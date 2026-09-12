@@ -26,13 +26,13 @@ HEADERS = {
 # --- FONCTION DE SYNCHRONISATION AUTOMATIQUE GITHUB ---
 
 def sauvegarder_et_synchroniser(data, filename, message="Mise à jour automatique des données PMU"):
-    # 1. Enregistrement local sur le serveur
+    # 1. Enregistrement local sur le serveur / disque
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     
     # 2. Envoi automatique sur GitHub si le token est configuré dans Streamlit Secrets
-    if "GITHUB_TOKEN" in st.secrets:
-        try:
+    try:
+        if "GITHUB_TOKEN" in st.secrets:
             token = st.secrets["GITHUB_TOKEN"]
             
             subprocess.run(["git", "config", "--global", "user.email", "bot@streamlit.app"], capture_output=True)
@@ -50,9 +50,9 @@ def sauvegarder_et_synchroniser(data, filename, message="Mise à jour automatiqu
                     subprocess.run(["git", "push", repo_url, "HEAD"], capture_output=True)
                 
                 st.toast("Données sauvegardées et synchronisées sur GitHub !", icon="✅")
-        except Exception as e:
-            st.warning(f"Sauvegarde locale effectuée, mais échec de la synchro GitHub : {e}")
-
+    except Exception:
+        # En local (sans secrets.toml), l'enregistrement local a fonctionné, on prévient simplement sans bloquer
+        st.toast("Données enregistrées localement (mode hors ligne).", icon="💾")
 # --- FONCTIONS MÉTIER ---
 
 def telecharger_pmu_date(date_iso, fichier_cible):
@@ -449,15 +449,28 @@ with tab_suivi:
         with col_act3:
             gain_saisi = st.number_input("Montant du gain (si Gagné)", min_value=0.0, value=0.0, step=0.5)
             
-        if st.button("Mettre à jour le statut du pari"):
-            if 0 <= index_pari < len(historique):
-                historique[index_pari]["statut"] = nouveau_statut
-                historique[index_pari]["gain"] = gain_saisi if nouveau_statut == "Gagné" else 0.0
-                
-                # Sauvegarde et synchronisation automatique sur GitHub après modification
-                sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Mise à jour statut pari")
-                
-                st.success("Mise à jour et synchronisation effectuées !")
-                st.rerun()
+        col_btn1, col_btn2 = st.columns(2)
+        with col_btn1:
+            if st.button("Mettre à jour le statut du pari"):
+                if 0 <= index_pari < len(historique):
+                    historique[index_pari]["statut"] = nouveau_statut
+                    historique[index_pari]["gain"] = gain_saisi if nouveau_statut == "Gagné" else 0.0
+                    
+                    # Sauvegarde et synchronisation automatique sur GitHub après modification
+                    sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Mise à jour statut pari")
+                    
+                    st.success("Mise à jour et synchronisation effectuées !")
+                    st.rerun()
+                    
+        with col_btn2:
+            if st.button("🗑️ Supprimer ce pari"):
+                if 0 <= index_pari < len(historique):
+                    pari_supprime = historique.pop(index_pari)
+                    
+                    # Sauvegarde et synchronisation automatique sur GitHub après suppression
+                    sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, f"Suppression du pari index {index_pari}")
+                    
+                    st.success("Pari supprimé et synchronisé avec succès !")
+                    st.rerun()
     else:
         st.info("Aucun historique de pari enregistré pour le moment.")
