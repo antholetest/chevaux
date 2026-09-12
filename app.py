@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import streamlit as st
 import requests
+import subprocess
 
 # Configuration de la page Streamlit pour mobile et PC
 st.set_page_config(
@@ -21,6 +22,36 @@ HEADERS = {
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
     )
 }
+
+# --- FONCTION DE SYNCHRONISATION AUTOMATIQUE GITHUB ---
+
+def sauvegarder_et_synchroniser(data, filename, message="Mise à jour automatique des données PMU"):
+    # 1. Enregistrement local sur le serveur
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    
+    # 2. Envoi automatique sur GitHub si le token est configuré dans Streamlit Secrets
+    if "GITHUB_TOKEN" in st.secrets:
+        try:
+            token = st.secrets["GITHUB_TOKEN"]
+            
+            subprocess.run(["git", "config", "--global", "user.email", "bot@streamlit.app"], capture_output=True)
+            subprocess.run(["git", "config", "--global", "user.name", "Streamlit Bot"], capture_output=True)
+            
+            subprocess.run(["git", "add", str(filename)], check=True, capture_output=True)
+            
+            status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
+            if filename.name in status.stdout or str(filename) in status.stdout:
+                subprocess.run(["git", "commit", "-m", message], check=True, capture_output=True)
+                
+                repo_url = f"https://{token}@github.com/antholetest/chevaux.git"
+                res_push = subprocess.run(["git", "push", repo_url], capture_output=True, text=True)
+                if res_push.returncode != 0:
+                    subprocess.run(["git", "push", repo_url, "HEAD"], capture_output=True)
+                
+                st.toast("Données sauvegardées et synchronisées sur GitHub !", icon="✅")
+        except Exception as e:
+            st.warning(f"Sauvegarde locale effectuée, mais échec de la synchro GitHub : {e}")
 
 # --- FONCTIONS MÉTIER ---
 
@@ -78,9 +109,8 @@ def telecharger_pmu_date(date_iso, fichier_cible):
             except Exception:
                 pass
 
-    with open(fichier_cible, "w", encoding="utf-8") as f:
-        json.dump(resultats_journee, f, ensure_ascii=False, indent=2)
-
+    # Remplacement de l'écriture simple par la fonction de synchronisation
+    sauvegarder_et_synchroniser(resultats_journee, fichier_cible, f"Téléchargement courses {date_iso}")
     return True
 
 def charger_donnees_fichier(fichier_json):
@@ -226,7 +256,7 @@ with tab_analyse:
             with st.spinner("Téléchargement des données PMU en cours..."):
                 succes = telecharger_pmu_date(date_iso, fichier_jour)
                 if succes:
-                    st.success("Données chargées avec succès !")
+                    st.success("Données chargées et synchronisées avec succès !")
                 else:
                     st.error("Impossible de récupérer les données pour cette date.")
 
@@ -371,9 +401,11 @@ with tab_analyse:
                     except Exception:
                         pass
                 historique.append(st.session_state["dernier_pari"])
-                with open(FICHIER_HISTORIQUE, "w", encoding="utf-8") as f:
-                    json.dump(historique, f, ensure_ascii=False, indent=2)
-                st.success("Pari enregistré avec succès dans l'historique !")
+                
+                # Sauvegarde et synchronisation automatique sur GitHub
+                sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Ajout d'un nouveau pari")
+                
+                st.success("Pari enregistré et synchronisé avec succès !")
                 del st.session_state["dernier_pari"]
 
 with tab_suivi:
@@ -421,9 +453,11 @@ with tab_suivi:
             if 0 <= index_pari < len(historique):
                 historique[index_pari]["statut"] = nouveau_statut
                 historique[index_pari]["gain"] = gain_saisi if nouveau_statut == "Gagné" else 0.0
-                with open(FICHIER_HISTORIQUE, "w", encoding="utf-8") as f:
-                    json.dump(historique, f, ensure_ascii=False, indent=2)
-                st.success("Mise à jour effectuée !")
+                
+                # Sauvegarde et synchronisation automatique sur GitHub après modification
+                sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Mise à jour statut pari")
+                
+                st.success("Mise à jour et synchronisation effectuées !")
                 st.rerun()
     else:
         st.info("Aucun historique de pari enregistré pour le moment.")
