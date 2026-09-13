@@ -5,6 +5,10 @@ import streamlit as st
 import requests
 import subprocess
 import re
+import random
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 # Configuration de la page Streamlit pour mobile et PC
 st.set_page_config(
@@ -13,17 +17,57 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
-# Dossier cible défini sur votre bureau
-DOSSIER = Path(r"C:\Users\antho\Desktop\application jeux")
-DOSSIER.mkdir(parents=True, exist_ok=True)
-FICHIER_HISTORIQUE = DOSSIER / "historique_bilan_pmu.json"
-
+DOSSIER = Path(".")
+FICHIER_HISTORIQUE = DOSSIER / "historique_paris.json"
 HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-    )
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 }
+
+# --- PROTECTION PAR EMAIL ET CODE OTP ALÉATOIRE ---
+def envoyer_code_email(code):
+    try:
+        expediteur = st.secrets["EMAIL_SENDER"]
+        password = st.secrets["EMAIL_PASSWORD"]
+        destinataire = st.secrets["EMAIL_RECEIVER"]
+        
+        msg = MIMEMultipart()
+        msg["From"] = expediteur
+        msg["To"] = destinataire
+        msg["Subject"] = "🔐 Code de validation - Application PMU"
+        
+        message_corps = f"Bonjour,\n\nVoici votre code de connexion à usage unique : {code}\n\nCe code est requis pour accéder à votre application."
+        msg.attach(MIMEText(message_corps, "plain"))
+        
+        server = smtplib.SMTP("smtp.gmail.com", 587)
+        server.starttls()
+        server.login(expediteur, password)
+        server.sendmail(expediteur, destinataire, msg.as_string())
+        server.quit()
+        return True
+    except Exception as e:
+        st.error(f"Erreur lors de l'envoi du mail : {e}")
+        return False
+
+def verifier_authentification():
+    if "authentifie" not in st.session_state:
+        st.session_state["authentifie"] = False
+
+    if not st.session_state["authentifie"]:
+        st.title("🔒 Espace Restreint - Connexion Sécurisée")
+        
+        mot_de_passe_saisi = st.text_input("Entrez votre mot de passe", type="password")
+        
+        if st.button("Se connecter"):
+            mdp_attendu = st.secrets.get("PASSWORD", "301180")
+            if mot_de_passe_saisi.strip() == mdp_attendu:
+                st.session_state["authentifie"] = True
+                st.rerun()
+            else:
+                st.error("Mot de passe incorrect.")
+                
+        st.stop()
+
+verifier_authentification()
 
 # --- FONCTION DE SYNCHRONISATION AUTOMATIQUE GITHUB ---
 
@@ -263,7 +307,6 @@ def verifier_resultats_automatiques_pmu(historique):
                     for part in participants:
                         num_pmu = str(part.get("numPmu"))
                         
-                        # Récupération de la cote officielle réelle (dernier rapport direct)
                         rapport_direct = part.get("dernierRapportDirect")
                         if isinstance(rapport_direct, dict):
                             val_rapport = rapport_direct.get("rapport")
@@ -279,15 +322,12 @@ def verifier_resultats_automatiques_pmu(historique):
                     
                     if arrivee_trouvee:
                         details = p.get("details", "")
-                        
                         gain_total = 0.0
                         un_gagne = False
                         
-                        # --- Sécu : Pari Placé (doit figurer dans le top 3) ---
                         secu_match = re.search(r'Sécu:\s*\[N°(\d+)[^\]]*Cote win:\s*([\d\.]+)[^\]]*\]\s*\((\d+)€\)', details)
                         if secu_match:
                             num_secu = secu_match.group(1)
-                            # Utilisation prioritaire de la cote réelle de l'API, sinon repli sur le texte
                             cote_secu = cotes_reelles.get(num_secu, float(secu_match.group(2)))
                             mise_secu = float(secu_match.group(3))
                             
@@ -298,7 +338,6 @@ def verifier_resultats_automatiques_pmu(historique):
                                 gain_total += mise_secu * (1.0 + (cote_secu - 1.0) / 3.0)
                                 un_gagne = True
                                 
-                        # --- Poker / Gros : Pari Gagnant (doit terminer STRICTEMENT 1er) ---
                         poker_match = re.search(r'Poker:\s*\[N°(\d+)[^\]]*Cote win:\s*([\d\.]+)[^\]]*\]\s*\((\d+)€\)', details)
                         if poker_match:
                             num_poker = poker_match.group(1)
