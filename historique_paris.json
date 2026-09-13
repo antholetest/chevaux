@@ -80,7 +80,7 @@
     "type": "Automatique",
     "details": "Sécu: [N°7 - ZERO STRESS (Cote win: 7.0)] (4€) | Poker: [N°3 - GRECIAN CONQUEST (Cote win: 19.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0
   },
   {
@@ -92,7 +92,7 @@
     "type": "Automatique",
     "details": "Sécu: [N°2 - HABIBA (Cote win: 8.2)] (4€) | Poker: [N°1 - TOMOE GOZEN (Cote win: 10.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0
   },
   {
@@ -104,7 +104,7 @@
     "type": "Automatique",
     "details": "Sécu: [N°9 - TRUE VALUE (Cote win: 3.2)] (4€) | Poker: [N°1 - WHATAHERO (Cote win: 26.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0
+    "statut": "Gagné",
+    "gain": 5.6
   }
 ]
