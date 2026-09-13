@@ -164,8 +164,8 @@
     "type": "Automatique",
     "details": "Sécu: [N°2 - NICO DU TOULAY (Cote win: 3.9)] (14€) | Poker: [N°1 - NAFISA MENUET (Cote win: 30.0)] (6€)",
     "mise": 20,
-    "statut": "En attente",
-    "gain": 0.0
+    "statut": "Gagné",
+    "gain": 54.6
   },
   {
     "date": "2026-09-12",
@@ -176,8 +176,8 @@
     "type": "Simple",
     "details": "Sécu: [N°2 - NICO DU TOULAY (Cote win: 3.9)] (14€) | Poker: [N°1 - NAFISA MENUET (Cote win: 30.0)] (6€)",
     "mise": 20,
-    "statut": "En attente",
-    "gain": 0.0
+    "statut": "Gagné",
+    "gain": 54.6
   },
   {
     "date": "2026-09-12",
@@ -188,7 +188,7 @@
     "type": "Couplé",
     "details": "Sécu: [N°2 et N°11] (14€) | Poker: [N°2 et N°1] (6€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0
   },
   {
@@ -200,7 +200,7 @@
     "type": "Trio",
     "details": "Sécu: [N°2, N°11, N°1] (14€) | Poker: [N°2, N°11, N°1] (6€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0
   }
 ]
