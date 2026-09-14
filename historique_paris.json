@@ -92,8 +92,9 @@
     "type": "Simple",
     "details": "Sécu: [N°4 - KING PRESTIGE (Cote win: 2.7)] (4€) | Poker: [N°1 - KALINA STAR (Cote win: 11.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0
+    "statut": "Gagné",
+    "gain": 6.8,
+    "diagnostic": "Succès : Les sélections ont atteint les objectifs."
   },
   {
     "date": "2026-09-14",
@@ -104,9 +105,9 @@
     "type": "Simple",
     "details": "Sécu: [N°1 - RUBY BLUES (Cote win: 4.1)] (4€) | Poker: [N°4 - AIVLIS (Cote win: 5.3)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 15.6,
+    "diagnostic": "Succès : Les sélections ont atteint les objectifs."
   },
   {
     "date": "2026-09-14",
@@ -117,9 +118,9 @@
     "type": "Simple",
     "details": "Sécu: [N°4 - CHATOR FAL (Cote win: 3.9)] (4€) | Poker: [N°7 - FASHIONISTA (Cote win: 5.4)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 4e (au pied du podium) | N°7 2e"
   },
   {
     "date": "2026-09-14",
@@ -130,9 +131,9 @@
     "type": "Simple",
     "details": "Sécu: [N°2 - KATIBI FAL (Cote win: 6.6)] (4€) | Poker: [N°6 - RELIEVAL (Cote win: 11.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 16.8,
+    "diagnostic": "Succès : Les sélections ont atteint les objectifs."
   },
   {
     "date": "2026-09-14",
@@ -143,9 +144,9 @@
     "type": "Simple",
     "details": "Sécu: [N°9 - SAWT ESSALAM RM (Cote win: 2.2)] (4€) | Poker: [N°3 - FARES MAMS (Cote win: 9.9)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 10.0,
+    "diagnostic": "Succès : Les sélections ont atteint les objectifs."
   },
   {
     "date": "2026-09-14",
@@ -156,8 +157,8 @@
     "type": "Simple",
     "details": "Sécu: [N°5 - CITY SPIRIT FAL (Cote win: 3.6)] (4€) | Poker: [N°11 - BAHIJ (Cote win: 8.9)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°5 11e | N°11 10e"
   }
 ]
