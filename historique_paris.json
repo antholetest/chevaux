@@ -170,9 +170,9 @@
     "type": "Simple",
     "details": "Sécu: [N°2 - LOVELY WARRIOR (Cote win: 4.3)] (4€) | Poker: [N°3 - LUDWIG DER ZWEITE (Cote win: 12.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°2 6e | N°3 8e"
   },
   {
     "date": "2026-09-14",
@@ -183,9 +183,9 @@
     "type": "Simple",
     "details": "Sécu: [N°1 - CORBUSIER (Cote win: 3.5)] (4€) | Poker: [N°6 - PINK PALACE (Cote win: 11.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°1 4e (au pied du podium) | N°6 6e"
   },
   {
     "date": "2026-09-14",
@@ -196,9 +196,9 @@
     "type": "Simple",
     "details": "Sécu: [N°3 - CELAGO (Cote win: 3.1)] (4€) | Poker: [N°8 - TASTEFUL (Cote win: 4.2)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 9.43,
+    "diagnostic": "Succès : Les sélections ont atteint les objectifs."
   },
   {
     "date": "2026-09-14",
@@ -209,9 +209,9 @@
     "type": "Simple",
     "details": "Sécu: [N°3 - ILIANNABELLA (Cote win: 5.3)] (4€) | Poker: [N°9 - COUNSELOR (Cote win: 10.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 14.53,
+    "diagnostic": "Succès : Les sélections ont atteint les objectifs."
   },
   {
     "date": "2026-09-14",
@@ -222,9 +222,9 @@
     "type": "Simple",
     "details": "Sécu: [N°4 - IVORY SPRING (Cote win: 3.8)] (4€) | Poker: [N°8 - WINDFLOWER (Cote win: 11.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 6e | N°8 4e (au pied du podium)"
   },
   {
     "date": "2026-09-14",
@@ -235,9 +235,9 @@
     "type": "Simple",
     "details": "Sécu: [N°3 - SPACE GOOD (Cote win: 4.2)] (4€) | Poker: [N°11 - MIXED FORCE (Cote win: 18.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 11.33,
+    "diagnostic": "Succès : Les sélections ont atteint les objectifs."
   },
   {
     "date": "2026-09-14",
@@ -248,8 +248,8 @@
     "type": "Simple",
     "details": "Sécu: [N°3 - COSMIC BOY (Cote win: 3.8)] (4€) | Poker: [N°2 - GENTLEMANLIKE (Cote win: 4.5)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°3 non classé / battu | N°2 2e"
   }
 ]
