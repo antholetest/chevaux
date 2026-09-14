@@ -430,9 +430,9 @@
     "type": "Simple",
     "details": "Sécu: [N°1 - SIM CARD (Cote win: 5.2)] (4€) | Poker: [N°7 - ADICTA (Cote win: 17.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°1 5e | N°7 4e (au pied du podium)"
   },
   {
     "date": "2026-09-13",
@@ -443,9 +443,9 @@
     "type": "Simple",
     "details": "Sécu: [N°3 - STOLEN KISS (Cote win: 6.7)] (4€) | Poker: [N°9 - SHIRI (Cote win: 9.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°3 4e (au pied du podium) | N°9 2e"
   },
   {
     "date": "2026-09-14",
@@ -456,9 +456,9 @@
     "type": "Simple",
     "details": "Sécu: [N°4 - NIAOULI DE WALLIS (Cote win: 3.0)] (4€) | Poker: [N°9 - NEW LOOK SENOVILLE (Cote win: 3.1)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 non classé / battu | N°9 3e"
   },
   {
     "date": "2026-09-14",
@@ -469,9 +469,9 @@
     "type": "Simple",
     "details": "Sécu: [N°15 - MAJOR SAUTONNE (Cote win: 2.9)] (4€) | Poker: [N°16 - MACUMBA MESLOISE (Cote win: 7.4)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 11.6,
+    "diagnostic": "Succès : Les sélections ont atteint les objectifs."
   },
   {
     "date": "2026-09-14",
@@ -482,9 +482,9 @@
     "type": "Simple",
     "details": "Sécu: [N°8 - MAGIQUE REVAT (Cote win: 4.6)] (4€) | Poker: [N°6 - MUSE DU VIVIER (Cote win: 5.2)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 18.4,
+    "diagnostic": "Succès : Les sélections ont atteint les objectifs."
   },
   {
     "date": "2026-09-14",
@@ -495,9 +495,9 @@
     "type": "Simple",
     "details": "Sécu: [N°17 - LEOPARD WIT (Cote win: 3.8)] (4€) | Poker: [N°9 - LUCKY LUMALO (Cote win: 7.7)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 15.2,
+    "diagnostic": "Succès : Les sélections ont atteint les objectifs."
   },
   {
     "date": "2026-09-14",
@@ -508,9 +508,9 @@
     "type": "Simple",
     "details": "Sécu: [N°6 - JAMAIS (Cote win: 2.3)] (4€) | Poker: [N°11 - JALTO DU TREMONT (Cote win: 3.5)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 9.2,
+    "diagnostic": "Succès : Les sélections ont atteint les objectifs."
   },
   {
     "date": "2026-09-14",
@@ -521,8 +521,8 @@
     "type": "Simple",
     "details": "Sécu: [N°4 - KING PRESTIGE (Cote win: 1.7)] (4€) | Poker: [N°1 - KALINA STAR (Cote win: 9.2)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 6.8,
+    "diagnostic": "Succès : Les sélections ont atteint les objectifs."
   }
 ]
