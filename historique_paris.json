@@ -339,9 +339,9 @@
     "type": "Simple",
     "details": "Sécu: [N°9 - KING GOLD (Cote win: 5.1)] (4€) | Poker: [N°3 - HYPERCORE (Cote win: 5.7)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°9 5e | N°3 4e (au pied du podium)"
   },
   {
     "date": "2026-09-14",
@@ -365,9 +365,9 @@
     "type": "Simple",
     "details": "Sécu: [N°3 - MORENA TEXANA (Cote win: 2.0)] (4€) | Poker: [N°12 - GRAN PAJARITA (Cote win: 10.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°3 7e | N°12 2e"
   },
   {
     "date": "2026-09-14",
@@ -378,9 +378,9 @@
     "type": "Simple",
     "details": "Sécu: [N°2 - NINO MATICO (Cote win: 5.4)] (4€) | Poker: [N°5 - EL DESTINO REAL (Cote win: 43.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 16.0,
+    "diagnostic": "Succès : Les sélections ont atteint les objectifs."
   },
   {
     "date": "2026-09-14",
