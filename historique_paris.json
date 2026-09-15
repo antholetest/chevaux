@@ -9,9 +9,9 @@
     "type": "Automatique",
     "details": "Sécu: [N°6 - MIGHTY BOY (Cote win: 5.9)] (4€) | Poker: [N°1 - CHESS (Cote win: 9.1)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 10.53,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -23,9 +23,9 @@
     "type": "Automatique",
     "details": "Sécu: [N°3 - PAIUTE (Cote win: 1.6)] (4€) | Poker: [N°2 - LOVING QUEEN (Cote win: 10.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 4.8,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -37,9 +37,9 @@
     "type": "Automatique",
     "details": "Sécu: [N°3 - KENERGY (Cote win: 2.5)] (4€) | Poker: [N°6 - RITZY ROXY (Cote win: 15.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 10.0,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -51,9 +51,9 @@
     "type": "Automatique",
     "details": "Sécu: [N°6 - MAGIC INSPIRATION (Cote win: 2.8)] (3€) | Poker: [N°3 - CORMAC (Cote win: 17.0)] (2€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 4.8,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -65,9 +65,9 @@
     "type": "Automatique",
     "details": "Sécu: [N°11 - BLANQUETTE (Cote win: 2.8)] (4€) | Poker: [N°1 - MARASI DRIVE (Cote win: 12.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°11 non classé | N°1 5e"
   },
   {
     "date": "2026-09-15",
@@ -79,9 +79,9 @@
     "type": "Automatique",
     "details": "Sécu: [N°6 - JANNET (Cote win: 2.0)] (4€) | Poker: [N°2 - MARANTAO (Cote win: 16.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°6 4e (au pied du podium) | N°2 7e"
   },
   {
     "date": "2026-09-15",
@@ -93,9 +93,9 @@
     "type": "Automatique",
     "details": "Sécu: [N°4 - GOD SAVE THE QUEEN (Cote win: 5.7)] (4€) | Poker: [N°1 - MY EDEN JAMES (Cote win: 22.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 10e | N°1 4e (au pied du podium)"
   },
   {
     "date": "2026-09-15",
@@ -107,8 +107,8 @@
     "type": "Automatique",
     "details": "Sécu: [N°1 - SPLENDINO (Cote win: 5.2)] (4€) | Poker: [N°3 - LE GAST (Cote win: 13.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°1 8e | N°3 5e"
   }
 ]
