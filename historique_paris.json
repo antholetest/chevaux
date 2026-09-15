@@ -9,9 +9,9 @@
     "type": "Automatique",
     "details": "Sécu: [N°12 - JEFF DE MONPAZ (Cote win: 5.2)] (17€) | Poker: [N°2 - FEROX BRICK (Cote win: 16.0)] (3€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°12 6e | N°2 non classé"
   },
   {
     "date": "2026-09-14",
@@ -23,9 +23,9 @@
     "type": "Automatique",
     "details": "Sécu: [N°11 - GARD (Cote win: 3.2)] (16€) | Poker: [N°2 - JANEIRO TURGOT (Cote win: 12.0)] (4€)",
     "mise": 20,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 27.73,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-14",
@@ -37,9 +37,9 @@
     "type": "Automatique",
     "details": "Sécu: [N°4 - NIAOULI DE WALLIS (Cote win: 3.0)] (17€) | Poker: [N°2 - NEWTON GAB (Cote win: 19.0)] (3€)",
     "mise": 20,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 57.0,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-14",
@@ -51,9 +51,9 @@
     "type": "Automatique",
     "details": "Sécu: [N°15 - MAJOR SAUTONNE (Cote win: 2.9)] (14€) | Poker: [N°4 - MAXWELL SAUTREUIL (Cote win: 18.0)] (6€)",
     "mise": 20,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 40.6,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-14",
@@ -65,9 +65,9 @@
     "type": "Automatique",
     "details": "Sécu: [N°8 - MAGIQUE REVAT (Cote win: 4.6)] (17€) | Poker: [N°3 - MONEY AIMEF (Cote win: 14.0)] (3€)",
     "mise": 20,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 78.2,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-14",
@@ -79,9 +79,9 @@
     "type": "Automatique",
     "details": "Sécu: [N°17 - LEOPARD WIT (Cote win: 3.8)] (16€) | Poker: [N°4 - LOVELY ONE (Cote win: 9.8)] (4€)",
     "mise": 20,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 60.8,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-14",
@@ -93,9 +93,9 @@
     "type": "Automatique",
     "details": "Sécu: [N°6 - JAMAIS (Cote win: 2.3)] (16€) | Poker: [N°1 - HALFAN SPEED (Cote win: 11.0)] (4€)",
     "mise": 20,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 36.8,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-14",
@@ -107,8 +107,8 @@
     "type": "Automatique",
     "details": "Sécu: [N°4 - KING PRESTIGE (Cote win: 1.7)] (14€) | Poker: [N°1 - KALINA STAR (Cote win: 9.2)] (6€)",
     "mise": 20,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 23.8,
+    "diagnostic": "Succès : Objectifs atteints."
   }
 ]
