@@ -415,9 +415,9 @@
     "type": "Simple",
     "details": "Sécu: [N°6 - MIGHTY BOY (Cote win: 5.9)] (4€) | Poker: [N°1 - CHESS (Cote win: 9.1)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 10.53,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -429,9 +429,9 @@
     "type": "Simple",
     "details": "Sécu: [N°3 - PAIUTE (Cote win: 1.6)] (4€) | Poker: [N°2 - LOVING QUEEN (Cote win: 10.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 4.8,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -443,9 +443,9 @@
     "type": "Simple",
     "details": "Sécu: [N°3 - KENERGY (Cote win: 2.5)] (4€) | Poker: [N°1 - BILLION GOLD (Cote win: 4.9)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 10.0,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -457,9 +457,9 @@
     "type": "Simple",
     "details": "Sécu: [N°6 - MAGIC INSPIRATION (Cote win: 2.8)] (4€) | Poker: [N°7 - SHALOM (Cote win: 14.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 6.4,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -471,9 +471,9 @@
     "type": "Simple",
     "details": "Sécu: [N°11 - BLANQUETTE (Cote win: 2.8)] (4€) | Poker: [N°2 - PIYANGO (Cote win: 12.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°11 non classé | N°2 4e (au pied du podium)"
   },
   {
     "date": "2026-09-15",
@@ -485,9 +485,9 @@
     "type": "Simple",
     "details": "Sécu: [N°6 - JANNET (Cote win: 2.0)] (4€) | Poker: [N°8 - STORY WAY (Cote win: 4.3)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 4.3,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -499,9 +499,9 @@
     "type": "Simple",
     "details": "Sécu: [N°4 - GOD SAVE THE QUEEN (Cote win: 5.7)] (4€) | Poker: [N°10 - AND WE DANCED (Cote win: 12.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 10e | N°10 8e"
   },
   {
     "date": "2026-09-15",
@@ -513,8 +513,8 @@
     "type": "Simple",
     "details": "Sécu: [N°1 - SPLENDINO (Cote win: 5.2)] (4€) | Poker: [N°6 - LUCIO VERO (Cote win: 9.2)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°1 8e | N°6 7e"
   }
 ]
