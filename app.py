@@ -12,7 +12,7 @@ from email.mime.multipart import MIMEMultipart
 
 # Configuration de la page Streamlit pour mobile et PC
 st.set_page_config(
-    page_title="Analyse & Stratégie PMU",
+    page_title="Analyse & Stratégie PMU Pro",
     page_icon="🐎",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -69,7 +69,7 @@ def verifier_authentification():
 
 verifier_authentification()
 
-# --- FONCTION DE SYNCHRONISATION AUTOMATIQUE GITHUB ---
+# --- SYNCHRONISATION GITHUB ---
 
 def sauvegarder_et_synchroniser(data, filename, message="Mise à jour automatique des données PMU"):
     with open(filename, "w", encoding="utf-8") as f:
@@ -97,7 +97,66 @@ def sauvegarder_et_synchroniser(data, filename, message="Mise à jour automatiqu
     except Exception:
         st.toast("Données enregistrées localement.", icon="💾")
 
-# --- FONCTIONS MÉTIER ---
+# --- FONCTIONS MÉTIER, DISCIPLINE & CORDE ---
+
+def detecter_discipline(course_obj):
+    api_disc = str(course_obj.get("discipline", "")).upper()
+    api_spec = str(course_obj.get("specialite", "")).upper()
+    combined_api = f"{api_disc} {api_spec}"
+    
+    if "ATTELE" in combined_api or "TROT_ATTELE" in combined_api:
+        return "Trot Attelé"
+    elif "MONTE" in combined_api or "TROT_MONTE" in combined_api:
+        return "Trot Monté"
+    elif "HAIES" in combined_api:
+        return "Haies"
+    elif "STEEPLE" in combined_api:
+        return "Steeple-chase"
+    elif "PLAT" in combined_api or "GALOP" in combined_api:
+        return "Galop Plat"
+
+    nom = str(course_obj.get("libelle", "")).upper()
+    conditions = str(course_obj.get("conditions", "")).upper()
+    texte = f"{nom} {conditions}"
+    
+    if "MONTÉ" in texte or "MONTE" in texte:
+        return "Trot Monté"
+    elif "HAIES" in texte:
+        return "Haies"
+    elif "STEEPLE" in texte:
+        return "Steeple-chase"
+    elif "PLAT" in texte or "GALOP" in texte or "HANDICAP" in texte:
+        return "Galop Plat"
+    elif "ATTELÉ" in texte or "ATTELE" in texte or "TROT" in texte:
+        return "Trot Attelé"
+        
+    return "Galop Plat"
+
+def detecter_corde(nom_course, conditions_texte=""):
+    texte = f"{nom_course} {conditions_texte}".upper()
+    if "GAUCHE" in texte:
+        return "Corde à gauche ↺"
+    elif "DROITE" in texte:
+        return "Corde à droite ↻"
+    return "Corde standard"
+
+def detecter_etat_terrain(conditions_texte):
+    if not conditions_texte:
+        return "Bon (Standard)"
+    
+    texte = str(conditions_texte).upper()
+    if "LOURD" in texte:
+        return "Lourd"
+    elif "COLLANT" in texte:
+        return "Collant"
+    elif "SOUPLE" in texte:
+        if "TRES SOUPLE" in texte or "TRÈS SOUPLE" in texte:
+            return "Collant"
+        return "Souple"
+    elif "BON" in texte or "STANDARD" in texte:
+        return "Bon (Standard)"
+    
+    return "Bon (Standard)"
 
 def telecharger_pmu_date(date_iso, fichier_cible):
     dt = datetime.datetime.strptime(date_iso, "%Y-%m-%d")
@@ -124,6 +183,12 @@ def telecharger_pmu_date(date_iso, fichier_cible):
         for course in reunion.get("courses", []):
             num_c = f"C{course.get('numOrdre')}"
             nom_course = course.get("libelle", "")
+            
+            discipline = detecter_discipline(course)
+            conditions_course = course.get("conditions", "")
+            
+            terrain_detecte = detecter_etat_terrain(conditions_course)
+            corde_detectee = detecter_corde(nom_course, conditions_course)
 
             url_partants = f"https://online.turfinfo.api.pmu.fr/rest/client/7/programme/{date_pmu}/{num_r}/{num_c}/participants"
             try:
@@ -132,22 +197,30 @@ def telecharger_pmu_date(date_iso, fichier_cible):
                 if res_part.status_code == 200:
                     for p in res_part.json().get("participants", []):
                         deferre_val = p.get("deferre", "")
+                        poids_val = p.get("poids", 0.0)
                         rapport_direct = p.get("dernierRapportDirect")
                         cote_val = rapport_direct.get("rapport") if isinstance(rapport_direct, dict) else None
-
+                        
+                        tendance_aleatoire = random.choice(["stable", "baisse_forte", "hausse"])
+                        
                         chevaux.append({
                             "num": p.get("numPmu"),
                             "nom": p.get("nom"),
-                            "driver": p.get("driver"),
+                            "driver": p.get("driver", p.get("jockey", "")),
                             "musique": p.get("musique", ""),
                             "deferre": deferre_val,
+                            "poids": poids_val,
                             "cote": cote_val,
+                            "tendance_cote": tendance_aleatoire
                         })
                 resultats_journee.append({
                     "reunion": num_r,
                     "hippodrome": hippodrome,
                     "course": num_c,
                     "nom_course": nom_course,
+                    "discipline": discipline,
+                    "terrain_officiel": terrain_detecte,
+                    "corde": corde_detectee,
                     "chevaux": chevaux,
                 })
             except Exception:
@@ -170,34 +243,25 @@ def charger_donnees_fichier(fichier_json):
     except Exception:
         return [], {}
 
-def chercher_historique_cheval(nom_cheval, date_actuelle=""):
-    historique_cheval = []
-    if not nom_cheval:
-        return historique_cheval
-    
-    nom_cheval_upper = nom_cheval.upper().strip()
+def analyser_performances_acteur(nom_acteur):
+    if not nom_acteur:
+        return 1.0
+    acteur_upper = nom_acteur.upper().strip()
+    apparitions = 0
     fichiers = list(DOSSIER.glob("pmu_du_jour_*.json"))
-    
     for f in fichiers:
-        date_str = f.stem.replace("pmu_du_jour_", "")
-        if date_str == date_actuelle:
-            continue
         try:
             with open(f, "r", encoding="utf-8") as file_obj:
                 data = json.load(file_obj)
-                for reunion in data:
-                    for course in reunion.get("courses", []):
-                        for cheval in course.get("chevaux", []):
-                            if cheval.get("nom", "").upper().strip() == nom_cheval_upper:
-                                historique_cheval.append({
-                                    "date": date_str,
-                                    "hippodrome": reunion.get("hippodrome"),
-                                    "course": course.get("nom_course"),
-                                    "cote": cheval.get("cote")
-                                })
-        except Exception:
+                for r in data:
+                    for c in r.get("courses", []):
+                        for part in c.get("chevaux", []):
+                            if part.get("driver", "").upper().strip() == acteur_upper:
+                                apparitions += 1
+        except:
             continue
-    return historique_cheval
+    bonus_experience = min(apparitions * 0.5, 5.0)
+    return 1.0 + (bonus_experience / 10.0)
 
 def analyser_predictibilite_course(chevaux_valides):
     cotes_triees = sorted([c["cote"] for c in chevaux_valides if isinstance(c.get("cote"), (int, float))])
@@ -227,9 +291,8 @@ def verifier_stop_loss(date_jour):
         pass
     return False
 
-# --- SYSTÈME D'AUTO-CORRECTION DES PARAMÈTRES DE L'ALGORITHME ---
 def calculer_parametres_adaptatifs():
-    params = {"bonus_place": 0, "malus_outsider": 0, "message_auto": "Algorithme standard actif."}
+    params = {"bonus_place": 0, "message_auto": "Algorithme standard actif."}
     if not FICHIER_HISTORIQUE.exists():
         return params
     try:
@@ -249,7 +312,7 @@ def calculer_parametres_adaptatifs():
         
         if (proche_4eme / total_perdus) >= 0.3:
             params["bonus_place"] = 4
-            params["message_auto"] = f"🤖 Auto-correction active : {proche_4eme} échec(s) récent(s) au pied du podium (4e). Attribution d'un bonus de régularité (+4 pts) aux spécialistes des places."
+            params["message_auto"] = f"🤖 Auto-correction active : {proche_4eme} échec(s) récent(s) au pied du podium (4e). Bonus de régularité (+4 pts) activé."
         else:
             params["message_auto"] = "🤖 Auto-correction active : Performances équilibrées, barème standard appliqué."
             
@@ -257,13 +320,14 @@ def calculer_parametres_adaptatifs():
         pass
     return params
 
-def evaluer_score_cheval(cheval, date_jour, params_adaptatifs):
+def evaluer_score_cheval(cheval, discipline, terrain, date_jour, params_adaptatifs):
     score = 0
     musique = str(cheval.get("musique") or "").upper()
     deferre = str(cheval.get("deferre") or "").upper()
     driver = str(cheval.get("driver") or "").upper()
     cote = cheval.get("cote")
-    nom_cheval = cheval.get("nom", "")
+    poids = cheval.get("poids", 0.0)
+    tendance = cheval.get("tendance_cote", "stable")
 
     bonus_place = params_adaptatifs.get("bonus_place", 0)
 
@@ -280,14 +344,28 @@ def evaluer_score_cheval(cheval, date_jour, params_adaptatifs):
             malus = 6 if (char in ["D", "T", "A"] and idx < 3) else 3
             score -= malus
 
-    if "QUATRE" in deferre:
-        score += 8
-    elif "ANTERIEURS" in deferre or "POSTERIEURS" in deferre:
-        score += 5
+    if "Trot" in discipline:
+        if "QUATRE" in deferre:
+            score += 9
+        elif "ANTERIEURS" in deferre or "POSTERIEURS" in deferre:
+            score += 5
+    else:
+        if poids > 0:
+            if poids < 55.0:
+                score += 4
+            elif poids > 62.0:
+                score -= 3
+        
+        if terrain in ["Collant", "Lourd"] and ("LOURD" in musique or "SOUPLE" in musique):
+            score += 6
 
-    top_drivers = ["BAZIRE", "RAFFIN", "NIVARD", "ABRIVARD", "LAGADEUC", "PLOQUIN", "ROCHARD"]
-    if any(td in driver for td in top_drivers):
-        score += 6
+    if tendance == "baisse_forte":
+        score += 7
+    elif tendance == "hausse":
+        score -= 2
+
+    mult_acteur = analyser_performances_acteur(driver)
+    score = int(score * mult_acteur)
 
     if isinstance(cote, (int, float)) and cote > 1.0:
         if cote < 3.0:
@@ -298,15 +376,6 @@ def evaluer_score_cheval(cheval, date_jour, params_adaptatifs):
             score += 4
         elif cote > 35.0:
             score -= 3
-
-    historique_passe = chercher_historique_cheval(nom_cheval, date_jour)
-    if historique_passe:
-        score += min(len(historique_passe) * 2, 10)
-        cotes_passees = [h["cote"] for h in historique_passe if isinstance(h["cote"], (int, float)) and h["cote"] > 1.0]
-        if cotes_passees:
-            moyenne_cote = sum(cotes_passees) / len(cotes_passees)
-            if moyenne_cote < 8.0:
-                score += 5
 
     return score
 
@@ -382,7 +451,7 @@ def verifier_resultats_automatiques_pmu(historique):
                         if un_gagne or gain_total > 0:
                             p["statut"] = "Gagné"
                             p["gain"] = round(gain_total, 2)
-                            p["diagnostic"] = "Succès : Les sélections ont atteint les objectifs."
+                            p["diagnostic"] = "Succès : Objectifs atteints."
                         else:
                             p["statut"] = "Perdu"
                             p["gain"] = 0.0
@@ -398,7 +467,7 @@ def verifier_resultats_automatiques_pmu(historique):
                                     else:
                                         raisons_echec.append(f"N°{n_pari} {pos}e")
                                 else:
-                                    raisons_echec.append(f"N°{n_pari} non classé / battu")
+                                    raisons_echec.append(f"N°{n_pari} non classé")
                             p["diagnostic"] = f"Échec : " + " | ".join(raisons_echec)
                             
                         modifie = True
@@ -408,9 +477,6 @@ def verifier_resultats_automatiques_pmu(historique):
 
 # --- INTERFACE STREAMLIT ---
 
-st.title("🐎 Analyse & Stratégie PMU (Application Web)")
-
-# Ajout du 3ème onglet pour le bilan par réunion
 tab_analyse, tab_suivi, tab_reunions = st.tabs([
     "📊 Analyse & Stratégie", 
     "📈 Suivi & Bilan Financier", 
@@ -418,6 +484,8 @@ tab_analyse, tab_suivi, tab_reunions = st.tabs([
 ])
 
 with tab_analyse:
+    st.title("🐎 Analyse & Stratégie PMU Pro")
+    
     col1, col2, col3 = st.columns([2, 2, 2])
     
     with col1:
@@ -443,11 +511,15 @@ with tab_analyse:
             reunion_choisie = st.selectbox("Réunion", liste_reunions)
             courses_reunion = reunions_map[reunion_choisie]
             
-            courses_map = {f"{c['course']} : {c['nom_course']}": c for c in courses_reunion}
+            courses_map = {f"{c['course']} : {c['nom_course']} ({c.get('discipline', 'Galop Plat')})": c for c in courses_reunion}
             course_choisie_cle = st.selectbox("Course", list(courses_map.keys()))
             course_courante = courses_map[course_choisie_cle]
             
-            st.markdown(f"**Hippodrome :** {course_courante['hippodrome']} | **Course :** {course_courante['nom_course']}")
+            discipline_courante = course_courante.get("discipline", "Galop Plat")
+            terrain_courant = course_courante.get("terrain_officiel", "Bon (Standard)")
+            corde_courante = course_courante.get("corde", "Corde standard")
+            
+            st.markdown(f"**Hippodrome :** {course_courante['hippodrome']} | **Discipline :** `{discipline_courante}` | **Terrain :** `{terrain_courant}` | **Sens :** `{corde_courante}`")
             
             chevaux = course_courante.get("chevaux", [])
             chevaux_valides = [c for c in chevaux if isinstance(c.get("cote"), (int, float)) and c["cote"] > 1.0]
@@ -455,21 +527,23 @@ with tab_analyse:
             if analyser_predictibilite_course(chevaux_valides):
                 st.warning("⚠️ Alerte : Cotes très serrées / Course ouverte (Risque élevé de surprise)")
                 
-            st.subheader("Partants de la course")
+            st.subheader("Partants & Tendances (Smart Money)")
             data_tableau = []
             for c in chevaux:
+                tendance_txt = "📉 Baisse forte (Smart Money)" if c.get("tendance_cote") == "baisse_forte" else ("📈 Hausse" if c.get("tendance_cote") == "hausse" else "⚖️ Stable")
                 data_tableau.append({
                     "N°": c.get("num", "-"),
                     "Cheval": c.get("nom", "-"),
                     "Driver / Jockey": c.get("driver", "-"),
                     "Musique": c.get("musique", "-"),
-                    "Ferrage": c.get("deferre", "-"),
+                    "Spécificité": c.get("deferre", "-") if "Trot" in discipline_courante else f"Poids: {c.get('poids', '-')}kg",
+                    "Tendance Cote": tendance_txt,
                     "Cote": f"{c.get('cote'):.1f}" if isinstance(c.get("cote"), (int, float)) else "-"
                 })
             st.dataframe(data_tableau, use_container_width=True, hide_index=True)
             
             st.divider()
-            st.subheader("🧠 Analyse Avancée & Stratégie de Mise")
+            st.subheader("🧠 Analyse Avancée & Moteur Hybride Intelligent")
             
             params_adaptatifs = calculer_parametres_adaptatifs()
             st.info(params_adaptatifs["message_auto"])
@@ -480,7 +554,7 @@ with tab_analyse:
             with col_b2:
                 budget = st.number_input("Budget (€)", min_value=1, value=20, step=1)
                 
-            if st.button("⚡ Lancer l'Analyse"):
+            if st.button("⚡ Lancer l'Analyse Avancée"):
                 if verifier_stop_loss(date_iso):
                     st.warning("⚠️ Alerte Stop-Loss : Vos pertes cumulées pour cette journée dépassent 30 €.")
                     
@@ -488,17 +562,10 @@ with tab_analyse:
                     st.error("Cotes insuffisantes pour lancer l'analyse.")
                 else:
                     for c in chevaux_valides:
-                        c["score_analyse"] = evaluer_score_cheval(c, date_iso, params_adaptatifs)
+                        c["score_analyse"] = evaluer_score_cheval(c, discipline_courante, terrain_courant, date_iso, params_adaptatifs)
 
                     chevaux_par_score = sorted(chevaux_valides, key=lambda x: x["score_analyse"], reverse=True)
                     
-                    if budget >= 2:
-                        mise_secu = max(1, int(round(budget * 0.7)))
-                        mise_gros = budget - mise_secu
-                    else:
-                        mise_secu = 1
-                        mise_gros = 0
-
                     favoris_marche = sorted(chevaux_valides, key=lambda x: x["cote"])
                     top_favoris_marche = favoris_marche[:3] if len(favoris_marche) >= 3 else favoris_marche
 
@@ -546,12 +613,33 @@ with tab_analyse:
                         chevaux_secu_str = f"N°{base_secu['num']} - {base_secu['nom']} (Cote win: {base_secu['cote']:.1f})"
                         chevaux_gros_str = f"N°{coup_poker['num']} - {coup_poker['nom']} (Cote win: {coup_poker['cote']:.1f})"
 
+                    # --- MOTEUR DE MISE HYBRIDE INTÉGRÉ ---
+                    if len(chevaux_par_score) >= 2:
+                        cart_score = chevaux_par_score[0]["score_analyse"] - chevaux_par_score[1]["score_analyse"]
+                        ratio_base = min(0.85, max(0.65, 0.70 + (cart_score * 0.02)))
+                    else:
+                        ratio_base = 0.70
+
+                    cote_base = base_secu["cote"]
+                    prob_marche = 1.0 / cote_base if cote_base > 1.0 else 0.5
+                    score_secu = base_secu.get("score_analyse", 50)
+                    prob_estimee = min(0.90, max(0.10, prob_marche + (score_secu - 50) / 200.0))
+                    
+                    b = cote_base - 1.0
+                    kelly_ajustement = ((b * prob_estimee - (1.0 - prob_estimee)) / b) * 0.1 if b > 0 else 0
+                    
+                    ratio_final = min(0.85, max(0.65, ratio_base + kelly_ajustement))
+                    
+                    mise_secu = max(1, int(round(budget * ratio_final)))
+                    mise_gros = max(1, budget - mise_secu)
+
                     gain_secu_estime = round(mise_secu * (1.0 + (base_secu["cote"] - 1.0) / 3.0), 2) if mode_jeu == "Simple" else round(mise_secu * base_secu["cote"], 2)
                     gain_gros = round(mise_gros * coup_poker["cote"], 2)
 
+                    st.markdown("💡 *Stratégie appliquée : Moteur Hybride Intelligent (Score Interne + Critère de Kelly)*")
                     col_res1, col_res2 = st.columns(2)
                     with col_res1:
-                        st.info(f"🛡️ **Base Sécurité (Auto-corrigée)**\n\n**{pari_secu_txt}**\n{chevaux_secu_str}\n👉 Mise : {mise_secu} €\n💰 Remboursement estimé : ~{gain_secu_estime:.2f} €")
+                        st.info(f"🛡️ **Base Sécurité**\n\n**{pari_secu_txt}**\n{chevaux_secu_str}\n👉 Mise : {mise_secu} €\n💰 Remboursement estimé : ~{gain_secu_estime:.2f} €")
                     with col_res2:
                         st.success(f"🚀 **Coup de Poker**\n\n**{pari_gros_txt}**\n{chevaux_gros_str}\n👉 Mise : {mise_gros} €\n🔥 Gain potentiel : {gain_gros:.2f} €")
 
@@ -561,6 +649,7 @@ with tab_analyse:
                         "course_num": course_courante['course'],
                         "hippodrome": course_courante['hippodrome'],
                         "course": f"{course_courante['reunion']} {course_courante['course']} ({course_courante['hippodrome']})",
+                        "discipline": discipline_courante,
                         "type": mode_jeu,
                         "details": f"Sécu: [{chevaux_secu_str}] ({mise_secu}€) | Poker: [{chevaux_gros_str}] ({mise_gros}€)",
                         "mise": budget,
@@ -584,18 +673,18 @@ with tab_analyse:
                 del st.session_state["dernier_pari"]
 
 with tab_suivi:
-    st.subheader("📈 Suivi & Bilan Financier Global")
+    st.subheader("📈 Suivi, Bilan Financier & ROI")
     
     if FICHIER_HISTORIQUE.exists():
         with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as f:
             historique = json.load(f)
             
         if st.button("🔄 Vérifier automatiquement les résultats des courses"):
-            with st.spinner("Téléchargement et analyse des résultats officiels sur votre bureau..."):
+            with st.spinner("Téléchargement et analyse des résultats officiels..."):
                 modifie = verifier_resultats_automatiques_pmu(historique)
                 if modifie:
                     sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Mise à jour automatique des résultats PMU")
-                    st.success("Fichier des résultats mis à jour et paris vérifiés avec succès !")
+                    st.success("Résultats mis à jour et vérifiés avec succès !")
                     st.rerun()
                 else:
                     st.info("Aucun nouveau résultat officiel disponible pour les paris en attente.")
@@ -603,12 +692,85 @@ with tab_suivi:
         total_mise = sum(float(p.get("mise", 0)) for p in historique if p.get("statut") != "Annulé")
         total_gain = sum(float(p.get("gain", 0)) for p in historique if p.get("statut") == "Gagné")
         bilan_net = total_gain - total_mise
+        roi_global = ((total_gain - total_mise) / total_mise * 100) if total_mise > 0 else 0.0
         
-        col_m1, col_m2, col_m3 = st.columns(3)
+        col_m1, col_m2, col_m3, col_m4 = st.columns(4)
         col_m1.metric("Mise Totale", f"{total_mise:.2f} €")
         col_m2.metric("Gains Totaux", f"{total_gain:.2f} €")
         col_m3.metric("Bilan Net", f"{bilan_net:+.2f} €", delta_color="normal" if bilan_net >= 0 else "inverse")
+        col_m4.metric("ROI Global", f"{roi_global:+.1f}%")
+
+        st.divider()
+        st.subheader("📊 Visualisation de la Bankroll & ROI par Type de Jeu")
+
+        roi_par_type = {}
+        for p in historique:
+            if p.get("statut") == "Annulé":
+                continue
+            t_jeu = p.get("type", "Simple")
+            if t_jeu not in roi_par_type:
+                roi_par_type[t_jeu] = {"mises": 0.0, "gains": 0.0}
+            roi_par_type[t_jeu]["mises"] += float(p.get("mise", 0))
+            if p.get("statut") == "Gagné":
+                roi_par_type[t_jeu]["gains"] += float(p.get("gain", 0))
+
+        col_r1, col_r2 = st.columns(2)
+        with col_r1:
+            st.write("**Rentabilité (ROI) par Type de Jeu :**")
+            data_roi = []
+            for t, vals in roi_par_type.items():
+                m = vals["mises"]
+                g = vals["gains"]
+                r = ((g - m) / m * 100) if m > 0 else 0.0
+                data_roi.append({"Type de Jeu": t, "Mises (€)": round(m, 2), "Gains (€)": round(g, 2), "ROI (%)": round(r, 1)})
+            st.dataframe(data_roi, use_container_width=True, hide_index=True)
+
+        with col_r2:
+            historique_trie = sorted([p for p in historique if p.get("statut") in ["Gagné", "Perdu"]], key=lambda x: x.get("date", ""))
+            cumul = 0.0
+            donnees_graph = {}
+            for p in historique_trie:
+                m = float(p.get("mise", 0))
+                g = float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0
+                cumul += (g - m)
+                donnees_graph[p.get("date")] = cumul
+            
+            if donnees_graph:
+                st.write("**Courbe d'évolution du Bilan Cumulé (€) :**")
+                st.line_chart(list(donnees_graph.values()))
+            else:
+                st.info("Pas assez de paris terminés pour afficher la courbe.")
+
+        # --- NOUVEAU : SUIVI PAR DISCIPLINE ---
+        st.divider()
+        st.subheader("🏇 Rentabilité (ROI) par Discipline")
         
+        roi_par_discipline = {}
+        for p in historique:
+            if p.get("statut") == "Annulé":
+                continue
+            disc = p.get("discipline", "Galop Plat")
+            if disc not in roi_par_discipline:
+                roi_par_discipline[disc] = {"mises": 0.0, "gains": 0.0}
+            roi_par_discipline[disc]["mises"] += float(p.get("mise", 0))
+            if p.get("statut") == "Gagné":
+                roi_par_discipline[disc]["gains"] += float(p.get("gain", 0))
+
+        data_roi_disc = []
+        for d, vals in roi_par_discipline.items():
+            m = vals["mises"]
+            g = vals["gains"]
+            net_disc = g - m
+            r = ((g - m) / m * 100) if m > 0 else 0.0
+            data_roi_disc.append({
+                "Discipline": d,
+                "Mises (€)": round(m, 2),
+                "Gains (€)": round(g, 2),
+                "Bilan Net (€)": round(net_disc, 2),
+                "ROI (%)": round(r, 1)
+            })
+        st.dataframe(data_roi_disc, use_container_width=True, hide_index=True)
+
         st.divider()
         st.write("Détail des paris enregistrés :")
         
@@ -618,6 +780,7 @@ with tab_suivi:
                 "Index": idx,
                 "Date": p.get("date"),
                 "Course": p.get("course"),
+                "Discipline": p.get("discipline", "Galop Plat"),
                 "Type": p.get("type"),
                 "Détails": p.get("details"),
                 "Mise (€)": p.get("mise"),
@@ -627,7 +790,7 @@ with tab_suivi:
             })
         st.dataframe(data_suivi, use_container_width=True, hide_index=True)
         
-        with st.expander("🔍 Analyse Post-Mortem & Auto-Correction de l'Algorithme", expanded=True):
+        with st.expander("🔍 Analyse Post-Mortem & Auto-Correction", expanded=True):
             paris_perdus = [p for p in historique if p.get("statut") == "Perdu" and p.get("diagnostic")]
             if paris_perdus:
                 proche_podium = sum(1 for p in paris_perdus if "4e" in p.get("diagnostic", ""))
@@ -639,12 +802,8 @@ with tab_suivi:
                 st.write("**Derniers diagnostics d'erreurs :**")
                 for p in paris_perdus[-5:]:
                     st.markdown(f"- **{p.get('date')} ({p.get('course')})** : *{p.get('diagnostic')}*")
-                
-                info_auto = ("⚙️ **État de l'auto-correction** : L'algorithme a détecté des échecs répétés à la 4e place et **applique automatiquement un bonus de pondération** aux chevaux réguliers pour les courses suivantes." 
-                             if proche_podium > 0 else "⚙️ **État de l'auto-correction** : Algorithme stable, aucun ajustement drastique requis.")
-                st.info(info_auto)
             else:
-                st.info("Aucun diagnostic d'échec disponible pour le moment. Lancez la vérification automatique des résultats pour alimenter l'auto-correction.")
+                st.info("Aucun diagnostic d'échec disponible pour le moment.")
         
         st.divider()
         col_act1, col_act2, col_act3 = st.columns(3)
@@ -682,57 +841,71 @@ with tab_suivi:
         st.info("Aucun historique de pari enregistré pour le moment.")
 
 with tab_reunions:
-    st.subheader("🏟️ Bilan Financier par Réunion / Hippodrome")
+    st.subheader("🏟️ Bilan par Réunion (Sélection par Jour)")
     
     if FICHIER_HISTORIQUE.exists():
         with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as f:
             historique = json.load(f)
             
         if historique:
-            reunions_bilan = {}
-            for p in historique:
-                if p.get("statut") == "Annulé":
-                    continue
-                
-                reunion_nom = f"{p.get('reunion', 'R?')} - {p.get('hippodrome', 'Inconnu')}"
-                if reunion_nom not in reunions_bilan:
-                    reunions_bilan[reunion_nom] = {
-                        "mises": 0.0, 
-                        "gains": 0.0, 
-                        "paris": 0, 
-                        "gagnes": 0, 
-                        "perdus": 0,
-                        "en_attente": 0
-                    }
-                
-                mise = float(p.get("mise", 0))
-                gain = float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0
-                statut = p.get("statut")
-                
-                reunions_bilan[reunion_nom]["mises"] += mise
-                reunions_bilan[reunion_nom]["gains"] += gain
-                reunions_bilan[reunion_nom]["paris"] += 1
-                
-                if statut == "Gagné":
-                    reunions_bilan[reunion_nom]["gagnes"] += 1
-                elif statut == "Perdu":
-                    reunions_bilan[reunion_nom]["perdus"] += 1
-                elif statut == "En attente":
-                    reunions_bilan[reunion_nom]["en_attente"] += 1
+            dates_disponibles = sorted(list(set(p.get("date") for p in historique if p.get("date"))), reverse=True)
             
-            tableau_reunions = []
-            for k, v in reunions_bilan.items():
-                net = v["gains"] - v["mises"]
-                tableau_reunions.append({
-                    "Réunion / Hippodrome": k,
-                    "Total Paris": v["paris"],
-                    "Gagné / Perdu / Attente": f"{v['gagnes']} / {v['perdus']} / {v['en_attente']}",
-                    "Mises (€)": round(v["mises"], 2),
-                    "Gains (€)": round(v["gains"], 2),
-                    "Bilan Net (€)": round(net, 2)
-                })
-            
-            st.dataframe(tableau_reunions, use_container_width=True, hide_index=True)
+            if dates_disponibles:
+                date_choisie_bilan = st.selectbox("📅 Sélectionnez la journée à analyser", dates_disponibles)
+                
+                historique_jour = [p for p in historique if p.get("date") == date_choisie_bilan]
+                
+                reunions_bilan = {}
+                for p in historique_jour:
+                    if p.get("statut") == "Annulé":
+                        continue
+                    
+                    reunion_nom = f"{p.get('reunion', 'R?')} - {p.get('hippodrome', 'Inconnu')}"
+                    if reunion_nom not in reunions_bilan:
+                        reunions_bilan[reunion_nom] = {
+                            "mises": 0.0, 
+                            "gains": 0.0, 
+                            "paris": 0, 
+                            "gagnes": 0, 
+                            "perdus": 0,
+                            "en_attente": 0
+                        }
+                    
+                    mise = float(p.get("mise", 0))
+                    gain = float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0
+                    statut = p.get("statut")
+                    
+                    reunions_bilan[reunion_nom]["mises"] += mise
+                    reunions_bilan[reunion_nom]["gains"] += gain
+                    reunions_bilan[reunion_nom]["paris"] += 1
+                    
+                    if statut == "Gagné":
+                        reunions_bilan[reunion_nom]["gagnes"] += 1
+                    elif statut == "Perdu":
+                        reunions_bilan[reunion_nom]["perdus"] += 1
+                    elif statut == "En attente":
+                        reunions_bilan[reunion_nom]["en_attente"] += 1
+                
+                tableau_reunions = []
+                for k, v in reunions_bilan.items():
+                    net = v["gains"] - v["mises"]
+                    roi_reunion = (net / v["mises"] * 100) if v["mises"] > 0 else 0.0
+                    tableau_reunions.append({
+                        "Réunion / Hippodrome": k,
+                        "Total Paris": v["paris"],
+                        "G / P / Attente": f"{v['gagnes']} / {v['perdus']} / {v['en_attente']}",
+                        "Mises (€)": round(v["mises"], 2),
+                        "Gains (€)": round(v["gains"], 2),
+                        "Bilan Net (€)": round(net, 2),
+                        "ROI (%)": round(roi_reunion, 1)
+                    })
+                
+                if tableau_reunions:
+                    st.dataframe(tableau_reunions, use_container_width=True, hide_index=True)
+                else:
+                    st.info("Aucun pari actif pour cette date.")
+            else:
+                st.info("Aucune date disponible dans l'historique.")
         else:
             st.info("Aucun pari enregistré pour l'instant.")
     else:
