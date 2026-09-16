@@ -2613,9 +2613,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°4 - THE MAGPIE (Cote win: 3.6)] (4€) | Ticket 2 (Couplé N°4-3): [N°3 - LOVATREE PARIS (Cote win: 18.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 7.47,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -2627,9 +2627,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°4 - THE MAGPIE (Cote win: 3.6)] (4€) | Ticket 2 (Simple Gagnant): [N°5 - WHITE MIRACLE (Cote win: 5.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 7.47,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -2641,9 +2641,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°4 et N°5] (4€) | Ticket 2 (Couplé Gagnant): [N°4 et N°3] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 2e | N°5 3e | N°3 4e (au pied du podium)"
   },
   {
     "date": "2026-09-15",
@@ -2655,8 +2655,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°4, N°5, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°4, N°5, N°3] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 50.0,
+    "diagnostic": "Succès : Objectifs atteints."
   }
 ]
