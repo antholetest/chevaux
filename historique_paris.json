@@ -4676,7 +4676,8 @@
     "mise": 12.0,
     "statut": "Gagné",
     "gain": 12.53,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-03-01",
@@ -4690,7 +4691,8 @@
     "mise": 10.0,
     "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "Échec : N°11 13e | N°1 8e"
+    "diagnostic": "Échec : N°11 13e | N°1 8e",
+    "ignore_stats": true
   },
   {
     "date": "2026-03-01",
@@ -4704,7 +4706,8 @@
     "mise": 10.0,
     "statut": "Gagné",
     "gain": 10.0,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-03-01",
@@ -4718,7 +4721,8 @@
     "mise": 10.0,
     "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "Échec : N°14 4e (au pied du podium) | N°1 5e"
+    "diagnostic": "Échec : N°14 4e (au pied du podium) | N°1 5e",
+    "ignore_stats": true
   },
   {
     "date": "2026-03-01",
@@ -4732,7 +4736,8 @@
     "mise": 9.0,
     "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "Échec : N°8 4e (au pied du podium) | N°9 2e"
+    "diagnostic": "Échec : N°8 4e (au pied du podium) | N°9 2e",
+    "ignore_stats": true
   },
   {
     "date": "2026-03-02",
@@ -4746,7 +4751,8 @@
     "mise": 12.0,
     "statut": "Gagné",
     "gain": 10.67,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-03-02",
@@ -4760,7 +4766,8 @@
     "mise": 12.0,
     "statut": "Gagné",
     "gain": 11.4,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-03-02",
@@ -4774,7 +4781,8 @@
     "mise": 12.0,
     "statut": "Gagné",
     "gain": 12.37,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-03-02",
@@ -4788,7 +4796,8 @@
     "mise": 11.0,
     "statut": "Gagné",
     "gain": 11.67,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-03-02",
@@ -4802,7 +4811,8 @@
     "mise": 9.0,
     "statut": "Gagné",
     "gain": 10.0,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-03-03",
@@ -4816,7 +4826,8 @@
     "mise": 13.0,
     "statut": "Gagné",
     "gain": 13.07,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-03-03",
@@ -4830,7 +4841,8 @@
     "mise": 12.0,
     "statut": "Gagné",
     "gain": 12.3,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-03-03",
@@ -4844,7 +4856,8 @@
     "mise": 11.0,
     "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "Échec : N°2 6e | N°6 8e"
+    "diagnostic": "Échec : N°2 6e | N°6 8e",
+    "ignore_stats": true
   },
   {
     "date": "2026-03-03",
@@ -4858,7 +4871,8 @@
     "mise": 11.0,
     "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "Échec : N°8 6e | N°2 4e (au pied du podium)"
+    "diagnostic": "Échec : N°8 6e | N°2 4e (au pied du podium)",
+    "ignore_stats": true
   },
   {
     "date": "2026-03-03",
@@ -4872,6 +4886,7 @@
     "mise": 10.0,
     "statut": "Gagné",
     "gain": 9.57,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   }
 ]
