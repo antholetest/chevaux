@@ -5097,7 +5097,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec : N°4 10e | N°10 8e",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-15",
@@ -5112,7 +5112,7 @@
     "statut": "Gagné",
     "gain": 11.0,
     "diagnostic": "Succès : Objectifs atteints.",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-15",
@@ -5127,7 +5127,7 @@
     "statut": "Gagné",
     "gain": 9.67,
     "diagnostic": "Succès : Objectifs atteints.",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-15",
@@ -5142,7 +5142,7 @@
     "statut": "Gagné",
     "gain": 9.33,
     "diagnostic": "Succès : Objectifs atteints.",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-15",
@@ -5157,7 +5157,7 @@
     "statut": "Gagné",
     "gain": 8.6,
     "diagnostic": "Succès : Objectifs atteints.",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-14",
@@ -5172,7 +5172,7 @@
     "statut": "Gagné",
     "gain": 11.0,
     "diagnostic": "Succès : Objectifs atteints.",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-14",
@@ -5187,7 +5187,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec : N°2 3e | N°6 5e",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-14",
@@ -5202,7 +5202,7 @@
     "statut": "Gagné",
     "gain": 10.7,
     "diagnostic": "Succès : Objectifs atteints.",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-14",
@@ -5217,7 +5217,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec : N°9 3e | N°12 6e",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-14",
@@ -5232,6 +5232,6 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec : N°4 non classé | N°8 4e (au pied du podium)",
-    "ignore_stats": false
+    "ignore_stats": true
   }
 ]
