@@ -4713,9 +4713,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°1 - HOLD THE LINE (Cote: 10.0) (5 €) | Poker: Simple Gagnant ➔ N°3 - ICARE WILLIAMS (Cote: 10.0) (16 €)",
     "mise": 21.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°3 non classé | N°1 5e"
   },
   {
     "date": "2026-09-11",
@@ -4727,9 +4727,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°11 - KALIE GEMA (Cote: 4.4) (9 €) | Poker: Simple Gagnant ➔ N°13 - JULIETTA VICI (Cote: 8.4) (10 €)",
     "mise": 19.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°11 non classé | N°13 2e"
   },
   {
     "date": "2026-09-11",
@@ -4741,9 +4741,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°4 - NO DAY NEVER (Cote: 5.6) (6 €) | Poker: Simple Gagnant ➔ N°1 - BAHIA BLANCA (Cote: 11.0) (10 €)",
     "mise": 16.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 5e | N°1 11e"
   },
   {
     "date": "2026-09-11",
@@ -4755,9 +4755,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°6 - NUIT DU QUENNE (Cote: 3.1) (8 €) | Poker: Simple Gagnant ➔ N°4 - NUN WARRIOR (Cote: 13.0) (6 €)",
     "mise": 14.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 2e | N°6 4e (au pied du podium)"
   },
   {
     "date": "2026-09-11",
@@ -4769,8 +4769,8 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°1 - JABALLA (Cote: 4.4) (6 €) | Poker: Simple Gagnant ➔ N°3 - KILANTA PASMARICK (Cote: 9.7) (7 €)",
     "mise": 13.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 12.8,
+    "diagnostic": "Succès : Objectifs atteints."
   }
 ]
