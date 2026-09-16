@@ -1941,9 +1941,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°11 - BLANQUETTE (Cote win: 2.8)] (4€) | Ticket 2 (Couplé N°11-1): [N°1 - MARASI DRIVE (Cote win: 12.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°11 non classé | N°1 5e"
   },
   {
     "date": "2026-09-15",
@@ -1955,9 +1955,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°11 - BLANQUETTE (Cote win: 2.8)] (4€) | Ticket 2 (Simple Gagnant): [N°2 - PIYANGO (Cote win: 12.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°11 non classé | N°2 4e (au pied du podium)"
   },
   {
     "date": "2026-09-15",
@@ -1969,9 +1969,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°11 et N°5] (4€) | Ticket 2 (Couplé Gagnant): [N°11 et N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°11 non classé | N°5 12e | N°1 5e"
   },
   {
     "date": "2026-09-15",
@@ -1983,8 +1983,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°11, N°5, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°11, N°5, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°11 non classé | N°5 12e | N°1 5e"
   }
 ]
