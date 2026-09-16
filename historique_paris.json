@@ -359,9 +359,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°4 - JILORD VIVA (Cote win: 3.4)] (4€) | Ticket 2 (Couplé N°4-2): [N°2 - KAPTAIN DU LIAMONE (Cote win: 12.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 10.6,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -373,9 +373,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°4 - JILORD VIVA (Cote win: 3.4)] (4€) | Ticket 2 (Simple Gagnant): [N°8 - HUDO DU RUEL (Cote win: 10.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 7.2,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -387,9 +387,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°4 et N°3] (4€) | Ticket 2 (Couplé Gagnant): [N°4 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 1e | N°2 4e (au pied du podium) | N°3 non classé"
   },
   {
     "date": "2026-09-16",
@@ -401,8 +401,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°4, N°3, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°4, N°3, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 1e | N°3 non classé | N°1 6e"
   }
 ]
