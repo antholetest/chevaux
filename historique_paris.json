@@ -3551,9 +3551,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°12 - JEFF DE MONPAZ (Cote win: 5.2)] (4€) | Ticket 2 (Couplé N°12-2): [N°2 - FEROX BRICK (Cote win: 16.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°2 non classé | N°12 6e"
   },
   {
     "date": "2026-09-14",
@@ -3565,9 +3565,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°12 - JEFF DE MONPAZ (Cote win: 5.2)] (4€) | Ticket 2 (Simple Gagnant): [N°9 - JAZZ PAT (Cote win: 13.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°9 3e | N°12 6e"
   },
   {
     "date": "2026-09-14",
@@ -3579,9 +3579,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°12 et N°14] (4€) | Ticket 2 (Couplé Gagnant): [N°12 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 5e | N°12 6e | N°2 non classé"
   },
   {
     "date": "2026-09-14",
@@ -3593,8 +3593,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°12, N°14, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°12, N°14, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 5e | N°12 6e | N°1 10e"
   }
 ]
