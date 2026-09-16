@@ -1647,9 +1647,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°5 - CHAKIFA (Cote win: 4.8)] (4€) | Ticket 2 (Couplé N°5-1): [N°1 - TABARUS (Cote win: 8.4)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 9.07,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -1661,9 +1661,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°5 - CHAKIFA (Cote win: 4.8)] (4€) | Ticket 2 (Simple Gagnant): [N°1 - TABARUS (Cote win: 8.4)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 17.47,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -1675,9 +1675,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°5 et N°2] (4€) | Ticket 2 (Couplé Gagnant): [N°5 et N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°5 3e | N°2 2e | N°1 1e"
   },
   {
     "date": "2026-09-16",
@@ -1689,8 +1689,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°5, N°2, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°5, N°2, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 50.0,
+    "diagnostic": "Succès : Objectifs atteints."
   }
 ]
