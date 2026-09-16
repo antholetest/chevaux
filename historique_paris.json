@@ -807,9 +807,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°3 - HYSIS VENESI (Cote win: 5.6)] (4€) | Ticket 2 (Couplé N°3-2): [N°2 - JEUNE ORANGE COTON (Cote win: 20.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 10.13,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -821,9 +821,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°3 - HYSIS VENESI (Cote win: 5.6)] (4€) | Ticket 2 (Simple Gagnant): [N°5 - JACADI D'ARGILIN (Cote win: 7.3)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 10.13,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -835,9 +835,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°3 et N°1] (4€) | Ticket 2 (Couplé Gagnant): [N°3 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°2 7e | N°3 2e | N°1 non classé"
   },
   {
     "date": "2026-09-16",
@@ -849,8 +849,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°3, N°1, N°2] (4€) | Ticket 2 (Trio Spéculatif): [N°3, N°1, N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°2 7e | N°3 2e | N°1 non classé"
   }
 ]
