@@ -2781,9 +2781,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°8 - CHESTER LIGHT (Cote win: 2.3)] (4€) | Ticket 2 (Couplé N°8-2): [N°2 - KRISS DE VALNOR (Cote win: 13.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°8 4e (au pied du podium) | N°2 5e"
   },
   {
     "date": "2026-09-15",
@@ -2795,9 +2795,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°8 - CHESTER LIGHT (Cote win: 2.3)] (4€) | Ticket 2 (Simple Gagnant): [N°1 - GAFARA (Cote win: 2.5)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 2.5,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -2809,9 +2809,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°8 et N°1] (4€) | Ticket 2 (Couplé Gagnant): [N°8 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°8 4e (au pied du podium) | N°1 1e | N°2 5e"
   },
   {
     "date": "2026-09-15",
@@ -2823,8 +2823,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°8, N°1, N°2] (4€) | Ticket 2 (Trio Spéculatif): [N°8, N°1, N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°8 4e (au pied du podium) | N°1 1e | N°2 5e"
   }
 ]
