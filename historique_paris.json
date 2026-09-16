@@ -2445,9 +2445,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°3 - PHILADELPHIE (Cote win: 1.7)] (4€) | Ticket 2 (Couplé N°3-1): [N°1 - MA STAR SIVOLA (Cote win: 10.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 6.63,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -2459,9 +2459,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°3 - PHILADELPHIE (Cote win: 1.7)] (4€) | Ticket 2 (Simple Gagnant): [N°1 - MA STAR SIVOLA (Cote win: 10.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 4.93,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -2473,9 +2473,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°3 et N°4] (4€) | Ticket 2 (Couplé Gagnant): [N°3 et N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 4e (au pied du podium) | N°3 1e | N°1 3e"
   },
   {
     "date": "2026-09-15",
@@ -2487,8 +2487,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°3, N°4, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°3, N°4, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 4e (au pied du podium) | N°3 1e | N°1 3e"
   }
 ]
