@@ -1885,9 +1885,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°6 - MAGIC INSPIRATION (Cote win: 2.8)] (4€) | Ticket 2 (Couplé N°6-3): [N°3 - CORMAC (Cote win: 17.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 6.4,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -1899,9 +1899,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°6 - MAGIC INSPIRATION (Cote win: 2.8)] (4€) | Ticket 2 (Simple Gagnant): [N°7 - SHALOM (Cote win: 14.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 6.4,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -1913,9 +1913,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°6 et N°1] (4€) | Ticket 2 (Couplé Gagnant): [N°6 et N°3] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°3 non classé | N°1 9e | N°6 3e"
   },
   {
     "date": "2026-09-15",
@@ -1927,8 +1927,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°6, N°1, N°2] (4€) | Ticket 2 (Trio Spéculatif): [N°6, N°1, N°3] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°2 10e | N°3 non classé | N°1 9e | N°6 3e"
   }
 ]
