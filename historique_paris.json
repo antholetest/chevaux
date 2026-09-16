@@ -2557,9 +2557,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°2 - SHAZAM (Cote win: 2.1)] (4€) | Ticket 2 (Couplé N°2-5): [N°5 - ALGAJUST (Cote win: 14.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 7.57,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -2571,9 +2571,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°2 - SHAZAM (Cote win: 2.1)] (4€) | Ticket 2 (Simple Gagnant): [N°1 - LUTECE ALLEN (Cote win: 3.8)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 5.47,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -2585,9 +2585,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°2 et N°1] (4€) | Ticket 2 (Couplé Gagnant): [N°2 et N°5] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 25.0,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -2599,8 +2599,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°2, N°1, N°3] (4€) | Ticket 2 (Trio Spéculatif): [N°2, N°1, N°5] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 50.0,
+    "diagnostic": "Succès : Objectifs atteints."
   }
 ]
