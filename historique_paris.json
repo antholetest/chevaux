@@ -1829,9 +1829,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°3 - KENERGY (Cote win: 2.5)] (4€) | Ticket 2 (Couplé N°3-6): [N°6 - RITZY ROXY (Cote win: 15.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 8.5,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -1843,9 +1843,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°3 - KENERGY (Cote win: 2.5)] (4€) | Ticket 2 (Simple Gagnant): [N°1 - BILLION GOLD (Cote win: 4.9)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 6.0,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -1857,9 +1857,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°3 et N°5] (4€) | Ticket 2 (Couplé Gagnant): [N°3 et N°6] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°5 7e | N°3 1e | N°6 5e"
   },
   {
     "date": "2026-09-15",
@@ -1871,8 +1871,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°3, N°5, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°3, N°5, N°6] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°5 7e | N°3 1e | N°1 3e | N°6 5e"
   }
 ]
