@@ -23,6 +23,15 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 }
 
+# --- FONCTION UTILITAIRE DE CONVERSION SÉCURISÉE ---
+def safe_float(val, default=0.0):
+    if val is None or val == "" or val == "-":
+        return default
+    try:
+        return float(str(val).replace(",", ".").replace("€", "").strip())
+    except (ValueError, TypeError):
+        return default
+
 # --- PROTECTION PAR EMAIL ET CODE OTP ALÉATOIRE ---
 def envoyer_code_email(code):
     try:
@@ -160,8 +169,11 @@ def detecter_etat_terrain(conditions_texte):
     return "Bon (Standard)"
 
 def telecharger_pmu_date(date_iso, fichier_cible):
-    dt = datetime.datetime.strptime(date_iso, "%Y-%m-%d")
-    date_pmu = dt.strftime("%d%m%Y")
+    try:
+        dt = datetime.datetime.strptime(date_iso, "%Y-%m-%d")
+        date_pmu = dt.strftime("%d%m%Y")
+    except Exception:
+        return False
 
     url_programme = f"https://online.turfinfo.api.pmu.fr/rest/client/7/programme/{date_pmu}"
     try:
@@ -198,7 +210,7 @@ def telecharger_pmu_date(date_iso, fichier_cible):
                 if res_part.status_code == 200:
                     for p in res_part.json().get("participants", []):
                         deferre_val = p.get("deferre", "")
-                        poids_val = p.get("poids", 0.0)
+                        poids_val = safe_float(p.get("poids", 0.0))
                         rapport_direct = p.get("dernierRapportDirect")
                         cote_val = rapport_direct.get("rapport") if isinstance(rapport_direct, dict) else None
                         
@@ -236,7 +248,7 @@ def charger_donnees_fichier(fichier_json):
             donnees = json.load(f)
         reunions_map = {}
         for elem in donnees:
-            cle = f"{elem['reunion']} - {elem['hippodrome']}"
+            cle = f"{elem.get('reunion', 'R?')} - {elem.get('hippodrome', 'Hippodrome')}"
             if cle not in reunions_map:
                 reunions_map[cle] = []
             reunions_map[cle].append(elem)
@@ -280,8 +292,8 @@ def verifier_stop_loss(date_jour):
         perte_jour = 0.0
         for p in historique:
             if p.get("date") == date_jour and p.get("statut") != "Annulé":
-                mise = float(p.get("mise", 0))
-                gain = float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0
+                mise = safe_float(p.get("mise", 0))
+                gain = safe_float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0
                 bilan_pari = gain - mise
                 if bilan_pari < 0:
                     perte_jour += abs(bilan_pari)
@@ -313,7 +325,7 @@ def calculer_parametres_adaptatifs():
         if total_perdus == 0:
             return params
             
-        proche_podium = sum(1 for p in perdus if "4e" in p.get("diagnostic", "") or "5e" in p.get("diagnostic", ""))
+        proche_podium = sum(1 for p in perdus if "4e" in str(p.get("diagnostic", "")) or "5e" in str(p.get("diagnostic", "")))
         taux_proche = proche_podium / total_perdus
         
         if taux_proche >= 0.2:
@@ -343,7 +355,7 @@ def evaluer_score_cheval(cheval, discipline, terrain, date_jour, params_adaptati
     deferre = str(cheval.get("deferre") or "").upper()
     driver = str(cheval.get("driver") or "").upper()
     cote = cheval.get("cote")
-    poids = cheval.get("poids", 0.0)
+    poids = safe_float(cheval.get("poids", 0.0))
     tendance = cheval.get("tendance_cote", "stable")
 
     bonus_place = params_adaptatifs.get("bonus_place", 0)
@@ -402,7 +414,7 @@ def evaluer_score_cheval(cheval, discipline, terrain, date_jour, params_adaptati
 def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs):
     donnees, _ = charger_donnees_fichier(fichier_json)
     
-    budget_total_effectif = float(budget_base)
+    budget_total_effectif = safe_float(budget_base)
     if FICHIER_HISTORIQUE.exists():
         try:
             with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as f:
@@ -411,7 +423,7 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs)
             derniers_paris = [p for p in historique if p.get("statut") in ["Gagné", "Perdu"]][-10:]
             if derniers_paris:
                 bilan_recent = sum(
-                    (float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0) - float(p.get("mise", 0)) 
+                    (safe_float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0) - safe_float(p.get("mise", 0)) 
                     for p in derniers_paris
                 )
                 if bilan_recent < 0:
@@ -506,21 +518,42 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs)
         
     return plan_paris
 
+# --- VERIFICATION HYBRIDE ET RÉTROCOMPATIBLE DES RÉSULTATS PMU ---
 def verifier_resultats_automatiques_pmu(historique):
     modifie = False
     for p in historique:
         if p.get("statut") == "En attente":
-            date_pari = p.get("date")
-            reunion_str = p.get("reunion")
-            course_str = p.get("course_num")
+            date_pari = str(p.get("date", "")).strip()
+            reunion_raw = str(p.get("reunion", "")).strip()
+            course_raw = str(p.get("course_num", "")).strip()
+            course_full = str(p.get("course", "")).strip()
             
-            if not reunion_str or not course_str or not date_pari:
+            if not date_pari:
                 continue
             
-            try:
-                dt = datetime.datetime.strptime(date_pari, "%Y-%m-%d")
-                date_pmu = dt.strftime("%d%m%Y")
-            except Exception:
+            date_pmu = None
+            for fmt in ("%Y-%m-%d", "%d/%m/%Y", "%d-%m-%Y"):
+                try:
+                    dt = datetime.datetime.strptime(date_pari, fmt)
+                    date_pmu = dt.strftime("%d%m%Y")
+                    break
+                except Exception:
+                    pass
+            
+            if not date_pmu:
+                continue
+
+            r_match = re.search(r'R?(\d+)', reunion_raw, re.IGNORECASE)
+            if not r_match and course_full:
+                r_match = re.search(r'R(\d+)', course_full, re.IGNORECASE)
+            reunion_str = f"R{r_match.group(1)}" if r_match else ""
+
+            c_match = re.search(r'C?(\d+)', course_raw, re.IGNORECASE)
+            if not c_match and course_full:
+                c_match = re.search(r'C(\d+)', course_full, re.IGNORECASE)
+            course_str = f"C{c_match.group(1)}" if c_match else ""
+
+            if not reunion_str or not course_str:
                 continue
             
             url_partants = f"https://online.turfinfo.api.pmu.fr/rest/client/7/programme/{date_pmu}/{reunion_str}/{course_str}/participants"
@@ -549,54 +582,61 @@ def verifier_resultats_automatiques_pmu(historique):
                     arrivee_trouvee = [num for ordre, num in partants_arrives]
                     
                     if arrivee_trouvee:
-                        details = p.get("details", "")
+                        details = str(p.get("details", ""))
+                        mise_totale = safe_float(p.get("mise", 0))
                         gain_total = 0.0
                         un_gagne = False
                         
-                        nums_paries = re.findall(r'N°(\d+)', details)
-                        type_jeu = p.get("type", "Simple")
+                        nums_paries = re.findall(r'N°\s*(\d+)', details)
+                        if not nums_paries:
+                            nums_paries = re.findall(r'\b(\d{1,2})\b', details)
+
+                        type_jeu = str(p.get("type", "Simple"))
+                        parts = details.split("|") if "|" in details else [details]
                         
-                        parts = details.split("|")
-                        part_secu = parts[0] if len(parts) > 0 else details
-                        part_poker = parts[1] if len(parts) > 1 else ""
-                        
-                        if type_jeu in ["Simple", "Automatique", "Plan Global Journalier"]:
-                            num_secu_m = re.search(r'N°(\d+)', part_secu)
-                            cote_secu_m = re.search(r'Cote(?: win)?:\s*([\d\.]+)', part_secu)
-                            mise_secu_m = re.search(r'\((\d+(?:\.\d+)?)\s*€?\)', part_secu)
-                            
-                            if num_secu_m and mise_secu_m:
-                                num_secu = num_secu_m.group(1)
-                                cote_secu = cotes_reelles.get(num_secu, float(cote_secu_m.group(1)) if cote_secu_m else 2.0)
-                                mise_secu = float(mise_secu_m.group(1))
-                                
+                        for part in parts:
+                            part_lower = part.lower()
+                            nums_part = re.findall(r'N°\s*(\d+)', part)
+                            if not nums_part:
+                                nums_part = re.findall(r'\b(\d{1,2})\b', part)
+
+                            mise_part_m = re.search(r'\((\d+(?:[\.,]\d+)?)\s*€?\)', part)
+                            mise_part = float(mise_part_m.group(1).replace(",", ".")) if mise_part_m else (mise_totale / len(parts) if len(parts) > 0 else mise_totale)
+
+                            cote_part_m = re.search(r'cote(?:\s*win)?:\s*([\d\.,]+)', part_lower)
+                            cote_default = float(cote_part_m.group(1).replace(",", ".")) if cote_part_m else 3.0
+
+                            is_place = "placé" in part_lower or "place" in part_lower or "sécu" in part_lower or "secu" in part_lower or "ticket 1" in part_lower
+                            is_gagnant = "gagnant" in part_lower or "poker" in part_lower or "spéculatif" in part_lower or "speculatif" in part_lower or "ticket 2" in part_lower
+
+                            if is_place and nums_part:
+                                num_secu = nums_part[0]
+                                cote_secu = cotes_reelles.get(num_secu, cote_default)
                                 if num_secu in arrivee_trouvee[:3]:
                                     rendement = 1.0 + (cote_secu - 1.0) / 3.0 if cote_secu > 1.0 else 1.1
-                                    gain_total += mise_secu * rendement
+                                    gain_total += mise_part * rendement
                                     un_gagne = True
-                            
-                            if part_poker:
-                                num_poker_m = re.search(r'N°(\d+)', part_poker)
-                                cote_poker_m = re.search(r'Cote(?: win)?:\s*([\d\.]+)', part_poker)
-                                mise_poker_m = re.search(r'\((\d+(?:\.\d+)?)\s*€?\)', part_poker)
-                                
-                                if num_poker_m and mise_poker_m:
-                                    num_poker = num_poker_m.group(1)
-                                    cote_poker = cotes_reelles.get(num_poker, float(cote_poker_m.group(1)) if cote_poker_m else 5.0)
-                                    mise_poker = float(mise_poker_m.group(1))
-                                    
-                                    if num_poker == arrivee_trouvee[0]:
-                                        gain_total += mise_poker * cote_poker
+                            elif is_gagnant and nums_part:
+                                num_poker = nums_part[0]
+                                cote_poker = cotes_reelles.get(num_poker, cote_default)
+                                if num_poker == arrivee_trouvee[0]:
+                                    gain_total += mise_part * cote_poker
+                                    un_gagne = True
+                            elif "couplé" in part_lower or "couple" in part_lower or type_jeu in ["Couplé", "Couple"]:
+                                if len(nums_part) >= 2 and all(n in arrivee_trouvee[:3] for n in nums_part[:2]):
+                                    gain_total += mise_part * 5.0
+                                    un_gagne = True
+                            elif "trio" in part_lower or type_jeu == "Trio":
+                                if len(nums_part) >= 3 and all(n in arrivee_trouvee[:3] for n in nums_part[:3]):
+                                    gain_total += mise_part * 10.0
+                                    un_gagne = True
+                            else:
+                                if nums_part:
+                                    num_val = nums_part[0]
+                                    cote_val = cotes_reelles.get(num_val, cote_default)
+                                    if num_val in arrivee_trouvee[:3]:
+                                        gain_total += mise_part * (1.0 + (cote_val - 1.0) / 3.0)
                                         un_gagne = True
-                        else:
-                            if len(arrivee_trouvee) >= 2 and type_jeu == "Couplé":
-                                if nums_paries[:2] and all(n in arrivee_trouvee[:2] for n in nums_paries[:2]):
-                                    gain_total += float(p.get("mise", 10)) * 5.0
-                                    un_gagne = True
-                            elif len(arrivee_trouvee) >= 3 and type_jeu == "Trio":
-                                if nums_paries[:3] and all(n in arrivee_trouvee[:3] for n in nums_paries[:3]):
-                                    gain_total += float(p.get("mise", 10)) * 10.0
-                                    un_gagne = True
 
                         if un_gagne or gain_total > 0:
                             p["statut"] = "Gagné"
@@ -618,7 +658,7 @@ def verifier_resultats_automatiques_pmu(historique):
                                         raisons_echec.append(f"N°{n_pari} {pos}e")
                                 else:
                                     raisons_echec.append(f"N°{n_pari} non classé")
-                            p["diagnostic"] = "Échec : " + " | ".join(raisons_echec)
+                            p["diagnostic"] = "Échec : " + (" | ".join(raisons_echec) if raisons_echec else "Cheval non placé")
                             
                         modifie = True
             except Exception:
@@ -683,17 +723,13 @@ with tab_analyse:
                             pass
                     
                     for item in st.session_state["plan_journalier_actuel"]:
-                        mise_totale_str = item["Mise Totale Course"].replace("€", "").strip()
-                        try:
-                            mise_val = float(mise_totale_str)
-                        except Exception:
-                            mise_val = 2.0
+                        mise_val = safe_float(item["Mise Totale Course"], 2.0)
                         
                         pari_item = {
                             "date": date_iso,
                             "reunion": item["Course"].split(" - ")[0],
-                            "course_num": item["Course"].split(" - ")[1].split(" ")[0],
-                            "hippodrome": item["Course"].split("(")[-1].replace(")", ""),
+                            "course_num": item["Course"].split(" - ")[1].split(" ")[0] if len(item["Course"].split(" - ")) > 1 else "C1",
+                            "hippodrome": item["Course"].split("(")[-1].replace(")", "") if "(" in item["Course"] else "",
                             "course": item["Course"],
                             "discipline": item["Discipline"],
                             "type": "Plan Global Journalier",
@@ -956,8 +992,8 @@ with tab_suivi:
                 else:
                     st.info("Aucun nouveau résultat officiel disponible pour les paris en attente.")
 
-        total_mise = sum(float(p.get("mise", 0)) for p in historique_actifs if p.get("statut") != "Annulé")
-        total_gain = sum(float(p.get("gain", 0)) for p in historique_actifs if p.get("statut") == "Gagné")
+        total_mise = sum(safe_float(p.get("mise", 0)) for p in historique_actifs if p.get("statut") != "Annulé")
+        total_gain = sum(safe_float(p.get("gain", 0)) for p in historique_actifs if p.get("statut") == "Gagné")
         bilan_net = total_gain - total_mise
         roi_global = ((total_gain - total_mise) / total_mise * 100) if total_mise > 0 else 0.0
         
@@ -974,12 +1010,12 @@ with tab_suivi:
         for p in historique_actifs:
             if p.get("statut") == "Annulé":
                 continue
-            t_jeu = p.get("type", "Simple")
+            t_jeu = str(p.get("type", "Simple"))
             if t_jeu not in roi_par_type:
                 roi_par_type[t_jeu] = {"mises": 0.0, "gains": 0.0}
-            roi_par_type[t_jeu]["mises"] += float(p.get("mise", 0))
+            roi_par_type[t_jeu]["mises"] += safe_float(p.get("mise", 0))
             if p.get("statut") == "Gagné":
-                roi_par_type[t_jeu]["gains"] += float(p.get("gain", 0))
+                roi_par_type[t_jeu]["gains"] += safe_float(p.get("gain", 0))
 
         col_r1, col_r2 = st.columns(2)
         with col_r1:
@@ -993,12 +1029,12 @@ with tab_suivi:
             st.dataframe(data_roi, use_container_width=True, hide_index=True)
 
         with col_r2:
-            historique_trie = sorted([p for p in historique_actifs if p.get("statut") in ["Gagné", "Perdu"]], key=lambda x: x.get("date", ""))
+            historique_trie = sorted([p for p in historique_actifs if p.get("statut") in ["Gagné", "Perdu"]], key=lambda x: str(x.get("date", "")))
             cumul = 0.0
             donnees_graph = {}
             for p in historique_trie:
-                m = float(p.get("mise", 0))
-                g = float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0
+                m = safe_float(p.get("mise", 0))
+                g = safe_float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0
                 cumul += (g - m)
                 donnees_graph[p.get("date")] = cumul
             
@@ -1015,12 +1051,12 @@ with tab_suivi:
         for p in historique_actifs:
             if p.get("statut") == "Annulé":
                 continue
-            disc = p.get("discipline", "Galop Plat")
+            disc = str(p.get("discipline", "Galop Plat"))
             if disc not in roi_par_discipline:
                 roi_par_discipline[disc] = {"mises": 0.0, "gains": 0.0}
-            roi_par_discipline[disc]["mises"] += float(p.get("mise", 0))
+            roi_par_discipline[disc]["mises"] += safe_float(p.get("mise", 0))
             if p.get("statut") == "Gagné":
-                roi_par_discipline[disc]["gains"] += float(p.get("gain", 0))
+                roi_par_discipline[disc]["gains"] += safe_float(p.get("gain", 0))
 
         data_roi_disc = []
         for d, vals in roi_par_discipline.items():
@@ -1050,9 +1086,9 @@ with tab_suivi:
                     "Discipline": p.get("discipline", "Galop Plat"),
                     "Type": p.get("type"),
                     "Détails": p.get("details"),
-                    "Mise (€)": p.get("mise"),
+                    "Mise (€)": safe_float(p.get("mise", 0)),
                     "Statut": p.get("statut"),
-                    "Gain (€)": p.get("gain", 0.0) if p.get("statut") == "Gagné" else "-",
+                    "Gain (€)": safe_float(p.get("gain", 0)) if p.get("statut") == "Gagné" else "-",
                     "Diagnostic": p.get("diagnostic", "-")
                 })
             
@@ -1079,7 +1115,7 @@ with tab_suivi:
         with st.expander("🔍 Analyse Post-Mortem & Auto-Correction", expanded=False):
             paris_perdus = [p for p in historique if p.get("statut") == "Perdu" and p.get("diagnostic")]
             if paris_perdus:
-                proche_podium = sum(1 for p in paris_perdus if "4e" in p.get("diagnostic", "") or "5e" in p.get("diagnostic", ""))
+                proche_podium = sum(1 for p in paris_perdus if "4e" in str(p.get("diagnostic", "")) or "5e" in str(p.get("diagnostic", "")))
                 
                 col_d1, col_d2 = st.columns(2)
                 col_d1.metric("Total Paris Perdus Analysés", len(paris_perdus))
@@ -1101,12 +1137,12 @@ with tab_reunions:
             historique = json.load(f)
             
         if historique:
-            dates_disponibles = sorted(list(set(p.get("date") for p in historique if p.get("date"))), reverse=True)
+            dates_disponibles = sorted(list(set(str(p.get("date")) for p in historique if p.get("date"))), reverse=True)
             
             if dates_disponibles:
                 date_choisie_bilan = st.selectbox("📅 Sélectionnez la journée à analyser", dates_disponibles)
                 
-                historique_jour = [p for p in historique if p.get("date") == date_choisie_bilan]
+                historique_jour = [p for p in historique if str(p.get("date")) == date_choisie_bilan]
                 
                 reunions_bilan = {}
                 for p in historique_jour:
@@ -1124,8 +1160,8 @@ with tab_reunions:
                             "en_attente": 0
                         }
                     
-                    mise = float(p.get("mise", 0))
-                    gain = float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0
+                    mise = safe_float(p.get("mise", 0))
+                    gain = safe_float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0
                     statut = p.get("statut")
                     
                     reunions_bilan[reunion_nom]["mises"] += mise
