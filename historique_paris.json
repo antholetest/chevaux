@@ -1087,9 +1087,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°11 - MARCEL (Cote win: 2.0)] (4€) | Ticket 2 (Couplé N°11-6): [N°6 - MADIBA DE BELLANDE (Cote win: 10.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 7.33,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -1101,9 +1101,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°11 - MARCEL (Cote win: 2.0)] (4€) | Ticket 2 (Simple Gagnant): [N°8 - MILOU D'AVRIL (Cote win: 7.4)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 5.33,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -1115,9 +1115,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°11 et N°2] (4€) | Ticket 2 (Couplé Gagnant): [N°11 et N°6] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°11 1e | N°2 4e (au pied du podium) | N°6 non classé"
   },
   {
     "date": "2026-09-16",
@@ -1129,8 +1129,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°11, N°2, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°11, N°2, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°11 1e | N°2 4e (au pied du podium) | N°1 10e"
   }
 ]
