@@ -9,6 +9,7 @@ import random
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import pandas as pd
 
 # Configuration de la page Streamlit pour mobile et PC
 st.set_page_config(
@@ -291,7 +292,7 @@ def verifier_stop_loss(date_jour):
             historique = json.load(f)
         perte_jour = 0.0
         for p in historique:
-            if p.get("date") == date_jour and p.get("statut") != "Annulé":
+            if p.get("date") == date_jour and p.get("statut") != "Annulé" and not p.get("ignore_stats", False):
                 mise = safe_float(p.get("mise", 0))
                 gain = safe_float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0
                 bilan_pari = gain - mise
@@ -420,7 +421,7 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs)
             with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as f:
                 historique = json.load(f)
             
-            derniers_paris = [p for p in historique if p.get("statut") in ["Gagné", "Perdu"]][-10:]
+            derniers_paris = [p for p in historique if p.get("statut") in ["Gagné", "Perdu"] and not p.get("ignore_stats", False)][-10:]
             if derniers_paris:
                 bilan_recent = sum(
                     (safe_float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0) - safe_float(p.get("mise", 0)) 
@@ -737,7 +738,8 @@ with tab_analyse:
                             "mise": mise_val,
                             "statut": "En attente",
                             "gain": 0.0,
-                            "diagnostic": ""
+                            "diagnostic": "",
+                            "ignore_stats": False
                         }
                         historique.append(pari_item)
                     
@@ -929,7 +931,8 @@ with tab_analyse:
                         "mise": budget,
                         "statut": "En attente",
                         "gain": 0.0,
-                        "diagnostic": ""
+                        "diagnostic": "",
+                        "ignore_stats": False
                     }
 
             if "dernier_pari" in st.session_state:
@@ -955,32 +958,35 @@ with tab_suivi:
         with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as f:
             historique = json.load(f)
             
-        with st.expander("🔄 Remise à zéro du compteur de gains", expanded=False):
-            st.warning("Attention : Cette action remet à zéro uniquement le compteur de gains (gains = 0 €) sans masquer les paris ni supprimer les tableaux de rentabilité, de disciplines ou d'auto-correction.")
+        expander_raz_ouvert = st.session_state.get("confirmer_raz_stats", False)
+        with st.expander("🔄 Remise à zéro des compteurs financiers (Nouveau cycle)", expanded=expander_raz_ouvert):
+            st.warning("Cette action réinitialise les compteurs globaux (Mises, Gains, Bilan, ROI) à zéro pour démarrer un nouveau cycle. L'historique complet reste conservé dans le tableau pour tes analyses.")
             if "confirmer_raz_stats" not in st.session_state:
                 st.session_state["confirmer_raz_stats"] = False
 
             if not st.session_state["confirmer_raz_stats"]:
-                if st.button("Remettre à zéro le compteur de gains"):
+                if st.button("Remettre à zéro les compteurs financiers", key="btn_init_raz"):
                     st.session_state["confirmer_raz_stats"] = True
                     st.rerun()
             else:
+                st.write("⚠️ **Confirmer la remise à zéro des compteurs financiers pour lancer un nouveau cycle ?**")
                 col_c1, col_c2 = st.columns(2)
                 with col_c1:
-                    if st.button("✅ Oui, remettre à zéro les gains", type="primary"):
+                    if st.button("✅ Oui, démarrer un nouveau cycle", type="primary", key="btn_confirm_raz"):
                         for p in historique:
-                            p["gain"] = 0.0
-                            p.pop("ignore_stats", None)
-                        sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Remise à zéro du compteur de gains")
+                            p["ignore_stats"] = True
+                        sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Réinitialisation des compteurs financiers")
                         st.session_state["confirmer_raz_stats"] = False
-                        st.success("Compteur de gains remis à zéro avec succès !")
+                        st.success("Compteurs remis à zéro ! Le tableau d'analyse reste intact.")
                         st.rerun()
                 with col_c2:
-                    if st.button("❌ Annuler"):
+                    if st.button("❌ Annuler", key="btn_cancel_raz"):
                         st.session_state["confirmer_raz_stats"] = False
                         st.rerun()
 
         historique_actifs = historique
+        # Seuls les paris non archivés sont pris en compte dans les métriques
+        historique_stats = [p for p in historique_actifs if not p.get("ignore_stats", False)]
             
         if st.button("🔄 Vérifier automatiquement les résultats des courses"):
             with st.spinner("Téléchargement et analyse des résultats officiels..."):
@@ -992,8 +998,8 @@ with tab_suivi:
                 else:
                     st.info("Aucun nouveau résultat officiel disponible pour les paris en attente.")
 
-        total_mise = sum(safe_float(p.get("mise", 0)) for p in historique_actifs if p.get("statut") != "Annulé")
-        total_gain = sum(safe_float(p.get("gain", 0)) for p in historique_actifs if p.get("statut") == "Gagné")
+        total_mise = sum(safe_float(p.get("mise", 0)) for p in historique_stats if p.get("statut") != "Annulé")
+        total_gain = sum(safe_float(p.get("gain", 0)) for p in historique_stats if p.get("statut") == "Gagné")
         bilan_net = total_gain - total_mise
         roi_global = ((total_gain - total_mise) / total_mise * 100) if total_mise > 0 else 0.0
         
@@ -1007,7 +1013,7 @@ with tab_suivi:
         st.subheader("📊 Visualisation de la Bankroll & ROI par Type de Jeu")
 
         roi_par_type = {}
-        for p in historique_actifs:
+        for p in historique_stats:
             if p.get("statut") == "Annulé":
                 continue
             t_jeu = str(p.get("type", "Simple"))
@@ -1029,7 +1035,7 @@ with tab_suivi:
             st.dataframe(data_roi, use_container_width=True, hide_index=True)
 
         with col_r2:
-            historique_trie = sorted([p for p in historique_actifs if p.get("statut") in ["Gagné", "Perdu"]], key=lambda x: str(x.get("date", "")))
+            historique_trie = sorted([p for p in historique_stats if p.get("statut") in ["Gagné", "Perdu"]], key=lambda x: str(x.get("date", "")))
             cumul = 0.0
             donnees_graph = {}
             for p in historique_trie:
@@ -1042,13 +1048,13 @@ with tab_suivi:
                 st.write("**Courbe d'évolution du Bilan Cumulé (€) :**")
                 st.line_chart(list(donnees_graph.values()))
             else:
-                st.info("Pas assez de paris terminés pour afficher la courbe.")
+                st.info("Pas assez de paris terminés pour afficher la courbe du cycle actuel.")
 
         st.divider()
         st.subheader("🏇 Rentabilité (ROI) par Discipline")
         
         roi_par_discipline = {}
-        for p in historique_actifs:
+        for p in historique_stats:
             if p.get("statut") == "Annulé":
                 continue
             disc = str(p.get("discipline", "Galop Plat"))
@@ -1099,11 +1105,17 @@ with tab_suivi:
                 },
                 disabled=["Index", "Date", "Course", "Discipline", "Type", "Détails", "Mise (€)", "Statut", "Gain (€)", "Diagnostic"],
                 hide_index=True,
-                use_container_width=True
+                use_container_width=True,
+                key="editor_suivi_table"
             )
             
-            if st.button("🗑️ Supprimer les paris sélectionnés"):
-                indices_a_supprimer = [row["Index"] for row in edited_df if row.get("Sélectionner")]
+            if st.button("🗑️ Supprimer les paris sélectionnés", key="btn_suppr_selection"):
+                if isinstance(edited_df, pd.DataFrame):
+                    edited_rows = edited_df.to_dict(orient="records")
+                else:
+                    edited_rows = edited_df
+
+                indices_a_supprimer = [row["Index"] for row in edited_rows if row.get("Sélectionner")]
                 if indices_a_supprimer:
                     historique_maj = [p for i, p in enumerate(historique) if i not in indices_a_supprimer]
                     sauvegarder_et_synchroniser(historique_maj, FICHIER_HISTORIQUE, f"Suppression de {len(indices_a_supprimer)} pari(s)")
@@ -1142,7 +1154,7 @@ with tab_reunions:
             if dates_disponibles:
                 date_choisie_bilan = st.selectbox("📅 Sélectionnez la journée à analyser", dates_disponibles)
                 
-                historique_jour = [p for p in historique if str(p.get("date")) == date_choisie_bilan]
+                historique_jour = [p for p in historique if str(p.get("date")) == date_choisie_bilan and not p.get("ignore_stats", False)]
                 
                 reunions_bilan = {}
                 for p in historique_jour:
@@ -1186,13 +1198,13 @@ with tab_reunions:
                         "Mises (€)": round(v["mises"], 2),
                         "Gains (€)": round(v["gains"], 2),
                         "Bilan Net (€)": round(net, 2),
-                        "ROI (%)": round(roi_reunion, 1)
+                        "ROI (%)": round(r_reunion := roi_reunion, 1)
                     })
                 
                 if tableau_reunions:
                     st.dataframe(tableau_reunions, use_container_width=True, hide_index=True)
                 else:
-                    st.info("Aucun pari actif pour cette date.")
+                    st.info("Aucun pari actif dans le cycle actuel pour cette date.")
             else:
                 st.info("Aucune date disponible dans l'historique.")
         else:
