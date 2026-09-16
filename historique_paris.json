@@ -1773,9 +1773,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°5 - NANCY DES PLACES (Cote win: 4.2)] (4€) | Ticket 2 (Couplé N°5-2): [N°2 - LOVING QUEEN (Cote win: 10.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 12.47,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -1787,9 +1787,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°5 - NANCY DES PLACES (Cote win: 4.2)] (4€) | Ticket 2 (Simple Gagnant): [N°1 - BOGLIASCO (Cote win: 6.5)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 8.27,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -1801,9 +1801,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°5 et N°3] (4€) | Ticket 2 (Couplé Gagnant): [N°5 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 25.0,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -1815,8 +1815,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°5, N°3, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°5, N°3, N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°5 1e | N°2 6e | N°3 2e | N°1 4e (au pied du podium)"
   }
 ]
