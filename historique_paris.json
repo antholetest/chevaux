@@ -1199,9 +1199,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°15 - KARO DAIRPET (Cote win: 2.9)] (4€) | Ticket 2 (Couplé N°15-2): [N°2 - KOALA D'AMOUR (Cote win: 17.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 6.53,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -1213,9 +1213,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°15 - KARO DAIRPET (Cote win: 2.9)] (4€) | Ticket 2 (Simple Gagnant): [N°4 - KIRDKER DU MESLE (Cote win: 7.9)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 14.43,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -1227,9 +1227,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°15 et N°14] (4€) | Ticket 2 (Couplé Gagnant): [N°15 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 non classé | N°2 9e | N°15 2e"
   },
   {
     "date": "2026-09-16",
@@ -1241,8 +1241,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°15, N°14, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°15, N°14, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 non classé | N°1 14e | N°15 2e"
   }
 ]
