@@ -4526,7 +4526,8 @@
     "mise": 10.0,
     "statut": "Gagné",
     "gain": 9.6,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-09-08",
@@ -4540,7 +4541,8 @@
     "mise": 8.0,
     "statut": "Gagné",
     "gain": 8.0,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-09-08",
@@ -4554,7 +4556,8 @@
     "mise": 8.0,
     "statut": "Gagné",
     "gain": 8.0,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-09-08",
@@ -4568,7 +4571,8 @@
     "mise": 7.0,
     "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "Échec : N°5 10e | N°1 7e"
+    "diagnostic": "Échec : N°5 10e | N°1 7e",
+    "ignore_stats": true
   },
   {
     "date": "2026-09-08",
@@ -4582,7 +4586,8 @@
     "mise": 7.0,
     "statut": "Gagné",
     "gain": 7.47,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-08-01",
@@ -4596,7 +4601,8 @@
     "mise": 10.0,
     "statut": "Gagné",
     "gain": 9.8,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-08-01",
@@ -4610,7 +4616,8 @@
     "mise": 9.0,
     "statut": "Gagné",
     "gain": 10.27,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-08-01",
@@ -4624,7 +4631,8 @@
     "mise": 9.0,
     "statut": "Gagné",
     "gain": 18.0,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-08-01",
@@ -4638,7 +4646,8 @@
     "mise": 7.0,
     "statut": "Gagné",
     "gain": 7.67,
-    "diagnostic": "Succès : Objectifs atteints."
+    "diagnostic": "Succès : Objectifs atteints.",
+    "ignore_stats": true
   },
   {
     "date": "2026-08-01",
@@ -4652,6 +4661,7 @@
     "mise": 7.0,
     "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "Échec : N°4 6e | N°8 7e"
+    "diagnostic": "Échec : N°4 6e | N°8 7e",
+    "ignore_stats": true
   }
 ]
