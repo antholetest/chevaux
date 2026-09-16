@@ -1997,9 +1997,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°6 - JANNET (Cote win: 2.0)] (4€) | Ticket 2 (Couplé N°6-2): [N°2 - MARANTAO (Cote win: 16.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°2 7e | N°6 4e (au pied du podium)"
   },
   {
     "date": "2026-09-15",
@@ -2011,9 +2011,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°6 - JANNET (Cote win: 2.0)] (4€) | Ticket 2 (Simple Gagnant): [N°8 - STORY WAY (Cote win: 4.3)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 4.3,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -2025,9 +2025,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°6 et N°8] (4€) | Ticket 2 (Couplé Gagnant): [N°6 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°8 1e | N°6 4e (au pied du podium) | N°2 7e"
   },
   {
     "date": "2026-09-15",
@@ -2039,8 +2039,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°6, N°8, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°6, N°8, N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°8 1e | N°1 2e | N°6 4e (au pied du podium) | N°2 7e"
   }
 ]
