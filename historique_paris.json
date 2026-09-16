@@ -3243,9 +3243,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°16 - KRAK DE BUSSIERES (Cote win: 2.9)] (4€) | Ticket 2 (Couplé N°16-1): [N°1 - KING OF RACE (Cote win: 9.2)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 8.03,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -3257,9 +3257,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°16 - KRAK DE BUSSIERES (Cote win: 2.9)] (4€) | Ticket 2 (Simple Gagnant): [N°14 - IBLIS GEMA (Cote win: 8.2)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 5.73,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -3271,9 +3271,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°16 et N°15] (4€) | Ticket 2 (Couplé Gagnant): [N°16 et N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°16 1e | N°1 non classé | N°15 3e"
   },
   {
     "date": "2026-09-15",
@@ -3285,8 +3285,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°16, N°15, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°16, N°15, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°16 1e | N°1 non classé | N°15 3e"
   }
 ]
