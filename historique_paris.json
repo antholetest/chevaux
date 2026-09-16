@@ -1255,9 +1255,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°7 - MISS PARANO (Cote win: 5.9)] (4€) | Ticket 2 (Couplé N°7-4): [N°4 - ARYVESAN (Cote win: 15.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 3e | N°7 4e (au pied du podium)"
   },
   {
     "date": "2026-09-16",
@@ -1269,9 +1269,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°7 - MISS PARANO (Cote win: 5.9)] (4€) | Ticket 2 (Simple Gagnant): [N°14 - KHELLE TARTARE (Cote win: 10.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 6e | N°7 4e (au pied du podium)"
   },
   {
     "date": "2026-09-16",
@@ -1283,9 +1283,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°7 et N°3] (4€) | Ticket 2 (Couplé Gagnant): [N°7 et N°4] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 3e | N°7 4e (au pied du podium) | N°3 5e"
   },
   {
     "date": "2026-09-16",
@@ -1297,8 +1297,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°7, N°3, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°7, N°3, N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°2 10e | N°7 4e (au pied du podium) | N°3 5e | N°1 8e"
   }
 ]
