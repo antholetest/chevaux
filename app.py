@@ -919,31 +919,32 @@ with tab_suivi:
         with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as f:
             historique = json.load(f)
             
-        with st.expander("🔄 Remise à zéro des compteurs financiers", expanded=False):
-            st.warning("Attention : Cela va remettre à zéro les compteurs financiers et graphiques (Mises, Gains, Bilan, ROI) sans toucher à l'analyse post-mortem ni à l'auto-correction.")
+        with st.expander("🔄 Remise à zéro du compteur de gains", expanded=False):
+            st.warning("Attention : Cette action remet à zéro uniquement le compteur de gains (gains = 0 €) sans masquer les paris ni supprimer les tableaux de rentabilité, de disciplines ou d'auto-correction.")
             if "confirmer_raz_stats" not in st.session_state:
                 st.session_state["confirmer_raz_stats"] = False
 
             if not st.session_state["confirmer_raz_stats"]:
-                if st.button("Remettre à zéro les compteurs financiers"):
+                if st.button("Remettre à zéro le compteur de gains"):
                     st.session_state["confirmer_raz_stats"] = True
                     st.rerun()
             else:
                 col_c1, col_c2 = st.columns(2)
                 with col_c1:
-                    if st.button("✅ Oui, remettre à zéro", type="primary"):
+                    if st.button("✅ Oui, remettre à zéro les gains", type="primary"):
                         for p in historique:
-                            p["ignore_stats"] = True
-                        sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Remise à zéro des indicateurs financiers")
+                            p["gain"] = 0.0
+                            p.pop("ignore_stats", None)
+                        sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Remise à zéro du compteur de gains")
                         st.session_state["confirmer_raz_stats"] = False
-                        st.success("Compteurs financiers remis à zéro avec succès !")
+                        st.success("Compteur de gains remis à zéro avec succès !")
                         st.rerun()
                 with col_c2:
                     if st.button("❌ Annuler"):
                         st.session_state["confirmer_raz_stats"] = False
                         st.rerun()
 
-        historique_actifs = [p for p in historique if not p.get("ignore_stats", False)]
+        historique_actifs = historique
             
         if st.button("🔄 Vérifier automatiquement les résultats des courses"):
             with st.spinner("Téléchargement et analyse des résultats officiels..."):
