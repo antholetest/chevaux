@@ -2837,9 +2837,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°1 - MAGIC STARS (Cote win: 3.4)] (4€) | Ticket 2 (Couplé N°1-2): [N°2 - GREY BELLE (Cote win: 17.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 7.2,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -2851,9 +2851,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°1 - MAGIC STARS (Cote win: 3.4)] (4€) | Ticket 2 (Simple Gagnant): [N°4 - BALAGAN (Cote win: 14.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 7.2,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -2865,9 +2865,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°1 et N°8] (4€) | Ticket 2 (Couplé Gagnant): [N°1 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°8 3e | N°1 2e | N°2 8e"
   },
   {
     "date": "2026-09-15",
@@ -2879,8 +2879,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°1, N°8, N°2] (4€) | Ticket 2 (Trio Spéculatif): [N°1, N°8, N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°8 3e | N°1 2e | N°2 8e"
   }
 ]
