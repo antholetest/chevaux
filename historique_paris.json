@@ -639,9 +639,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°5 - LINUS (Cote win: 1.8)] (4€) | Ticket 2 (Couplé N°5-1): [N°1 - I.D. JANEECE (Cote win: 14.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 5.07,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -653,9 +653,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°5 - LINUS (Cote win: 1.8)] (4€) | Ticket 2 (Simple Gagnant): [N°9 - CLASSICHAP'S LADY (Cote win: 5.3)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 10.37,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -667,9 +667,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°5 et N°9] (4€) | Ticket 2 (Couplé Gagnant): [N°5 et N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 25.0,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -681,8 +681,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°5, N°9, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°5, N°9, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°5 2e | N°9 1e | N°1 non classé"
   }
 ]
