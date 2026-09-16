@@ -3355,9 +3355,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°8 - NEWTON DE CORS (Cote win: 4.7)] (4€) | Ticket 2 (Couplé N°8-2): [N°2 - NAPOLI DU BOUFFEY (Cote win: 16.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°8 non classé | N°2 6e"
   },
   {
     "date": "2026-09-15",
@@ -3369,9 +3369,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°8 - NEWTON DE CORS (Cote win: 4.7)] (4€) | Ticket 2 (Simple Gagnant): [N°7 - NABAD DU ROCHER (Cote win: 8.9)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 9.9,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -3383,9 +3383,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°8 et N°4] (4€) | Ticket 2 (Couplé Gagnant): [N°8 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 4e (au pied du podium) | N°8 non classé | N°2 6e"
   },
   {
     "date": "2026-09-15",
@@ -3397,8 +3397,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°8, N°4, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°8, N°4, N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 4e (au pied du podium) | N°8 non classé | N°1 non classé | N°2 6e"
   }
 ]
