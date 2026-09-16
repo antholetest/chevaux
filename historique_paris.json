@@ -2501,9 +2501,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°5 - GUIDO D'ONEIX (Cote win: 3.3)] (4€) | Ticket 2 (Couplé N°5-6): [N°6 - STUPEFIANTE (Cote win: 13.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 7.07,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -2515,9 +2515,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°5 - GUIDO D'ONEIX (Cote win: 3.3)] (4€) | Ticket 2 (Simple Gagnant): [N°1 - HAPPY TIME (Cote win: 7.6)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 7.07,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-15",
@@ -2529,9 +2529,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°5 et N°4] (4€) | Ticket 2 (Couplé Gagnant): [N°5 et N°6] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°5 3e | N°4 4e (au pied du podium) | N°6 1e"
   },
   {
     "date": "2026-09-15",
@@ -2543,8 +2543,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°5, N°4, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°5, N°4, N°3] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°5 3e | N°4 4e (au pied du podium) | N°1 non classé | N°3 5e"
   }
 ]
