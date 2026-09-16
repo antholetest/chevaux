@@ -72,7 +72,8 @@ verifier_authentification()
 # --- SYNCHRONISATION GITHUB ---
 
 def sauvegarder_et_synchroniser(data, filename, message="Mise à jour automatique des données PMU"):
-    with open(filename, "w", encoding="utf-8") as f:
+    filename_path = Path(filename)
+    with open(filename_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     
     try:
@@ -82,10 +83,10 @@ def sauvegarder_et_synchroniser(data, filename, message="Mise à jour automatiqu
             subprocess.run(["git", "config", "--global", "user.email", "bot@streamlit.app"], capture_output=True)
             subprocess.run(["git", "config", "--global", "user.name", "Streamlit Bot"], capture_output=True)
             
-            subprocess.run(["git", "add", str(filename)], check=True, capture_output=True)
+            subprocess.run(["git", "add", str(filename_path)], check=True, capture_output=True)
             
             status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
-            if filename.name in status.stdout or str(filename) in status.stdout:
+            if filename_path.name in status.stdout or str(filename_path) in status.stdout:
                 subprocess.run(["git", "commit", "-m", message], check=True, capture_output=True)
                 
                 repo_url = f"https://{token}@github.com/antholetest/chevaux.git"
@@ -253,12 +254,11 @@ def analyser_performances_acteur(nom_acteur):
         try:
             with open(f, "r", encoding="utf-8") as file_obj:
                 data = json.load(file_obj)
-                for r in data:
-                    for c in r.get("courses", []):
-                        for part in c.get("chevaux", []):
-                            if part.get("driver", "").upper().strip() == acteur_upper:
-                                apparitions += 1
-        except:
+                for race in data:
+                    for part in race.get("chevaux", []):
+                        if part.get("driver", "").upper().strip() == acteur_upper:
+                            apparitions += 1
+        except Exception:
             continue
     bonus_experience = min(apparitions * 0.5, 5.0)
     return 1.0 + (bonus_experience / 10.0)
@@ -291,15 +291,20 @@ def verifier_stop_loss(date_jour):
         pass
     return False
 
+# --- AUTO-CORRECTION INTELLIGENTE ---
 def calculer_parametres_adaptatifs():
-    params = {"bonus_place": 0, "message_auto": "Algorithme standard actif."}
+    params = {
+        "bonus_place": 0, 
+        "malus_discipline": {}, 
+        "message_auto": "Algorithme standard actif."
+    }
     if not FICHIER_HISTORIQUE.exists():
         return params
     try:
         with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as f:
             historique = json.load(f)
         
-        derniers_paris = [p for p in historique if p.get("statut") in ["Gagné", "Perdu"]][-10:]
+        derniers_paris = [p for p in historique if p.get("statut") in ["Gagné", "Perdu"]][-15:]
         if not derniers_paris:
             return params
             
@@ -308,14 +313,26 @@ def calculer_parametres_adaptatifs():
         if total_perdus == 0:
             return params
             
-        proche_4eme = sum(1 for p in perdus if "4e" in p.get("diagnostic", ""))
+        proche_podium = sum(1 for p in perdus if "4e" in p.get("diagnostic", "") or "5e" in p.get("diagnostic", ""))
+        taux_proche = proche_podium / total_perdus
         
-        if (proche_4eme / total_perdus) >= 0.3:
-            params["bonus_place"] = 4
-            params["message_auto"] = f"🤖 Auto-correction active : {proche_4eme} échec(s) récent(s) au pied du podium (4e). Bonus de régularité (+4 pts) activé."
-        else:
-            params["message_auto"] = "🤖 Auto-correction active : Performances équilibrées, barème standard appliqué."
+        if taux_proche >= 0.2:
+            params["bonus_place"] = int(round(taux_proche * 10)) 
             
+        disciplines_echouees = {}
+        for p in perdus:
+            disc = p.get("discipline", "Galop Plat")
+            disciplines_echouees[disc] = disciplines_echouees.get(disc, 0) + 1
+            
+        messages_parts = [f"🤖 Auto-correction active : {proche_podium} quasi-podium(s) détecté(s). Bonus régularité (+{params['bonus_place']} pts) appliqué."]
+        
+        for disc, count in disciplines_echouees.items():
+            if count >= 3:
+                params["malus_discipline"][disc] = -3
+                messages_parts.append(f"Vigilance accrue sur '{disc}' (-3 pts de pénalité de prudence).")
+                
+        params["message_auto"] = " | ".join(messages_parts)
+        
     except Exception:
         pass
     return params
@@ -377,7 +394,117 @@ def evaluer_score_cheval(cheval, discipline, terrain, date_jour, params_adaptati
         elif cote > 35.0:
             score -= 3
 
+    malus_disc = params_adaptatifs.get("malus_discipline", {}).get(discipline, 0)
+    score += malus_disc
+
     return score
+
+def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs):
+    donnees, _ = charger_donnees_fichier(fichier_json)
+    
+    budget_total_effectif = float(budget_base)
+    if FICHIER_HISTORIQUE.exists():
+        try:
+            with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as f:
+                historique = json.load(f)
+            
+            derniers_paris = [p for p in historique if p.get("statut") in ["Gagné", "Perdu"]][-10:]
+            if derniers_paris:
+                bilan_recent = sum(
+                    (float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0) - float(p.get("mise", 0)) 
+                    for p in derniers_paris
+                )
+                if bilan_recent < 0:
+                    budget_total_effectif += abs(bilan_recent) * 0.25
+        except Exception:
+            pass
+            
+    opportunites = []
+    for course in donnees:
+        chevaux = course.get("chevaux", [])
+        discipline = course.get("discipline", "Galop Plat")
+        terrain = course.get("terrain_officiel", "Bon (Standard)")
+        chevaux_valides = [c for c in chevaux if isinstance(c.get("cote"), (int, float)) and c["cote"] > 1.0]
+        
+        if len(chevaux_valides) < 3:
+            continue
+            
+        for c in chevaux_valides:
+            c["score_analyse"] = evaluer_score_cheval(c, discipline, terrain, datetime.date.today().strftime("%Y-%m-%d"), params_adaptatifs)
+            
+        chevaux_tries = sorted(chevaux_valides, key=lambda x: x["score_analyse"], reverse=True)
+        meilleur = chevaux_tries[0]
+        second = chevaux_tries[1]
+        
+        ecart_score = meilleur["score_analyse"] - second["score_analyse"]
+        cote_fav = meilleur["cote"]
+        indice_confiance = ecart_score + (15 if 2.0 <= cote_fav <= 6.0 else 5)
+        
+        outsiders = [c for c in chevaux_valides if 6.0 <= c["cote"] <= 25.0 and c["num"] != meilleur["num"]]
+        poker = max(outsiders, key=lambda x: x["score_analyse"]) if outsiders else second
+
+        opportunites.append({
+            "score_confiance": max(1.0, indice_confiance),
+            "reunion_course": f"{course.get('reunion')} - {course.get('course')} ({course.get('hippodrome')})",
+            "nom_course": course.get('nom_course'),
+            "discipline": discipline,
+            "meilleur_cheval": meilleur,
+            "poker": poker
+        })
+        
+    opportunites.sort(key=lambda x: x["score_confiance"], reverse=True)
+    
+    if not opportunites:
+        return []
+        
+    courses_qualifiees = [o for o in opportunites if o["score_confiance"] >= 10.0]
+    top_courses = courses_qualifiees[:5] if courses_qualifiees else opportunites[:1]
+        
+    somme_scores = sum(c["score_confiance"] for c in top_courses)
+    
+    brutes_mises = []
+    for course_opt in top_courses:
+        proportion = course_opt["score_confiance"] / somme_scores if somme_scores > 0 else (1.0 / len(top_courses))
+        brutes_mises.append(budget_total_effectif * proportion)
+        
+    mises_allouees = [max(1, round(m)) for m in brutes_mises]
+    diff = int(round(budget_total_effectif)) - sum(mises_allouees)
+    if mises_allouees:
+        mises_allouees[0] += diff
+        if mises_allouees[0] < 1:
+            mises_allouees[0] = 1
+
+    plan_paris = []
+    for idx, course_opt in enumerate(top_courses):
+        mise_course_cible = mises_allouees[idx]
+        
+        chev_base = course_opt["meilleur_cheval"]
+        chev_poker = course_opt["poker"]
+        cote_secu = chev_base["cote"]
+        
+        if isinstance(cote_secu, (int, float)) and cote_secu > 1.0:
+            rendement_place = 1.0 + (cote_secu - 1.0) / 3.0
+            if rendement_place > 1.0:
+                mise_secu = max(1, round(mise_course_cible / rendement_place))
+            else:
+                mise_secu = max(1, round(mise_course_cible * 0.7))
+        else:
+            mise_secu = max(1, round(mise_course_cible * 0.7))
+            
+        mise_poker = max(1, mise_course_cible - mise_secu)
+        mise_totale_course = mise_secu + mise_poker
+        
+        plan_paris.append({
+            "Course": course_opt["reunion_course"],
+            "Discipline": course_opt["discipline"],
+            "Base Solide (Sécurité)": f"Simple Placé ➔ N°{chev_base['num']} - {chev_base['nom']} (Cote: {cote_secu:.1f})",
+            "Mise Sécu": f"{mise_secu} €",
+            "Coup de Poker": f"Simple Gagnant ➔ N°{chev_poker['num']} - {chev_poker['nom']} (Cote: {chev_poker['cote']:.1f})",
+            "Mise Poker": f"{mise_poker} €",
+            "Mise Totale Course": f"{mise_totale_course} €"
+        })
+        
+    return plan_paris
 
 def verifier_resultats_automatiques_pmu(historique):
     modifie = False
@@ -390,8 +517,11 @@ def verifier_resultats_automatiques_pmu(historique):
             if not reunion_str or not course_str or not date_pari:
                 continue
             
-            dt = datetime.datetime.strptime(date_pari, "%Y-%m-%d")
-            date_pmu = dt.strftime("%d%m%Y")
+            try:
+                dt = datetime.datetime.strptime(date_pari, "%Y-%m-%d")
+                date_pmu = dt.strftime("%d%m%Y")
+            except Exception:
+                continue
             
             url_partants = f"https://online.turfinfo.api.pmu.fr/rest/client/7/programme/{date_pmu}/{reunion_str}/{course_str}/participants"
             try:
@@ -424,29 +554,49 @@ def verifier_resultats_automatiques_pmu(historique):
                         un_gagne = False
                         
                         nums_paries = re.findall(r'N°(\d+)', details)
+                        type_jeu = p.get("type", "Simple")
                         
-                        secu_match = re.search(r'Sécu:\s*\[N°(\d+)[^\]]*Cote win:\s*([\d\.]+)[^\]]*\]\s*\((\d+)€\)', details)
-                        if secu_match:
-                            num_secu = secu_match.group(1)
-                            cote_secu = cotes_reelles.get(num_secu, float(secu_match.group(2)))
-                            mise_secu = float(secu_match.group(3))
+                        parts = details.split("|")
+                        part_secu = parts[0] if len(parts) > 0 else details
+                        part_poker = parts[1] if len(parts) > 1 else ""
+                        
+                        if type_jeu in ["Simple", "Automatique", "Plan Global Journalier"]:
+                            num_secu_m = re.search(r'N°(\d+)', part_secu)
+                            cote_secu_m = re.search(r'Cote(?: win)?:\s*([\d\.]+)', part_secu)
+                            mise_secu_m = re.search(r'\((\d+(?:\.\d+)?)\s*€?\)', part_secu)
                             
-                            if num_secu == arrivee_trouvee[0]:
-                                gain_total += mise_secu * cote_secu
-                                un_gagne = True
-                            elif num_secu in arrivee_trouvee[:3]:
-                                gain_total += mise_secu * (1.0 + (cote_secu - 1.0) / 3.0)
-                                un_gagne = True
+                            if num_secu_m and mise_secu_m:
+                                num_secu = num_secu_m.group(1)
+                                cote_secu = cotes_reelles.get(num_secu, float(cote_secu_m.group(1)) if cote_secu_m else 2.0)
+                                mise_secu = float(mise_secu_m.group(1))
                                 
-                        poker_match = re.search(r'Poker:\s*\[N°(\d+)[^\]]*Cote win:\s*([\d\.]+)[^\]]*\]\s*\((\d+)€\)', details)
-                        if poker_match:
-                            num_poker = poker_match.group(1)
-                            cote_poker = cotes_reelles.get(num_poker, float(poker_match.group(2)))
-                            mise_poker = float(poker_match.group(3))
+                                if num_secu in arrivee_trouvee[:3]:
+                                    rendement = 1.0 + (cote_secu - 1.0) / 3.0 if cote_secu > 1.0 else 1.1
+                                    gain_total += mise_secu * rendement
+                                    un_gagne = True
                             
-                            if num_poker == arrivee_trouvee[0]:
-                                gain_total += mise_poker * cote_poker
-                                un_gagne = True
+                            if part_poker:
+                                num_poker_m = re.search(r'N°(\d+)', part_poker)
+                                cote_poker_m = re.search(r'Cote(?: win)?:\s*([\d\.]+)', part_poker)
+                                mise_poker_m = re.search(r'\((\d+(?:\.\d+)?)\s*€?\)', part_poker)
+                                
+                                if num_poker_m and mise_poker_m:
+                                    num_poker = num_poker_m.group(1)
+                                    cote_poker = cotes_reelles.get(num_poker, float(cote_poker_m.group(1)) if cote_poker_m else 5.0)
+                                    mise_poker = float(mise_poker_m.group(1))
+                                    
+                                    if num_poker == arrivee_trouvee[0]:
+                                        gain_total += mise_poker * cote_poker
+                                        un_gagne = True
+                        else:
+                            if len(arrivee_trouvee) >= 2 and type_jeu == "Couplé":
+                                if nums_paries[:2] and all(n in arrivee_trouvee[:2] for n in nums_paries[:2]):
+                                    gain_total += float(p.get("mise", 10)) * 5.0
+                                    un_gagne = True
+                            elif len(arrivee_trouvee) >= 3 and type_jeu == "Trio":
+                                if nums_paries[:3] and all(n in arrivee_trouvee[:3] for n in nums_paries[:3]):
+                                    gain_total += float(p.get("mise", 10)) * 10.0
+                                    un_gagne = True
 
                         if un_gagne or gain_total > 0:
                             p["statut"] = "Gagné"
@@ -457,7 +607,7 @@ def verifier_resultats_automatiques_pmu(historique):
                             p["gain"] = 0.0
                             
                             raisons_echec = []
-                            for n_pari in nums_paries:
+                            for n_pari in set(nums_paries):
                                 if n_pari in arrivee_trouvee:
                                     pos = arrivee_trouvee.index(n_pari) + 1
                                     if pos == 4:
@@ -468,7 +618,7 @@ def verifier_resultats_automatiques_pmu(historique):
                                         raisons_echec.append(f"N°{n_pari} {pos}e")
                                 else:
                                     raisons_echec.append(f"N°{n_pari} non classé")
-                            p["diagnostic"] = f"Échec : " + " | ".join(raisons_echec)
+                            p["diagnostic"] = "Échec : " + " | ".join(raisons_echec)
                             
                         modifie = True
             except Exception:
@@ -504,6 +654,63 @@ with tab_analyse:
                     st.error("Impossible de récupérer les données pour cette date.")
 
     if fichier_jour.exists():
+        with st.expander("🎯 Répartiteur Intelligent de Budget Journalier (Récupération intégrée)", expanded=True):
+            st.write("Indiquez votre budget global pour la journée. L'algorithme intègre automatiquement la récupération dynamique des pertes et répartit les mises sur les meilleures opportunités.")
+            
+            budget_journalier = st.number_input("Budget total de base du jour (€)", min_value=10, value=50, step=5)
+            lancer_repartition = st.button("🪄 Générer mon plan de mise idéal du jour")
+                
+            if lancer_repartition:
+                with st.spinner("Analyse globale des réunions et optimisation de placement..."):
+                    params_adaptatifs = calculer_parametres_adaptatifs()
+                    plan_journalier = generer_plan_budget_journalier(fichier_jour, budget_journalier, params_adaptatifs)
+                    if plan_journalier:
+                        st.success("Plan généré avec succès avec prise en compte automatique de l'historique !")
+                        st.dataframe(plan_journalier, use_container_width=True, hide_index=True)
+                        st.session_state["plan_journalier_actuel"] = plan_journalier
+                    else:
+                        st.warning("Pas assez de données valides pour générer un plan aujourd'hui.")
+
+            if "plan_journalier_actuel" in st.session_state and st.session_state["plan_journalier_actuel"]:
+                st.markdown("")
+                if st.button("✅ Valider et enregistrer tout ce plan du jour dans le suivi", type="primary"):
+                    historique = []
+                    if FICHIER_HISTORIQUE.exists():
+                        try:
+                            with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as f:
+                                historique = json.load(f)
+                        except Exception:
+                            pass
+                    
+                    for item in st.session_state["plan_journalier_actuel"]:
+                        mise_totale_str = item["Mise Totale Course"].replace("€", "").strip()
+                        try:
+                            mise_val = float(mise_totale_str)
+                        except Exception:
+                            mise_val = 2.0
+                        
+                        pari_item = {
+                            "date": date_iso,
+                            "reunion": item["Course"].split(" - ")[0],
+                            "course_num": item["Course"].split(" - ")[1].split(" ")[0],
+                            "hippodrome": item["Course"].split("(")[-1].replace(")", ""),
+                            "course": item["Course"],
+                            "discipline": item["Discipline"],
+                            "type": "Plan Global Journalier",
+                            "details": f'Sécu: {item["Base Solide (Sécurité)"]} ({item["Mise Sécu"]}) | Poker: {item["Coup de Poker"]} ({item["Mise Poker"]})',
+                            "mise": mise_val,
+                            "statut": "En attente",
+                            "gain": 0.0,
+                            "diagnostic": ""
+                        }
+                        historique.append(pari_item)
+                    
+                    sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Validation du plan budgétaire journalier")
+                    st.success("Tout le plan du jour a été validé et enregistré dans votre suivi financier !")
+                    del st.session_state["plan_journalier_actuel"]
+                    st.rerun()
+        st.divider()
+
         donnees, reunions_map = charger_donnees_fichier(fichier_jour)
         
         liste_reunions = sorted(list(reunions_map.keys()))
@@ -552,9 +759,9 @@ with tab_analyse:
             with col_b1:
                 mode_jeu = st.selectbox("Type de jeu", ["Automatique", "Simple", "Couplé", "Trio"])
             with col_b2:
-                budget = st.number_input("Budget (€)", min_value=1, value=20, step=1)
+                budget = st.number_input("Budget course (€)", min_value=1, value=20, step=1)
                 
-            if st.button("⚡ Lancer l'Analyse Avancée"):
+            if st.button("⚡ Lancer l'Analyse de cette course"):
                 if verifier_stop_loss(date_iso):
                     st.warning("⚠️ Alerte Stop-Loss : Vos pertes cumulées pour cette journée dépassent 30 €.")
                     
@@ -613,35 +820,66 @@ with tab_analyse:
                         chevaux_secu_str = f"N°{base_secu['num']} - {base_secu['nom']} (Cote win: {base_secu['cote']:.1f})"
                         chevaux_gros_str = f"N°{coup_poker['num']} - {coup_poker['nom']} (Cote win: {coup_poker['cote']:.1f})"
 
-                    # --- MOTEUR DE MISE HYBRIDE INTÉGRÉ ---
                     if len(chevaux_par_score) >= 2:
-                        cart_score = chevaux_par_score[0]["score_analyse"] - chevaux_par_score[1]["score_analyse"]
-                        ratio_base = min(0.85, max(0.65, 0.70 + (cart_score * 0.02)))
+                        ecart_score = chevaux_par_score[0]["score_analyse"] - chevaux_par_score[1]["score_analyse"]
+                        ratio_base = min(0.85, max(0.65, 0.70 + (ecart_score * 0.02)))
                     else:
                         ratio_base = 0.70
 
                     cote_base = base_secu["cote"]
-                    prob_marche = 1.0 / cote_base if cote_base > 1.0 else 0.5
+                    prob_marche = (1.0 / cote_base) * 0.90 if cote_base > 1.0 else 0.5
                     score_secu = base_secu.get("score_analyse", 50)
-                    prob_estimee = min(0.90, max(0.10, prob_marche + (score_secu - 50) / 200.0))
+                    prob_estimee = min(0.85, max(0.15, prob_marche + (score_secu - 50) / 180.0))
                     
-                    b = cote_base - 1.0
-                    kelly_ajustement = ((b * prob_estimee - (1.0 - prob_estimee)) / b) * 0.1 if b > 0 else 0
+                    if mode_jeu == "Simple" and "Placé" in pari_secu_txt:
+                        b = ((cote_base - 1.0) / 3.0)
+                    else:
+                        b = cote_base - 1.0
+
+                    if b > 0:
+                        kelly_pur = (b * prob_estimee - (1.0 - prob_estimee)) / b
+                    else:
+                        kelly_pur = 0.0
+
+                    fraction_kelly = 0.05 + (min(score_secu, 100) / 1000.0) 
+                    kelly_ajustement = max(0.0, kelly_pur) * fraction_kelly
                     
-                    ratio_final = min(0.85, max(0.65, ratio_base + kelly_ajustement))
+                    ratio_final = min(0.80, max(0.50, ratio_base + kelly_ajustement))
                     
                     mise_secu = max(1, int(round(budget * ratio_final)))
                     mise_gros = max(1, budget - mise_secu)
 
-                    gain_secu_estime = round(mise_secu * (1.0 + (base_secu["cote"] - 1.0) / 3.0), 2) if mode_jeu == "Simple" else round(mise_secu * base_secu["cote"], 2)
-                    gain_gros = round(mise_gros * coup_poker["cote"], 2)
-
-                    st.markdown("💡 *Stratégie appliquée : Moteur Hybride Intelligent (Score Interne + Critère de Kelly)*")
-                    col_res1, col_res2 = st.columns(2)
-                    with col_res1:
-                        st.info(f"🛡️ **Base Sécurité**\n\n**{pari_secu_txt}**\n{chevaux_secu_str}\n👉 Mise : {mise_secu} €\n💰 Remboursement estimé : ~{gain_secu_estime:.2f} €")
-                    with col_res2:
-                        st.success(f"🚀 **Coup de Poker**\n\n**{pari_gros_txt}**\n{chevaux_gros_str}\n👉 Mise : {mise_gros} €\n🔥 Gain potentiel : {gain_gros:.2f} €")
+                    st.markdown("---")
+                    st.markdown("### 🎫 Tickets PMU à valider")
+                    
+                    if mode_jeu == "Simple":
+                        st.info(f"""
+                        * **Ticket 1 (Sécurité) :** **Simple Placé** sur le **N°{base_secu['num']} - {base_secu['nom']}** 
+                          * *Mise conseillée :* **{mise_secu} €** 
+                          * *Cote estimée :* {base_secu['cote']:.1f}
+                        * **Ticket 2 (Spéculatif) :** **Simple Gagnant** sur le **N°{coup_poker['num']} - {coup_poker['nom']}** 
+                          * *Mise conseillée :* **{mise_gros} €** 
+                          * *Cote estimée :* {coup_poker['cote']:.1f}
+                        """)
+                    elif mode_jeu == "Couplé":
+                        st.info(f"""
+                        * **Ticket 1 (Sécurité) :** **Couplé Placé** sur **{chevaux_secu_str}** 
+                          * *Mise conseillée :* **{mise_secu} €**
+                        * **Ticket 2 (Spéculatif) :** **Couplé Gagnant** sur **{chevaux_gros_str}** 
+                          * *Mise conseillée :* **{mise_gros} €**
+                        """)
+                    elif mode_jeu == "Trio":
+                        st.info(f"""
+                        * **Ticket 1 (Sécurité) :** **Trio Ordre / Désordre** sur **{chevaux_secu_str}** 
+                          * *Mise conseillée :* **{mise_secu} €**
+                        * **Ticket 2 (Spéculatif) :** **Trio Spéculatif** sur **{chevaux_gros_str}** 
+                          * *Mise conseillée :* **{mise_gros} €**
+                        """)
+                    else:
+                        st.info(f"""
+                        * **Ticket 1 (Sécurité) :** **Simple Placé** sur le **N°{base_secu['num']} - {base_secu['nom']}** ({mise_secu} €)
+                        * **Ticket 2 (Spéculatif) :** **Couplé / Spéculatif** sur **{chevaux_gros_str}** ({mise_gros} €)
+                        """)
 
                     st.session_state["dernier_pari"] = {
                         "date": date_iso,
@@ -651,26 +889,28 @@ with tab_analyse:
                         "course": f"{course_courante['reunion']} {course_courante['course']} ({course_courante['hippodrome']})",
                         "discipline": discipline_courante,
                         "type": mode_jeu,
-                        "details": f"Sécu: [{chevaux_secu_str}] ({mise_secu}€) | Poker: [{chevaux_gros_str}] ({mise_gros}€)",
+                        "details": f"Ticket 1 ({pari_secu_txt}): [{chevaux_secu_str}] ({mise_secu}€) | Ticket 2 ({pari_gros_txt}): [{chevaux_gros_str}] ({mise_gros}€)",
                         "mise": budget,
                         "statut": "En attente",
                         "gain": 0.0,
                         "diagnostic": ""
                     }
 
-            if "dernier_pari" in st.session_state and st.button("✅ Valider / Enregistrer ce pari"):
-                historique = []
-                if FICHIER_HISTORIQUE.exists():
-                    try:
-                        with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as f:
-                            historique = json.load(f)
-                    except Exception:
-                        pass
-                historique.append(st.session_state["dernier_pari"])
-                
-                sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Ajout d'un nouveau pari")
-                st.success("Pari enregistré et synchronisé avec succès !")
-                del st.session_state["dernier_pari"]
+            if "dernier_pari" in st.session_state:
+                st.markdown("")
+                if st.button("✅ Valider / Intégrer ce pari au suivi financier", type="primary"):
+                    historique = []
+                    if FICHIER_HISTORIQUE.exists():
+                        try:
+                            with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as f:
+                                historique = json.load(f)
+                        except Exception:
+                            pass
+                    
+                    historique.append(st.session_state["dernier_pari"])
+                    sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Ajout et validation d'un nouveau pari")
+                    st.success("Pari validé, enregistré et synchronisé avec succès dans vos suivis !")
+                    del st.session_state["dernier_pari"]
 
 with tab_suivi:
     st.subheader("📈 Suivi, Bilan Financier & ROI")
@@ -678,6 +918,32 @@ with tab_suivi:
     if FICHIER_HISTORIQUE.exists():
         with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as f:
             historique = json.load(f)
+            
+        with st.expander("🔄 Remise à zéro des compteurs financiers", expanded=False):
+            st.warning("Attention : Cela va remettre à zéro les compteurs financiers et graphiques (Mises, Gains, Bilan, ROI) sans toucher à l'analyse post-mortem ni à l'auto-correction.")
+            if "confirmer_raz_stats" not in st.session_state:
+                st.session_state["confirmer_raz_stats"] = False
+
+            if not st.session_state["confirmer_raz_stats"]:
+                if st.button("Remettre à zéro les compteurs financiers"):
+                    st.session_state["confirmer_raz_stats"] = True
+                    st.rerun()
+            else:
+                col_c1, col_c2 = st.columns(2)
+                with col_c1:
+                    if st.button("✅ Oui, remettre à zéro", type="primary"):
+                        for p in historique:
+                            p["ignore_stats"] = True
+                        sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Remise à zéro des indicateurs financiers")
+                        st.session_state["confirmer_raz_stats"] = False
+                        st.success("Compteurs financiers remis à zéro avec succès !")
+                        st.rerun()
+                with col_c2:
+                    if st.button("❌ Annuler"):
+                        st.session_state["confirmer_raz_stats"] = False
+                        st.rerun()
+
+        historique_actifs = [p for p in historique if not p.get("ignore_stats", False)]
             
         if st.button("🔄 Vérifier automatiquement les résultats des courses"):
             with st.spinner("Téléchargement et analyse des résultats officiels..."):
@@ -689,8 +955,8 @@ with tab_suivi:
                 else:
                     st.info("Aucun nouveau résultat officiel disponible pour les paris en attente.")
 
-        total_mise = sum(float(p.get("mise", 0)) for p in historique if p.get("statut") != "Annulé")
-        total_gain = sum(float(p.get("gain", 0)) for p in historique if p.get("statut") == "Gagné")
+        total_mise = sum(float(p.get("mise", 0)) for p in historique_actifs if p.get("statut") != "Annulé")
+        total_gain = sum(float(p.get("gain", 0)) for p in historique_actifs if p.get("statut") == "Gagné")
         bilan_net = total_gain - total_mise
         roi_global = ((total_gain - total_mise) / total_mise * 100) if total_mise > 0 else 0.0
         
@@ -704,7 +970,7 @@ with tab_suivi:
         st.subheader("📊 Visualisation de la Bankroll & ROI par Type de Jeu")
 
         roi_par_type = {}
-        for p in historique:
+        for p in historique_actifs:
             if p.get("statut") == "Annulé":
                 continue
             t_jeu = p.get("type", "Simple")
@@ -726,7 +992,7 @@ with tab_suivi:
             st.dataframe(data_roi, use_container_width=True, hide_index=True)
 
         with col_r2:
-            historique_trie = sorted([p for p in historique if p.get("statut") in ["Gagné", "Perdu"]], key=lambda x: x.get("date", ""))
+            historique_trie = sorted([p for p in historique_actifs if p.get("statut") in ["Gagné", "Perdu"]], key=lambda x: x.get("date", ""))
             cumul = 0.0
             donnees_graph = {}
             for p in historique_trie:
@@ -741,12 +1007,11 @@ with tab_suivi:
             else:
                 st.info("Pas assez de paris terminés pour afficher la courbe.")
 
-        # --- NOUVEAU : SUIVI PAR DISCIPLINE ---
         st.divider()
         st.subheader("🏇 Rentabilité (ROI) par Discipline")
         
         roi_par_discipline = {}
-        for p in historique:
+        for p in historique_actifs:
             if p.get("statut") == "Annulé":
                 continue
             disc = p.get("discipline", "Galop Plat")
@@ -772,71 +1037,58 @@ with tab_suivi:
         st.dataframe(data_roi_disc, use_container_width=True, hide_index=True)
 
         st.divider()
-        st.write("Détail des paris enregistrés :")
         
-        data_suivi = []
-        for idx, p in enumerate(historique):
-            data_suivi.append({
-                "Index": idx,
-                "Date": p.get("date"),
-                "Course": p.get("course"),
-                "Discipline": p.get("discipline", "Galop Plat"),
-                "Type": p.get("type"),
-                "Détails": p.get("details"),
-                "Mise (€)": p.get("mise"),
-                "Statut": p.get("statut"),
-                "Gain (€)": p.get("gain", 0.0) if p.get("statut") == "Gagné" else "-",
-                "Diagnostic": p.get("diagnostic", "-")
-            })
-        st.dataframe(data_suivi, use_container_width=True, hide_index=True)
+        with st.expander("📁 Tableau détaillé et suppression des paris", expanded=True):
+            data_suivi = []
+            for idx, p in enumerate(historique):
+                data_suivi.append({
+                    "Sélectionner": False,
+                    "Index": idx,
+                    "Date": p.get("date"),
+                    "Course": p.get("course"),
+                    "Discipline": p.get("discipline", "Galop Plat"),
+                    "Type": p.get("type"),
+                    "Détails": p.get("details"),
+                    "Mise (€)": p.get("mise"),
+                    "Statut": p.get("statut"),
+                    "Gain (€)": p.get("gain", 0.0) if p.get("statut") == "Gagné" else "-",
+                    "Diagnostic": p.get("diagnostic", "-")
+                })
+            
+            edited_df = st.data_editor(
+                data_suivi,
+                column_config={
+                    "Sélectionner": st.column_config.CheckboxColumn("🗑️ Sélectionner", default=False),
+                },
+                disabled=["Index", "Date", "Course", "Discipline", "Type", "Détails", "Mise (€)", "Statut", "Gain (€)", "Diagnostic"],
+                hide_index=True,
+                use_container_width=True
+            )
+            
+            if st.button("🗑️ Supprimer les paris sélectionnés"):
+                indices_a_supprimer = [row["Index"] for row in edited_df if row.get("Sélectionner")]
+                if indices_a_supprimer:
+                    historique_maj = [p for i, p in enumerate(historique) if i not in indices_a_supprimer]
+                    sauvegarder_et_synchroniser(historique_maj, FICHIER_HISTORIQUE, f"Suppression de {len(indices_a_supprimer)} pari(s)")
+                    st.success(f"{len(indices_a_supprimer)} pari(s) supprimé(s) avec succès !")
+                    st.rerun()
+                else:
+                    st.warning("Aucun pari sélectionné pour la suppression.")
         
-        with st.expander("🔍 Analyse Post-Mortem & Auto-Correction", expanded=True):
+        with st.expander("🔍 Analyse Post-Mortem & Auto-Correction", expanded=False):
             paris_perdus = [p for p in historique if p.get("statut") == "Perdu" and p.get("diagnostic")]
             if paris_perdus:
-                proche_podium = sum(1 for p in paris_perdus if "4e" in p.get("diagnostic", ""))
+                proche_podium = sum(1 for p in paris_perdus if "4e" in p.get("diagnostic", "") or "5e" in p.get("diagnostic", ""))
                 
                 col_d1, col_d2 = st.columns(2)
                 col_d1.metric("Total Paris Perdus Analysés", len(paris_perdus))
-                col_d2.metric("Échecs 'De peu' (4e position)", proche_podium)
+                col_d2.metric("Échecs 'De peu' (4e/5e position)", proche_podium)
                 
                 st.write("**Derniers diagnostics d'erreurs :**")
                 for p in paris_perdus[-5:]:
                     st.markdown(f"- **{p.get('date')} ({p.get('course')})** : *{p.get('diagnostic')}*")
             else:
                 st.info("Aucun diagnostic d'échec disponible pour le moment.")
-        
-        st.divider()
-        col_act1, col_act2, col_act3 = st.columns(3)
-        with col_act1:
-            index_pari = st.number_input("Index du pari à modifier", min_value=0, max_value=max(0, len(historique)-1), step=1)
-        with col_act2:
-            nouveau_statut = st.selectbox("Nouveau statut", ["En attente", "Gagné", "Perdu", "Annulé"])
-        with col_act3:
-            gain_saisi = st.number_input("Montant du gain (si Gagné)", min_value=0.0, value=0.0, step=0.5)
-            
-        col_btn1, col_btn2 = st.columns(2)
-        with col_btn1:
-            if st.button("Mettre à jour le statut du pari"):
-                if 0 <= index_pari < len(historique):
-                    historique[index_pari]["statut"] = nouveau_statut
-                    historique[index_pari]["gain"] = gain_saisi if nouveau_statut == "Gagné" else 0.0
-                    if nouveau_statut == "Gagné":
-                        historique[index_pari]["diagnostic"] = "Succès validé manuellement."
-                    elif nouveau_statut == "Perdu" and not historique[index_pari].get("diagnostic"):
-                        historique[index_pari]["diagnostic"] = "Marqué perdu manuellement."
-                    
-                    sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Mise à jour statut pari")
-                    st.success("Mise à jour et synchronisation effectuées !")
-                    st.rerun()
-                    
-        with col_btn2:
-            if st.button("🗑️ Supprimer ce pari"):
-                if 0 <= index_pari < len(historique):
-                    historique.pop(index_pari)
-                    
-                    sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, f"Suppression du pari index {index_pari}")
-                    st.success("Pari supprimé et synchronisé avec succès !")
-                    st.rerun()
     else:
         st.info("Aucun historique de pari enregistré pour le moment.")
 
