@@ -247,9 +247,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°9 - KATCHINA FOR CLARA (Cote win: 4.2)] (4€) | Ticket 2 (Couplé N°9-7): [N°7 - JUPITER DU CORTA (Cote win: 15.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 8.27,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -261,9 +261,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°9 - KATCHINA FOR CLARA (Cote win: 4.2)] (4€) | Ticket 2 (Simple Gagnant): [N°8 - JOKER DU HAMEL (Cote win: 29.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 8.27,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -275,9 +275,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°9, N°2, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°9, N°2, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°2 6e | N°9 3e | N°1 5e"
   },
   {
     "date": "2026-09-16",
@@ -289,8 +289,8 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°9 et N°2] (4€) | Ticket 2 (Couplé Gagnant): [N°9 et N°7] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°2 6e | N°7 7e | N°9 3e"
   }
 ]
