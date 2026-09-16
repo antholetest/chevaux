@@ -4947,7 +4947,7 @@
     "statut": "Gagné",
     "gain": 13.07,
     "diagnostic": "Succès : Objectifs atteints.",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-15",
@@ -4962,7 +4962,7 @@
     "statut": "Gagné",
     "gain": 11.47,
     "diagnostic": "Succès : Objectifs atteints.",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-15",
@@ -4977,7 +4977,7 @@
     "statut": "Gagné",
     "gain": 8.83,
     "diagnostic": "Succès : Objectifs atteints.",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-15",
@@ -4992,7 +4992,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec : N°4 10e | N°10 8e",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-15",
@@ -5007,6 +5007,6 @@
     "statut": "Gagné",
     "gain": 7.17,
     "diagnostic": "Succès : Objectifs atteints.",
-    "ignore_stats": false
+    "ignore_stats": true
   }
 ]
