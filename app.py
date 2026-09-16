@@ -292,7 +292,7 @@ def verifier_stop_loss(date_jour):
             historique = json.load(f)
         perte_jour = 0.0
         for p in historique:
-            if p.get("date") == date_jour and p.get("statut") != "Annulé" and not p.get("ignore_stats", False):
+            if p.get("date") == date_jour and p.get("statut") != "Annulé":
                 mise = safe_float(p.get("mise", 0))
                 gain = safe_float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0
                 bilan_pari = gain - mise
@@ -421,7 +421,7 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs)
             with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as f:
                 historique = json.load(f)
             
-            derniers_paris = [p for p in historique if p.get("statut") in ["Gagné", "Perdu"] and not p.get("ignore_stats", False)][-10:]
+            derniers_paris = [p for p in historique if p.get("statut") in ["Gagné", "Perdu"]][-10:]
             if derniers_paris:
                 bilan_recent = sum(
                     (safe_float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0) - safe_float(p.get("mise", 0)) 
@@ -960,7 +960,7 @@ with tab_suivi:
             
         expander_raz_ouvert = st.session_state.get("confirmer_raz_stats", False)
         with st.expander("🔄 Remise à zéro des compteurs financiers (Nouveau cycle)", expanded=expander_raz_ouvert):
-            st.warning("Cette action réinitialise les compteurs globaux (Mises, Gains, Bilan, ROI) à zéro pour démarrer un nouveau cycle. L'historique complet reste conservé dans le tableau pour tes analyses.")
+            st.warning("Cette action réinitialise les compteurs de mise/gain principaux du haut pour démarrer un nouveau cycle. L'historique complet et les graphiques d'évolution restent basés sur la totalité de l'historique global.")
             if "confirmer_raz_stats" not in st.session_state:
                 st.session_state["confirmer_raz_stats"] = False
 
@@ -977,7 +977,7 @@ with tab_suivi:
                             p["ignore_stats"] = True
                         sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Réinitialisation des compteurs financiers")
                         st.session_state["confirmer_raz_stats"] = False
-                        st.success("Compteurs remis à zéro ! Le tableau d'analyse reste intact.")
+                        st.success("Compteurs remis à zéro pour le cycle actif !")
                         st.rerun()
                 with col_c2:
                     if st.button("❌ Annuler", key="btn_cancel_raz"):
@@ -985,7 +985,6 @@ with tab_suivi:
                         st.rerun()
 
         historique_actifs = historique
-        # Seuls les paris non archivés sont pris en compte dans les métriques
         historique_stats = [p for p in historique_actifs if not p.get("ignore_stats", False)]
             
         if st.button("🔄 Vérifier automatiquement les résultats des courses"):
@@ -998,11 +997,16 @@ with tab_suivi:
                 else:
                     st.info("Aucun nouveau résultat officiel disponible pour les paris en attente.")
 
+        # Calculs du cycle actif pour les métriques principales du haut
         total_mise = sum(safe_float(p.get("mise", 0)) for p in historique_stats if p.get("statut") != "Annulé")
         total_gain = sum(safe_float(p.get("gain", 0)) for p in historique_stats if p.get("statut") == "Gagné")
         bilan_net = total_gain - total_mise
-        roi_global = ((total_gain - total_mise) / total_mise * 100) if total_mise > 0 else 0.0
         
+        # Calcul du ROI Global (statique sur l'intégralité de l'historique pour ne jamais se remettre à zéro)
+        total_mise_global = sum(safe_float(p.get("mise", 0)) for p in historique if p.get("statut") != "Annulé")
+        total_gain_global = sum(safe_float(p.get("gain", 0)) for p in historique if p.get("statut") == "Gagné")
+        roi_global = ((total_gain_global - total_mise_global) / total_mise_global * 100) if total_mise_global > 0 else 0.0
+
         col_m1, col_m2, col_m3, col_m4 = st.columns(4)
         col_m1.metric("Mise Totale", f"{total_mise:.2f} €")
         col_m2.metric("Gains Totaux", f"{total_gain:.2f} €")
@@ -1012,8 +1016,9 @@ with tab_suivi:
         st.divider()
         st.subheader("📊 Visualisation de la Bankroll & ROI par Type de Jeu")
 
+        # Utilisation de l'historique complet pour que les graphiques et types de jeu affichent toute la chronologie
         roi_par_type = {}
-        for p in historique_stats:
+        for p in historique:
             if p.get("statut") == "Annulé":
                 continue
             t_jeu = str(p.get("type", "Simple"))
@@ -1025,7 +1030,7 @@ with tab_suivi:
 
         col_r1, col_r2 = st.columns(2)
         with col_r1:
-            st.write("**Rentabilité (ROI) par Type de Jeu :**")
+            st.write("**Rentabilité (ROI) par Type de Jeu (Historique complet) :**")
             data_roi = []
             for t, vals in roi_par_type.items():
                 m = vals["mises"]
@@ -1035,7 +1040,7 @@ with tab_suivi:
             st.dataframe(data_roi, use_container_width=True, hide_index=True)
 
         with col_r2:
-            historique_trie = sorted([p for p in historique_stats if p.get("statut") in ["Gagné", "Perdu"]], key=lambda x: str(x.get("date", "")))
+            historique_trie = sorted([p for p in historique if p.get("statut") in ["Gagné", "Perdu"]], key=lambda x: str(x.get("date", "")))
             cumul = 0.0
             donnees_graph = {}
             for p in historique_trie:
@@ -1045,16 +1050,16 @@ with tab_suivi:
                 donnees_graph[p.get("date")] = cumul
             
             if donnees_graph:
-                st.write("**Courbe d'évolution du Bilan Cumulé (€) :**")
+                st.write("**Courbe d'évolution du Bilan Cumulé (€) (Historique complet) :**")
                 st.line_chart(list(donnees_graph.values()))
             else:
-                st.info("Pas assez de paris terminés pour afficher la courbe du cycle actuel.")
+                st.info("Pas assez de paris terminés pour afficher la courbe d'évolution.")
 
         st.divider()
-        st.subheader("🏇 Rentabilité (ROI) par Discipline")
+        st.subheader("🏇 Rentabilité (ROI) par Discipline (Historique complet)")
         
         roi_par_discipline = {}
-        for p in historique_stats:
+        for p in historique:
             if p.get("statut") == "Annulé":
                 continue
             disc = str(p.get("discipline", "Galop Plat"))
@@ -1154,7 +1159,7 @@ with tab_reunions:
             if dates_disponibles:
                 date_choisie_bilan = st.selectbox("📅 Sélectionnez la journée à analyser", dates_disponibles)
                 
-                historique_jour = [p for p in historique if str(p.get("date")) == date_choisie_bilan and not p.get("ignore_stats", False)]
+                historique_jour = [p for p in historique if str(p.get("date")) == date_choisie_bilan]
                 
                 reunions_bilan = {}
                 for p in historique_jour:
@@ -1204,7 +1209,7 @@ with tab_reunions:
                 if tableau_reunions:
                     st.dataframe(tableau_reunions, use_container_width=True, hide_index=True)
                 else:
-                    st.info("Aucun pari actif dans le cycle actuel pour cette date.")
+                    st.info("Aucun pari actif pour cette date.")
             else:
                 st.info("Aucune date disponible dans l'historique.")
         else:
