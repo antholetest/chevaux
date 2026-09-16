@@ -751,9 +751,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°9 - QUITE NICE (Cote win: 5.5)] (4€) | Ticket 2 (Couplé N°9-5): [N°5 - SKINNY JEANS (Cote win: 9.1)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°5 4e (au pied du podium) | N°9 8e"
   },
   {
     "date": "2026-09-16",
@@ -765,9 +765,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°9 - QUITE NICE (Cote win: 5.5)] (4€) | Ticket 2 (Simple Gagnant): [N°11 - JUST LIKE ME (Cote win: 9.7)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°11 2e | N°9 8e"
   },
   {
     "date": "2026-09-16",
@@ -779,9 +779,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°9 et N°3] (4€) | Ticket 2 (Couplé Gagnant): [N°9 et N°5] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°5 4e (au pied du podium) | N°3 1e | N°9 8e"
   },
   {
     "date": "2026-09-16",
@@ -793,8 +793,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°9, N°3, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°9, N°3, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°3 1e | N°9 8e | N°1 7e"
   }
 ]
