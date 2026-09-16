@@ -3994,9 +3994,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°14 - INSTINCT SAINT BAR (Cote win: 4.9)] (4€) | Ticket 2 (Couplé N°14-2): [N°2 - JET DES PRES (Cote win: 19.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 5e | N°2 non classé"
   },
   {
     "date": "2026-09-16",
@@ -4008,9 +4008,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°14 - INSTINCT SAINT BAR (Cote win: 4.9)] (4€) | Ticket 2 (Simple Gagnant): [N°1 - IVAN DE L'ERDRE (Cote win: 37.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 5e | N°1 7e"
   },
   {
     "date": "2026-09-16",
@@ -4022,9 +4022,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°14 et N°7] (4€) | Ticket 2 (Couplé Gagnant): [N°14 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 5e | N°7 2e | N°2 non classé"
   },
   {
     "date": "2026-09-16",
@@ -4036,8 +4036,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°14, N°7, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°14, N°7, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 5e | N°7 2e | N°1 7e"
   }
 ]
