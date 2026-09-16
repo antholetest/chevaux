@@ -15,8 +15,8 @@
         "musique": "2a6a2a2a8a3a3a2a1a(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 120.0,
-        "tendance_cote": "hausse"
+        "cote": 30.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -25,8 +25,8 @@
         "musique": "7a6a9a5a6a2a6a5a4a4a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 75.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 23.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -35,7 +35,7 @@
         "musique": "8a3a7a5m0a6a8a4a6a9m",
         "deferre": "",
         "poids": 0.0,
-        "cote": 300.0,
+        "cote": 103.0,
         "tendance_cote": "hausse"
       },
       {
@@ -45,7 +45,7 @@
         "musique": "4a3a3a1a7a3a5a7a6a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 16.0,
+        "cote": 13.0,
         "tendance_cote": "stable"
       },
       {
@@ -55,8 +55,8 @@
         "musique": "5aDa6a7a5a6a3aDa1aDa",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 4.1,
-        "tendance_cote": "baisse_forte"
+        "cote": 25.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -65,7 +65,7 @@
         "musique": "6aDa5a5a3a6a9a6a3a4a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 75.0,
+        "cote": 63.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -75,8 +75,8 @@
         "musique": "7a0a4a2a1a0a1a6a1a7a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 2.1,
-        "tendance_cote": "baisse_forte"
+        "cote": 3.9,
+        "tendance_cote": "hausse"
       },
       {
         "num": 8,
@@ -85,8 +85,8 @@
         "musique": "0a(25)6a7a0a4a2a8a9a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 66.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 86.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -95,8 +95,8 @@
         "musique": "3a3a6a3a2a5a3a6a2a5a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 7.1,
-        "tendance_cote": "hausse"
+        "cote": 6.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 10,
@@ -105,8 +105,8 @@
         "musique": "0a4a6a1a1aDa1a1aDa(25)",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 30.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 8.8,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -115,7 +115,7 @@
         "musique": "5a3aDa0a7aDa0a(25)Da6a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 50.0,
+        "cote": 33.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -125,8 +125,8 @@
         "musique": "6a0aDa(25)4a7a2a6a1a8a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 67.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 13,
@@ -135,8 +135,8 @@
         "musique": "3a1a4a7a9m8a0a0a(25)9a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 32.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 11.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 14,
@@ -145,8 +145,8 @@
         "musique": "1a1a3a3a1aAa2a1a0a(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 23.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 7.4,
+        "tendance_cote": "hausse"
       },
       {
         "num": 15,
@@ -155,8 +155,8 @@
         "musique": "1a4a6a6a4a8a1a7a2a4a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 11.0,
-        "tendance_cote": "hausse"
+        "cote": 7.0,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -176,7 +176,7 @@
         "musique": "3a2a6a2a2a3a3a4aDa0a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 7.6,
         "tendance_cote": "hausse"
       },
       {
@@ -186,7 +186,7 @@
         "musique": "1a1a3a4a5aDa7a3aDa9a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 3.8,
         "tendance_cote": "stable"
       },
       {
@@ -196,8 +196,8 @@
         "musique": "3a2a4aDa5a1a1a5a8a8a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 20.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -206,7 +206,7 @@
         "musique": "7a0aDa1a4a1a2a0a1a3a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 2.6,
+        "cote": 10.0,
         "tendance_cote": "stable"
       },
       {
@@ -216,8 +216,8 @@
         "musique": "Da3a9a6a3a3a2a2a(25)4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 29.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -226,7 +226,7 @@
         "musique": "Da0a5a1a1a5a2a4aDa(25)",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 21.0,
         "tendance_cote": "stable"
       },
       {
@@ -236,7 +236,7 @@
         "musique": "8a0a0a0a9a0a0a(25)0a1a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 124.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -246,7 +246,7 @@
         "musique": "4a7a9a4m7a5a1a1a8a8a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 50.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -256,7 +256,7 @@
         "musique": "5a7a8a8a0a4a0a6a2a3a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 47.0,
         "tendance_cote": "stable"
       },
       {
@@ -266,7 +266,7 @@
         "musique": "7a7a0a4a6a7a3aDa7a9a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 55.0,
         "tendance_cote": "hausse"
       },
       {
@@ -276,7 +276,7 @@
         "musique": "2a1a2m5a1a9a6a1a(25)8a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 1.2,
+        "cote": 3.3,
         "tendance_cote": "stable"
       },
       {
@@ -286,8 +286,8 @@
         "musique": "4a7a1a9aDa0a3a2a3a6a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 5.7,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -307,7 +307,7 @@
         "musique": "4a4aDa4a3a6a2aDa6a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 52.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -317,7 +317,7 @@
         "musique": "3a1a2aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 22.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -327,8 +327,8 @@
         "musique": "3a3aDa1a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.5,
-        "tendance_cote": "stable"
+        "cote": 4.6,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -337,8 +337,8 @@
         "musique": "3a1a5a7a2a4aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 52.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -347,7 +347,7 @@
         "musique": "3mDa2m4a6mDm2m5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 74.0,
         "tendance_cote": "hausse"
       },
       {
@@ -357,8 +357,8 @@
         "musique": "2mDa4a4m2a4mDaDaDa",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 104.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -367,7 +367,7 @@
         "musique": "4aDa1a1a3a5a3aDa5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.5,
+        "cote": 27.0,
         "tendance_cote": "hausse"
       },
       {
@@ -377,8 +377,8 @@
         "musique": "5aDa5a4a6a3a2a6a3a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 140.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -387,8 +387,8 @@
         "musique": "2a1a5a4a",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 1.6,
-        "tendance_cote": "stable"
+        "cote": 1.5,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 10,
@@ -397,8 +397,8 @@
         "musique": "5a3a4a3a2a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 37.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -407,8 +407,8 @@
         "musique": "3a7aDa7a4a(25)2a5a3a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 22.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -417,8 +417,8 @@
         "musique": "3a6a2aDa3a3aDa4a3a(25)",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 15.0,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -438,8 +438,8 @@
         "musique": "7aDa2aDmDa2a1a3aDa(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 23.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -448,7 +448,7 @@
         "musique": "1m1m3m5m7m5m1mDm2m1m",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 1.1,
+        "cote": 2.5,
         "tendance_cote": "stable"
       },
       {
@@ -458,8 +458,8 @@
         "musique": "5mDa4a4m8mDaDa9a5a5a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 81.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -468,8 +468,8 @@
         "musique": "6m4mDm7m4m4m2m3m9m2m",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 22.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -478,8 +478,8 @@
         "musique": "Dm0a2m8a2m6m3m3mDa(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 5.3,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -488,7 +488,7 @@
         "musique": "1mDa4mDmDm1m1m(25)1m7m",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 11.0,
+        "cote": 8.6,
         "tendance_cote": "hausse"
       },
       {
@@ -498,7 +498,7 @@
         "musique": "Da9mDm6m1m(25)2m7a2mDm",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 10.0,
         "tendance_cote": "stable"
       },
       {
@@ -508,7 +508,7 @@
         "musique": "Dm4m2m1m2mDa7mDm(25)5m",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 14.0,
         "tendance_cote": "stable"
       },
       {
@@ -518,7 +518,7 @@
         "musique": "1m3m1m3mDmDm2m5m6mDm",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 5.5,
+        "cote": 4.9,
         "tendance_cote": "hausse"
       }
     ]
@@ -539,8 +539,8 @@
         "musique": "5a3aDa7a2a6a7m6a4a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 46.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -549,8 +549,8 @@
         "musique": "7a9aDa6a5a5aDaDa1a2a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 18.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -559,8 +559,8 @@
         "musique": "3aDa5a1aDa6aDa(25)5aDa",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 32.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -569,7 +569,7 @@
         "musique": "8a1a5a7a4a1a1a(25)8a1a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 9.0,
         "tendance_cote": "stable"
       },
       {
@@ -579,7 +579,7 @@
         "musique": "2aDa4aDa7a5a4a(25)DaDa",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 4.4,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -589,8 +589,8 @@
         "musique": "2a1a1aDaDa(25)1a1a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 2.5,
-        "tendance_cote": "baisse_forte"
+        "cote": 3.2,
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -599,8 +599,8 @@
         "musique": "8a7aAa1a6aDa7a1a6a(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 25.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -609,8 +609,8 @@
         "musique": "0a7a5a1a8aDaDa(25)3a1a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 22.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -619,8 +619,8 @@
         "musique": "7a9a2a3a1a2a5aDaDa8a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 3.8,
-        "tendance_cote": "baisse_forte"
+        "cote": 9.9,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -629,7 +629,7 @@
         "musique": "7aDa7a7aDa(25)2aDa3a1a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 1.9,
+        "cote": 6.1,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -639,8 +639,8 @@
         "musique": "Da9a5aDa(25)2a4a5a1a2a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 14.0,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -660,7 +660,7 @@
         "musique": "4aDa7a3a9a3a8aDa8a(25)",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 26.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -670,7 +670,7 @@
         "musique": "4a1a9a2a4a0a0a4a3a4a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 15.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -680,8 +680,8 @@
         "musique": "8aDa3a1a1aDa2a2a1a7a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 1.2,
-        "tendance_cote": "baisse_forte"
+        "cote": 3.3,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -690,8 +690,8 @@
         "musique": "9a3a3a5a6a9a1a5a0a(25)",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 4.9,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -700,7 +700,7 @@
         "musique": "5a3a2a2a0a1a6a2a(25)8a",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 17.0,
         "tendance_cote": "stable"
       },
       {
@@ -710,7 +710,7 @@
         "musique": "3a0a6a0a0a5a8a(25)7a3a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 18.0,
+        "cote": 5.8,
         "tendance_cote": "hausse"
       },
       {
@@ -720,8 +720,8 @@
         "musique": "6a6a1aDa2a1a1a(25)1a8a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 18.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 6.4,
+        "tendance_cote": "hausse"
       },
       {
         "num": 8,
@@ -730,7 +730,7 @@
         "musique": "4a2a2a3a1a1a1a1a6a1a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 12.0,
+        "cote": 8.8,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -740,8 +740,8 @@
         "musique": "4a2aDa7a0a0a2a(25)2a7a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 17.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 10,
@@ -750,8 +750,8 @@
         "musique": "7a7a5a9a2a2a1a5aDm2a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 7.2,
-        "tendance_cote": "baisse_forte"
+        "cote": 4.8,
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -771,7 +771,7 @@
         "musique": "2aDa3a(25)1a1a8a1a(24)2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 8.1,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -781,8 +781,8 @@
         "musique": "3a4m4m6a4a5a1a4a2a6a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 3.5,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -791,8 +791,8 @@
         "musique": "3a4a4a2a2a5a3a(25)7a4a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 26.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -801,8 +801,8 @@
         "musique": "2a1aDa1aDaDa7mDa4aDa",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 4.5,
-        "tendance_cote": "hausse"
+        "cote": 6.6,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -811,8 +811,8 @@
         "musique": "2a5a6aDa5aDa9a3a4a3a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 22.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -821,8 +821,8 @@
         "musique": "3a3a3a5a5aDa(25)2a1a1a",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 9.3,
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -831,7 +831,7 @@
         "musique": "2a1a2a1aDa3a3a(25)Aa5a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 16.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -841,8 +841,8 @@
         "musique": "1a3a2a4a2a1a2a(25)4a7a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 2.2,
-        "tendance_cote": "hausse"
+        "cote": 4.9,
+        "tendance_cote": "stable"
       },
       {
         "num": 9,
@@ -851,8 +851,8 @@
         "musique": "1a3a1a3a1a3a1a3a7a1a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 2.0,
-        "tendance_cote": "hausse"
+        "cote": 6.3,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -872,7 +872,7 @@
         "musique": "7aDa0a0a6a4aDa(25)DaDa",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 34.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -882,7 +882,7 @@
         "musique": "Da7a0a8a0a0a1aDa(25)Da",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 33.0,
         "tendance_cote": "stable"
       },
       {
@@ -892,8 +892,8 @@
         "musique": "0a2a5a7m4a6m(25)Dm1mDa",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 52.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -902,8 +902,8 @@
         "musique": "1a7a8aDaDa0aDa0a2a(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 39.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -912,8 +912,8 @@
         "musique": "8a1a1aDa0aDa1a0aDa5a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 1.1,
-        "tendance_cote": "baisse_forte"
+        "cote": 4.9,
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -922,8 +922,8 @@
         "musique": "8a4a6aDa1aDaDa4a9a2a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 27.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -932,8 +932,8 @@
         "musique": "Da4m5a1aDm7m3mDa3m(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 17.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -942,7 +942,7 @@
         "musique": "DaDaDaDaDaDaDaDaDa(25)",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 24.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -952,7 +952,7 @@
         "musique": "3a4a2a8a3a3a3a3a5a6a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 3.6,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -962,8 +962,8 @@
         "musique": "0aAa1a6a6a1a1aDm1aDa",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 17.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -972,8 +972,8 @@
         "musique": "1a1a8a4a8a9a5a1a(25)Da",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 16.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -982,8 +982,8 @@
         "musique": "1a9a3a7a1a9a9a(25)6a2a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 7.7,
-        "tendance_cote": "hausse"
+        "cote": 3.0,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -1003,8 +1003,8 @@
         "musique": "0a6a0a0a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.2,
-        "tendance_cote": "hausse"
+        "cote": 25.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -1013,7 +1013,7 @@
         "musique": "1m6a3a6a3m",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.4,
+        "cote": 5.1,
         "tendance_cote": "hausse"
       },
       {
@@ -1023,8 +1023,8 @@
         "musique": "0a0a5a0a2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 20.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -1033,7 +1033,7 @@
         "musique": "5a(25)0a3a4a2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 6.9,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -1043,8 +1043,8 @@
         "musique": "0a0a7a0a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 26.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -1053,18 +1053,18 @@
         "musique": "0a0a1a4a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 12.0,
-        "tendance_cote": "stable"
+        "cote": 2.9,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
         "nom": "LUCKY LUCIANO",
         "driver": "G. ANTONSEN",
         "musique": "0a2a7a3a6a",
-        "deferre": "",
+        "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 4.1,
-        "tendance_cote": "stable"
+        "cote": 7.7,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -1073,8 +1073,8 @@
         "musique": "3a6a0a8a7a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 4.3,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -1092,19 +1092,19 @@
         "nom": "KONG AMOK",
         "driver": "B. STEINE",
         "musique": "0a5a1a8a0a",
-        "deferre": "",
+        "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 8.2,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
         "nom": "VICTORYS MAXIMUS",
-        "driver": "H.R. TVEDT",
+        "driver": "A. TENGSAREID",
         "musique": "2a0a7a2a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.1,
+        "cote": 2.8,
         "tendance_cote": "hausse"
       },
       {
@@ -1112,19 +1112,19 @@
         "nom": "G.G. EGRI",
         "driver": "F.S. LYSSAND",
         "musique": "5a4a6a7a4a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 3.9,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
         "nom": "WATCH ME EXPLODE",
         "driver": "G. AUSTEVOLL",
         "musique": "0a5a6a4a3a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 18.0,
         "tendance_cote": "hausse"
       },
       {
@@ -1134,8 +1134,8 @@
         "musique": "0a3aDa4a1a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 3.4,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -1144,18 +1144,18 @@
         "musique": "0a5a0a7a7a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 15.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
         "nom": "DREAM BRILJANT",
         "driver": "H.CHR. HOLM",
         "musique": "0a5a(25)0a0a0a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 34.0,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -1175,7 +1175,7 @@
         "musique": "0a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 14.0,
         "tendance_cote": "stable"
       },
       {
@@ -1185,8 +1185,8 @@
         "musique": "0a0a(25)3a0a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 82.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -1195,7 +1195,7 @@
         "musique": "0a4a6a3a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 65.0,
         "tendance_cote": "hausse"
       },
       {
@@ -1205,8 +1205,8 @@
         "musique": "Da1a0a1a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 5.6,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -1215,8 +1215,8 @@
         "musique": "1a0a(25)0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 1.8,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -1225,17 +1225,17 @@
         "musique": "0a(25)0a(24)0a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 93.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
         "nom": "LOGICAL EXIT",
         "driver": "G. AUSTEVOLL",
         "musique": "0a1a5a(25)0a0a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 14.0,
         "tendance_cote": "hausse"
       },
       {
@@ -1245,8 +1245,8 @@
         "musique": "0a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 22.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -1255,7 +1255,7 @@
         "musique": "3a2a5a0aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 5.3,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -1263,9 +1263,9 @@
         "nom": "EYE IN THE SKY",
         "driver": "P.O. MIDTFJELD",
         "musique": "6a4a5a0a(25)0a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 16.0,
         "tendance_cote": "stable"
       },
       {
@@ -1275,8 +1275,8 @@
         "musique": "4a4a3a6a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 18.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -1285,8 +1285,8 @@
         "musique": "Da0a6a(25)0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 116.0,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -1306,18 +1306,18 @@
         "musique": "0a0a4a5a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 11.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
         "nom": "DÆMRO ODD",
         "driver": "M.T. GUNDERSEN",
         "musique": "Da3a2a8a2a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 6.6,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -1326,28 +1326,28 @@
         "musique": "0m0a6a3a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 9.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
         "nom": "ALFHEIM LOKE",
         "driver": "O.CH. KJENNER",
         "musique": "3a3a6a0a2a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 15.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
         "nom": "KOS LOKE",
         "driver": "L.A. KOLLE",
         "musique": "2a1a4a2aDa",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 3.3,
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -1356,17 +1356,17 @@
         "musique": "2a0a0a6a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 19.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
         "nom": "FINNSKOG BOLT",
         "driver": "H. KULBLIK",
         "musique": "1a2a1a0a0a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 9.0,
         "tendance_cote": "hausse"
       },
       {
@@ -1374,20 +1374,20 @@
         "nom": "STORM JOKERN",
         "driver": "C. ANTONSEN",
         "musique": "1aDa0a0aDa",
-        "deferre": "",
+        "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 6.1,
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
         "nom": "DAHLS VINNA",
         "driver": "P.G. ROLAND",
         "musique": "0a0m(25)0a0a0a",
-        "deferre": "",
+        "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 93.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 10,
@@ -1396,8 +1396,8 @@
         "musique": "0a0a2a0a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 13.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -1406,7 +1406,7 @@
         "musique": "Da0a2aDa0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 50.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -1416,8 +1416,8 @@
         "musique": "3a6a0aDa0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 12.0,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -1435,9 +1435,9 @@
         "nom": "I.D.INGENIOUS",
         "driver": "O.B. REIME",
         "musique": "0a3a(25)5a2a0a",
-        "deferre": "",
+        "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 14.0,
         "tendance_cote": "stable"
       },
       {
@@ -1447,8 +1447,8 @@
         "musique": "0a5a6a7a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 38.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -1457,7 +1457,7 @@
         "musique": "2a3a2a6a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 8.1,
         "tendance_cote": "stable"
       },
       {
@@ -1467,8 +1467,8 @@
         "musique": "4aDa4a3a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 23.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -1477,8 +1477,8 @@
         "musique": "2a0a3a0a(25)0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 14.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -1487,7 +1487,7 @@
         "musique": "6a2a3a0a(23)3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 14.0,
         "tendance_cote": "stable"
       },
       {
@@ -1497,8 +1497,8 @@
         "musique": "5a0a0aDa4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 11.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 8,
@@ -1507,8 +1507,8 @@
         "musique": "0a(24)8a3a2a2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 38.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -1517,7 +1517,7 @@
         "musique": "2a2a6a1a1a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 2.1,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -1527,8 +1527,8 @@
         "musique": "0a3a8a(25)4a2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 28.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -1537,18 +1537,18 @@
         "musique": "3a3a2a3a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 12.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
         "nom": "G.G. FINCA",
         "driver": "F.S. LYSSAND",
         "musique": "1a4a4a0a(23)0a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 14.0,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -1569,17 +1569,17 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
         "nom": "JACKSON AVERY",
         "driver": "M.T. GUNDERSEN",
         "musique": "0a4a0a2a4a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -1589,14 +1589,14 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
         "nom": "BUGATTI MILES",
         "driver": "E. HØITOMT",
         "musique": "0a3a2a0a(25)5a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
         "tendance_cote": "baisse_forte"
@@ -1616,7 +1616,7 @@
         "nom": "EPICURE",
         "driver": "P.V. KALS",
         "musique": "2a2a4a0a8a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
         "tendance_cote": "hausse"
@@ -1640,7 +1640,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -1650,17 +1650,17 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
         "nom": "FOLLOWTHATDREAM E.P.",
         "driver": "M.T. GUNDERSEN",
         "musique": "2a3a8aDaDa",
-        "deferre": "",
+        "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -1670,7 +1670,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -1680,14 +1680,14 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
         "nom": "U.N. LANDO",
         "driver": "J.H. UNDEM",
         "musique": "4a0a3a7a2a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
         "tendance_cote": "baisse_forte"
@@ -1707,10 +1707,10 @@
         "nom": "FREE MILLION",
         "driver": "G. AUSTEVOLL",
         "musique": "0a8a4a(25)0a6a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -1731,7 +1731,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -1751,7 +1751,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -1761,7 +1761,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -1771,7 +1771,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -1781,7 +1781,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -1791,14 +1791,14 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
         "nom": "TANGEN INGRID",
         "driver": "O.CH. KJENNER",
         "musique": "Da0a0a3a4a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
         "tendance_cote": "stable"
@@ -1821,7 +1821,7 @@
         "musique": "1a6a1a4a4a7a0aDaDa0a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 1.1,
+        "cote": 3.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -1831,8 +1831,8 @@
         "musique": "DaDa1aDaDaDa3a2aDa(25)",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 20.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -1841,8 +1841,8 @@
         "musique": "1a0a(25)0aDa3a0aDa7a1a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 51.0,
-        "tendance_cote": "stable"
+        "cote": 5.6,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -1851,8 +1851,8 @@
         "musique": "1a4aAa9aDa7a7a0a(25)4a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 12.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -1861,8 +1861,8 @@
         "musique": "2a4mDm2aDa0a5m2m2m9a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 13.0,
-        "tendance_cote": "hausse"
+        "cote": 7.3,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -1881,7 +1881,7 @@
         "musique": "5a4a4a4a0a0aDa2a3a6a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 20.0,
+        "cote": 5.7,
         "tendance_cote": "stable"
       },
       {
@@ -1891,7 +1891,7 @@
         "musique": "DaDa0a1aDa1a5aDa1a7a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 20.0,
+        "cote": 17.0,
         "tendance_cote": "stable"
       },
       {
@@ -1901,8 +1901,8 @@
         "musique": "0a7a7a4a5a7a8a4a9a7a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 47.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -1911,7 +1911,7 @@
         "musique": "9a2m9m6m0a7a7a8m7a5m",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 13.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -1921,8 +1921,8 @@
         "musique": "Da9a0a4a5aDa6a8a6a9a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 113.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -1931,8 +1931,8 @@
         "musique": "6a9a9a7a4a2a3a5a4a9a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 157.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 13,
@@ -1941,8 +1941,8 @@
         "musique": "4a1a8a7a1aDa9a9aDa5a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 22.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 14,
@@ -1951,7 +1951,7 @@
         "musique": "5m3m4mDm(25)2m4m4m1mDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 147.0,
         "tendance_cote": "baisse_forte"
       }
     ]
@@ -1972,8 +1972,8 @@
         "musique": "3a1a2a0a(25)0a2aDaDa2a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 3.7,
-        "tendance_cote": "baisse_forte"
+        "cote": 4.5,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -1982,8 +1982,8 @@
         "musique": "Da9mDa3a3a6a1a9a3aDa",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 18.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 25.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -1992,8 +1992,8 @@
         "musique": "0a7a1a7a6aDmDa7a2a5a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 43.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -2002,8 +2002,8 @@
         "musique": "0a8a5a1a8a(25)8a4a4a1a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 7.5,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -2012,7 +2012,7 @@
         "musique": "2a8m2m3a2aDa0a(25)6a2m",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 1.6,
+        "cote": 3.9,
         "tendance_cote": "hausse"
       },
       {
@@ -2022,8 +2022,8 @@
         "musique": "8a8a7a8a4aDaDa6aDaDa",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 9.4,
-        "tendance_cote": "hausse"
+        "cote": 33.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -2032,7 +2032,7 @@
         "musique": "9a2a1a1a0a(25)6a5a4a3a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 14.0,
         "tendance_cote": "hausse"
       },
       {
@@ -2042,8 +2042,8 @@
         "musique": "1a1a6a7a9a(25)3a1a2a1a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 34.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -2052,7 +2052,7 @@
         "musique": "2a1a1a2a4a(25)1a1a1a1a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 7.5,
+        "cote": 3.7,
         "tendance_cote": "hausse"
       },
       {
@@ -2062,8 +2062,8 @@
         "musique": "9a8a5a4a4a8a5a2a3a4a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 124.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -2072,8 +2072,8 @@
         "musique": "6a0aDa7a1a4a7a5a1a7a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 27.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 12,
@@ -2082,7 +2082,7 @@
         "musique": "5m8a3a8a8a6m1m3m4a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 125.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2092,7 +2092,7 @@
         "musique": "9aDa4a1a1a4a4a5a(25)9a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 19.0,
         "tendance_cote": "hausse"
       },
       {
@@ -2102,8 +2102,8 @@
         "musique": "5a9a8a2a4a5a2a4a(25)0a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 143.0,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -2123,8 +2123,8 @@
         "musique": "Dm6m",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 5.5,
-        "tendance_cote": "hausse"
+        "cote": 53.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -2133,7 +2133,7 @@
         "musique": "7m7a(25)Da9aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 77.0,
         "tendance_cote": "stable"
       },
       {
@@ -2143,8 +2143,8 @@
         "musique": "Da0aDa5a(25)Da",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 99.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -2153,8 +2153,8 @@
         "musique": "6m",
         "deferre": "",
         "poids": 0.0,
-        "cote": 27.0,
-        "tendance_cote": "stable"
+        "cote": 15.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -2163,8 +2163,8 @@
         "musique": "5mDa",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 17.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -2173,8 +2173,8 @@
         "musique": "DaDa6m9mDmDmDa6m",
         "deferre": "",
         "poids": 0.0,
-        "cote": 13.0,
-        "tendance_cote": "hausse"
+        "cote": 30.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -2183,7 +2183,7 @@
         "musique": "4m",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 22.0,
         "tendance_cote": "hausse"
       },
       {
@@ -2193,7 +2193,7 @@
         "musique": "4a8m5m7mDa9a9a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 13.0,
+        "cote": 28.0,
         "tendance_cote": "stable"
       },
       {
@@ -2203,7 +2203,7 @@
         "musique": "8a7a9aDa5a4a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 32.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2213,8 +2213,8 @@
         "musique": "6mDa7aDaDaDa3a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 27.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 11,
@@ -2223,8 +2223,8 @@
         "musique": "2m8m",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 8.2,
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -2233,8 +2233,8 @@
         "musique": "Da7a5aDaDaDaDaDa8a1a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 76.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 13,
@@ -2243,8 +2243,8 @@
         "musique": "8a1mDa7aDa",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 55.0,
-        "tendance_cote": "stable"
+        "cote": 9.3,
+        "tendance_cote": "hausse"
       },
       {
         "num": 14,
@@ -2253,7 +2253,7 @@
         "musique": "2m2m",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 7.6,
         "tendance_cote": "hausse"
       },
       {
@@ -2263,7 +2263,7 @@
         "musique": "Da6a1a8a5aDa",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 1.2,
+        "cote": 2.2,
         "tendance_cote": "hausse"
       }
     ]
@@ -2284,8 +2284,8 @@
         "musique": "7a4aDa6a5a8aDaDa9aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 78.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -2294,7 +2294,7 @@
         "musique": "7aDa3aDa",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 38.0,
         "tendance_cote": "hausse"
       },
       {
@@ -2304,7 +2304,7 @@
         "musique": "4aDa8aDa2a5a5a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 18.0,
         "tendance_cote": "hausse"
       },
       {
@@ -2314,8 +2314,8 @@
         "musique": "DaDaDaDaDa3a2aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 10.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -2324,8 +2324,8 @@
         "musique": "3aDa3a4aDa5aDa(25)Da",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 22.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -2334,8 +2334,8 @@
         "musique": "5a4a6a2a6a7aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 37.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -2344,8 +2344,8 @@
         "musique": "1a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 5.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -2354,8 +2354,8 @@
         "musique": "7a0aDaDm4aDaDaDaDa1a",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 3.4,
-        "tendance_cote": "baisse_forte"
+        "cote": 3.7,
+        "tendance_cote": "stable"
       },
       {
         "num": 9,
@@ -2364,7 +2364,7 @@
         "musique": "3a1a",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 3.4,
+        "cote": 6.9,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2374,8 +2374,8 @@
         "musique": "2a4a8a2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.7,
-        "tendance_cote": "stable"
+        "cote": 9.1,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -2384,8 +2384,8 @@
         "musique": "1a7a6a9a5a4a8a(25)9a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 51.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 12,
@@ -2394,7 +2394,7 @@
         "musique": "5a6aDa7aDa9a1a5a(25)Da",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 17.0,
         "tendance_cote": "stable"
       },
       {
@@ -2404,8 +2404,8 @@
         "musique": "3a8a5a8a6a2aDa3aDa4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 17.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 14,
@@ -2414,7 +2414,7 @@
         "musique": "5a2a3aDa2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 19.0,
         "tendance_cote": "baisse_forte"
       }
     ]
@@ -2435,7 +2435,7 @@
         "musique": "DaDa9aDaDaDa(25)9a2aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 51.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2445,8 +2445,8 @@
         "musique": "Da0a0a3m6m5m0a(25)DmDm",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 22.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -2455,8 +2455,8 @@
         "musique": "AmDm(25)5m9m0a9a(24)5m1m",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 6.7,
-        "tendance_cote": "hausse"
+        "cote": 37.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -2465,8 +2465,8 @@
         "musique": "6mDm3m0a9a0a7a9a8a8a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 186.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -2475,8 +2475,8 @@
         "musique": "Dm2m5mDa(25)4m4m(24)1m2m",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 10.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -2485,8 +2485,8 @@
         "musique": "5m3m6m5mDm(25)6mDm4m4m",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.3,
-        "tendance_cote": "hausse"
+        "cote": 34.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -2495,7 +2495,7 @@
         "musique": "9m9a0a4mDmDm8a2m(25)4m",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 16.0,
         "tendance_cote": "stable"
       },
       {
@@ -2505,8 +2505,8 @@
         "musique": "5m3mDm6mDm2m1mDm(25)5m",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 8.2,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -2515,8 +2515,8 @@
         "musique": "4m1m1m4m2m2m7m8a6m(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 13.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 7.9,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -2525,8 +2525,8 @@
         "musique": "0m4m3m3m5m2m(25)0m4m0a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 11.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -2535,7 +2535,7 @@
         "musique": "4m5m7m1m7m8mDa0a4m7m",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 3.3,
+        "cote": 11.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2545,8 +2545,8 @@
         "musique": "0m6m1m0m5m4m7a0a7m(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 15.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 13,
@@ -2555,8 +2555,8 @@
         "musique": "1m1a4a8a3a9a0a1a9a(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 2.9,
-        "tendance_cote": "hausse"
+        "cote": 2.5,
+        "tendance_cote": "stable"
       },
       {
         "num": 14,
@@ -2565,7 +2565,7 @@
         "musique": "9aDaDmDm(24)Dm0a0aDm7m",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 105.0,
         "tendance_cote": "stable"
       }
     ]
@@ -2586,8 +2586,8 @@
         "musique": "6a1a2aDa4a5aDa5a5a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 15.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -2596,8 +2596,8 @@
         "musique": "Da2aDaDa1a8a(25)DmDaDa",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 9.2,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -2606,8 +2606,8 @@
         "musique": "9a5a5a2a7a2a8a5a7a0a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 58.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -2616,7 +2616,7 @@
         "musique": "Da7a2a3a8a1aDaAa1a6a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 35.0,
         "tendance_cote": "stable"
       },
       {
@@ -2626,8 +2626,8 @@
         "musique": "8a7a1a6a1a3a3aDa5aDa",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 30.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -2636,8 +2636,8 @@
         "musique": "3a5aDa8a3a1aDaDa6a(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 9.7,
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -2646,8 +2646,8 @@
         "musique": "4a3a8a5a9a6a(25)4a5a5a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 5.6,
+        "tendance_cote": "hausse"
       },
       {
         "num": 8,
@@ -2656,8 +2656,8 @@
         "musique": "2a2aDa1a7a1a5a4a(25)9a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 3.6,
-        "tendance_cote": "hausse"
+        "cote": 6.2,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -2666,7 +2666,7 @@
         "musique": "1a9aDa8m8a0a6aDa6a5a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 78.0,
         "tendance_cote": "stable"
       },
       {
@@ -2676,8 +2676,8 @@
         "musique": "2a5a5aDaDa8a6a(25)1a3a",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 17.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -2686,8 +2686,8 @@
         "musique": "2a1a1a2a(25)DaDa",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 1.3,
-        "tendance_cote": "baisse_forte"
+        "cote": 3.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -2696,8 +2696,8 @@
         "musique": "5a5a8aDa9a3a6a8a6aDa",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 7.3,
-        "tendance_cote": "stable"
+        "cote": 19.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 13,
@@ -2706,7 +2706,7 @@
         "musique": "8aDaDa7a3a3a1a5aDa(25)",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 30.0,
         "tendance_cote": "stable"
       }
     ]
@@ -2727,7 +2727,7 @@
         "musique": "0mDmDm8m5m7m6m(25)Dm4m",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 124.0,
         "tendance_cote": "hausse"
       },
       {
@@ -2737,7 +2737,7 @@
         "musique": "1m6mDmDm5mDa(25)Da9a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 69.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2747,8 +2747,8 @@
         "musique": "3aDa8aDmDmDaDaDa3m6a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 31.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -2757,8 +2757,8 @@
         "musique": "4mDaDm5m4m8m7m4m3m4m",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 35.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -2767,8 +2767,8 @@
         "musique": "DmDm4mDmDm2m2m4m8mDm",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 14.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -2777,8 +2777,8 @@
         "musique": "Da5a(25)DaDa3a4aDa1a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.1,
-        "tendance_cote": "stable"
+        "cote": 12.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -2787,8 +2787,8 @@
         "musique": "9aDm2m3aDaDa6aDa2a2a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 34.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -2797,7 +2797,7 @@
         "musique": "5aDm7a2a6aDaDa7a(25)2a",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 21.0,
         "tendance_cote": "stable"
       },
       {
@@ -2807,8 +2807,8 @@
         "musique": "Da3a8mDm7a6a0m(25)Da6m",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 11.0,
-        "tendance_cote": "hausse"
+        "cote": 47.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 10,
@@ -2817,7 +2817,7 @@
         "musique": "Dm5m2mDm7a3a1a8a8m5a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 18.0,
         "tendance_cote": "stable"
       },
       {
@@ -2827,7 +2827,7 @@
         "musique": "DaDa2a7aDaDaDa7a(25)0a",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 10.0,
         "tendance_cote": "hausse"
       },
       {
@@ -2837,7 +2837,7 @@
         "musique": "Dm0a8a0mDa9aDa7aDa8m",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 137.0,
         "tendance_cote": "stable"
       },
       {
@@ -2847,7 +2847,7 @@
         "musique": "0mDm1m1m4mDmDmDmDm5m",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 18.0,
         "tendance_cote": "hausse"
       },
       {
@@ -2857,8 +2857,8 @@
         "musique": "1m8aDaDa2aDa4aDmDm(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 6.4,
+        "tendance_cote": "hausse"
       },
       {
         "num": 15,
@@ -2867,7 +2867,7 @@
         "musique": "6aDa5a2a0aDa(25)6a3a2a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 5.6,
+        "cote": 24.0,
         "tendance_cote": "stable"
       },
       {
@@ -2877,8 +2877,8 @@
         "musique": "Da2a1m3mDa2a7a(25)Da5a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 4.2,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 17,
@@ -2887,7 +2887,7 @@
         "musique": "2m4m0m6m1m2m5mDaDm",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 11.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2897,7 +2897,7 @@
         "musique": "0m3m1mDm2mDmDm6m4m5m",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 7.1,
         "tendance_cote": "stable"
       }
     ]
@@ -2918,7 +2918,7 @@
         "musique": "0aDa9aDaDa0a(25)DaDaDa",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 49.0,
         "tendance_cote": "hausse"
       },
       {
@@ -2928,8 +2928,8 @@
         "musique": "8a4a0a8a6m(25)0a6a7a1a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 34.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -2938,8 +2938,8 @@
         "musique": "7a3a2a9a7a3a0a(25)Da2a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 16.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -2948,8 +2948,8 @@
         "musique": "2a3a6a5a0a(25)7aDa8a6a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 5.3,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -2958,7 +2958,7 @@
         "musique": "3a6a7a7a2a3a3a3a8a(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 4.2,
+        "cote": 5.5,
         "tendance_cote": "hausse"
       },
       {
@@ -2968,7 +2968,7 @@
         "musique": "4a1aDa2a2a4a0a0a2a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 2.1,
+        "cote": 13.0,
         "tendance_cote": "stable"
       },
       {
@@ -2978,8 +2978,8 @@
         "musique": "Dm0a9aDaDa1a7a8aDa(25)",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 28.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -2988,7 +2988,7 @@
         "musique": "0a3a8a3a0a4a0aDa0a0a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 27.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2998,8 +2998,8 @@
         "musique": "9a8a9a9a0a9a6a0a0a(25)",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 88.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 10,
@@ -3008,8 +3008,8 @@
         "musique": "Da(25)1mDmDa(24)Dm3mDm4m",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 67.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 11,
@@ -3018,8 +3018,8 @@
         "musique": "0a7a1aDaDaDa6a0a8aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 38.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -3028,8 +3028,8 @@
         "musique": "Dm6a8a0m0a0a4a9a0a(25)",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 41.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 13,
@@ -3038,8 +3038,8 @@
         "musique": "DaDa2aDaDaDa1aDaDaDa",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 9.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 14,
@@ -3048,8 +3048,8 @@
         "musique": "7a1a4aDa2aDaDaDaDaDa",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 10.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 15,
@@ -3058,8 +3058,8 @@
         "musique": "0aDa1a3a5a6a4a3a2a0a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 2.1,
-        "tendance_cote": "stable"
+        "cote": 4.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 16,
@@ -3068,8 +3068,8 @@
         "musique": "DaDa(25)DaDa(24)DaDa7a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 67.0,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -3089,8 +3089,8 @@
         "musique": "5p7p0p5p2p5p8p1p2p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 15.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -3099,8 +3099,8 @@
         "musique": "9p5p6p2p4p8p0p8p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 24.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -3109,8 +3109,8 @@
         "musique": "7p8p5p7p4p6p8p9p(25)8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 6.9,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -3119,7 +3119,7 @@
         "musique": "6p7p0p9p0p6p(25)1p5p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.9,
+        "cote": 25.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3129,8 +3129,8 @@
         "musique": "0p0p5p9p0p5p7p6p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 28.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -3139,8 +3139,8 @@
         "musique": "5p3p0p0p0p2p0p(25)6p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 13.0,
-        "tendance_cote": "stable"
+        "cote": 8.4,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -3149,8 +3149,8 @@
         "musique": "1p1p7p9p0p7p6p3p8p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.8,
-        "tendance_cote": "stable"
+        "cote": 13.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -3159,7 +3159,7 @@
         "musique": "4p7p7p0p9p8p(25)0p4p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 8.8,
         "tendance_cote": "stable"
       },
       {
@@ -3169,8 +3169,8 @@
         "musique": "3p5p0p6p1p0p7p2p2p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.8,
-        "tendance_cote": "stable"
+        "cote": 6.1,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -3179,8 +3179,8 @@
         "musique": "(25)0p6p1p5p7p(24)0p0p9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 11.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -3189,8 +3189,8 @@
         "musique": "(25)3p3p4p9p0p(24)4p8p1p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 34.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -3199,7 +3199,7 @@
         "musique": "0p8p9p7p0p5p8p9p5p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.8,
+        "cote": 26.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3209,7 +3209,7 @@
         "musique": "(25)0p0p1p2p5p9p4p2p8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.8,
+        "cote": 19.0,
         "tendance_cote": "hausse"
       },
       {
@@ -3219,8 +3219,8 @@
         "musique": "2p3p4p2p3p4p4p6p7p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 8.8,
+        "tendance_cote": "hausse"
       },
       {
         "num": 15,
@@ -3229,8 +3229,8 @@
         "musique": "3p6p6p3p6p5p9p5p4p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 19.0,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -3250,7 +3250,7 @@
         "musique": "4p6p3p0p6p4p(25)2p7p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 19.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3260,7 +3260,7 @@
         "musique": "(25)3p8p4p(24)3p3p4p7p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 39.0,
         "tendance_cote": "stable"
       },
       {
@@ -3270,7 +3270,7 @@
         "musique": "2p6p3p2p0p0p9p0p4p9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 4.8,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3280,7 +3280,7 @@
         "musique": "7p2p2p2p4p1p3pAhAh",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 19.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3290,8 +3290,8 @@
         "musique": "2p5p4p7p7p0p3p6p(25)4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.2,
-        "tendance_cote": "baisse_forte"
+        "cote": 11.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -3300,7 +3300,7 @@
         "musique": "3p1p4p3p2p4p1p0p7p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.2,
+        "cote": 9.2,
         "tendance_cote": "hausse"
       },
       {
@@ -3310,7 +3310,7 @@
         "musique": "0p(25)3p8p2p5p4p8p4p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 32.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3320,8 +3320,8 @@
         "musique": "0p0p1p6p4p1p8p(25)0p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 18.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 9,
@@ -3330,7 +3330,7 @@
         "musique": "0p2p6p8p4p1p6p2p(25)4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.2,
+        "cote": 18.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3340,8 +3340,8 @@
         "musique": "5p2p1p7p0p9p8p3p0p9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 4.1,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -3350,7 +3350,7 @@
         "musique": "8p2p4p1p0p0p0p0p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 25.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3360,8 +3360,8 @@
         "musique": "3p0p5p0p0p0p7p7p(25)0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.2,
-        "tendance_cote": "baisse_forte"
+        "cote": 26.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 13,
@@ -3370,7 +3370,7 @@
         "musique": "6p0p4p2p5p6p0p4p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.2,
+        "cote": 8.3,
         "tendance_cote": "hausse"
       },
       {
@@ -3380,8 +3380,8 @@
         "musique": "0p6p(24)2p8p0p2p4p9p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 66.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 15,
@@ -3390,8 +3390,8 @@
         "musique": "0p7p6p0p7p1p3p8p6p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 25.0,
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -3411,7 +3411,7 @@
         "musique": "2p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 10.0,
         "tendance_cote": "hausse"
       },
       {
@@ -3421,8 +3421,8 @@
         "musique": "3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 6.5,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -3431,8 +3431,8 @@
         "musique": "0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 10.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -3441,8 +3441,8 @@
         "musique": "6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 34.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -3451,8 +3451,8 @@
         "musique": "8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 16.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -3461,7 +3461,7 @@
         "musique": "0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 26.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3471,7 +3471,7 @@
         "musique": "6p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 10.0,
         "tendance_cote": "hausse"
       },
       {
@@ -3481,7 +3481,7 @@
         "musique": "5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 9.7,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3491,8 +3491,8 @@
         "musique": "7p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 13.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -3501,8 +3501,8 @@
         "musique": "5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.7,
-        "tendance_cote": "hausse"
+        "cote": 8.3,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -3511,8 +3511,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.7,
-        "tendance_cote": "stable"
+        "cote": 31.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -3521,8 +3521,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 23.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 13,
@@ -3531,7 +3531,7 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 9.1,
         "tendance_cote": "hausse"
       },
       {
@@ -3541,8 +3541,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 19.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 15,
@@ -3551,8 +3551,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 6.6,
+        "tendance_cote": "hausse"
       },
       {
         "num": 16,
@@ -3561,8 +3561,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 31.0,
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -3582,8 +3582,8 @@
         "musique": "7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 30.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -3592,8 +3592,8 @@
         "musique": "0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 24.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -3602,8 +3602,8 @@
         "musique": "4p3p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 2.9,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -3613,7 +3613,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -3622,8 +3622,8 @@
         "musique": "3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 4.5,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -3632,8 +3632,8 @@
         "musique": "5p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 2.5,
-        "tendance_cote": "hausse"
+        "cote": 10.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -3642,8 +3642,8 @@
         "musique": "1p8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 15.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -3652,8 +3652,8 @@
         "musique": "4p6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 28.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 9,
@@ -3662,8 +3662,8 @@
         "musique": "4p3p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.2,
-        "tendance_cote": "stable"
+        "cote": 4.9,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -3672,8 +3672,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 16.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -3682,7 +3682,7 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 14.0,
         "tendance_cote": "baisse_forte"
       }
     ]
@@ -3703,8 +3703,8 @@
         "musique": "1p6p5p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 16.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -3713,7 +3713,7 @@
         "musique": "4p2p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.1,
+        "cote": 3.6,
         "tendance_cote": "hausse"
       },
       {
@@ -3723,7 +3723,7 @@
         "musique": "7p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 15.0,
         "tendance_cote": "hausse"
       },
       {
@@ -3733,8 +3733,8 @@
         "musique": "6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 12.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -3743,8 +3743,8 @@
         "musique": "3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 7.6,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -3753,8 +3753,8 @@
         "musique": "4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 5.3,
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -3763,7 +3763,7 @@
         "musique": "0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 24.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3773,7 +3773,7 @@
         "musique": "9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 27.0,
         "tendance_cote": "stable"
       },
       {
@@ -3783,8 +3783,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 24.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -3793,8 +3793,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 69.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -3803,8 +3803,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.1,
-        "tendance_cote": "hausse"
+        "cote": 19.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
@@ -3813,8 +3813,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 13.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 13,
@@ -3823,7 +3823,7 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 38.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3833,7 +3833,7 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 22.0,
         "tendance_cote": "stable"
       },
       {
@@ -3843,8 +3843,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 21.0,
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -3864,8 +3864,8 @@
         "musique": "2p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 13.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -3874,8 +3874,8 @@
         "musique": "8p2p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 32.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -3884,8 +3884,8 @@
         "musique": "5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 1.2,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -3894,7 +3894,7 @@
         "musique": "4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 8.1,
         "tendance_cote": "stable"
       },
       {
@@ -3904,8 +3904,8 @@
         "musique": "4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 47.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -3914,7 +3914,7 @@
         "musique": "3p8p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.1,
+        "cote": 23.0,
         "tendance_cote": "hausse"
       },
       {
@@ -3924,7 +3924,7 @@
         "musique": "0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 13.0,
         "tendance_cote": "stable"
       }
     ]
@@ -3945,8 +3945,8 @@
         "musique": "4p8p4p(25)7p5p5p2p1p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 5.6,
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -3955,7 +3955,7 @@
         "musique": "4p3p(25)9p8p2p7p5p9p6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 3.9,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3965,8 +3965,8 @@
         "musique": "3p1p5p7p8p(25)2p1p1p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 5.4,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -3975,8 +3975,8 @@
         "musique": "(25)3p0p6p7p9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 30.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -3985,7 +3985,7 @@
         "musique": "3p8p(25)7p0p2p6p4p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 24.0,
         "tendance_cote": "stable"
       },
       {
@@ -3995,7 +3995,7 @@
         "musique": "5p2p3p6p5p6p(25)8p4p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 10.0,
         "tendance_cote": "hausse"
       },
       {
@@ -4005,8 +4005,8 @@
         "musique": "7p5p6p8p8p6p6p(25)6p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 30.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -4015,8 +4015,8 @@
         "musique": "(25)1p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 5.7,
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -4025,8 +4025,8 @@
         "musique": "(25)1p5p6p2p3p6p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 5.6,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -4046,8 +4046,8 @@
         "musique": "5p2p2p(25)7p8p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 5.7,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -4056,8 +4056,8 @@
         "musique": "4p3p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 3.6,
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -4066,7 +4066,7 @@
         "musique": "8p6p5p7p2p2p(25)3p4p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.1,
+        "cote": 8.1,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -4076,8 +4076,8 @@
         "musique": "6p5p4p0p(25)2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 14.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -4086,8 +4086,8 @@
         "musique": "3p2p6p3p0p(25)4p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 3.6,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -4096,8 +4096,8 @@
         "musique": "3p0p0p8p(25)3p6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 6.3,
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -4106,8 +4106,8 @@
         "musique": "7p(25)9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 11.0,
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -4128,7 +4128,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -4138,7 +4138,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -4158,7 +4158,7 @@
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -4178,7 +4178,7 @@
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -4198,7 +4198,7 @@
         "musique": "4a2a3a2a3a1a2a2a0a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 6.2,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -4208,8 +4208,8 @@
         "musique": "6a5a5a3a3a5a0a2aDa2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 10.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -4218,8 +4218,8 @@
         "musique": "5a7a6a8a7a7a4a4a7a7a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 7.2,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -4228,8 +4228,8 @@
         "musique": "3a5a7a7a0a6a5a5a2a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 10.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -4238,8 +4238,8 @@
         "musique": "5a1a3aDa4a6a7a6a3a6a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 8.8,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -4248,8 +4248,8 @@
         "musique": "2a2aDa2a6a5a3a5a5a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 3.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -4258,8 +4258,8 @@
         "musique": "3a2a7a7a7a2a3a4a4a2a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 17.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -4268,7 +4268,7 @@
         "musique": "Da6a3a4a6a2a8a0a7a8a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 10.0,
         "tendance_cote": "stable"
       },
       {
@@ -4278,8 +4278,8 @@
         "musique": "7a8a4a4a6aDa5a1a4a6a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 22.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -4288,8 +4288,8 @@
         "musique": "5a3a5a1a2a6a4a2a3a2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 27.0,
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -4309,7 +4309,7 @@
         "musique": "7a7a7a4a5a1aDa4a7a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 4.8,
         "tendance_cote": "stable"
       },
       {
@@ -4320,7 +4320,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -4329,8 +4329,8 @@
         "musique": "3a7aDaDa4a6a0a4a0aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 12.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -4339,8 +4339,8 @@
         "musique": "6a4a6a0a5a5a3a8a2a6a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 12.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -4349,7 +4349,7 @@
         "musique": "3a9a4a5a5a6a3a0a7a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 11.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -4360,7 +4360,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -4369,8 +4369,8 @@
         "musique": "4a2a4a0a0a7aDa5a0a6a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 19.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -4379,8 +4379,8 @@
         "musique": "6a3a2a0a1a3a2a6a4a1a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 25.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -4389,8 +4389,8 @@
         "musique": "2a2a7a2aDa6aDa4aDa6a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 5.9,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -4399,7 +4399,7 @@
         "musique": "4a6a4a2a2a3a1a1a3a0a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 5.5,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -4409,8 +4409,8 @@
         "musique": "6a6aDa4a4a2a1a1a3a1a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 11.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 12,
@@ -4419,7 +4419,7 @@
         "musique": "0aDa2a6a0a0a3a7a1a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 7.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -4429,8 +4429,8 @@
         "musique": "Da4aDa5a3a8a5a6aDa3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 19.0,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -4450,8 +4450,8 @@
         "musique": "5a6a4a1a2a4a1a0a3a1a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 5.2,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -4460,8 +4460,8 @@
         "musique": "1a1a8a1a1a8a2a6a5a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.1,
-        "tendance_cote": "hausse"
+        "cote": 2.8,
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -4470,8 +4470,8 @@
         "musique": "5a4a4aDa8a5aDa7a6aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 13.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -4480,8 +4480,8 @@
         "musique": "8a4a0a3a2a6a2a1a3a3a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 17.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -4490,8 +4490,8 @@
         "musique": "Da2a3a4a1a0a4a1a1a0a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 8.4,
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -4500,8 +4500,8 @@
         "musique": "1aDa2aDa1a7a1aDa2a6a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 9.6,
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -4510,8 +4510,8 @@
         "musique": "Da7a1a9a3aDa6a8a6a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 3.6,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -4531,8 +4531,8 @@
         "musique": "3a6a1a2a4a3a6a3a3a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 2.5,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -4541,8 +4541,8 @@
         "musique": "2a3a6a6a6a6a3a5a5a6a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 20.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -4551,8 +4551,8 @@
         "musique": "Da2a1a1a3a1aDa1a2a3a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 5.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -4561,8 +4561,8 @@
         "musique": "7a8a7a5a8a0a4a5a1a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 20.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -4571,7 +4571,7 @@
         "musique": "4a2a3a2a6a3a4a9a2a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 6.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -4581,8 +4581,8 @@
         "musique": "3a3a2a2a2a5aDaDa6a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 7.4,
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -4591,8 +4591,8 @@
         "musique": "1a1a8a4a4a3a6a1a1a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 20.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 8,
@@ -4601,8 +4601,8 @@
         "musique": "2a2a3a5a8a8a0a0a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 9.1,
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -4612,7 +4612,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 10,
@@ -4621,8 +4621,8 @@
         "musique": "4a6a6a6a4a5a3a6a5a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 41.0,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -4642,7 +4642,7 @@
         "musique": "3a3aDa6a3a7a3aDa6a7a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.1,
+        "cote": 6.8,
         "tendance_cote": "hausse"
       },
       {
@@ -4652,8 +4652,8 @@
         "musique": "1a3a1a1a2a3a1a4a4aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 7.3,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -4663,7 +4663,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -4672,7 +4672,7 @@
         "musique": "5a1a1a1a2a1a2a1a0a2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 4.5,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -4682,8 +4682,8 @@
         "musique": "4a9a4a6a5a6a6a0a5a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 33.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -4692,8 +4692,8 @@
         "musique": "2a5a2a2a2a2a4a3a4a6a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 10.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -4702,7 +4702,7 @@
         "musique": "6a4a5a6a0a0a4a1a0a2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 20.0,
         "tendance_cote": "stable"
       },
       {
@@ -4712,8 +4712,8 @@
         "musique": "3a2a3a5a4a2a5a5a2a6a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 9.1,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -4722,8 +4722,8 @@
         "musique": "1a3a1a2a1a3a1a1a1a2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 3.2,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -4732,7 +4732,7 @@
         "musique": "7a1a3a0a1a5a2aDa1a2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 13.0,
         "tendance_cote": "baisse_forte"
       }
     ]
@@ -4754,7 +4754,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -4764,7 +4764,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -4774,7 +4774,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -4804,7 +4804,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -4835,7 +4835,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -4865,7 +4865,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -4875,7 +4875,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -4885,7 +4885,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -4906,7 +4906,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -4926,7 +4926,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -4936,7 +4936,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -4956,7 +4956,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -4966,7 +4966,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 8,
@@ -4996,7 +4996,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -5006,7 +5006,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -5016,7 +5016,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -5047,7 +5047,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -5057,7 +5057,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -5067,7 +5067,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -5087,7 +5087,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -5127,7 +5127,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -5137,7 +5137,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
@@ -5147,7 +5147,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -5188,7 +5188,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -5198,7 +5198,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -5208,7 +5208,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -5218,7 +5218,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -5228,7 +5228,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -5238,7 +5238,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -5248,7 +5248,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 10,
@@ -5258,7 +5258,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 11,
@@ -5278,7 +5278,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -5299,7 +5299,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -5309,7 +5309,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -5319,7 +5319,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -5329,7 +5329,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -5339,7 +5339,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -5349,7 +5349,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -5369,7 +5369,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -5379,7 +5379,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -5389,7 +5389,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 11,
@@ -5399,7 +5399,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -5440,7 +5440,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -5470,7 +5470,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -5490,7 +5490,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -5510,7 +5510,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -5540,7 +5540,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -5581,7 +5581,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -5611,7 +5611,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -5621,7 +5621,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -5631,7 +5631,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -5641,7 +5641,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -5651,7 +5651,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -5661,7 +5661,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
@@ -5671,7 +5671,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -5712,7 +5712,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -5722,7 +5722,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -5732,7 +5732,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -5742,7 +5742,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -5762,7 +5762,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -5792,7 +5792,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 12,
@@ -5802,7 +5802,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -5823,7 +5823,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -5833,7 +5833,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -5843,7 +5843,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -5853,7 +5853,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -5873,7 +5873,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -5883,7 +5883,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -5903,7 +5903,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -5923,7 +5923,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
@@ -5974,7 +5974,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -6004,7 +6004,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -6034,17 +6034,17 @@
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
         "nom": "VECTOR S.F.",
-        "driver": "P. LINDEROTH",
+        "driver": "M. FORSS",
         "musique": "(25)4aDaDa",
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -6054,17 +6054,17 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
         "nom": "NEPTUN'S JEWELCASS",
-        "driver": "R. BAKKER",
+        "driver": "U. OHLSSON",
         "musique": "5a0a5a",
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -6085,7 +6085,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -6125,7 +6125,7 @@
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -6135,7 +6135,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -6145,7 +6145,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 8,
@@ -6155,7 +6155,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -6165,7 +6165,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -6185,7 +6185,7 @@
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
@@ -6195,7 +6195,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -6236,7 +6236,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -6266,7 +6266,7 @@
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -6276,7 +6276,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -6286,7 +6286,7 @@
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 9,
@@ -6306,7 +6306,7 @@
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -6337,7 +6337,7 @@
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -6357,7 +6357,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -6367,7 +6367,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -6387,7 +6387,7 @@
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 8,
@@ -6397,7 +6397,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -6407,7 +6407,7 @@
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -6417,7 +6417,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -6438,7 +6438,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -6478,7 +6478,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -6488,7 +6488,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -6498,7 +6498,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -6519,7 +6519,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -6539,7 +6539,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -6549,7 +6549,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -6569,7 +6569,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -6579,12 +6579,12 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
         "nom": "COLETTE WIBB",
-        "driver": "R. BAKKER",
+        "driver": "R.N. SKOGLUND",
         "musique": "0a8a2a6a1a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
@@ -6609,7 +6609,7 @@
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -6650,17 +6650,17 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
         "nom": "BOURBON PHANTASY",
-        "driver": "D. WAJERSTEN",
+        "driver": "M. DJUSE",
         "musique": "4a0a3a1a1a",
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -6670,7 +6670,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -6690,7 +6690,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 8,
@@ -6700,7 +6700,7 @@
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -6710,17 +6710,17 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
         "nom": "FIFTY SIXTY SOX",
-        "driver": "R. BAKKER",
+        "driver": "M.E. DJUSE",
         "musique": "6a2a8aDa1a",
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -6741,7 +6741,7 @@
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -6761,7 +6761,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -6776,7 +6776,7 @@
       {
         "num": 5,
         "nom": "PEHOE BOKO",
-        "driver": "R. BAKKER",
+        "driver": "M.E. DJUSE",
         "musique": "6a6a3a3a2a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
@@ -6791,7 +6791,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -6801,7 +6801,7 @@
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 8,
@@ -6811,7 +6811,7 @@
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 9,
@@ -6821,7 +6821,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 10,
@@ -6831,7 +6831,7 @@
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 11,
@@ -6841,7 +6841,7 @@
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -6851,7 +6851,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -6882,7 +6882,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -6892,7 +6892,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -6902,7 +6902,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -6912,7 +6912,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -6922,12 +6922,12 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
         "nom": "IRINA JET",
-        "driver": "R. BAKKER",
+        "driver": "J. KONTIO",
         "musique": "3a2a3a1a3a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
@@ -6942,7 +6942,7 @@
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 9,
@@ -6962,7 +6962,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -7003,7 +7003,7 @@
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -7013,7 +7013,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -7023,7 +7023,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -7033,7 +7033,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -7093,7 +7093,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -7113,7 +7113,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -7134,7 +7134,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -7144,7 +7144,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -7154,7 +7154,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -7164,7 +7164,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -7174,7 +7174,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -7184,7 +7184,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -7194,7 +7194,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -7204,7 +7204,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 9,
@@ -7214,7 +7214,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -7235,7 +7235,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -7245,7 +7245,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -7255,7 +7255,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -7275,7 +7275,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -7285,7 +7285,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -7295,7 +7295,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -7315,7 +7315,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 10,
@@ -7335,7 +7335,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -7376,7 +7376,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -7396,7 +7396,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -7416,7 +7416,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -7436,7 +7436,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -7446,7 +7446,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -7456,7 +7456,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -7466,7 +7466,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -7476,7 +7476,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -7497,7 +7497,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -7517,7 +7517,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -7527,7 +7527,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -7557,7 +7557,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -7578,7 +7578,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -7588,7 +7588,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -7598,7 +7598,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -7638,7 +7638,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -7648,7 +7648,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -7658,7 +7658,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -7668,7 +7668,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -7678,7 +7678,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -7698,7 +7698,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 14,
@@ -7708,7 +7708,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 15,
@@ -7718,7 +7718,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 16,
