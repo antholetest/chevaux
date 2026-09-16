@@ -415,9 +415,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°4 - LUMIERE DAIRPET (Cote win: 2.9)] (4€) | Ticket 2 (Couplé N°4-1): [N°1 - LUPIN D'ETE (Cote win: 16.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 non classé | N°1 3e"
   },
   {
     "date": "2026-09-16",
@@ -429,9 +429,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°4 - LUMIERE DAIRPET (Cote win: 2.9)] (4€) | Ticket 2 (Simple Gagnant): [N°7 - LIZZY DE JOUDES (Cote win: 20.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 non classé | N°7 4e (au pied du podium)"
   },
   {
     "date": "2026-09-16",
@@ -443,9 +443,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°4 et N°8] (4€) | Ticket 2 (Couplé Gagnant): [N°4 et N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 non classé | N°8 5e | N°1 3e"
   },
   {
     "date": "2026-09-16",
@@ -457,8 +457,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°4, N°8, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°4, N°8, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°4 non classé | N°8 5e | N°1 3e"
   }
 ]
