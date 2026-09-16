@@ -4674,9 +4674,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°9 - EMBLAZON (Cote: 2.7) (8 €) | Poker: Simple Gagnant ➔ N°7 - GUSTOSISIMO (Cote: 6.2) (4 €)",
     "mise": 12.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 12.53,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-03-01",
@@ -4688,9 +4688,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°11 - PIC DU MIDI (Cote: 4.0) (5 €) | Poker: Simple Gagnant ➔ N°1 - ABACUR (Cote: 6.5) (5 €)",
     "mise": 10.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°11 13e | N°1 8e"
   },
   {
     "date": "2026-03-01",
@@ -4702,9 +4702,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°1 - GLADY TIGER (Cote: 3.0) (6 €) | Poker: Simple Gagnant ➔ N°4 - LACCIO CONTI (Cote: 22.0) (4 €)",
     "mise": 10.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 10.0,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-03-01",
@@ -4716,9 +4716,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°14 - KALINE DE COSSE (Cote: 3.9) (5 €) | Poker: Simple Gagnant ➔ N°1 - KANSAS DU RIB (Cote: 16.0) (5 €)",
     "mise": 10.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 4e (au pied du podium) | N°1 5e"
   },
   {
     "date": "2026-03-01",
@@ -4730,8 +4730,8 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°8 - MON AMI (Cote: 3.0) (5 €) | Poker: Simple Gagnant ➔ N°9 - MAHOU SP (Cote: 8.4) (4 €)",
     "mise": 9.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°8 4e (au pied du podium) | N°9 2e"
   }
 ]
