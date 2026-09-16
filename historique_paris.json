@@ -9,9 +9,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°14 - INSTINCT SAINT BAR (Cote: 4.9) (4 €) | Poker: Simple Gagnant ➔ N°13 - IQUEM D'AMER (Cote: 12.0) (6 €)",
     "mise": 10.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 5e | N°13 8e"
   },
   {
     "date": "2026-09-16",
@@ -23,9 +23,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°11 - MARCEL (Cote: 2.0) (6 €) | Poker: Simple Gagnant ➔ N°8 - MILOU D'AVRIL (Cote: 7.4) (2 €)",
     "mise": 8.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 8.0,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -37,9 +37,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°6 - MON COUSIN (Cote: 2.6) (5 €) | Poker: Simple Gagnant ➔ N°9 - MUSE DU VALLON (Cote: 7.4) (3 €)",
     "mise": 8.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 7.67,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -51,9 +51,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°7 - MISS PARANO (Cote: 5.9) (3 €) | Poker: Simple Gagnant ➔ N°14 - KHELLE TARTARE (Cote: 10.0) (4 €)",
     "mise": 7.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 6e | N°7 4e (au pied du podium)"
   },
   {
     "date": "2026-09-16",
@@ -65,9 +65,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°2 - DAWWAAS (Cote: 2.5) (5 €) | Poker: Simple Gagnant ➔ N°9 - GHAITH MAJAN (Cote: 14.0) (2 €)",
     "mise": 7.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": ""
+    "statut": "Gagné",
+    "gain": 7.5,
+    "diagnostic": "Succès : Objectifs atteints."
   },
   {
     "date": "2026-09-16",
@@ -79,9 +79,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°14 - INSTINCT SAINT BAR (Cote win: 4.9)] (4€) | Ticket 2 (Couplé N°14-2): [N°2 - JET DES PRES (Cote win: 19.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 5e | N°2 non classé"
   },
   {
     "date": "2026-09-16",
@@ -93,9 +93,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°14 - INSTINCT SAINT BAR (Cote win: 4.9)] (4€) | Ticket 2 (Simple Gagnant): [N°13 - IQUEM D'AMER (Cote win: 12.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 5e | N°13 8e"
   },
   {
     "date": "2026-09-16",
@@ -107,9 +107,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°14 et N°7] (4€) | Ticket 2 (Couplé Gagnant): [N°14 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 5e | N°7 2e | N°2 non classé"
   },
   {
     "date": "2026-09-16",
@@ -121,8 +121,8 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°14, N°7, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°14, N°7, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": ""
+    "diagnostic": "Échec : N°14 5e | N°7 2e | N°1 7e"
   }
 ]
