@@ -504,9 +504,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°1 - ARTURO (Cote win: 3.9)] (4€) | Ticket 2 (Couplé N°1-2): [N°2 - ODIN NORMANDY (Cote win: 19.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°2 9e | N°1 4e (au pied du podium)",
     "ignore_stats": false
   },
   {
@@ -519,9 +519,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°1 - ARTURO (Cote win: 3.9)] (4€) | Ticket 2 (Simple Gagnant): [N°9 - DRUIDE (Cote win: 8.8)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°9 10e | N°1 4e (au pied du podium)",
     "ignore_stats": false
   },
   {
@@ -534,9 +534,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°1, N°12, N°2] (4€) | Ticket 2 (Trio Spéculatif): [N°1, N°12, N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°2 9e | N°1 4e (au pied du podium) | N°12 6e",
     "ignore_stats": false
   },
   {
@@ -549,9 +549,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°1 et N°12] (4€) | Ticket 2 (Couplé Gagnant): [N°1 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°2 9e | N°1 4e (au pied du podium) | N°12 6e",
     "ignore_stats": false
   }
 ]
