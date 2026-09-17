@@ -108,6 +108,66 @@ def sauvegarder_et_synchroniser(data, filename, message="Mise à jour automatiqu
     except Exception:
         st.toast("Données enregistrées localement.", icon="💾")
 
+# --- FONCTION DE REMISE A ZERO COMPLETE (ADMIN) ---
+
+def reinitialiser_application_complete():
+    """Supprime tous les fichiers de données (historique et courses) en local et sur GitHub."""
+    fichiers_supprimes = 0
+    
+    # 1. Suppression physique des fichiers locaux correspondants
+    patterns = ["historique_paris.json", "pmu_du_jour_*.json"]
+    for pattern in patterns:
+        for f in DOSSIER.glob(pattern):
+            try:
+                f.unlink()
+                fichiers_supprimes += 1
+            except Exception:
+                pass
+
+    # 2. Synchronisation de la suppression sur GitHub si le token est présent
+    try:
+        if "GITHUB_TOKEN" in st.secrets:
+            token = st.secrets["GITHUB_TOKEN"]
+            
+            subprocess.run(["git", "config", "--global", "user.email", "bot@streamlit.app"], capture_output=True)
+            subprocess.run(["git", "config", "--global", "user.name", "Streamlit Bot"], capture_output=True)
+            
+            subprocess.run(["git", "rm", "-f", "*.json"], capture_output=True)
+            
+            status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
+            if status.stdout.strip():
+                subprocess.run(["git", "commit", "-m", "Remise à zéro complète de l'application (admin)"], check=True, capture_output=True)
+                
+                repo_url = f"https://{token}@github.com/antholetest/chevaux.git"
+                res_push = subprocess.run(["git", "push", repo_url], capture_output=True, text=True)
+                if res_push.returncode != 0:
+                    subprocess.run(["git", "push", repo_url, "HEAD"], capture_output=True)
+                
+                st.toast("Dépôt GitHub nettoyé avec succès !", icon="🧹")
+    except Exception as e:
+        st.toast(f"Nettoyage local effectué (Git: {e})", icon="⚠️")
+        
+    # Nettoyage de la session en cours
+    for key in list(st.session_state.keys()):
+        del st.session_state[key]
+        
+    return fichiers_supprimes
+
+# --- BARRE LATERALE : ZONE ADMIN / RESET ---
+st.sidebar.divider()
+with st.sidebar.expander("🛠️ Administration & Reset"):
+    st.write("Zone sécurisée pour purger tous les tests et repartir à zéro.")
+    mdp_admin = st.text_input("Code Admin / Mot de passe", type="password", key="input_mdp_admin")
+    
+    if st.button("🔥 Remise à zéro totale (Effacer tout)", type="primary"):
+        mdp_attendu = st.secrets.get("PASSWORD", "301180")
+        if mdp_admin.strip() == mdp_attendu:
+            nb = reinitialiser_application_complete()
+            st.success(f"Application réinitialisée avec succès ! ({nb} fichier(s) purgé(s)).")
+            st.rerun()
+        else:
+            st.error("Mot de passe admin incorrect.")
+
 # --- FONCTIONS MÉTIER, DISCIPLINE & CORDE ---
 
 def detecter_discipline(course_obj):
@@ -304,11 +364,12 @@ def verifier_stop_loss(date_jour):
         pass
     return False
 
-# --- AUTO-CORRECTION INTELLIGENTE ---
+# --- AUTO-CORRECTION INTELLIGENTE ET AVANCÉE ---
 def calculer_parametres_adaptatifs():
     params = {
         "bonus_place": 0, 
         "malus_discipline": {}, 
+        "types_privilegies": ["Simple", "Couplé"],
         "message_auto": "Algorithme standard actif."
     }
     if not FICHIER_HISTORIQUE.exists():
@@ -317,35 +378,65 @@ def calculer_parametres_adaptatifs():
         with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as f:
             historique = json.load(f)
         
-        derniers_paris = [p for p in historique if p.get("statut") in ["Gagné", "Perdu"]][-15:]
+        paris_regles = [p for p in historique if p.get("statut") in ["Gagné", "Perdu"]]
+        derniers_paris = paris_regles[-20:]
         if not derniers_paris:
             return params
             
         perdus = [p for p in derniers_paris if p.get("statut") == "Perdu"]
         total_perdus = len(perdus)
-        if total_perdus == 0:
-            return params
-            
-        proche_podium = sum(1 for p in perdus if "4e" in str(p.get("diagnostic", "")) or "5e" in str(p.get("diagnostic", "")))
-        taux_proche = proche_podium / total_perdus
         
-        if taux_proche >= 0.2:
-            params["bonus_place"] = int(round(taux_proche * 10)) 
-            
-        disciplines_echouees = {}
-        for p in perdus:
+        messages_parts = []
+        
+        # 1. Analyse des quasi-podiums (4e / 5e)
+        if total_perdus > 0:
+            proche_podium = sum(1 for p in perdus if "4e" in str(p.get("diagnostic", "")) or "5e" in str(p.get("diagnostic", "")))
+            taux_proche = proche_podium / total_perdus
+            if taux_proche >= 0.2:
+                params["bonus_place"] = int(round(taux_proche * 10))
+                messages_parts.append(f"🎯 {proche_podium} quasi-podium(s) détecté(s) -> Bonus régularité (+{params['bonus_place']} pts)")
+
+        # 2. Analyse ROI par discipline sur tout l'historique réglé
+        roi_disciplines = {}
+        for p in paris_regles:
             disc = p.get("discipline", "Galop Plat")
-            disciplines_echouees[disc] = disciplines_echouees.get(disc, 0) + 1
+            if disc not in roi_disciplines:
+                roi_disciplines[disc] = {"mises": 0.0, "gains": 0.0}
+            roi_disciplines[disc]["mises"] += safe_float(p.get("mise", 0))
+            if p.get("statut") == "Gagné":
+                roi_disciplines[disc]["gains"] += safe_float(p.get("gain", 0))
+
+        for disc, vals in roi_disciplines.items():
+            m = vals["mises"]
+            g = vals["gains"]
+            if m > 10.0:  # Si assez de volume
+                roi = ((g - m) / m) * 100
+                if roi < -20.0:
+                    params["malus_discipline"][disc] = -5
+                    messages_parts.append(f"⚠️ Discipline '{disc}' en déficit (ROI: {roi:.1f}%) -> Pénalité -5 pts")
+                elif roi > 15.0:
+                    messages_parts.append(f"🔥 Discipline '{disc}' performante (ROI: +{roi:.1f}%)")
+
+        # 3. Analyse du meilleur type de jeu
+        roi_types = {}
+        for p in paris_regles:
+            t_jeu = p.get("type", "Simple")
+            if t_jeu not in roi_types:
+                roi_types[t_jeu] = {"mises": 0.0, "gains": 0.0}
+            roi_types[t_jeu]["mises"] += safe_float(p.get("mise", 0))
+            if p.get("statut") == "Gagné":
+                roi_types[t_jeu]["gains"] += safe_float(p.get("gain", 0))
+        
+        meilleurs_types = sorted(roi_types.keys(), key=lambda t: ((roi_types[t]["gains"] - roi_types[t]["mises"]) / roi_types[t]["mises"]) if roi_types[t]["mises"] > 0 else 0, reverse=True)
+        if meilleurs_types:
+            params["types_privilegies"] = meilleurs_types[:2]
+            messages_parts.append(f"💡 Type(s) de pari conseillé(s) par l'IA : {', '.join(params['types_privilegies'])}")
+
+        if messages_parts:
+            params["message_auto"] = " | ".join(messages_parts)
+        else:
+            params["message_auto"] = "🤖 Auto-analyse active : Aucun déséquilibre majeur détecté."
             
-        messages_parts = [f"🤖 Auto-correction active : {proche_podium} quasi-podium(s) détecté(s). Bonus régularité (+{params['bonus_place']} pts) appliqué."]
-        
-        for disc, count in disciplines_echouees.items():
-            if count >= 3:
-                params["malus_discipline"][disc] = -3
-                messages_parts.append(f"Vigilance accrue sur '{disc}' (-3 pts de pénalité de prudence).")
-                
-        params["message_auto"] = " | ".join(messages_parts)
-        
     except Exception:
         pass
     return params
@@ -412,6 +503,7 @@ def evaluer_score_cheval(cheval, discipline, terrain, date_jour, params_adaptati
 
     return score
 
+# --- RÉPARTITEUR INTELLIGENT CONNECTÉ À L'AUTO-ANALYSE ---
 def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs):
     donnees, _ = charger_donnees_fichier(fichier_json)
     
@@ -433,9 +525,15 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs)
             pass
             
     opportunites = []
+    malus_disciplines = params_adaptatifs.get("malus_discipline", {})
+
     for course in donnees:
         chevaux = course.get("chevaux", [])
         discipline = course.get("discipline", "Galop Plat")
+        
+        if malus_disciplines.get(discipline, 0) <= -5:
+            continue
+            
         terrain = course.get("terrain_officiel", "Bon (Standard)")
         chevaux_valides = [c for c in chevaux if isinstance(c.get("cote"), (int, float)) and c["cote"] > 1.0]
         
@@ -695,22 +793,22 @@ with tab_analyse:
                     st.error("Impossible de récupérer les données pour cette date.")
 
     if fichier_jour.exists():
-        with st.expander("🎯 Répartiteur Intelligent de Budget Journalier (Récupération intégrée)", expanded=True):
-            st.write("Indiquez votre budget global pour la journée. L'algorithme intègre automatiquement la récupération dynamique des pertes et répartit les mises sur les meilleures opportunités.")
+        with st.expander("🎯 Répartiteur Intelligent de Budget Journalier (Connecté à l'Auto-Analyse)", expanded=True):
+            st.write("L'algorithme analyse vos performances passées, écarte les disciplines non rentables, ajuste les mises selon vos pertes récentes et cible les meilleures opportunités.")
             
             budget_journalier = st.number_input("Budget total de base du jour (€)", min_value=10, value=50, step=5)
             lancer_repartition = st.button("🪄 Générer mon plan de mise idéal du jour")
                 
             if lancer_repartition:
-                with st.spinner("Analyse globale des réunions et optimisation de placement..."):
+                with st.spinner("Analyse globale et application de l'auto-correction..."):
                     params_adaptatifs = calculer_parametres_adaptatifs()
                     plan_journalier = generer_plan_budget_journalier(fichier_jour, budget_journalier, params_adaptatifs)
                     if plan_journalier:
-                        st.success("Plan généré avec succès avec prise en compte automatique de l'historique !")
-                        st.dataframe(plan_journalier, use_container_width=True, hide_index=True)
+                        st.success("Plan généré avec succès en tenant compte de votre historique !")
+                        st.dataframe(plan_journalier, width='stretch', hide_index=True)
                         st.session_state["plan_journalier_actuel"] = plan_journalier
                     else:
-                        st.warning("Pas assez de données valides pour générer un plan aujourd'hui.")
+                        st.warning("Pas assez de données valides ou disciplines filtrées par l'auto-analyse aujourd'hui.")
 
             if "plan_journalier_actuel" in st.session_state and st.session_state["plan_journalier_actuel"]:
                 st.markdown("")
@@ -785,7 +883,7 @@ with tab_analyse:
                     "Tendance Cote": tendance_txt,
                     "Cote": f"{c.get('cote'):.1f}" if isinstance(c.get("cote"), (int, float)) else "-"
                 })
-            st.dataframe(data_tableau, use_container_width=True, hide_index=True)
+            st.dataframe(data_tableau, width='stretch', hide_index=True)
             
             st.divider()
             st.subheader("🧠 Analyse Avancée & Moteur Hybride Intelligent")
@@ -795,7 +893,8 @@ with tab_analyse:
 
             col_b1, col_b2 = st.columns(2)
             with col_b1:
-                mode_jeu = st.selectbox("Type de jeu", ["Automatique", "Simple", "Couplé", "Trio"])
+                types_disponibles = ["Automatique", "Simple", "Couplé", "Trio"]
+                mode_jeu = st.selectbox("Type de jeu", types_disponibles)
             with col_b2:
                 budget = st.number_input("Budget course (€)", min_value=1, value=20, step=1)
                 
@@ -997,12 +1096,10 @@ with tab_suivi:
                 else:
                     st.info("Aucun nouveau résultat officiel disponible pour les paris en attente.")
 
-        # Calculs du cycle actif pour les métriques principales du haut
         total_mise = sum(safe_float(p.get("mise", 0)) for p in historique_stats if p.get("statut") != "Annulé")
         total_gain = sum(safe_float(p.get("gain", 0)) for p in historique_stats if p.get("statut") == "Gagné")
         bilan_net = total_gain - total_mise
         
-        # Calcul du ROI Global (statique sur l'intégralité de l'historique pour ne jamais se remettre à zéro)
         total_mise_global = sum(safe_float(p.get("mise", 0)) for p in historique if p.get("statut") != "Annulé")
         total_gain_global = sum(safe_float(p.get("gain", 0)) for p in historique if p.get("statut") == "Gagné")
         roi_global = ((total_gain_global - total_mise_global) / total_mise_global * 100) if total_mise_global > 0 else 0.0
@@ -1016,7 +1113,6 @@ with tab_suivi:
         st.divider()
         st.subheader("📊 Visualisation de la Bankroll & ROI par Type de Jeu")
 
-        # Utilisation de l'historique complet pour que les graphiques et types de jeu affichent toute la chronologie
         roi_par_type = {}
         for p in historique:
             if p.get("statut") == "Annulé":
@@ -1037,7 +1133,7 @@ with tab_suivi:
                 g = vals["gains"]
                 r = ((g - m) / m * 100) if m > 0 else 0.0
                 data_roi.append({"Type de Jeu": t, "Mises (€)": round(m, 2), "Gains (€)": round(g, 2), "ROI (%)": round(r, 1)})
-            st.dataframe(data_roi, use_container_width=True, hide_index=True)
+            st.dataframe(data_roi, width='stretch', hide_index=True)
 
         with col_r2:
             historique_trie = sorted([p for p in historique if p.get("statut") in ["Gagné", "Perdu"]], key=lambda x: str(x.get("date", "")))
@@ -1082,7 +1178,7 @@ with tab_suivi:
                 "Bilan Net (€)": round(net_disc, 2),
                 "ROI (%)": round(r, 1)
             })
-        st.dataframe(data_roi_disc, use_container_width=True, hide_index=True)
+        st.dataframe(data_roi_disc, width='stretch', hide_index=True)
 
         st.divider()
         
@@ -1110,7 +1206,7 @@ with tab_suivi:
                 },
                 disabled=["Index", "Date", "Course", "Discipline", "Type", "Détails", "Mise (€)", "Statut", "Gain (€)", "Diagnostic"],
                 hide_index=True,
-                use_container_width=True,
+                width='stretch',
                 key="editor_suivi_table"
             )
             
@@ -1207,7 +1303,7 @@ with tab_reunions:
                     })
                 
                 if tableau_reunions:
-                    st.dataframe(tableau_reunions, use_container_width=True, hide_index=True)
+                    st.dataframe(tableau_reunions, width='stretch', hide_index=True)
                 else:
                     st.info("Aucun pari actif pour cette date.")
             else:
