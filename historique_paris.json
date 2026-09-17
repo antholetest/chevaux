@@ -5319,9 +5319,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°1 - CALAS (Cote win: 4.6)] (4€) | Ticket 2 (Couplé N°1-6): [N°6 - MONTGAUDRY (Cote win: 15.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 13.4,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -5334,9 +5334,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°1 - CALAS (Cote win: 4.6)] (4€) | Ticket 2 (Simple Gagnant): [N°6 - MONTGAUDRY (Cote win: 15.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.8,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -5349,9 +5349,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°1 et N°4] (4€) | Ticket 2 (Couplé Gagnant): [N°1 et N°6] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 13.4,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -5364,9 +5364,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°1, N°4, N°2] (4€) | Ticket 2 (Trio Spéculatif): [N°1, N°4, N°6] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 13.4,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -5379,9 +5379,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°4 - OLYMPIQUE (Cote win: 6.2)] (4€) | Ticket 2 (Couplé N°4-1): [N°1 - KATA TJUTA (Cote win: 15.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°4 7e | N°1 6e",
     "ignore_stats": false
   },
   {
@@ -5394,9 +5394,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°4 et N°2] (4€) | Ticket 2 (Couplé Gagnant): [N°4 et N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°4 7e | N°2 1e | N°1 6e",
     "ignore_stats": false
   },
   {
@@ -5409,9 +5409,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°4, N°2, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°4, N°2, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°4 7e | N°2 1e | N°1 6e",
     "ignore_stats": false
   },
   {
@@ -5424,9 +5424,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°1 - SWEET AS (Cote win: 5.7)] (4€) | Ticket 2 (Couplé N°1-2): [N°2 - LE CENTRAL (Cote win: 12.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°2 10e | N°1 8e",
     "ignore_stats": false
   },
   {
@@ -5439,9 +5439,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°1 - SWEET AS (Cote win: 5.7)] (4€) | Ticket 2 (Simple Gagnant): [N°5 - KAMAND (Cote win: 13.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 11e | N°1 8e",
     "ignore_stats": false
   },
   {
@@ -5454,9 +5454,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°1 et N°3] (4€) | Ticket 2 (Couplé Gagnant): [N°1 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°2 10e | N°3 6e | N°1 8e",
     "ignore_stats": false
   },
   {
@@ -5469,9 +5469,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°1, N°3, N°2] (4€) | Ticket 2 (Trio Spéculatif): [N°1, N°3, N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°2 10e | N°3 6e | N°1 8e",
     "ignore_stats": false
   },
   {
@@ -5484,9 +5484,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°7 - DREAM MACHINE (Cote win: 6.2)] (4€) | Ticket 2 (Couplé N°7-1): [N°1 - SILENCIO (Cote win: 24.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°7 4e (au pied du podium) | N°1 5e",
     "ignore_stats": false
   },
   {
@@ -5499,9 +5499,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°7 - DREAM MACHINE (Cote win: 6.2)] (4€) | Ticket 2 (Simple Gagnant): [N°8 - CADEAU DE NOEL (Cote win: 11.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°8 11e | N°7 4e (au pied du podium)",
     "ignore_stats": false
   },
   {
@@ -5514,9 +5514,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°7 et N°12] (4€) | Ticket 2 (Couplé Gagnant): [N°7 et N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°7 4e (au pied du podium) | N°12 7e | N°1 5e",
     "ignore_stats": false
   },
   {
@@ -5529,9 +5529,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°7, N°12, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°7, N°12, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°7 4e (au pied du podium) | N°12 7e | N°1 5e",
     "ignore_stats": false
   },
   {
@@ -5544,9 +5544,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°8 - JIJI MY LOVE (Cote win: 9.0)] (4€) | Ticket 2 (Couplé N°8-2): [N°2 - LIGHT WAKEUP (Cote win: 9.5)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°8 8e | N°2 1e",
     "ignore_stats": false
   },
   {
@@ -5559,9 +5559,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°8 - JIJI MY LOVE (Cote win: 9.0)] (4€) | Ticket 2 (Simple Gagnant): [N°6 - ASTRA DREAM (Cote win: 33.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°8 8e | N°6 2e",
     "ignore_stats": false
   },
   {
@@ -5574,9 +5574,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°8 et N°3] (4€) | Ticket 2 (Couplé Gagnant): [N°8 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°8 8e | N°3 4e (au pied du podium) | N°2 1e",
     "ignore_stats": false
   },
   {
@@ -5589,9 +5589,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°8, N°3, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°8, N°3, N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°8 8e | N°3 4e (au pied du podium) | N°1 11e | N°2 1e",
     "ignore_stats": false
   },
   {
@@ -5604,9 +5604,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°9 - PAMELA BOUM (Cote win: 4.9)] (4€) | Ticket 2 (Couplé N°9-1): [N°1 - MODERN SPIRIT (Cote win: 20.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°9 5e | N°1 1e",
     "ignore_stats": false
   },
   {
@@ -5619,9 +5619,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°9 - PAMELA BOUM (Cote win: 4.9)] (4€) | Ticket 2 (Simple Gagnant): [N°2 - LIGHTNING RAID (Cote win: 21.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°2 non classé | N°9 5e",
     "ignore_stats": false
   },
   {
@@ -5634,9 +5634,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°9 et N°5] (4€) | Ticket 2 (Couplé Gagnant): [N°9 et N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 8e | N°9 5e | N°1 1e",
     "ignore_stats": false
   },
   {
@@ -5649,9 +5649,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°9, N°5, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°9, N°5, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 8e | N°9 5e | N°1 1e",
     "ignore_stats": false
   },
   {
@@ -5664,9 +5664,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°2 - BOLKHOV (Cote win: 4.3)] (4€) | Ticket 2 (Couplé N°2-4): [N°4 - OUT OF THE BLUE (Cote win: 19.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 12.7,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -5679,9 +5679,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°2 - BOLKHOV (Cote win: 4.3)] (4€) | Ticket 2 (Simple Gagnant): [N°1 - HAYEJOHN (Cote win: 4.7)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.4,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -5694,9 +5694,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°2 et N°1] (4€) | Ticket 2 (Couplé Gagnant): [N°2 et N°4] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 12.7,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -5709,9 +5709,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°2, N°1, N°3] (4€) | Ticket 2 (Trio Spéculatif): [N°2, N°1, N°4] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 12.7,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -5724,9 +5724,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°1 - ARTURO (Cote win: 3.9)] (4€) | Ticket 2 (Couplé N°1-2): [N°2 - ODIN NORMANDY (Cote win: 19.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°2 9e | N°1 4e (au pied du podium)",
     "ignore_stats": false
   },
   {
@@ -5739,9 +5739,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°1 - ARTURO (Cote win: 3.9)] (4€) | Ticket 2 (Simple Gagnant): [N°9 - DRUIDE (Cote win: 8.8)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°9 10e | N°1 4e (au pied du podium)",
     "ignore_stats": false
   },
   {
@@ -5754,9 +5754,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°1 et N°12] (4€) | Ticket 2 (Couplé Gagnant): [N°1 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°2 9e | N°1 4e (au pied du podium) | N°12 6e",
     "ignore_stats": false
   },
   {
@@ -5769,9 +5769,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°1, N°12, N°2] (4€) | Ticket 2 (Trio Spéculatif): [N°1, N°12, N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°2 9e | N°1 4e (au pied du podium) | N°12 6e",
     "ignore_stats": false
   }
 ]
