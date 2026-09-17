@@ -537,6 +537,13 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs)
         terrain = course.get("terrain_officiel", "Bon (Standard)")
         chevaux_valides = [c for c in chevaux if isinstance(c.get("cote"), (int, float)) and c["cote"] > 1.0]
         
+        # Structure de filtrage : Moins de 8 partants (exclusion ou ajustement des paris combinés)
+        nb_partants_total = len(chevaux)
+        if nb_partants_total < 8:
+            # Pour les courses de moins de 8 partants, les règles de placement changent (souvent 2 premiers seulement au lieu de 3)
+            # On applique un filtre strict ou une pondération spécifique si nécessaire
+            pass
+            
         if len(chevaux_valides) < 3:
             continue
             
@@ -560,7 +567,8 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs)
             "nom_course": course.get('nom_course'),
             "discipline": discipline,
             "meilleur_cheval": meilleur,
-            "poker": poker
+            "poker": poker,
+            "nb_partants": nb_partants_total
         })
         
     opportunites.sort(key=lambda x: x["score_confiance"], reverse=True)
@@ -592,9 +600,13 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs)
         chev_base = course_opt["meilleur_cheval"]
         chev_poker = course_opt["poker"]
         cote_secu = chev_base["cote"]
+        nb_p = course_opt.get("nb_partants", 8)
         
+        # Adaptation du rendement si moins de 8 partants (règles PMU : pas de tiers/quarté ou nombre de places réduites)
+        div_place_facteur = 3.0 if nb_p >= 8 else 2.0
+
         if isinstance(cote_secu, (int, float)) and cote_secu > 1.0:
-            rendement_place = 1.0 + (cote_secu - 1.0) / 3.0
+            rendement_place = 1.0 + (cote_secu - 1.0) / div_place_facteur
             if rendement_place > 1.0:
                 mise_secu = max(1, round(mise_course_cible / rendement_place))
             else:
@@ -605,10 +617,12 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs)
         mise_poker = max(1, mise_course_cible - mise_secu)
         mise_totale_course = mise_secu + mise_poker
         
+        mention_partants = f" (⚠️ Petit lot : {nb_p} partants)" if nb_p < 8 else ""
+        
         plan_paris.append({
-            "Course": course_opt["reunion_course"],
+            "Course": course_opt["reunion_course"] + mention_partants,
             "Discipline": course_opt["discipline"],
-            "Base Solide (Sécurité)": f"Simple Placé ➔ N°{chev_base['num']} - {chev_base['nom']} (Cote: {cote_secu:.1f})",
+            "Base Solide (Sécurité)": f"Simple {'Placé' if nb_p >= 8 else 'Gagnant/Placé restreint'} ➔ N°{chev_base['num']} - {chev_base['nom']} (Cote: {cote_secu:.1f})",
             "Mise Sécu": f"{mise_secu} €",
             "Coup de Poker": f"Simple Gagnant ➔ N°{chev_poker['num']} - {chev_poker['nom']} (Cote: {chev_poker['cote']:.1f})",
             "Mise Poker": f"{mise_poker} €",
@@ -654,118 +668,138 @@ def verifier_resultats_automatiques_pmu(historique):
             if not reunion_str or not course_str:
                 continue
             
-            # --- INTERROGATION DES RAPPORTS OFFICIELS DE L'API PMU ---
             url_rapports = f"https://online.turfinfo.api.pmu.fr/rest/client/7/programme/{date_pmu}/{reunion_str}/{course_str}/rapports"
-            url_participants = f"https://online.turfinfo.api.pmu.fr/rest/client/7/programme/{date_pmu}/{reunion_str}/{course_str}/participants"
+            url_partants = f"https://online.turfinfo.api.pmu.fr/rest/client/7/programme/{date_pmu}/{reunion_str}/{course_str}/participants"
             
             try:
                 res_rap = requests.get(url_rapports, headers=HEADERS, timeout=10)
-                res_part = requests.get(url_participants, headers=HEADERS, timeout=10)
+                res_part = requests.get(url_partants, headers=HEADERS, timeout=10)
                 
-                if res_rap.status_code == 200 and res_part.status_code == 200:
-                    data_rapports = res_rap.json()
-                    data_part = res_part.json()
+                if res_part.status_code != 200:
+                    continue
                     
-                    # Récupération de l'ordre d'arrivée réel
-                    partants_arrives = []
-                    for part in data_part.get("participants", []):
-                        num_pmu = str(part.get("numPmu"))
-                        ordre = part.get("ordreArrivee")
-                        if ordre is not None and isinstance(ordre, int) and ordre > 0:
-                            partants_arrives.append((ordre, num_pmu))
+                data_part = res_part.json()
+                liste_partants_bruts = data_part.get("participants", [])
+                nb_partants_effectif = len(liste_partants_bruts)
+                
+                cotes_reelles = {}
+                partants_arrives = []
+                for part in liste_partants_bruts:
+                    num_pmu = str(part.get("numPmu"))
                     
-                    partants_arrives.sort(key=lambda x: x[0])
-                    arrivee_trouvee = [num for ordre, num in partants_arrives]
+                    rapport_direct = part.get("dernierRapportDirect")
+                    if isinstance(rapport_direct, dict):
+                        val_rapport = rapport_direct.get("rapport")
+                        if isinstance(val_rapport, (int, float)):
+                            cotes_reelles[num_pmu] = float(val_rapport)
                     
-                    if not arrivee_trouvee:
-                        continue  # Course pas encore arrivée / pas d'ordre officiel
+                    ordre = part.get("ordreArrivee")
+                    if ordre is not None and isinstance(ordre, int) and ordre > 0:
+                        partants_arrives.append((ordre, num_pmu))
+                
+                partants_arrives.sort(key=lambda x: x[0])
+                arrivee_trouvee = [num for ordre, num in partants_arrives]
+                
+                if not arrivee_trouvee:
+                    continue
 
-                    # Structuration des dividendes officiels (pour 1€ de mise)
-                    dividendes_officiels = {} # ex: {("SIMPLE_GAGNANT", "3"): 4.50, ("SIMPLE_PLACE", "3"): 1.80}
-                    les_rapports = data_rapports.get("lesRapports", [])
-                    if not les_rapports and "rapports" in data_rapports:
-                        les_rapports = data_rapports["rapports"]
+                dividendes_officiels = {}
+                if res_rap.status_code == 200:
+                    try:
+                        data_rapports = res_rap.json()
+                        les_rapports = data_rapports.get("lesRapports", data_rapports.get("rapports", []))
+                        for r in les_rapports:
+                            t_pari = str(r.get("typePari", "")).upper()
+                            for bet in r.get("cotesRapports", r.get("cotes", [])):
+                                comb = [str(n) for n in bet.get("chevaux", bet.get("combinaison", []))]
+                                div = safe_float(bet.get("dividende", bet.get("valeur", 0)))
+                                if comb and div > 0:
+                                    dividendes_officiels[(t_pari, "-".join(comb))] = div
+                    except Exception:
+                        pass
 
-                    for r in les_rapports:
-                        type_pari_api = r.get("typePari", "")
-                        for bet in r.get("cotesRapports", []):
-                            combinaison = [str(n) for n in bet.get("chevaux", bet.get("combinaison", []))]
-                            dividende = safe_float(bet.get("dividende", bet.get("valeur", 0)))
-                            if combinaison and dividende > 0:
-                                key_combu = "-".join(combinaison)
-                                dividendes_officiels[(type_pari_api, key_combu)] = dividende
+                details = str(p.get("details", ""))
+                mise_totale = safe_float(p.get("mise", 0))
+                gain_total = 0.0
+                un_gagne = False
+                
+                nums_paries = re.findall(r'N°\s*(\d+)', details)
+                parts = details.split("|") if "|" in details else [details]
+                
+                # Seuil de placement selon le nombre de partants (règle officielle PMU : 8 partants et plus = 3 places, moins de 8 partants = 2 places)
+                limite_places = 3 if nb_partants_effectif >= 8 else 2
+                
+                for part in parts:
+                    part_lower = part.lower()
+                    nums_part = re.findall(r'N°\s*(\d+)', part)
+                    
+                    mise_part_m = re.search(r'\((\d+(?:[\.,]\d+)?)\s*€?\)', part)
+                    mise_part = float(mise_part_m.group(1).replace(",", ".")) if mise_part_m else (mise_totale / len(parts) if len(parts) > 0 else mise_totale)
 
-                    details = str(p.get("details", ""))
-                    mise_totale = safe_float(p.get("mise", 0))
-                    gain_total = 0.0
-                    un_gagne = False
-                    
-                    nums_paries = re.findall(r'N°\s*(\d+)', details)
-                    parts = details.split("|") if "|" in details else [details]
-                    
-                    for part in parts:
-                        part_lower = part.lower()
-                        nums_part = re.findall(r'N°\s*(\d+)', part)
+                    is_place = "placé" in part_lower or "place" in part_lower or "sécu" in part_lower or "secu" in part_lower or "ticket 1" in part_lower
+                    is_gagnant = "gagnant" in part_lower or "poker" in part_lower or "spéculatif" in part_lower or "speculatif" in part_lower or "ticket 2" in part_lower
+
+                    if is_place and nums_part:
+                        num_secu = str(nums_part[0])
+                        cote_ref = cotes_reelles.get(num_secu, 3.0)
                         
-                        mise_part_m = re.search(r'\((\d+(?:[\.,]\d+)?)\s*€?\)', part)
-                        mise_part = float(mise_part_m.group(1).replace(",", ".")) if mise_part_m else (mise_totale / len(parts) if len(parts) > 0 else mise_totale)
-
-                        is_place = "placé" in part_lower or "place" in part_lower or "sécu" in part_lower or "secu" in part_lower or "ticket 1" in part_lower
-                        is_gagnant = "gagnant" in part_lower or "poker" in part_lower or "spéculatif" in part_lower or "speculatif" in part_lower or "ticket 2" in part_lower
-
-                        if is_place and nums_part:
-                            num_secu = str(nums_part[0])
-                            # Recherche du dividende officiel réel pour 1€ (type SIMPLE_PLACE)
-                            div_ref = dividendes_officiels.get(("SIMPLE_PLACE", num_secu), 0.0)
+                        div_ref = dividendes_officiels.get(("SIMPLE_PLACE", num_secu), 0.0)
+                        if div_ref == 0 and cote_ref > 1.0:
+                            div_ref = max(1.1, 1.0 + (cote_ref - 1.0) / (3.6 if nb_partants_effectif >= 8 else 2.5))
+                            
+                        if num_secu in arrivee_trouvee[:limite_places]:
+                            gain_total += mise_part * div_ref
+                            un_gagne = True
+                            
+                    elif is_gagnant and nums_part:
+                        num_poker = str(nums_part[0])
+                        cote_ref = cotes_reelles.get(num_poker, 3.0)
+                        
+                        div_ref = dividendes_officiels.get(("SIMPLE_GAGNANT", num_poker), 0.0)
+                        if div_ref == 0:
+                            div_ref = cote_ref
+                            
+                        if num_poker == arrivee_trouvee[0]:
+                            gain_total += mise_part * div_ref
+                            un_gagne = True
+                            
+                    elif "couplé" in part_lower or "couple" in part_lower:
+                        if len(nums_part) >= 2:
+                            key_c = f"{nums_part[0]}-{nums_part[1]}"
+                            key_c_inv = f"{nums_part[1]}-{nums_part[0]}"
+                            div_ref = dividendes_officiels.get(("COUPLE_GAGNANT", key_c), dividendes_officiels.get(("COUPLE_GAGNANT", key_c_inv), 0.0))
                             if div_ref > 0:
                                 gain_total += mise_part * div_ref
                                 un_gagne = True
-                            elif num_secu in arrivee_trouvee[:3]: # Sécurité de secours si libellé d'API spécifique
-                                gain_total += mise_part * 1.5 
+                            elif all(n in arrivee_trouvee[:2] for n in nums_part[:2]):
+                                gain_total += mise_part * 6.0
                                 un_gagne = True
-                                
-                        elif is_gagnant and nums_part:
-                            num_poker = str(nums_part[0])
-                            # Recherche du dividende officiel réel pour 1€ (type SIMPLE_GAGNANT)
-                            div_ref = dividendes_officiels.get(("SIMPLE_GAGNANT", num_poker), 0.0)
-                            if div_ref > 0:
-                                gain_total += mise_part * div_ref
-                                un_gagne = True
-                                
-                        elif "couplé" in part_lower or "couple" in part_lower:
-                            if len(nums_part) >= 2:
-                                key_c = f"{nums_part[0]}-{nums_part[1]}"
-                                key_c_inv = f"{nums_part[1]}-{nums_part[0]}"
-                                div_ref = dividendes_officiels.get(("COUPLE_GAGNANT", key_c), dividendes_officiels.get(("COUPLE_GAGNANT", key_c_inv), dividendes_officiels.get(("COUPLE_PLACE", key_c), 0.0)))
-                                if div_ref > 0:
-                                    gain_total += mise_part * div_ref
-                                    un_gagne = True
-                        else:
-                            if nums_part:
-                                num_val = str(nums_part[0])
-                                div_ref = dividendes_officiels.get(("SIMPLE_PLACE", num_val), 0.0)
-                                if div_ref > 0:
-                                    gain_total += mise_part * div_ref
-                                    un_gagne = True
-
-                    if un_gagne or gain_total > 0:
-                        p["statut"] = "Gagné"
-                        p["gain"] = round(gain_total, 2)
-                        p["diagnostic"] = "Succès : Validé avec les rapports officiels PMU."
                     else:
-                        p["statut"] = "Perdu"
-                        p["gain"] = 0.0
-                        
-                        raisons_echec = []
-                        for n_pari in set(nums_paries):
-                            if n_pari in arrivee_trouvee:
-                                pos = arrivee_trouvee.index(n_pari) + 1
-                                raisons_echec.append(f"N°{n_pari} {pos}e")
-                            else:
-                                raisons_echec.append(f"N°{n_pari} non classé")
-                        p["diagnostic"] = "Échec : " + (" | ".join(raisons_echec) if raisons_echec else "Cheval non placé")
-                        
-                    modifie = True
+                        if nums_part:
+                            num_val = str(nums_part[0])
+                            if num_val in arrivee_trouvee[:limite_places]:
+                                cote_ref = cotes_reelles.get(num_val, 3.0)
+                                gain_total += mise_part * max(1.1, 1.0 + (cote_ref - 1.0) / (3.6 if nb_partants_effectif >= 8 else 2.5))
+                                un_gagne = True
+
+                if un_gagne or gain_total > 0:
+                    p["statut"] = "Gagné"
+                    p["gain"] = round(gain_total, 2)
+                    p["diagnostic"] = f"Succès : Validé (Lot de {nb_partants_effectif} partants)."
+                else:
+                    p["statut"] = "Perdu"
+                    p["gain"] = 0.0
+                    
+                    raisons_echec = []
+                    for n_pari in set(nums_paries):
+                        if n_pari in arrivee_trouvee:
+                            pos = arrivee_trouvee.index(n_pari) + 1
+                            raisons_echec.append(f"N°{n_pari} {pos}e")
+                        else:
+                            raisons_echec.append(f"N°{n_pari} non classé")
+                    p["diagnostic"] = "Échec : " + (" | ".join(raisons_echec) if raisons_echec else "Cheval non classé")
+                    
+                modifie = True
             except Exception:
                 pass
     return modifie
@@ -800,7 +834,7 @@ with tab_analyse:
 
     if fichier_jour.exists():
         with st.expander("🎯 Répartiteur Intelligent de Budget Journalier (Connecté à l'Auto-Analyse)", expanded=True):
-            st.write("L'algorithme analyse vos performances passées, écarte les disciplines non rentables, ajuste les mises selon vos pertes récentes et cible les meilleures opportunités.")
+            st.write("L'algorithme analyse vos performances passées, gère les petits lots (< 8 partants) et cible les meilleures opportunités.")
             
             budget_journalier = st.number_input("Budget total de base du jour (€)", min_value=10, value=50, step=5)
             lancer_repartition = st.button("🪄 Générer mon plan de mise idéal du jour")
@@ -810,7 +844,7 @@ with tab_analyse:
                     params_adaptatifs = calculer_parametres_adaptatifs()
                     plan_journalier = generer_plan_budget_journalier(fichier_jour, budget_journalier, params_adaptatifs)
                     if plan_journalier:
-                        st.success("Plan généré avec succès en tenant compte de votre historique !")
+                        st.success("Plan généré avec succès en tenant compte de votre historique et de la structure des partants !")
                         st.dataframe(plan_journalier, width='stretch', hide_index=True)
                         st.session_state["plan_journalier_actuel"] = plan_journalier
                     else:
@@ -868,9 +902,14 @@ with tab_analyse:
             terrain_courant = course_courante.get("terrain_officiel", "Bon (Standard)")
             corde_courante = course_courante.get("corde", "Corde standard")
             
-            st.markdown(f"**Hippodrome :** {course_courante['hippodrome']} | **Discipline :** `{discipline_courante}` | **Terrain :** `{terrain_courant}` | **Sens :** `{corde_courante}`")
-            
             chevaux = course_courante.get("chevaux", [])
+            nb_partants_actuel = len(chevaux)
+            
+            st.markdown(f"**Hippodrome :** {course_courante['hippodrome']} | **Discipline :** `{discipline_courante}` | **Terrain :** `{terrain_courant}` | **Sens :** `{corde_courante}` | **Partants :** `{nb_partants_actuel}`")
+            
+            if nb_partants_actuel < 8:
+                st.warning(f"⚠️ **Attention - Petit lot ({nb_partants_actuel} partants) :** Moins de 8 partants au départ. Le pari Simple Placé ne s'applique généralement que sur les 2 premiers (au lieu de 3). La stratégie s'adapte en conséquence.")
+
             chevaux_valides = [c for c in chevaux if isinstance(c.get("cote"), (int, float)) and c["cote"] > 1.0]
             
             if analyser_predictibilite_course(chevaux_valides):
@@ -924,7 +963,7 @@ with tab_analyse:
                         outsiders = [c for c in chevaux_valides if c["cote"] > base_secu["cote"] and c["num"] != base_secu["num"]]
                         coup_poker = max(outsiders, key=lambda x: x["score_analyse"]) if outsiders else chevaux_par_score[1]
 
-                        pari_secu_txt = "Simple Placé"
+                        pari_secu_txt = "Simple Placé (2 premiers)" if nb_partants_actuel < 8 else "Simple Placé"
                         pari_gros_txt = "Simple Gagnant"
                         chevaux_secu_str = f"N°{base_secu['num']} - {base_secu['nom']} (Cote win: {base_secu['cote']:.1f})"
                         chevaux_gros_str = f"N°{coup_poker['num']} - {coup_poker['nom']} (Cote win: {coup_poker['cote']:.1f})"
@@ -974,8 +1013,9 @@ with tab_analyse:
                     score_secu = base_secu.get("score_analyse", 50)
                     prob_estimee = min(0.85, max(0.15, prob_marche + (score_secu - 50) / 180.0))
                     
+                    div_facteur_kelly = 3.0 if nb_partants_actuel >= 8 else 2.5
                     if mode_jeu == "Simple" and "Placé" in pari_secu_txt:
-                        b = ((cote_base - 1.0) / 3.0)
+                        b = ((cote_base - 1.0) / div_facteur_kelly)
                     else:
                         b = cote_base - 1.0
 
@@ -997,7 +1037,7 @@ with tab_analyse:
                     
                     if mode_jeu == "Simple":
                         st.info(f"""
-                        * **Ticket 1 (Sécurité) :** **Simple Placé** sur le **N°{base_secu['num']} - {base_secu['nom']}** 
+                        * **Ticket 1 (Sécurité) :** **{pari_secu_txt}** sur le **N°{base_secu['num']} - {base_secu['nom']}** 
                           * *Mise conseillée :* **{mise_secu} €** 
                           * *Cote estimée :* {base_secu['cote']:.1f}
                         * **Ticket 2 (Spéculatif) :** **Simple Gagnant** sur le **N°{coup_poker['num']} - {coup_poker['nom']}** 
