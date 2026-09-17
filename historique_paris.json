@@ -654,9 +654,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°3 - SHANOUR (Cote win: 2.4)] (16€) | Ticket 2 (Couplé N°3-1): [N°1 - ZELZARA (Cote win: 13.0)] (4€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°3 4e | N°1 2e",
     "ignore_stats": false
   },
   {
@@ -669,9 +669,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°3 - SHANOUR (Cote win: 2.4)] (16€) | Ticket 2 (Simple Gagnant): [N°15 - SILVER REEL (Cote win: 32.0)] (4€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°3 4e | N°15 14e",
     "ignore_stats": false
   },
   {
@@ -684,9 +684,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°3 et N°13] (16€) | Ticket 2 (Couplé Gagnant): [N°3 et N°1] (4€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°13 5e | N°3 4e | N°1 2e",
     "ignore_stats": false
   },
   {
@@ -699,9 +699,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°3, N°13, N°1] (16€) | Ticket 2 (Trio Spéculatif): [N°3, N°13, N°1] (4€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°13 5e | N°3 4e | N°1 2e",
     "ignore_stats": false
   }
 ]
