@@ -617,7 +617,6 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs)
         
     return plan_paris
 
-# --- VERIFICATION HYBRIDE ET RÉTROCOMPATIBLE DES RÉSULTATS PMU ---
 def verifier_resultats_automatiques_pmu(historique):
     modifie = False
     for p in historique:
@@ -655,24 +654,22 @@ def verifier_resultats_automatiques_pmu(historique):
             if not reunion_str or not course_str:
                 continue
             
-            url_partants = f"https://online.turfinfo.api.pmu.fr/rest/client/7/programme/{date_pmu}/{reunion_str}/{course_str}/participants"
+            # --- INTERROGATION DES RAPPORTS OFFICIELS DE L'API PMU ---
+            url_rapports = f"https://online.turfinfo.api.pmu.fr/rest/client/7/programme/{date_pmu}/{reunion_str}/{course_str}/rapports"
+            url_participants = f"https://online.turfinfo.api.pmu.fr/rest/client/7/programme/{date_pmu}/{reunion_str}/{course_str}/participants"
+            
             try:
-                res = requests.get(url_partants, headers=HEADERS, timeout=10)
-                if res.status_code == 200:
-                    data_part = res.json()
-                    participants = data_part.get("participants", [])
+                res_rap = requests.get(url_rapports, headers=HEADERS, timeout=10)
+                res_part = requests.get(url_participants, headers=HEADERS, timeout=10)
+                
+                if res_rap.status_code == 200 and res_part.status_code == 200:
+                    data_rapports = res_rap.json()
+                    data_part = res_part.json()
                     
-                    cotes_reelles = {}
+                    # Récupération de l'ordre d'arrivée réel
                     partants_arrives = []
-                    for part in participants:
+                    for part in data_part.get("participants", []):
                         num_pmu = str(part.get("numPmu"))
-                        
-                        rapport_direct = part.get("dernierRapportDirect")
-                        if isinstance(rapport_direct, dict):
-                            val_rapport = rapport_direct.get("rapport")
-                            if isinstance(val_rapport, (int, float)):
-                                cotes_reelles[num_pmu] = float(val_rapport)
-                        
                         ordre = part.get("ordreArrivee")
                         if ordre is not None and isinstance(ordre, int) and ordre > 0:
                             partants_arrives.append((ordre, num_pmu))
@@ -680,86 +677,95 @@ def verifier_resultats_automatiques_pmu(historique):
                     partants_arrives.sort(key=lambda x: x[0])
                     arrivee_trouvee = [num for ordre, num in partants_arrives]
                     
-                    if arrivee_trouvee:
-                        details = str(p.get("details", ""))
-                        mise_totale = safe_float(p.get("mise", 0))
-                        gain_total = 0.0
-                        un_gagne = False
+                    if not arrivee_trouvee:
+                        continue  # Course pas encore arrivée / pas d'ordre officiel
+
+                    # Structuration des dividendes officiels (pour 1€ de mise)
+                    dividendes_officiels = {} # ex: {("SIMPLE_GAGNANT", "3"): 4.50, ("SIMPLE_PLACE", "3"): 1.80}
+                    les_rapports = data_rapports.get("lesRapports", [])
+                    if not les_rapports and "rapports" in data_rapports:
+                        les_rapports = data_rapports["rapports"]
+
+                    for r in les_rapports:
+                        type_pari_api = r.get("typePari", "")
+                        for bet in r.get("cotesRapports", []):
+                            combinaison = [str(n) for n in bet.get("chevaux", bet.get("combinaison", []))]
+                            dividende = safe_float(bet.get("dividende", bet.get("valeur", 0)))
+                            if combinaison and dividende > 0:
+                                key_combu = "-".join(combinaison)
+                                dividendes_officiels[(type_pari_api, key_combu)] = dividende
+
+                    details = str(p.get("details", ""))
+                    mise_totale = safe_float(p.get("mise", 0))
+                    gain_total = 0.0
+                    un_gagne = False
+                    
+                    nums_paries = re.findall(r'N°\s*(\d+)', details)
+                    parts = details.split("|") if "|" in details else [details]
+                    
+                    for part in parts:
+                        part_lower = part.lower()
+                        nums_part = re.findall(r'N°\s*(\d+)', part)
                         
-                        nums_paries = re.findall(r'N°\s*(\d+)', details)
-                        if not nums_paries:
-                            nums_paries = re.findall(r'\b(\d{1,2})\b', details)
+                        mise_part_m = re.search(r'\((\d+(?:[\.,]\d+)?)\s*€?\)', part)
+                        mise_part = float(mise_part_m.group(1).replace(",", ".")) if mise_part_m else (mise_totale / len(parts) if len(parts) > 0 else mise_totale)
 
-                        type_jeu = str(p.get("type", "Simple"))
-                        parts = details.split("|") if "|" in details else [details]
-                        
-                        for part in parts:
-                            part_lower = part.lower()
-                            nums_part = re.findall(r'N°\s*(\d+)', part)
-                            if not nums_part:
-                                nums_part = re.findall(r'\b(\d{1,2})\b', part)
+                        is_place = "placé" in part_lower or "place" in part_lower or "sécu" in part_lower or "secu" in part_lower or "ticket 1" in part_lower
+                        is_gagnant = "gagnant" in part_lower or "poker" in part_lower or "spéculatif" in part_lower or "speculatif" in part_lower or "ticket 2" in part_lower
 
-                            mise_part_m = re.search(r'\((\d+(?:[\.,]\d+)?)\s*€?\)', part)
-                            mise_part = float(mise_part_m.group(1).replace(",", ".")) if mise_part_m else (mise_totale / len(parts) if len(parts) > 0 else mise_totale)
-
-                            cote_part_m = re.search(r'cote(?:\s*win)?:\s*([\d\.,]+)', part_lower)
-                            cote_default = float(cote_part_m.group(1).replace(",", ".")) if cote_part_m else 3.0
-
-                            is_place = "placé" in part_lower or "place" in part_lower or "sécu" in part_lower or "secu" in part_lower or "ticket 1" in part_lower
-                            is_gagnant = "gagnant" in part_lower or "poker" in part_lower or "spéculatif" in part_lower or "speculatif" in part_lower or "ticket 2" in part_lower
-
-                            if is_place and nums_part:
-                                num_secu = nums_part[0]
-                                cote_secu = cotes_reelles.get(num_secu, cote_default)
-                                if num_secu in arrivee_trouvee[:3]:
-                                    rendement = 1.0 + (cote_secu - 1.0) / 3.0 if cote_secu > 1.0 else 1.1
-                                    gain_total += mise_part * rendement
+                        if is_place and nums_part:
+                            num_secu = str(nums_part[0])
+                            # Recherche du dividende officiel réel pour 1€ (type SIMPLE_PLACE)
+                            div_ref = dividendes_officiels.get(("SIMPLE_PLACE", num_secu), 0.0)
+                            if div_ref > 0:
+                                gain_total += mise_part * div_ref
+                                un_gagne = True
+                            elif num_secu in arrivee_trouvee[:3]: # Sécurité de secours si libellé d'API spécifique
+                                gain_total += mise_part * 1.5 
+                                un_gagne = True
+                                
+                        elif is_gagnant and nums_part:
+                            num_poker = str(nums_part[0])
+                            # Recherche du dividende officiel réel pour 1€ (type SIMPLE_GAGNANT)
+                            div_ref = dividendes_officiels.get(("SIMPLE_GAGNANT", num_poker), 0.0)
+                            if div_ref > 0:
+                                gain_total += mise_part * div_ref
+                                un_gagne = True
+                                
+                        elif "couplé" in part_lower or "couple" in part_lower:
+                            if len(nums_part) >= 2:
+                                key_c = f"{nums_part[0]}-{nums_part[1]}"
+                                key_c_inv = f"{nums_part[1]}-{nums_part[0]}"
+                                div_ref = dividendes_officiels.get(("COUPLE_GAGNANT", key_c), dividendes_officiels.get(("COUPLE_GAGNANT", key_c_inv), dividendes_officiels.get(("COUPLE_PLACE", key_c), 0.0)))
+                                if div_ref > 0:
+                                    gain_total += mise_part * div_ref
                                     un_gagne = True
-                            elif is_gagnant and nums_part:
-                                num_poker = nums_part[0]
-                                cote_poker = cotes_reelles.get(num_poker, cote_default)
-                                if num_poker == arrivee_trouvee[0]:
-                                    gain_total += mise_part * cote_poker
-                                    un_gagne = True
-                            elif "couplé" in part_lower or "couple" in part_lower or type_jeu in ["Couplé", "Couple"]:
-                                if len(nums_part) >= 2 and all(n in arrivee_trouvee[:3] for n in nums_part[:2]):
-                                    gain_total += mise_part * 5.0
-                                    un_gagne = True
-                            elif "trio" in part_lower or type_jeu == "Trio":
-                                if len(nums_part) >= 3 and all(n in arrivee_trouvee[:3] for n in nums_part[:3]):
-                                    gain_total += mise_part * 10.0
-                                    un_gagne = True
-                            else:
-                                if nums_part:
-                                    num_val = nums_part[0]
-                                    cote_val = cotes_reelles.get(num_val, cote_default)
-                                    if num_val in arrivee_trouvee[:3]:
-                                        gain_total += mise_part * (1.0 + (cote_val - 1.0) / 3.0)
-                                        un_gagne = True
-
-                        if un_gagne or gain_total > 0:
-                            p["statut"] = "Gagné"
-                            p["gain"] = round(gain_total, 2)
-                            p["diagnostic"] = "Succès : Objectifs atteints."
                         else:
-                            p["statut"] = "Perdu"
-                            p["gain"] = 0.0
-                            
-                            raisons_echec = []
-                            for n_pari in set(nums_paries):
-                                if n_pari in arrivee_trouvee:
-                                    pos = arrivee_trouvee.index(n_pari) + 1
-                                    if pos == 4:
-                                        raisons_echec.append(f"N°{n_pari} 4e (au pied du podium)")
-                                    elif pos == 5:
-                                        raisons_echec.append(f"N°{n_pari} 5e")
-                                    else:
-                                        raisons_echec.append(f"N°{n_pari} {pos}e")
-                                else:
-                                    raisons_echec.append(f"N°{n_pari} non classé")
-                            p["diagnostic"] = "Échec : " + (" | ".join(raisons_echec) if raisons_echec else "Cheval non placé")
-                            
-                        modifie = True
+                            if nums_part:
+                                num_val = str(nums_part[0])
+                                div_ref = dividendes_officiels.get(("SIMPLE_PLACE", num_val), 0.0)
+                                if div_ref > 0:
+                                    gain_total += mise_part * div_ref
+                                    un_gagne = True
+
+                    if un_gagne or gain_total > 0:
+                        p["statut"] = "Gagné"
+                        p["gain"] = round(gain_total, 2)
+                        p["diagnostic"] = "Succès : Validé avec les rapports officiels PMU."
+                    else:
+                        p["statut"] = "Perdu"
+                        p["gain"] = 0.0
+                        
+                        raisons_echec = []
+                        for n_pari in set(nums_paries):
+                            if n_pari in arrivee_trouvee:
+                                pos = arrivee_trouvee.index(n_pari) + 1
+                                raisons_echec.append(f"N°{n_pari} {pos}e")
+                            else:
+                                raisons_echec.append(f"N°{n_pari} non classé")
+                        p["diagnostic"] = "Échec : " + (" | ".join(raisons_echec) if raisons_echec else "Cheval non placé")
+                        
+                    modifie = True
             except Exception:
                 pass
     return modifie
