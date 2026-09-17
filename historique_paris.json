@@ -9,9 +9,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°1 - JAGER RS (Cote: 2.2) (6 €) | Poker: Simple Gagnant ➔ N°5 - JOKER ALONE (Cote: 8.2) (3 €)",
     "mise": 9.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.4,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -24,9 +24,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°1 - SWEET AS (Cote: 5.7) (3 €) | Poker: Simple Gagnant ➔ N°5 - KAMAND (Cote: 13.0) (5 €)",
     "mise": 8.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 11e | N°1 8e",
     "ignore_stats": false
   },
   {
@@ -39,9 +39,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°11 - IMPALA DE VAL (Cote: 1.4) (7 €) | Poker: Simple Gagnant ➔ N°8 - KAPAULA DE L'EPINE (Cote: 10.0) (1 €)",
     "mise": 8.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 7.93,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -54,9 +54,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°7 - MEZQUITA (Cote: 5.9) (3 €) | Poker: Simple Gagnant ➔ N°13 - MA TALOU JOLY (Cote: 12.0) (5 €)",
     "mise": 8.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°13 non classé | N°7 5e",
     "ignore_stats": false
   },
   {
@@ -69,9 +69,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°9 - BUCKLEUPBUTTERCUP (Cote: 3.4) (4 €) | Poker: Simple Gagnant ➔ N°2 - AERION (Cote: 22.0) (3 €)",
     "mise": 7.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°2 7e | N°9 non classé",
     "ignore_stats": false
   }
 ]
