@@ -2529,9 +2529,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°3 - MALFOY DE LABRUNIE (Cote win: 2.1)] (4€) | Ticket 2 (Couplé N°3-4): [N°4 - AZAAN DE ROCHE (Cote win: 12.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°4 4e (au pied du podium) | N°3 non classé",
     "ignore_stats": false
   },
   {
@@ -2544,9 +2544,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°3 - MALFOY DE LABRUNIE (Cote win: 2.1)] (4€) | Ticket 2 (Simple Gagnant): [N°1 - MONSIEUR EDDY (Cote win: 4.6)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°3 non classé | N°1 2e",
     "ignore_stats": false
   },
   {
@@ -2559,9 +2559,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°3 et N°2] (4€) | Ticket 2 (Couplé Gagnant): [N°3 et N°4] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°4 4e (au pied du podium) | N°2 1e | N°3 non classé",
     "ignore_stats": false
   },
   {
@@ -2574,9 +2574,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°3, N°2, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°3, N°2, N°4] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°4 4e (au pied du podium) | N°2 1e | N°3 non classé | N°1 2e",
     "ignore_stats": false
   }
 ]
