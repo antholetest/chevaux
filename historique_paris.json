@@ -279,9 +279,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Gagnant/Placé restreint ➔ N°7 - NEVER LOST (Cote: 2.3) (7 €) | Poker: Simple Gagnant ➔ N°5 - HATEDIA FAL (Cote: 8.2) (5 €)",
     "mise": 12.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 10.64,
+    "diagnostic": "Succès : Validé (Lot de 7 partants).",
     "ignore_stats": false
   },
   {
@@ -294,9 +294,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°10 - KRISTAL VICTORY (Cote: 9.3) (3 €) | Poker: Simple Gagnant ➔ N°5 - KEOPS DU RABUTIN (Cote: 21.0) (7 €)",
     "mise": 10.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 5e | N°10 7e",
     "ignore_stats": false
   },
   {
@@ -309,9 +309,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°10 - SIERRA BELLE (Cote: 3.1) (6 €) | Poker: Simple Gagnant ➔ N°6 - I AM ROYAL (Cote: 9.4) (4 €)",
     "mise": 10.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 9.5,
+    "diagnostic": "Succès : Validé (Lot de 12 partants).",
     "ignore_stats": false
   },
   {
@@ -324,9 +324,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°6 - CHOP VAL (Cote: 4.7) (4 €) | Poker: Simple Gagnant ➔ N°4 - INDIAN PACIFIC (Cote: 7.7) (5 €)",
     "mise": 9.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 46.61,
+    "diagnostic": "Succès : Validé (Lot de 10 partants).",
     "ignore_stats": false
   },
   {
@@ -339,9 +339,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Gagnant/Placé restreint ➔ N°1 - MONSIEUR EDDY (Cote: 4.6) (3 €) | Poker: Simple Gagnant ➔ N°4 - AZAAN DE ROCHE (Cote: 12.0) (6 €)",
     "mise": 9.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 7.32,
+    "diagnostic": "Succès : Validé (Lot de 6 partants).",
     "ignore_stats": false
   }
 ]
