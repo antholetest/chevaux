@@ -2064,9 +2064,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°7 - NEVER LOST (Cote win: 2.3)] (4€) | Ticket 2 (Couplé N°7-1): [N°1 - BIG VICTOR (Cote win: 20.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.03,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -2079,9 +2079,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°7 - NEVER LOST (Cote win: 2.3)] (4€) | Ticket 2 (Simple Gagnant): [N°6 - SMOLAR (Cote win: 21.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 5.73,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -2094,9 +2094,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°7 et N°2] (4€) | Ticket 2 (Couplé Gagnant): [N°7 et N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.03,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -2109,9 +2109,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°7, N°2, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°7, N°2, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.03,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   }
 ]
