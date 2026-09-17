@@ -1329,9 +1329,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°8 - KAPAULA DE L'EPINE (Cote win: 10.0)] (4€) | Ticket 2 (Couplé N°8-1): [N°1 - HANNAH (Cote win: 21.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°8 5e | N°1 11e",
     "ignore_stats": false
   },
   {
@@ -1344,9 +1344,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°8 - KAPAULA DE L'EPINE (Cote win: 10.0)] (4€) | Ticket 2 (Simple Gagnant): [N°6 - KELLY DE BANVILLE (Cote win: 14.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°8 5e | N°6 7e",
     "ignore_stats": false
   },
   {
@@ -1359,9 +1359,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°8 et N°11] (4€) | Ticket 2 (Couplé Gagnant): [N°8 et N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°11 1e | N°8 5e | N°1 11e",
     "ignore_stats": false
   },
   {
@@ -1374,9 +1374,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°8, N°11, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°8, N°11, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°11 1e | N°8 5e | N°1 11e",
     "ignore_stats": false
   }
 ]
