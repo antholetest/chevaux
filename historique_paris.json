@@ -1599,9 +1599,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°6 - GYPSIE MAGIQUE (Cote win: 4.4)] (4€) | Ticket 2 (Couplé N°6-1): [N°1 - JUDICIEUSE ZAILER (Cote win: 16.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°1 non classé | N°6 4e (au pied du podium)",
     "ignore_stats": false
   },
   {
@@ -1614,9 +1614,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°6 - GYPSIE MAGIQUE (Cote win: 4.4)] (4€) | Ticket 2 (Simple Gagnant): [N°10 - IT'S ME DIESCHOOT (Cote win: 14.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°10 3e | N°6 4e (au pied du podium)",
     "ignore_stats": false
   },
   {
@@ -1629,9 +1629,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°6 et N°5] (4€) | Ticket 2 (Couplé Gagnant): [N°6 et N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 6e | N°1 non classé | N°6 4e (au pied du podium)",
     "ignore_stats": false
   },
   {
@@ -1644,9 +1644,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°6, N°5, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°6, N°5, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 6e | N°1 non classé | N°6 4e (au pied du podium)",
     "ignore_stats": false
   }
 ]
