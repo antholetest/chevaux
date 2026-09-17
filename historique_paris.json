@@ -9,9 +9,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°4 - MATADOR (Cote: 1.4) (7 €) | Poker: Simple Gagnant ➔ N°5 - KELLY JEPHI (Cote: 7.8) (1 €)",
     "mise": 8.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 7.93,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -24,9 +24,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°9 - PAMELA BOUM (Cote: 4.9) (3 €) | Poker: Simple Gagnant ➔ N°10 - MARKSWOMAN (Cote: 7.6) (5 €)",
     "mise": 8.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°10 3e | N°9 5e",
     "ignore_stats": false
   },
   {
@@ -39,9 +39,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°2 - BOLKHOV (Cote: 4.3) (4 €) | Poker: Simple Gagnant ➔ N°8 - FASTER (Cote: 16.0) (4 €)",
     "mise": 8.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.4,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -54,9 +54,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°1 - MISS LIBERTY (Cote: 4.5) (4 €) | Poker: Simple Gagnant ➔ N°9 - FREAK (Cote: 6.8) (4 €)",
     "mise": 8.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.67,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -69,9 +69,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°1 - SWEET AS (Cote: 5.7) (3 €) | Poker: Simple Gagnant ➔ N°5 - KAMAND (Cote: 13.0) (5 €)",
     "mise": 8.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 11e | N°1 8e",
     "ignore_stats": false
   },
   {
@@ -84,9 +84,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°1 - CALAS (Cote win: 4.6)] (4€) | Ticket 2 (Couplé N°1-6): [N°6 - MONTGAUDRY (Cote win: 15.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 13.4,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -99,9 +99,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°1 - CALAS (Cote win: 4.6)] (4€) | Ticket 2 (Simple Gagnant): [N°3 - FELIX AUX ORMES (Cote win: 7.9)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.8,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -114,9 +114,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°1 et N°4] (4€) | Ticket 2 (Couplé Gagnant): [N°1 et N°6] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 13.4,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -129,9 +129,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°1, N°4, N°2] (4€) | Ticket 2 (Trio Spéculatif): [N°1, N°4, N°6] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 13.4,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   }
 ]
