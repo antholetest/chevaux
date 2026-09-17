@@ -115,7 +115,7 @@ def reinitialiser_application_complete():
     fichiers_supprimes = 0
     
     # 1. Suppression physique des fichiers locaux correspondants
-    patterns = ["historique_paris.json", "pmu_du_jour_*.json"]
+    patterns = ["historique_paris.json", "pmu_du_jour_*.json", "bilan_journee_*.json"]
     for pattern in patterns:
         for f in DOSSIER.glob(pattern):
             try:
@@ -537,11 +537,8 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs)
         terrain = course.get("terrain_officiel", "Bon (Standard)")
         chevaux_valides = [c for c in chevaux if isinstance(c.get("cote"), (int, float)) and c["cote"] > 1.0]
         
-        # Structure de filtrage : Moins de 8 partants (exclusion ou ajustement des paris combinés)
         nb_partants_total = len(chevaux)
         if nb_partants_total < 8:
-            # Pour les courses de moins de 8 partants, les règles de placement changent (souvent 2 premiers seulement au lieu de 3)
-            # On applique un filtre strict ou une pondération spécifique si nécessaire
             pass
             
         if len(chevaux_valides) < 3:
@@ -602,7 +599,6 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs)
         cote_secu = chev_base["cote"]
         nb_p = course_opt.get("nb_partants", 8)
         
-        # Adaptation du rendement si moins de 8 partants (règles PMU : pas de tiers/quarté ou nombre de places réduites)
         div_place_facteur = 3.0 if nb_p >= 8 else 2.0
 
         if isinstance(cote_secu, (int, float)) and cote_secu > 1.0:
@@ -631,8 +627,66 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs)
         
     return plan_paris
 
+def generer_et_sauvegarder_bilan_journee(historique, date_str):
+    """Génère, persiste et synchronise le bilan détaillé de la journée par réunion/hippodrome."""
+    historique_jour = [p for p in historique if str(p.get("date")) == str(date_str) and p.get("statut") != "Annulé"]
+    if not historique_jour:
+        return None
+
+    reunions_bilan = {}
+    for p in historique_jour:
+        reunion_nom = f"{p.get('reunion', 'R?')} - {p.get('hippodrome', 'Inconnu')}"
+        if reunion_nom not in reunions_bilan:
+            reunions_bilan[reunion_nom] = {
+                "date": date_str,
+                "reunion": reunion_nom,
+                "mises": 0.0,
+                "gains": 0.0,
+                "paris_total": 0,
+                "gagnes": 0,
+                "perdus": 0,
+                "en_attente": 0
+            }
+        
+        mise = safe_float(p.get("mise", 0))
+        gain = safe_float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0
+        statut = p.get("statut")
+        
+        reunions_bilan[reunion_nom]["mises"] += mise
+        reunions_bilan[reunion_nom]["gains"] += gain
+        reunions_bilan[reunion_nom]["paris_total"] += 1
+        
+        if statut == "Gagné":
+            reunions_bilan[reunion_nom]["gagnes"] += 1
+        elif statut == "Perdu":
+            reunions_bilan[reunion_nom]["perdus"] += 1
+        elif statut == "En attente":
+            reunions_bilan[reunion_nom]["en_attente"] += 1
+
+    bilan_data = []
+    for k, v in reunions_bilan.items():
+        net = v["gains"] - v["mises"]
+        roi = (net / v["mises"] * 100) if v["mises"] > 0 else 0.0
+        bilan_data.append({
+            "Réunion / Hippodrome": v["reunion"],
+            "Total Paris": v["paris_total"],
+            "Gagnés": v["gagnes"],
+            "Perdus": v["perdus"],
+            "En attente": v["en_attente"],
+            "Mises (€)": round(v["mises"], 2),
+            "Gains (€)": round(v["gains"], 2),
+            "Bilan Net (€)": round(net, 2),
+            "ROI (%)": round(roi, 1)
+        })
+
+    fichier_bilan = DOSSIER / f"bilan_journee_{date_str}.json"
+    sauvegarder_et_synchroniser(bilan_data, fichier_bilan, f"Mise à jour du bilan de la journée {date_str}")
+    return bilan_data
+
 def verifier_resultats_automatiques_pmu(historique):
     modifie = False
+    dates_modifiees = set()
+    
     for p in historique:
         if p.get("statut") == "En attente":
             date_pari = str(p.get("date", "")).strip()
@@ -648,6 +702,7 @@ def verifier_resultats_automatiques_pmu(historique):
                 try:
                     dt = datetime.datetime.strptime(date_pari, fmt)
                     date_pmu = dt.strftime("%d%m%Y")
+                    date_iso_norm = dt.strftime("%Y-%m-%d")
                     break
                 except Exception:
                     pass
@@ -726,7 +781,6 @@ def verifier_resultats_automatiques_pmu(historique):
                 nums_paries = re.findall(r'N°\s*(\d+)', details)
                 parts = details.split("|") if "|" in details else [details]
                 
-                # Seuil de placement selon le nombre de partants (règle officielle PMU : 8 partants et plus = 3 places, moins de 8 partants = 2 places)
                 limite_places = 3 if nb_partants_effectif >= 8 else 2
                 
                 for part in parts:
@@ -800,8 +854,15 @@ def verifier_resultats_automatiques_pmu(historique):
                     p["diagnostic"] = "Échec : " + (" | ".join(raisons_echec) if raisons_echec else "Cheval non classé")
                     
                 modifie = True
+                dates_modifiees.add(date_iso_norm)
             except Exception:
                 pass
+                
+    # Sauvegarde automatique des bilans par journée mis à jour
+    if modifie:
+        for d_mod in dates_modifiees:
+            generer_et_sauvegarder_bilan_journee(historique, d_mod)
+            
     return modifie
 
 # --- INTERFACE STREAMLIT ---
@@ -1133,11 +1194,11 @@ with tab_suivi:
         historique_stats = [p for p in historique_actifs if not p.get("ignore_stats", False)]
             
         if st.button("🔄 Vérifier automatiquement les résultats des courses"):
-            with st.spinner("Téléchargement et analyse des résultats officiels..."):
+            with st.spinner("Téléchargement et analyse des résultats officiels... (Persistance automatique du bilan activée)"):
                 modifie = verifier_resultats_automatiques_pmu(historique)
                 if modifie:
                     sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Mise à jour automatique des résultats PMU")
-                    st.success("Résultats mis à jour et vérifiés avec succès !")
+                    st.success("Résultats mis à jour, vérifiés et bilans journaliers sauvegardés avec succès !")
                     st.rerun()
                 else:
                     st.info("Aucun nouveau résultat officiel disponible pour les paris en attente.")
@@ -1301,55 +1362,61 @@ with tab_reunions:
             if dates_disponibles:
                 date_choisie_bilan = st.selectbox("📅 Sélectionnez la journée à analyser", dates_disponibles)
                 
-                historique_jour = [p for p in historique if str(p.get("date")) == date_choisie_bilan]
-                
-                reunions_bilan = {}
-                for p in historique_jour:
-                    if p.get("statut") == "Annulé":
-                        continue
-                    
-                    reunion_nom = f"{p.get('reunion', 'R?')} - {p.get('hippodrome', 'Inconnu')}"
-                    if reunion_nom not in reunions_bilan:
-                        reunions_bilan[reunion_nom] = {
-                            "mises": 0.0, 
-                            "gains": 0.0, 
-                            "paris": 0, 
-                            "gagnes": 0, 
-                            "perdus": 0,
-                            "en_attente": 0
-                        }
-                    
-                    mise = safe_float(p.get("mise", 0))
-                    gain = safe_float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0
-                    statut = p.get("statut")
-                    
-                    reunions_bilan[reunion_nom]["mises"] += mise
-                    reunions_bilan[reunion_nom]["gains"] += gain
-                    reunions_bilan[reunion_nom]["paris"] += 1
-                    
-                    if statut == "Gagné":
-                        reunions_bilan[reunion_nom]["gagnes"] += 1
-                    elif statut == "Perdu":
-                        reunions_bilan[reunion_nom]["perdus"] += 1
-                    elif statut == "En attente":
-                        reunions_bilan[reunion_nom]["en_attente"] += 1
-                
+                # Vérifie d'abord si un fichier de bilan journalier existe en mémoire, sinon l'établit à la volée
+                fichier_bilan_jour = DOSSIER / f"bilan_journee_{date_choisie_bilan}.json"
                 tableau_reunions = []
-                for k, v in reunions_bilan.items():
-                    net = v["gains"] - v["mises"]
-                    roi_reunion = (net / v["mises"] * 100) if v["mises"] > 0 else 0.0
-                    tableau_reunions.append({
-                        "Réunion / Hippodrome": k,
-                        "Total Paris": v["paris"],
-                        "G / P / Attente": f"{v['gagnes']} / {v['perdus']} / {v['en_attente']}",
-                        "Mises (€)": round(v["mises"], 2),
-                        "Gains (€)": round(v["gains"], 2),
-                        "Bilan Net (€)": round(net, 2),
-                        "ROI (%)": round(r_reunion := roi_reunion, 1)
-                    })
+                
+                if fichier_bilan_jour.exists():
+                    try:
+                        with open(fichier_bilan_jour, "r", encoding="utf-8") as fb:
+                            tableau_reunions = json.load(fb)
+                    except Exception:
+                        pass
+                
+                if not tableau_reunions:
+                    # Génération dynamique si non trouvé
+                    historique_jour = [p for p in historique if str(p.get("date")) == date_choisie_bilan]
+                    reunions_bilan = {}
+                    for p in historique_jour:
+                        if p.get("statut") == "Annulé":
+                            continue
+                        reunion_nom = f"{p.get('reunion', 'R?')} - {p.get('hippodrome', 'Inconnu')}"
+                        if reunion_nom not in reunions_bilan:
+                            reunions_bilan[reunion_nom] = {"mises": 0.0, "gains": 0.0, "paris": 0, "gagnes": 0, "perdus": 0, "en_attente": 0}
+                        
+                        mise = safe_float(p.get("mise", 0))
+                        gain = safe_float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0
+                        statut = p.get("statut")
+                        
+                        reunions_bilan[reunion_nom]["mises"] += mise
+                        reunions_bilan[reunion_nom]["gains"] += gain
+                        reunions_bilan[reunion_nom]["paris"] += 1
+                        if statut == "Gagné":
+                            reunions_bilan[reunion_nom]["gagnes"] += 1
+                        elif statut == "Perdu":
+                            reunions_bilan[reunion_nom]["perdus"] += 1
+                        elif statut == "En attente":
+                            reunions_bilan[reunion_nom]["en_attente"] += 1
+
+                    for k, v in reunions_bilan.items():
+                        net = v["gains"] - v["mises"]
+                        roi_reunion = (net / v["mises"] * 100) if v["mises"] > 0 else 0.0
+                        tableau_reunions.append({
+                            "Réunion / Hippodrome": k,
+                            "Total Paris": v["paris"],
+                            "Gagnés / Perdus / Attente": f"{v['gagnes']} / {v['perdus']} / {v['en_attente']}",
+                            "Mises (€)": round(v["mises"], 2),
+                            "Gains (€)": round(v["gains"], 2),
+                            "Bilan Net (€)": round(net, 2),
+                            "ROI (%)": round(roi_reunion, 1)
+                        })
                 
                 if tableau_reunions:
                     st.dataframe(tableau_reunions, width='stretch', hide_index=True)
+                    
+                    if st.button("💾 Forcer la sauvegarde et synchronisation de ce bilan"):
+                        generer_et_sauvegarder_bilan_journee(historique, date_choisie_bilan)
+                        st.success(f"Le bilan de la journée du {date_choisie_bilan} a été sauvegardé et synchronisé sur GitHub avec succès !")
                 else:
                     st.info("Aucun pari actif pour cette date.")
             else:
