@@ -12,7 +12,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec : N°5 11e | N°1 8e",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-01",
@@ -27,7 +27,7 @@
     "statut": "Gagné",
     "gain": 11.5,
     "diagnostic": "Succès : Validé (Lot de 11 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-01",
@@ -42,7 +42,7 @@
     "statut": "Gagné",
     "gain": 8.88,
     "diagnostic": "Succès : Validé (Lot de 6 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-01",
@@ -57,7 +57,7 @@
     "statut": "Gagné",
     "gain": 8.89,
     "diagnostic": "Succès : Validé (Lot de 9 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-01",
@@ -72,7 +72,7 @@
     "statut": "Gagné",
     "gain": 8.33,
     "diagnostic": "Succès : Validé (Lot de 13 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-01",
@@ -87,7 +87,7 @@
     "statut": "Gagné",
     "gain": 50.4,
     "diagnostic": "Succès : Validé (Lot de 16 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-01",
@@ -102,7 +102,7 @@
     "statut": "Gagné",
     "gain": 32.0,
     "diagnostic": "Succès : Validé (Lot de 16 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-01",
@@ -117,7 +117,7 @@
     "statut": "Gagné",
     "gain": 50.4,
     "diagnostic": "Succès : Validé (Lot de 16 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-01",
@@ -132,7 +132,7 @@
     "statut": "Gagné",
     "gain": 50.4,
     "diagnostic": "Succès : Validé (Lot de 16 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-01",
@@ -147,7 +147,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec : N°5 11e | N°1 8e",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-01",
@@ -162,7 +162,7 @@
     "statut": "Gagné",
     "gain": 11.5,
     "diagnostic": "Succès : Validé (Lot de 11 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-01",
@@ -177,7 +177,7 @@
     "statut": "Gagné",
     "gain": 8.88,
     "diagnostic": "Succès : Validé (Lot de 6 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-01",
@@ -192,7 +192,7 @@
     "statut": "Gagné",
     "gain": 8.89,
     "diagnostic": "Succès : Validé (Lot de 9 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-01",
@@ -207,6 +207,6 @@
     "statut": "Gagné",
     "gain": 8.33,
     "diagnostic": "Succès : Validé (Lot de 13 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   }
 ]
