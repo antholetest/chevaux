@@ -9,9 +9,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°3 - LUMIERE DE BAILLE (Cote: 2.6) (8 €) | Poker: Simple Gagnant ➔ N°5 - LUCY DU RILER (Cote: 12.0) (4 €)",
     "mise": 12.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 11e | N°3 non classé",
     "ignore_stats": false
   },
   {
@@ -24,9 +24,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Gagnant/Placé restreint ➔ N°1 - NUIT TORRIDE (Cote: 2.6) (7 €) | Poker: Simple Gagnant ➔ N°3 - SAINTE HELENE (Cote: 16.0) (5 €)",
     "mise": 12.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°3 4e | N°1 3e",
     "ignore_stats": false
   },
   {
@@ -39,9 +39,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°12 - MONDAINE (Cote: 2.6) (6 €) | Poker: Simple Gagnant ➔ N°7 - MYSTIQUE ULTRA (Cote: 6.5) (3 €)",
     "mise": 9.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°7 non classé | N°12 non classé",
     "ignore_stats": false
   },
   {
@@ -54,9 +54,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°8 - MERCEDES STAR (Cote: 2.3) (6 €) | Poker: Simple Gagnant ➔ N°7 - JAGUAR V ASSUM (Cote: 22.0) (3 €)",
     "mise": 9.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.17,
+    "diagnostic": "Succès : Validé (Lot de 8 partants).",
     "ignore_stats": false
   },
   {
@@ -69,9 +69,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°3 - KONFINER (Cote: 5.3) (3 €) | Poker: Simple Gagnant ➔ N°5 - JEU DE ROLE (Cote: 14.0) (5 €)",
     "mise": 8.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 non classé | N°3 5e",
     "ignore_stats": false
   }
 ]
