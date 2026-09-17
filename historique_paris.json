@@ -2469,9 +2469,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°6 - COUPE D'EUROPE (Cote win: 11.0)] (4€) | Ticket 2 (Couplé N°6-2): [N°2 - SPANISH LIGHT (Cote win: 13.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°2 2e | N°6 11e",
     "ignore_stats": false
   },
   {
@@ -2484,9 +2484,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°6 - COUPE D'EUROPE (Cote win: 11.0)] (4€) | Ticket 2 (Simple Gagnant): [N°2 - SPANISH LIGHT (Cote win: 13.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°2 2e | N°6 11e",
     "ignore_stats": false
   },
   {
@@ -2499,9 +2499,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°6 et N°3] (4€) | Ticket 2 (Couplé Gagnant): [N°6 et N°2] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°2 2e | N°3 3e | N°6 11e",
     "ignore_stats": false
   },
   {
@@ -2514,9 +2514,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°6, N°3, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°6, N°3, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°3 3e | N°6 11e | N°1 9e",
     "ignore_stats": false
   }
 ]
