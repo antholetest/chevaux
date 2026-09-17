@@ -9,9 +9,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°1 - SWEET AS (Cote: 5.7) (4 €) | Poker: Simple Gagnant ➔ N°5 - KAMAND (Cote: 13.0) (7 €)",
     "mise": 11.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 11e | N°1 8e",
     "ignore_stats": false
   },
   {
@@ -24,9 +24,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°2 - BOLKHOV (Cote: 4.3) (6 €) | Poker: Simple Gagnant ➔ N°8 - FASTER (Cote: 16.0) (6 €)",
     "mise": 12.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 11.5,
+    "diagnostic": "Succès : Validé (Lot de 11 partants).",
     "ignore_stats": false
   },
   {
@@ -39,9 +39,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Gagnant/Placé restreint ➔ N°1 - JAGER RS (Cote: 2.2) (6 €) | Poker: Simple Gagnant ➔ N°2 - JOYA DE FONT (Cote: 13.0) (3 €)",
     "mise": 9.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.88,
+    "diagnostic": "Succès : Validé (Lot de 6 partants).",
     "ignore_stats": false
   },
   {
@@ -54,9 +54,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°4 - MATADOR (Cote: 1.4) (8 €) | Poker: Simple Gagnant ➔ N°5 - KELLY JEPHI (Cote: 7.8) (1 €)",
     "mise": 9.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.89,
+    "diagnostic": "Succès : Validé (Lot de 9 partants).",
     "ignore_stats": false
   },
   {
@@ -69,9 +69,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°1 - BINT NEW BAY (Cote: 4.9) (4 €) | Poker: Simple Gagnant ➔ N°13 - TACITA (Cote: 21.0) (5 €)",
     "mise": 9.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.33,
+    "diagnostic": "Succès : Validé (Lot de 13 partants).",
     "ignore_stats": false
   }
 ]
