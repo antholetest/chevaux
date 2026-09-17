@@ -1389,9 +1389,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°2 - LUSSAC DE VANDEL (Cote: 3.8) (6 €) | Poker: Simple Gagnant ➔ N°4 - MARIEKE'S BOY TF (Cote: 6.0) (6 €)",
     "mise": 12.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°4 3e | N°2 4e (au pied du podium)",
     "ignore_stats": false
   },
   {
@@ -1419,9 +1419,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°1 - NUIT TORRIDE (Cote: 2.6) (6 €) | Poker: Simple Gagnant ➔ N°7 - RAFFLES JET (Cote: 8.9) (3 €)",
     "mise": 9.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 9.2,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -1434,9 +1434,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°6 - ILTONE (Cote: 2.0) (6 €) | Poker: Simple Gagnant ➔ N°2 - LEADER CONTI (Cote: 6.0) (2 €)",
     "mise": 8.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.0,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -1464,9 +1464,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°7 - NEVER LOST (Cote: 2.3) (8 €) | Poker: Simple Gagnant ➔ N°6 - SMOLAR (Cote: 21.0) (4 €)",
     "mise": 12.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 11.47,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -1479,9 +1479,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°2 - DEVIL OP (Cote: 6.6) (3 €) | Poker: Simple Gagnant ➔ N°6 - IQUITA VILI (Cote: 12.0) (7 €)",
     "mise": 10.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°2 4e (au pied du podium) | N°6 5e",
     "ignore_stats": false
   },
   {
@@ -1494,9 +1494,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°4 - GOODMOOD (Cote: 2.9) (6 €) | Poker: Simple Gagnant ➔ N°1 - PONTE DE LIMA (Cote: 9.8) (3 €)",
     "mise": 9.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 9.8,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   },
   {
@@ -1509,9 +1509,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°10 - KRISTAL VICTORY (Cote: 9.3) (2 €) | Poker: Simple Gagnant ➔ N°5 - KEOPS DU RABUTIN (Cote: 21.0) (6 €)",
     "mise": 8.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 5e | N°10 7e",
     "ignore_stats": false
   },
   {
@@ -1524,9 +1524,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°1 - LISETTE D'ESTRUVAL (Cote: 4.3) (4 €) | Poker: Simple Gagnant ➔ N°2 - GINO'S LINE (Cote: 8.4) (4 €)",
     "mise": 8.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.4,
+    "diagnostic": "Succès : Objectifs atteints.",
     "ignore_stats": false
   }
 ]
