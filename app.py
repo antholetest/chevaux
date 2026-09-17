@@ -1362,7 +1362,6 @@ with tab_reunions:
             if dates_disponibles:
                 date_choisie_bilan = st.selectbox("📅 Sélectionnez la journée à analyser", dates_disponibles)
                 
-                # Vérifie d'abord si un fichier de bilan journalier existe en mémoire, sinon l'établit à la volée
                 fichier_bilan_jour = DOSSIER / f"bilan_journee_{date_choisie_bilan}.json"
                 tableau_reunions = []
                 
@@ -1374,7 +1373,6 @@ with tab_reunions:
                         pass
                 
                 if not tableau_reunions:
-                    # Génération dynamique si non trouvé
                     historique_jour = [p for p in historique if str(p.get("date")) == date_choisie_bilan]
                     reunions_bilan = {}
                     for p in historique_jour:
