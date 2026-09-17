@@ -1089,9 +1089,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°9 - PAMELA BOUM (Cote win: 4.9)] (4€) | Ticket 2 (Couplé N°9-1): [N°1 - MODERN SPIRIT (Cote win: 20.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°9 5e | N°1 1e",
     "ignore_stats": false
   },
   {
@@ -1104,9 +1104,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°9 - PAMELA BOUM (Cote win: 4.9)] (4€) | Ticket 2 (Simple Gagnant): [N°10 - MARKSWOMAN (Cote win: 7.6)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°10 3e | N°9 5e",
     "ignore_stats": false
   },
   {
@@ -1119,9 +1119,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°9 et N°5] (4€) | Ticket 2 (Couplé Gagnant): [N°9 et N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 8e | N°9 5e | N°1 1e",
     "ignore_stats": false
   },
   {
@@ -1134,9 +1134,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°9, N°5, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°9, N°5, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 8e | N°9 5e | N°1 1e",
     "ignore_stats": false
   }
 ]
