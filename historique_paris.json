@@ -1824,9 +1824,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°2 - LUSSAC DE VANDEL (Cote win: 3.8)] (16€) | Ticket 2 (Couplé N°2-6): [N°6 - LUC PAASLOO TF (Cote win: 9.1)] (4€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°6 non classé | N°2 4e",
     "ignore_stats": false
   },
   {
@@ -1839,9 +1839,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°2 - LUSSAC DE VANDEL (Cote win: 3.8)] (16€) | Ticket 2 (Simple Gagnant): [N°7 - KARLA DE PAGERIE (Cote win: 27.0)] (4€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°7 non classé | N°2 4e",
     "ignore_stats": false
   },
   {
@@ -1854,9 +1854,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°2 et N°3] (16€) | Ticket 2 (Couplé Gagnant): [N°2 et N°6] (4€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°3 1e | N°6 non classé | N°2 4e",
     "ignore_stats": false
   },
   {
@@ -1869,9 +1869,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°2, N°3, N°1] (16€) | Ticket 2 (Trio Spéculatif): [N°2, N°3, N°1] (4€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°1 5e | N°3 1e | N°2 4e",
     "ignore_stats": false
   }
 ]
