@@ -714,9 +714,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°18 - INSERT BOY (Cote win: 1.6)] (16€) | Ticket 2 (Couplé N°18-2): [N°2 - ITALICA (Cote win: 27.0)] (4€)",
     "mise": 20,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 18.67,
+    "diagnostic": "Succès : Validé (Lot de 18 partants).",
     "ignore_stats": false
   },
   {
@@ -729,9 +729,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°4 - LADY MADELEINE (Cote: 4.1) (8 €) | Poker: Simple Gagnant ➔ N°5 - PASAND (Cote: 8.2) (9 €)",
     "mise": 17.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 9e | N°4 5e",
     "ignore_stats": false
   },
   {
@@ -759,9 +759,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Gagnant/Placé restreint ➔ N°5 - NO TURNING BACK (Cote: 5.5) (3 €) | Poker: Simple Gagnant ➔ N°2 - HELLO JO (Cote: 6.2) (8 €)",
     "mise": 11.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 8.4,
+    "diagnostic": "Succès : Validé (Lot de 6 partants).",
     "ignore_stats": false
   },
   {
@@ -774,9 +774,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°2 - LAUGH IS ENOUGH (Cote: 2.0) (8 €) | Poker: Simple Gagnant ➔ N°5 - PINK PALACE (Cote: 7.4) (3 €)",
     "mise": 11.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 10.22,
+    "diagnostic": "Succès : Validé (Lot de 8 partants).",
     "ignore_stats": false
   },
   {
@@ -789,9 +789,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°5 - STARRY SKY (Cote: 5.3) (5 €) | Poker: Simple Gagnant ➔ N°2 - MONARCO (Cote: 11.0) (6 €)",
     "mise": 11.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 10.97,
+    "diagnostic": "Succès : Validé (Lot de 10 partants).",
     "ignore_stats": false
   }
 ]
