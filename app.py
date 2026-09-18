@@ -379,7 +379,7 @@ def calculer_parametres_adaptatifs():
             historique = json.load(f)
         
         paris_regles = [p for p in historique if p.get("statut") in ["Gagné", "Perdu"]]
-        derniers_paris = paris_regles[-20:]
+        derniers_paris = paris_regles[-100:]
         if not derniers_paris:
             return params
             
@@ -396,27 +396,31 @@ def calculer_parametres_adaptatifs():
                 params["bonus_place"] = int(round(taux_proche * 10))
                 messages_parts.append(f"🎯 {proche_podium} quasi-podium(s) détecté(s) -> Bonus régularité (+{params['bonus_place']} pts)")
 
-        # 2. Analyse ROI par discipline sur tout l'historique réglé
+        # 2. Analyse ROI par discipline sur tout l'historique réglé (Version renforcée)
         roi_disciplines = {}
         for p in paris_regles:
             disc = p.get("discipline", "Galop Plat")
             if disc not in roi_disciplines:
-                roi_disciplines[disc] = {"mises": 0.0, "gains": 0.0}
+                roi_disciplines[disc] = {"mises": 0.0, "gains": 0.0, "nb_paris": 0}
             roi_disciplines[disc]["mises"] += safe_float(p.get("mise", 0))
+            roi_disciplines[disc]["nb_paris"] += 1
             if p.get("statut") == "Gagné":
                 roi_disciplines[disc]["gains"] += safe_float(p.get("gain", 0))
 
         for disc, vals in roi_disciplines.items():
             m = vals["mises"]
             g = vals["gains"]
-            if m > 10.0:  # Si assez de volume
+            nb = vals["nb_paris"]
+            
+            # Sécurité : On exige un volume suffisant (ex: 8 paris minimum ET 60€ de mises) 
+            # avant de juger et de pénaliser une discipline.
+            if nb >= 8 and m >= 60.0:
                 roi = ((g - m) / m) * 100
-                if roi < -20.0:
-                    params["malus_discipline"][disc] = -5
-                    messages_parts.append(f"⚠️ Discipline '{disc}' en déficit (ROI: {roi:.1f}%) -> Pénalité -5 pts")
+                if roi < -25.0:
+                    params["malus_discipline"][disc] = -2  # Pénalité adoucie (-2 pts au lieu de -5)
+                    messages_parts.append(f"⚠️ Discipline '{disc}' en déficit (ROI: {roi:.1f}%) -> Légère pénalité -2 pts")
                 elif roi > 15.0:
                     messages_parts.append(f"🔥 Discipline '{disc}' performante (ROI: +{roi:.1f}%)")
-
         # 3. Analyse du meilleur type de jeu
         roi_types = {}
         for p in paris_regles:
@@ -531,7 +535,7 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs)
         chevaux = course.get("chevaux", [])
         discipline = course.get("discipline", "Galop Plat")
         
-        if malus_disciplines.get(discipline, 0) <= -5:
+        if malus_disciplines.get(discipline, 0) <= -2:
             continue
             
         terrain = course.get("terrain_officiel", "Bon (Standard)")
