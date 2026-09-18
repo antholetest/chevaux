@@ -489,9 +489,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°14 - JUICY LUCY (Cote win: 5.7)] (7€) | Ticket 2 (Couplé N°14-1): [N°1 - BEMARA (Cote win: 16.0)] (3€)",
     "mise": 10,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°1 5e | N°14 10e",
     "ignore_stats": false
   },
   {
@@ -504,9 +504,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°14 - JUICY LUCY (Cote win: 5.7)] (7€) | Ticket 2 (Simple Gagnant): [N°5 - SNEJINSKHA (Cote win: 10.0)] (3€)",
     "mise": 10,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°5 7e | N°14 10e",
     "ignore_stats": false
   },
   {
@@ -519,9 +519,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°14 et N°2] (7€) | Ticket 2 (Couplé Gagnant): [N°14 et N°1] (3€)",
     "mise": 10,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°1 5e | N°2 8e | N°14 10e",
     "ignore_stats": false
   },
   {
@@ -534,9 +534,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°14, N°2, N°1] (7€) | Ticket 2 (Trio Spéculatif): [N°14, N°2, N°1] (3€)",
     "mise": 10,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°1 5e | N°2 8e | N°14 10e",
     "ignore_stats": false
   }
 ]
