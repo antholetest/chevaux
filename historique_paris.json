@@ -717,7 +717,7 @@
     "statut": "Gagné",
     "gain": 18.67,
     "diagnostic": "Succès : Validé (Lot de 18 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-04",
@@ -732,7 +732,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec : N°5 9e | N°4 5e",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-04",
@@ -747,7 +747,7 @@
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": "",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-04",
@@ -762,7 +762,7 @@
     "statut": "Gagné",
     "gain": 8.4,
     "diagnostic": "Succès : Validé (Lot de 6 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-04",
@@ -777,7 +777,7 @@
     "statut": "Gagné",
     "gain": 10.22,
     "diagnostic": "Succès : Validé (Lot de 8 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-04",
@@ -792,6 +792,6 @@
     "statut": "Gagné",
     "gain": 10.97,
     "diagnostic": "Succès : Validé (Lot de 10 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   }
 ]
