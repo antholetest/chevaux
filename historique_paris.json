@@ -1749,9 +1749,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°1 - KATANA DES ROCS (Cote: 2.9) (7 €) | Poker: Simple Gagnant ➔ N°4 - GARDOL MOON (Cote: 7.4) (5 €)",
     "mise": 12.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 10.69,
+    "diagnostic": "Succès : Validé (Lot de 14 partants).",
     "ignore_stats": false
   },
   {
@@ -1764,9 +1764,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Gagnant/Placé restreint ➔ N°1 - NUIT TORRIDE (Cote: 2.6) (7 €) | Poker: Simple Gagnant ➔ N°2 - NON SANS RAISON (Cote: 16.0) (5 €)",
     "mise": 12.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°1 3e | N°2 2e",
     "ignore_stats": false
   },
   {
@@ -1779,9 +1779,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°5 - RUE RECAMIER (Cote: 4.6) (3 €) | Poker: Simple Gagnant ➔ N°9 - ALLEGRESSE (Cote: 10.0) (4 €)",
     "mise": 7.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°9 2e | N°5 8e",
     "ignore_stats": false
   },
   {
@@ -1794,9 +1794,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°2 - FANZI CHOP (Cote: 4.2) (3 €) | Poker: Simple Gagnant ➔ N°6 - SPARKS OF LOVE (Cote: 19.0) (3 €)",
     "mise": 6.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 5.67,
+    "diagnostic": "Succès : Validé (Lot de 12 partants).",
     "ignore_stats": false
   },
   {
@@ -1809,9 +1809,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°2 - FROMONTINE (Cote: 7.4) (2 €) | Poker: Simple Gagnant ➔ N°7 - READY KING (Cote: 7.9) (3 €)",
     "mise": 5.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 5.56,
+    "diagnostic": "Succès : Validé (Lot de 15 partants).",
     "ignore_stats": false
   }
 ]
