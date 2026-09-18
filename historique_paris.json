@@ -114,9 +114,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°1 - MIDDLE EARTH (Cote: 5.0) (6 €) | Poker: Simple Gagnant ➔ N°7 - MAGIE DE CHAHAINS (Cote: 13.0) (9 €)",
     "mise": 15.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 12.67,
+    "diagnostic": "Succès ! Arrivée officielle : 6 - 1 - 5",
     "ignore_stats": false
   },
   {
@@ -129,9 +129,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°1 - ILLARANT (Cote: 4.3) (7 €) | Poker: Simple Gagnant ➔ N°2 - KWELAFE (Cote: 8.6) (8 €)",
     "mise": 15.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 13.42,
+    "diagnostic": "Succès ! Arrivée officielle : 4 - 1 - 3",
     "ignore_stats": false
   },
   {
@@ -144,9 +144,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Gagnant/Placé restreint ➔ N°6 - JET SET CODIE (Cote: 4.6) (4 €) | Poker: Simple Gagnant ➔ N°4 - INIMITABLE (Cote: 12.0) (8 €)",
     "mise": 12.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec de peu (4e/5e). Arrivée : 5 - 7 - 4 - 6 - 2",
     "ignore_stats": false
   },
   {
@@ -159,9 +159,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°5 - MEANDRE DE VANDEL (Cote: 3.5) (6 €) | Poker: Simple Gagnant ➔ N°4 - MARECHAL TURGOT (Cote: 12.0) (5 €)",
     "mise": 11.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Hors du combiné. Arrivée : 6 - 2 - 10 - 7 - 13",
     "ignore_stats": false
   },
   {
@@ -174,9 +174,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°2 - MEMORY (Cote: 4.3) (5 €) | Poker: Simple Gagnant ➔ N°6 - KOYA (Cote: 25.0) (5 €)",
     "mise": 10.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec de peu (4e/5e). Arrivée : 3 - 10 - 11 - 12 - 6",
     "ignore_stats": false
   }
 ]
