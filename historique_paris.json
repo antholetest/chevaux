@@ -12,7 +12,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Hors du combiné. Arrivée : 6 - 2 - 1 - 3 - 5",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-18",
@@ -27,7 +27,7 @@
     "statut": "Gagné",
     "gain": 10.56,
     "diagnostic": "Succès ! Arrivée officielle : 6 - 1 - 5",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-18",
@@ -42,7 +42,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec de peu (4e/5e). Arrivée : 5 - 7 - 4 - 6 - 2",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-18",
@@ -57,7 +57,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec de peu (4e/5e). Arrivée : 3 - 6 - 2 - 10 - 9",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-18",
@@ -72,7 +72,7 @@
     "statut": "Gagné",
     "gain": 9.53,
     "diagnostic": "Succès ! Arrivée officielle : 14 - 6 - 4",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-18",
@@ -87,7 +87,7 @@
     "statut": "Gagné",
     "gain": 9.58,
     "diagnostic": "Succès ! Arrivée officielle : 4 - 1 - 3",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-18",
@@ -102,7 +102,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec de peu (4e/5e). Arrivée : 3 - 5 - 6 - 10 - 2",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-18",
@@ -117,7 +117,7 @@
     "statut": "Gagné",
     "gain": 12.67,
     "diagnostic": "Succès ! Arrivée officielle : 6 - 1 - 5",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-18",
@@ -132,7 +132,7 @@
     "statut": "Gagné",
     "gain": 13.42,
     "diagnostic": "Succès ! Arrivée officielle : 4 - 1 - 3",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-18",
@@ -147,7 +147,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec de peu (4e/5e). Arrivée : 5 - 7 - 4 - 6 - 2",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-18",
@@ -162,7 +162,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Hors du combiné. Arrivée : 6 - 2 - 10 - 7 - 13",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-18",
@@ -177,6 +177,6 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec de peu (4e/5e). Arrivée : 3 - 10 - 11 - 12 - 6",
-    "ignore_stats": false
+    "ignore_stats": true
   }
 ]
