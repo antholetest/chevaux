@@ -234,9 +234,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°1 - ILLARANT (Cote win: 3.3)] (4€) | Ticket 2 (Simple Gagnant): [N°3 - LINER DE GUYE (Cote win: 5.3)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 7.67,
+    "diagnostic": "Succès : Validé (Lot de 9 partants).",
     "ignore_stats": false
   },
   {
@@ -249,9 +249,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°1 et N°3] (4€) | Ticket 2 (Couplé Gagnant): [N°1 et N°4] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 7.67,
+    "diagnostic": "Succès : Validé (Lot de 9 partants).",
     "ignore_stats": false
   },
   {
@@ -264,9 +264,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°1, N°3, N°2] (4€) | Ticket 2 (Trio Spéculatif): [N°1, N°3, N°4] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 7.67,
+    "diagnostic": "Succès : Validé (Lot de 9 partants).",
     "ignore_stats": false
   }
 ]
