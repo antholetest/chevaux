@@ -1255,29 +1255,7 @@ with tab_analyse:
                     mise_secu = max(1, int(round(budget * ratio_final)))
                     mise_gros = max(1, budget - mise_secu)
 
-                    st.markdown("---")
-                    st.markdown(f"### 🎯 Stratégie Optimale & Jeux Recommandés (Ajustement ROI : {roi_actuel:.2f})")
-        
-                    col_secu, col_gros = st.columns(2)
-        
-                    with col_secu:
-                        st.success(f"""
-                        **🛡️ OBJECTIF SÉCURITÉ**  
-                        *(Pour récupérer la mise / Sécuriser)*
-                        * **Type de jeu :** **{pari_secu_txt}**
-                        * **Sélection :** {chevaux_secu_str}
-                        * **Mise conseillée :** **{mise_secu} €**
-                        """)
-            
-                    with col_gros:
-                        st.warning(f"""
-                        **🚀 OBJECTIF GROS GAINS**  
-                        *(Pour maximiser la rentabilité / Spéculation)*
-                        * **Type de jeu :** **{pari_gros_txt}**
-                        * **Sélection :** {chevaux_gros_str}
-                        * **Mise conseillée :** **{mise_gros} €**
-                        """)
-
+                    # Sauvegarde persistante de l'analyse dans session_state en dehors de la condition du bouton
                     st.session_state["dernier_pari"] = {
                         "date": date_iso,
                         "reunion": course_courante['reunion'],
@@ -1291,10 +1269,40 @@ with tab_analyse:
                         "statut": "En attente",
                         "gain": 0.0,
                         "diagnostic": f"Analyse intégrale validée (Terrain: {terrain_courant}, ROI: {roi_actuel:.2f})",
-                        "ignore_stats": False
+                        "ignore_stats": False,
+                        "secu_txt": pari_secu_txt,
+                        "secu_str": chevaux_secu_str,
+                        "m_secu": mise_secu,
+                        "gros_txt": pari_gros_txt,
+                        "gros_str": chevaux_gros_str,
+                        "m_gros": mise_gros
                     }
 
+            # Affichage persistant du résultat et du bouton de validation si l'analyse a été lancée
             if "dernier_pari" in st.session_state:
+                pari_courant_affiche = st.session_state["dernier_pari"]
+                st.markdown("---")
+                st.markdown(f"### 🎯 Stratégie Optimale & Jeux Recommandés")
+    
+                col_secu, col_gros = st.columns(2)
+                with col_secu:
+                    st.success(f"""
+                    **🛡️ OBJECTIF SÉCURITÉ**  
+                    *(Pour récupérer la mise / Sécuriser)*
+                    * **Type de jeu :** **{pari_courant_affiche.get('secu_txt', 'Simple Placé')}**
+                    * **Sélection :** {pari_courant_affiche.get('secu_str', '')}
+                    * **Mise conseillée :** **{pari_courant_affiche.get('m_secu', 0)} €**
+                    """)
+        
+                with col_gros:
+                    st.warning(f"""
+                    **🚀 OBJECTIF GROS GAINS**  
+                    *(Pour maximiser la rentabilité / Spéculation)*
+                    * **Type de jeu :** **{pari_courant_affiche.get('gros_txt', 'Simple Gagnant')}**
+                    * **Sélection :** {pari_courant_affiche.get('gros_str', '')}
+                    * **Mise conseillée :** **{pari_courant_affiche.get('m_gros', 0)} €**
+                    """)
+
                 st.markdown("")
                 if st.button("✅ Valider / Intégrer ce pari au suivi financier", type="primary"):
                     historique = []
@@ -1305,10 +1313,16 @@ with tab_analyse:
                         except Exception:
                             pass
                     
-                    historique.append(st.session_state["dernier_pari"])
+                    # On nettoie les clés temporaires avant l'enregistrement final dans le fichier
+                    pari_a_enregistrer = dict(pari_courant_affiche)
+                    for k in ["secu_txt", "secu_str", "m_secu", "gros_txt", "gros_str", "m_gros"]:
+                        pari_a_enregistrer.pop(k, None)
+
+                    historique.append(pari_a_enregistrer)
                     sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Ajout et validation d'un nouveau pari")
                     st.success("Pari validé, enregistré et synchronisé avec succès dans vos suivis !")
                     del st.session_state["dernier_pari"]
+                    st.rerun()
 
 with tab_suivi:
     st.subheader("📈 Suivi, Bilan Financier & ROI")
