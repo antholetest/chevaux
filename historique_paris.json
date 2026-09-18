@@ -582,7 +582,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec : N°13 2e | N°6 non classé",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-03",
@@ -597,7 +597,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec : N°9 9e | N°6 6e",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-03",
@@ -612,7 +612,7 @@
     "statut": "Gagné",
     "gain": 10.44,
     "diagnostic": "Succès : Validé (Lot de 9 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-03",
@@ -627,7 +627,7 @@
     "statut": "Gagné",
     "gain": 10.5,
     "diagnostic": "Succès : Validé (Lot de 11 partants).",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-03",
@@ -642,7 +642,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec : N°5 3e | N°1 5e",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-03",
@@ -657,7 +657,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec : N°3 4e | N°1 2e",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-03",
@@ -672,7 +672,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec : N°3 4e | N°15 14e",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-03",
@@ -687,7 +687,7 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec : N°13 5e | N°3 4e | N°1 2e",
-    "ignore_stats": false
+    "ignore_stats": true
   },
   {
     "date": "2026-09-03",
@@ -702,6 +702,6 @@
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "Échec : N°13 5e | N°3 4e | N°1 2e",
-    "ignore_stats": false
+    "ignore_stats": true
   }
 ]
