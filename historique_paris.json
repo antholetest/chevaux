@@ -789,9 +789,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°4 - NAUTILUS DU BASSIN (Cote win: 6.3)] (8€) | Ticket 2 (Couplé N°4-1): [N°1 - NO QUARTER (Cote win: 11.0)] (2€)",
     "mise": 10,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°1 non classé | N°4 4e",
     "ignore_stats": false
   },
   {
@@ -804,9 +804,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°4 - NAUTILUS DU BASSIN (Cote win: 6.3)] (8€) | Ticket 2 (Simple Gagnant): [N°8 - NUTSY DU COQ (Cote win: 14.0)] (2€)",
     "mise": 10,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°8 non classé | N°4 4e",
     "ignore_stats": false
   },
   {
@@ -819,9 +819,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°4 et N°3] (8€) | Ticket 2 (Couplé Gagnant): [N°4 et N°1] (2€)",
     "mise": 10,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°1 non classé | N°3 non classé | N°4 4e",
     "ignore_stats": false
   },
   {
@@ -834,9 +834,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°4, N°3, N°1] (8€) | Ticket 2 (Trio Spéculatif): [N°4, N°3, N°1] (2€)",
     "mise": 10,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°1 non classé | N°3 non classé | N°4 4e",
     "ignore_stats": false
   },
   {
