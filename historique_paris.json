@@ -129,9 +129,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°6 - JET SET CODIE (Cote win: 2.8)] (4€) | Ticket 2 (Couplé N°6-1): [N°1 - INDEX D'YVEL (Cote win: 27.0)] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°1 7e | N°6 4e",
     "ignore_stats": false
   },
   {
@@ -144,9 +144,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé (2 premiers)): [N°6 - JET SET CODIE (Cote win: 2.8)] (4€) | Ticket 2 (Simple Gagnant): [N°5 - GALOPIN FONTAINE (Cote win: 4.7)] (1€)",
     "mise": 5,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 3.4,
+    "diagnostic": "Succès : Validé (Lot de 7 partants).",
     "ignore_stats": false
   },
   {
@@ -159,9 +159,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°6 et N°7] (4€) | Ticket 2 (Couplé Gagnant): [N°6 et N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°1 7e | N°6 4e | N°7 2e",
     "ignore_stats": false
   },
   {
@@ -174,9 +174,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°6, N°7, N°1] (4€) | Ticket 2 (Trio Spéculatif): [N°6, N°7, N°1] (1€)",
     "mise": 5,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "Échec : N°1 7e | N°6 4e | N°7 2e",
     "ignore_stats": false
   }
 ]
