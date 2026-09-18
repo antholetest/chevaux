@@ -1884,9 +1884,9 @@
     "type": "Automatique",
     "details": "Ticket 1 (Simple Placé): [N°5 - MAKE IT SCHERMER (Cote win: 2.2)] (15€) | Ticket 2 (Couplé N°5-7): [N°7 - JAGUAR V ASSUM (Cote win: 22.0)] (5€)",
     "mise": 20,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 20.0,
+    "diagnostic": "Succès : Validé (Lot de 8 partants).",
     "ignore_stats": false
   },
   {
@@ -1899,9 +1899,9 @@
     "type": "Simple",
     "details": "Ticket 1 (Simple Placé): [N°5 - MAKE IT SCHERMER (Cote win: 2.2)] (15€) | Ticket 2 (Simple Gagnant): [N°8 - MERCEDES STAR (Cote win: 2.3)] (5€)",
     "mise": 20,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 31.5,
+    "diagnostic": "Succès : Validé (Lot de 8 partants).",
     "ignore_stats": false
   },
   {
@@ -1914,9 +1914,9 @@
     "type": "Couplé",
     "details": "Ticket 1 (Couplé Placé): [N°5 et N°8] (15€) | Ticket 2 (Couplé Gagnant): [N°5 et N°7] (5€)",
     "mise": 20,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 20.0,
+    "diagnostic": "Succès : Validé (Lot de 8 partants).",
     "ignore_stats": false
   },
   {
@@ -1929,9 +1929,9 @@
     "type": "Trio",
     "details": "Ticket 1 (Trio Ordre / Désordre): [N°5, N°8, N°1] (15€) | Ticket 2 (Trio Spéculatif): [N°5, N°8, N°1] (5€)",
     "mise": 20,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 20.0,
+    "diagnostic": "Succès : Validé (Lot de 8 partants).",
     "ignore_stats": false
   }
 ]
