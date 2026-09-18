@@ -553,7 +553,7 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs)
             continue
             
         terrain = course.get("terrain_officiel", "Bon (Standard)")
-        chevaux_valides = [c for c in chevaux if isinstance(c.get("cote"), (int, float)) and c["cote"] > 1.0]
+        chevaux_valides = [c for c in chevaux if safe_float(c.get("cote")) > 1.0]
         nb_partants_total = len(chevaux)
         
         if len(chevaux_valides) < 3:
@@ -1166,7 +1166,7 @@ with tab_analyse:
             with col_b2:
                 budget = st.number_input("Budget course (€)", min_value=1, value=20, step=1)
                 
-            if st.button("⚡ Lancer l'Analyse Intégrale & Stratégique"):
+            if st.button("⚡ Lancer l'Analyse Intégrale & Stratégique", key="btn_analyser_integrale_onglet2"):
                 if verifier_stop_loss(date_iso):
                     st.warning("⚠️ Alerte Stop-Loss : Vos pertes cumulées pour cette journée dépassent 30 €.")
                     st.stop()
