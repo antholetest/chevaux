@@ -876,6 +876,14 @@ tab_chronologique, tab_analyse, tab_suivi, tab_reunions = st.tabs([
     "📈 Suivi & Bilan Financier", 
     "🏟️ Bilan par Réunion"
 ])
+if "date_commune" not in st.session_state:
+    st.session_state["date_commune"] = datetime.date.today()
+
+def sync_date_chrono():
+    st.session_state["date_commune"] = st.session_state["date_chrono_picker"]
+
+def sync_date_analyse():
+    st.session_state["date_commune"] = st.session_state["date_analyse_picker"]
 
 with tab_chronologique:
     st.title("⏰ Programme Chronologique & Paris Rapides")
@@ -883,10 +891,14 @@ with tab_chronologique:
     
     col_c1, col_c2 = st.columns([2, 2])
     with col_c1:
-        date_chrono_sel = st.date_input("Date à afficher", datetime.date.today(), key="date_chrono_picker")
+        date_chrono_sel = st.date_input(
+            "Date à afficher", 
+            value=st.session_state["date_commune"], 
+            key="date_chrono_picker", 
+            on_change=sync_date_chrono
+        )
         date_chrono_iso = date_chrono_sel.strftime("%Y-%m-%d")
-        
-    fichier_chrono_jour = DOSSIER / f"pmu_du_jour_{date_chrono_iso}.json"
+        fichier_chrono_jour = DOSSIER / f"pmu_du_jour_{date_chrono_iso}.json"
     
     with col_c2:
         if st.button("📥 Télécharger/Actualiser les courses pour cette date"):
@@ -942,78 +954,77 @@ with tab_chronologique:
 
                     if lancer_analyse_chrono:
                         if verifier_stop_loss(date_chrono_iso):
-                            st.warning("⚠️ Alerte Stop-Loss : Vos pertes cumulées pour cette journée dépassent 30 €.")
+                            st.warning("⚠️ Alerte Stop-Loss : Vos pertes cumulées pour cette journée dépassent 30 €. (Avertissement uniquement)")
+                        
+                        chevaux_val_c = [c for c in chevaux_chrono if isinstance(c.get("cote"), (int, float)) and c["cote"] > 1.0]
+                        if not chevaux_val_c:
+                            st.error("Cotes insuffisantes pour analyser cette course.")
                         else:
-                            chevaux_val_c = [c for c in chevaux_chrono if isinstance(c.get("cote"), (int, float)) and c["cote"] > 1.0]
-                            if not chevaux_val_c:
-                                st.error("Cotes insuffisantes pour analyser cette course.")
-                            else:
-                                stats_disc_c = params_adaptatifs_chrono.get(course_obj.get('discipline'), {"roi": 1.0})
-                                roi_c = stats_disc_c.get("roi", 1.0)
-                                facteur_roi_c = max(0.85, min(1.15, roi_c))
+                            stats_disc_c = params_adaptatifs_chrono.get(course_obj.get('discipline'), {"roi": 1.0})
+                            roi_c = stats_disc_c.get("roi", 1.0)
+                            facteur_roi_c = max(0.85, min(1.15, roi_c))
 
-                                for c in chevaux_val_c:
-                                    sc_brut = evaluer_score_cheval(c, course_obj.get('discipline'), course_obj.get('terrain_officiel'), date_chrono_iso, params_adaptatifs_chrono)
-                                    c["score_analyse"] = round(sc_brut * facteur_roi_c, 1)
+                            for c in chevaux_val_c:
+                                sc_brut = evaluer_score_cheval(c, course_obj.get('discipline'), course_obj.get('terrain_officiel'), date_chrono_iso, params_adaptatifs_chrono)
+                                c["score_analyse"] = round(sc_brut * facteur_roi_c, 1)
 
-                                chev_scores = sorted(chevaux_val_c, key=lambda x: x["score_analyse"], reverse=True)
-                                fav_marche = sorted(chevaux_val_c, key=lambda x: x["cote"])
-                                top_fav = fav_marche[:3] if len(fav_marche) >= 3 else fav_marche
+                            chev_scores = sorted(chevaux_val_c, key=lambda x: x["score_analyse"], reverse=True)
+                            fav_marche = sorted(chevaux_val_c, key=lambda x: x["cote"])
+                            top_fav = fav_marche[:3] if len(fav_marche) >= 3 else fav_marche
 
-                                base_secu = max(top_fav, key=lambda x: x["score_analyse"]) if top_fav else chev_scores[0]
-                                outsiders_c = [c for c in chevaux_val_c if c["cote"] > base_secu["cote"] and c["num"] != base_secu["num"]]
-                                coup_poker = max(outsiders_c, key=lambda x: x["score_analyse"]) if outsiders_c else chev_scores[1]
+                            base_secu = max(top_fav, key=lambda x: x["score_analyse"]) if top_fav else chev_scores[0]
+                            outsiders_c = [c for c in chevaux_val_c if c["cote"] > base_secu["cote"] and c["num"] != base_secu["num"]]
+                            coup_poker = max(outsiders_c, key=lambda x: x["score_analyse"]) if outsiders_c else chev_scores[1]
 
-                                p_secu_txt = "Simple Placé (2 premiers)" if nb_p_chrono < 8 else "Simple Placé"
-                                p_gros_txt = "Simple Gagnant"
-                                chev_secu_str = f"N°{base_secu['num']} - {base_secu['nom']} (Cote: {base_secu['cote']:.1f})"
-                                chev_gros_str = f"N°{coup_poker['num']} - {coup_poker['nom']} (Cote: {coup_poker['cote']:.1f})"
+                            p_secu_txt = "Simple Placé (2 premiers)" if nb_p_chrono < 8 else "Simple Placé"
+                            p_gros_txt = "Simple Gagnant"
+                            chev_secu_str = f"N°{base_secu['num']} - {base_secu['nom']} (Cote: {base_secu['cote']:.1f})"
+                            chev_gros_str = f"N°{coup_poker['num']} - {coup_poker['nom']} (Cote: {coup_poker['cote']:.1f})"
+                            
+                            cote_b = base_secu["cote"]
+                            prob_m = (1.0 / cote_b) * 0.90 if cote_b > 1.0 else 0.5
+                            sc_secu = base_secu.get("score_analyse", 50)
+                            prob_est = min(0.85, max(0.15, prob_m + (sc_secu - 50) / 180.0))
+                            div_k = 3.0 if nb_p_chrono >= 8 else 2.5
+                            b_k = ((cote_b - 1.0) / div_k) if "Placé" in p_secu_txt else (cote_b - 1.0)
+                            k_pur = (b_k * prob_est - (1.0 - prob_est)) / b_k if b_k > 0 else 0.0
+                            ratio_f = min(0.80, max(0.50, 0.70 + max(0.0, k_pur) * 0.1))
 
-                                # Répartition Kelly / Score
-                                cote_b = base_secu["cote"]
-                                prob_m = (1.0 / cote_b) * 0.90 if cote_b > 1.0 else 0.5
-                                sc_secu = base_secu.get("score_analyse", 50)
-                                prob_est = min(0.85, max(0.15, prob_m + (sc_secu - 50) / 180.0))
-                                div_k = 3.0 if nb_p_chrono >= 8 else 2.5
-                                b_k = ((cote_b - 1.0) / div_k) if "Placé" in p_secu_txt else (cote_b - 1.0)
-                                k_pur = (b_k * prob_est - (1.0 - prob_est)) / b_k if b_k > 0 else 0.0
-                                ratio_f = min(0.80, max(0.50, 0.70 + max(0.0, k_pur) * 0.1))
+                            m_secu = max(1, int(round(mise_chrono_input * ratio_f)))
+                            m_gros = max(1, mise_chrono_input - m_secu)
 
-                                m_secu = max(1, int(round(mise_chrono_input * ratio_f)))
-                                m_gros = max(1, mise_chrono_input - m_secu)
+                            st.markdown("---")
+                            col_res1, col_res2 = st.columns(2)
+                            with col_res1:
+                                st.success(f"""
+                                **🛡️ JEU SÉCURITÉ (Récupération / Assuré)**
+                                * **Type :** {p_secu_txt}
+                                * **Sélection :** {chev_secu_str}
+                                * **Mise :** **{m_secu} €**
+                                """)
+                            with col_res2:
+                                st.warning(f"""
+                                **🚀 JEU GROS GAINS (Coup de Poker / Spéculatif)**
+                                * **Type :** {p_gros_txt}
+                                * **Sélection :** {chev_gros_str}
+                                * **Mise :** **{m_gros} €**
+                                """)
 
-                                st.markdown("---")
-                                col_res1, col_res2 = st.columns(2)
-                                with col_res1:
-                                    st.success(f"""
-                                    **🛡️ JEU SÉCURITÉ (Récupération / Assuré)**
-                                    * **Type :** {p_secu_txt}
-                                    * **Sélection :** {chev_secu_str}
-                                    * **Mise :** **{m_secu} €**
-                                    """)
-                                with col_res2:
-                                    st.warning(f"""
-                                    **🚀 JEU GROS GAINS (Coup de Poker / Spéculatif)**
-                                    * **Type :** {p_gros_txt}
-                                    * **Sélection :** {chev_gros_str}
-                                    * **Mise :** **{m_gros} €**
-                                    """)
-
-                                st.session_state[f"pari_rapide_valide_{idx_c}"] = {
-                                    "date": date_chrono_iso,
-                                    "reunion": item_c['reunion'].split(' - ')[0],
-                                    "course_num": item_c['course_num'],
-                                    "hippodrome": course_obj['hippodrome'],
-                                    "course": f"{item_c['reunion']} {item_c['course_num']} ({course_obj['hippodrome']})",
-                                    "discipline": course_obj.get('discipline'),
-                                    "type": "Chrono Rapide",
-                                    "details": f"Sécurité ({p_secu_txt}): [{chev_secu_str}] ({m_secu}€) | Poker ({p_gros_txt}): [{chev_gros_str}] ({m_gros}€)",
-                                    "mise": mise_chrono_input,
-                                    "statut": "En attente",
-                                    "gain": 0.0,
-                                    "diagnostic": "Généré depuis l'onglet Chrono",
-                                    "ignore_stats": False
-                                }
+                            st.session_state[f"pari_rapide_valide_{idx_c}"] = {
+                                "date": date_chrono_iso,
+                                "reunion": item_c['reunion'].split(' - ')[0],
+                                "course_num": item_c['course_num'],
+                                "hippodrome": course_obj['hippodrome'],
+                                "course": f"{item_c['reunion']} {item_c['course_num']} ({course_obj['hippodrome']})",
+                                "discipline": course_obj.get('discipline'),
+                                "type": "Chrono Rapide",
+                                "details": f"Sécurité ({p_secu_txt}): [{chev_secu_str}] ({m_secu}€) | Poker ({p_gros_txt}): [{chev_gros_str}] ({m_gros}€)",
+                                "mise": mise_chrono_input,
+                                "statut": "En attente",
+                                "gain": 0.0,
+                                "diagnostic": "Généré depuis l'onglet Chrono",
+                                "ignore_stats": False
+                            }
 
                     if f"pari_rapide_valide_{idx_c}" in st.session_state:
                         if st.button("✅ Valider et enregistrer ce pari dans le suivi", key=f"btn_save_chrono_{idx_c}", type="primary"):
@@ -1037,13 +1048,18 @@ with tab_chronologique:
 with tab_analyse:
     st.title("📊 Analyse & Stratégie PMU Pro")
     
-    date_selectionnee = st.date_input("Date du jour", datetime.date.today())
+    date_selectionnee = st.date_input(
+        "Date du jour", 
+        value=st.session_state["date_commune"], 
+        key="date_analyse_picker", 
+        on_change=sync_date_analyse
+    )
     date_iso = date_selectionnee.strftime("%Y-%m-%d")
         
     fichier_jour = DOSSIER / f"pmu_du_jour_{date_iso}.json"
     if fichier_jour.exists():
         with st.expander("🎯 Répartiteur Intelligent de Budget Journalier (Connecté à l'Auto-Analyse)", expanded=True):
-            st.write("L'algorithme analyse vos performances passées, gère les petits lots (< 8 partants) et cible les meilleures opportunités.")
+            st.write("L'algorithme analyse vos performances passées, gère les petits lots (< 8 partants) et cibles les meilleures opportunités.")
             budget_journalier = st.number_input("Budget total de base du jour (€)", min_value=10, value=50, step=5)
             lancer_repartition = st.button("🪄 Générer mon plan de mise idéal du jour")
                 
@@ -1168,8 +1184,7 @@ with tab_analyse:
                 
             if st.button("⚡ Lancer l'Analyse Intégrale & Stratégique", key="btn_analyser_integrale_onglet2"):
                 if verifier_stop_loss(date_iso):
-                    st.warning("⚠️ Alerte Stop-Loss : Vos pertes cumulées pour cette journée dépassent 30 €.")
-                    st.stop()
+                    st.warning("⚠️ Alerte Stop-Loss : Vos pertes cumulées pour cette journée dépassent 30 €. (Avertissement uniquement)")
         
                 if not chevaux_valides:
                     st.error("Cotes insuffisantes pour lancer l'analyse.")
@@ -1255,7 +1270,6 @@ with tab_analyse:
                     mise_secu = max(1, int(round(budget * ratio_final)))
                     mise_gros = max(1, budget - mise_secu)
 
-                    # Sauvegarde persistante de l'analyse dans session_state en dehors de la condition du bouton
                     st.session_state["dernier_pari"] = {
                         "date": date_iso,
                         "reunion": course_courante['reunion'],
@@ -1278,7 +1292,6 @@ with tab_analyse:
                         "m_gros": mise_gros
                     }
 
-            # Affichage persistant du résultat et du bouton de validation si l'analyse a été lancée
             if "dernier_pari" in st.session_state:
                 pari_courant_affiche = st.session_state["dernier_pari"]
                 st.markdown("---")
@@ -1313,7 +1326,6 @@ with tab_analyse:
                         except Exception:
                             pass
                     
-                    # On nettoie les clés temporaires avant l'enregistrement final dans le fichier
                     pari_a_enregistrer = dict(pari_courant_affiche)
                     for k in ["secu_txt", "secu_str", "m_secu", "gros_txt", "gros_str", "m_gros"]:
                         pari_a_enregistrer.pop(k, None)
@@ -1466,25 +1478,19 @@ with tab_suivi:
             
             edited_df = st.data_editor(
                 data_suivi,
-                column_config={"Sélectionner": st.column_config.CheckboxColumn("🗑️ Sélectionner", default=False)},
-                disabled=["Index", "Date", "Course", "Discipline", "Type", "Détails", "Mise (€)", "Statut", "Gain (€)", "Diagnostic"],
-                hide_index=True, use_container_width=True, key="editor_suivi_table"
+                use_container_width=True,
+                hide_index=True
             )
             
-            if st.button("🗑️ Supprimer les paris sélectionnés", key="btn_suppr_selection"):
-                if isinstance(edited_df, pd.DataFrame):
-                    edited_rows = edited_df.to_dict(orient="records")
-                else:
-                    edited_rows = edited_df
-
-                indices_a_supprimer = [row["Index"] for row in edited_rows if row.get("Sélectionner")]
-                if indices_a_supprimer:
-                    historique_maj = [p for i, p in enumerate(historique) if i not in indices_a_supprimer]
-                    sauvegarder_et_synchroniser(historique_maj, FICHIER_HISTORIQUE, f"Suppression de {len(indices_a_supprimer)} pari(s)")
-                    st.success(f"{len(indices_a_supprimer)} pari(s) supprimé(s) avec succès !")
+            if st.button("🗑️ Supprimer les paris sélectionnés"):
+                paris_a_supprimer = [row["Index"] for row in edited_df if row.get("Sélectionner", False)]
+                if paris_a_supprimer:
+                    historique_nouveau = [p for i, p in enumerate(historique) if i not in paris_a_supprimer]
+                    sauvegarder_et_synchroniser(historique_nouveau, FICHIER_HISTORIQUE, "Suppression manuelle de paris")
+                    st.success(f"{len(paris_a_supprimer)} pari(s) supprimé(s).")
                     st.rerun()
                 else:
-                    st.warning("Aucun pari sélectionné pour la suppression.")
+                    st.warning("Veuillez cocher au moins un pari à supprimer.")
     else:
         st.info("Aucun historique de pari enregistré pour le moment.")
 
