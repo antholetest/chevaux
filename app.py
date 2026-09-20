@@ -679,6 +679,46 @@ def generer_et_sauvegarder_bilan_journee(historique, date_str):
     fichier_bilan = DOSSIER / f"bilan_journee_{date_str}.json"
     sauvegarder_et_synchroniser(bilan_data, fichier_bilan, f"Mise à jour du bilan de la journée {date_str}")
     return bilan_data
+def analyser_cause_pari(pari_item, arrivee_officielle, cotes_reelles, partants_details):
+    """
+    Analyse post-course détaillée pour comprendre pourquoi le pari a été gagné ou perdu
+    et formuler des recommandations stratégiques exploitables.
+    """
+    statut = pari_item.get("statut")
+    details_pari = str(pari_item.get("details", ""))
+    discipline = pari_item.get("discipline", "Galop Plat")
+    
+    nums_paries = re.findall(r'N°\s*(\d+)', details_pari)
+    diagnostic_lignes = []
+    
+    if statut == "Gagné":
+        diagnostic_lignes.append("🎯 **Succès validé :** La sélection a atteint l'objectif visé.")
+        if "Sécurité" in details_pari and any(n in arrivee_officielle[:3] for n in nums_paries):
+            diagnostic_lignes.append("💡 *Le pari de sécurité a fonctionné comme prévu, assurant le rendement.*")
+        if "Spéculatif" in details_pari or "Poker" in details_pari:
+            diagnostic_lignes.append("🔥 *Le coup de poker a pleinement profité de sa cote pour booster le rendement.*")
+            
+    elif statut == "Perdu":
+        diagnostic_lignes.append("⚠️ **Analyse de l'échec :**")
+        top_4_5 = arrivee_officielle[3:5] if len(arrivee_officielle) >= 5 else []
+        presence_proche = any(n in nums_paries for n in top_4_5)
+        
+        if presence_proche:
+            diagnostic_lignes.append("• *Quasi-podium (4e/5e) :* L'analyse de forme était bonne, mais la marge tactique ou le terrain ont manqué en fin de course.")
+        else:
+            gagnant_reel = arrivee_officielle[0] if arrivee_officielle else None
+            cote_gagnant = cotes_reelles.get(gagnant_reel, 0.0)
+            if cote_gagnant > 15.0:
+                diagnostic_lignes.append(f"• *Facteur Surprise :* La course a été remportée par un gros outsider (N°{gagnant_reel} à {cote_gagnant:.1f} de cote), chamboulant la hiérarchie logique.")
+            else:
+                diagnostic_lignes.append("• *Erreur de lecture de profil :* Les favoris du modèle ont été dominés par des adversaires mieux adaptés aux conditions du jour (terrain/corde).")
+                
+        if "Trot" in discipline:
+            diagnostic_lignes.append("📌 *Piste d'amélioration :* Vérifier plus strictement les configurations de ferrage ('déferré des 4') et la régularité récente de l'allure.")
+        else:
+            diagnostic_lignes.append("📌 *Piste d'amélioration :* Ajuster la pondération du poids et de l'état du terrain (souple/lourd) pour cette discipline.")
+
+    return "\n".join(diagnostic_lignes)
 
 def verifier_resultats_automatiques_pmu(historique):
     modifie = False
@@ -848,14 +888,8 @@ def verifier_resultats_automatiques_pmu(historique):
                 p["statut"] = "Gagné" if un_gagne else "Perdu"
                 p["gain"] = round(gain_total, 2)
                 
-                if un_gagne:
-                    p["diagnostic"] = f"Succès ! Arrivée officielle : {' - '.join(arrivee_trouvee[:3])}"
-                else:
-                    top_arrivee = arrivee_trouvee[:5]
-                    if any(n in nums_paries for n in top_arrivee[3:5]):
-                        p["diagnostic"] = f"Échec de peu (4e/5e). Arrivée : {' - '.join(top_arrivee)}"
-                    else:
-                        p["diagnostic"] = f"Hors du combiné. Arrivée : {' - '.join(top_arrivee)}"
+                # Appel de la fonction d'analyse détaillée pour générer un diagnostic riche
+                p["diagnostic"] = analyser_cause_pari(p, arrivee_trouvee, cotes_reelles, liste_partants_bruts)
                 
                 modifie = True
                 dates_modifiees.add(date_iso_norm)
