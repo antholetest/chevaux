@@ -1284,9 +1284,9 @@
     "type": "Automatique",
     "details": "Sécurité (Simple Placé): [N°1 - SWEET AS (Cote win: 5.7)] (16€) | Spéculatif (Couplé N°1-2): [N°2 - LE CENTRAL (Cote win: 12.0)] (4€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "Analyse intégrale validée (Terrain: Bon (Standard), ROI: 1.00)",
+    "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de lecture de profil :* Les favoris du modèle ont été dominés par des adversaires mieux adaptés aux conditions du jour (terrain/corde).\n📌 *Piste d'amélioration :* Ajuster la pondération du poids et de l'état du terrain (souple/lourd) pour cette discipline.",
     "ignore_stats": false
   },
   {
@@ -1299,9 +1299,9 @@
     "type": "Simple",
     "details": "Sécurité (Simple Placé): [N°1 - SWEET AS (Cote win: 5.7)] (16€) | Spéculatif (Simple Gagnant): [N°5 - KAMAND (Cote win: 13.0)] (4€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "Analyse intégrale validée (Terrain: Bon (Standard), ROI: 1.00)",
+    "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de lecture de profil :* Les favoris du modèle ont été dominés par des adversaires mieux adaptés aux conditions du jour (terrain/corde).\n📌 *Piste d'amélioration :* Ajuster la pondération du poids et de l'état du terrain (souple/lourd) pour cette discipline.",
     "ignore_stats": false
   },
   {
@@ -1314,9 +1314,9 @@
     "type": "Couplé",
     "details": "Sécurité (Couplé Placé): [N°1 et N°3] (16€) | Spéculatif (Couplé Gagnant): [N°1 et N°2] (4€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "Analyse intégrale validée (Terrain: Bon (Standard), ROI: 1.00)",
+    "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de lecture de profil :* Les favoris du modèle ont été dominés par des adversaires mieux adaptés aux conditions du jour (terrain/corde).\n📌 *Piste d'amélioration :* Ajuster la pondération du poids et de l'état du terrain (souple/lourd) pour cette discipline.",
     "ignore_stats": false
   }
 ]
