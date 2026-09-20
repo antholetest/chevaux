@@ -1224,9 +1224,9 @@
     "type": "Automatique",
     "details": "Sécurité (Simple Placé): [N°4 - OLYMPIQUE (Cote win: 6.2)] (16€) | Spéculatif (Couplé N°4-1): [N°1 - KATA TJUTA (Cote win: 15.0)] (4€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "Analyse intégrale validée (Terrain: Bon (Standard), ROI: 1.00)",
+    "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de lecture de profil :* Les favoris du modèle ont été dominés par des adversaires mieux adaptés aux conditions du jour (terrain/corde).\n📌 *Piste d'amélioration :* Ajuster la pondération du poids et de l'état du terrain (souple/lourd) pour cette discipline.",
     "ignore_stats": false
   },
   {
@@ -1239,9 +1239,9 @@
     "type": "Simple",
     "details": "Sécurité (Simple Placé (2 premiers)): [N°4 - OLYMPIQUE (Cote win: 6.2)] (16€) | Spéculatif (Simple Gagnant): [N°5 - QUIET STRENGTH (Cote win: 6.6)] (4€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "Analyse intégrale validée (Terrain: Bon (Standard), ROI: 1.00)",
+    "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* L'analyse de forme était bonne, mais la marge tactique ou le terrain ont manqué en fin de course.\n📌 *Piste d'amélioration :* Ajuster la pondération du poids et de l'état du terrain (souple/lourd) pour cette discipline.",
     "ignore_stats": false
   },
   {
@@ -1254,9 +1254,9 @@
     "type": "Couplé",
     "details": "Sécurité (Couplé Placé): [N°4 et N°2] (16€) | Spéculatif (Couplé Gagnant): [N°4 et N°1] (4€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "Analyse intégrale validée (Terrain: Bon (Standard), ROI: 1.00)",
+    "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de lecture de profil :* Les favoris du modèle ont été dominés par des adversaires mieux adaptés aux conditions du jour (terrain/corde).\n📌 *Piste d'amélioration :* Ajuster la pondération du poids et de l'état du terrain (souple/lourd) pour cette discipline.",
     "ignore_stats": false
   },
   {
@@ -1269,9 +1269,9 @@
     "type": "Trio",
     "details": "Sécurité (Trio Ordre / Désordre): [N°4, N°2, N°1] (16€) | Spéculatif (Trio Spéculatif): [N°4, N°2, N°1] (4€)",
     "mise": 20,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "Analyse intégrale validée (Terrain: Bon (Standard), ROI: 1.00)",
+    "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de lecture de profil :* Les favoris du modèle ont été dominés par des adversaires mieux adaptés aux conditions du jour (terrain/corde).\n📌 *Piste d'amélioration :* Ajuster la pondération du poids et de l'état du terrain (souple/lourd) pour cette discipline.",
     "ignore_stats": false
   }
 ]
