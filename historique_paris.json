@@ -1273,5 +1273,20 @@
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de lecture de profil :* Les favoris du modèle ont été dominés par des adversaires mieux adaptés aux conditions du jour (terrain/corde).\n📌 *Piste d'amélioration :* Ajuster la pondération du poids et de l'état du terrain (souple/lourd) pour cette discipline.",
     "ignore_stats": false
+  },
+  {
+    "date": "2026-09-01",
+    "reunion": "R1",
+    "course_num": "C3",
+    "hippodrome": "HIPPODROME DE DEAUVILLE",
+    "course": "R1 C3 (HIPPODROME DE DEAUVILLE)",
+    "discipline": "Galop Plat",
+    "type": "Automatique",
+    "details": "Sécurité (Simple Placé): [N°1 - SWEET AS (Cote win: 5.7)] (16€) | Spéculatif (Couplé N°1-2): [N°2 - LE CENTRAL (Cote win: 12.0)] (4€)",
+    "mise": 20,
+    "statut": "En attente",
+    "gain": 0.0,
+    "diagnostic": "Analyse intégrale validée (Terrain: Bon (Standard), ROI: 1.00)",
+    "ignore_stats": false
   }
 ]
