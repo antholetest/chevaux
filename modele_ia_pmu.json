@@ -4,15 +4,16 @@
   "poids_terrain": 1.1,
   "poids_poids": 1.0,
   "poids_cote_tendance": 1.3,
-  "poids_driver": 1.13,
+  "poids_driver": 1.14,
   "poids_corde": 1.0,
   "stats_impact": {
     "victoires_par_ferrage": 0,
     "victoires_par_smart_money": 0,
     "victoires_par_terrain": 0,
-    "total_analyses": 3
+    "total_analyses": 4
   },
   "historique_ajustements": [
+    "[21/09 18:13] Course R4 - C7 (HIPPODROME DE VICHY) -> Poids Driver/Jockey ⬆️ (+0.01)",
     "[21/09 18:13] Course R5 - C4 (HIPPODROME DE WOLVERHAMPTON GB) -> Poids Driver/Jockey ⬆️ (+0.01)",
     "[21/09 18:13] Course R4 - C7 (HIPPODROME DE VICHY) -> Poids Driver/Jockey ⬆️ (+0.01)",
     "[21/09 18:13] Course R5 - C4 (HIPPODROME DE WOLVERHAMPTON GB) -> Poids Driver/Jockey ⬆️ (+0.01)"
