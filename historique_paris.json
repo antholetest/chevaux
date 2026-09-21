@@ -4704,9 +4704,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°2 - DAWWAAS (Cote: 2.5) (25 €) | Poker: Simple Gagnant ➔ N°3 - NAWAZ AL SHAHANIA (Cote: 13.0) (12 €)",
     "mise": 37.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 35.42,
+    "diagnostic": "🎯 **Succès validé :** La sélection a atteint l'objectif visé.\n🔥 *Le coup de poker a pleinement profité de sa cote pour booster le rendement.*",
     "ignore_stats": false
   },
   {
@@ -4719,9 +4719,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°9 - AJOUZ (Cote: 5.0) (10 €) | Poker: Simple Gagnant ➔ N°1 - SHAKIRAH (Cote: 7.5) (14 €)",
     "mise": 24.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Facteur Surprise :* La course a été remportée par un gros outsider (N°12 à 27.0 de cote), chamboulant la hiérarchie logique.\n📌 *Piste d'amélioration :* Ajuster la pondération du poids et de l'état du terrain (souple/lourd) pour cette discipline.",
     "ignore_stats": false
   },
   {
@@ -4734,9 +4734,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Gagnant/Placé restreint ➔ N°1 - SCATY CHOP (Cote: 5.9) (7 €) | Poker: Simple Gagnant ➔ N°6 - EL LAGAR (Cote: 17.0) (17 €)",
     "mise": 24.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* L'analyse de forme était bonne, mais la marge tactique ou le terrain ont manqué en fin de course.\n📌 *Piste d'amélioration :* Ajuster la pondération du poids et de l'état du terrain (souple/lourd) pour cette discipline.",
     "ignore_stats": false
   },
   {
@@ -4749,9 +4749,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°9 - LADY FALCON CEN (Cote: 2.3) (13 €) | Poker: Simple Gagnant ➔ N°5 - ZEN STORM (Cote: 7.1) (5 €)",
     "mise": 18.0,
-    "statut": "En attente",
-    "gain": 0.0,
-    "diagnostic": "",
+    "statut": "Gagné",
+    "gain": 17.69,
+    "diagnostic": "🎯 **Succès validé :** La sélection a atteint l'objectif visé.\n🔥 *Le coup de poker a pleinement profité de sa cote pour booster le rendement.*",
     "ignore_stats": false
   },
   {
@@ -4764,9 +4764,9 @@
     "type": "Plan Global Journalier",
     "details": "Sécu: Simple Placé ➔ N°8 - MAGIC DREAM AA (Cote: 5.0) (7 €) | Poker: Simple Gagnant ➔ N°9 - MADAME LABOUEYRIE AA (Cote: 9.9) (10 €)",
     "mise": 17.0,
-    "statut": "En attente",
+    "statut": "Perdu",
     "gain": 0.0,
-    "diagnostic": "",
+    "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de lecture de profil :* Les favoris du modèle ont été dominés par des adversaires mieux adaptés aux conditions du jour (terrain/corde).\n📌 *Piste d'amélioration :* Ajuster la pondération du poids et de l'état du terrain (souple/lourd) pour cette discipline.",
     "ignore_stats": false
   }
 ]
