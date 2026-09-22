@@ -1,17 +1,17 @@
 [
   {
-    "Réunion / Hippodrome": "R4 - HIPPODROME DE VICHY",
-    "Total Paris": 4,
-    "Gagnés": 2,
+    "Réunion / Hippodrome": "R4 - C3 (HIPPODROME DE VICHY)",
+    "Total Paris": 2,
+    "Gagnés": 0,
     "Perdus": 2,
     "En attente": 0,
-    "Mises (€)": 96.0,
-    "Gains (€)": 27.5,
-    "Bilan Net (€)": -68.5,
-    "ROI (%)": -71.4
+    "Mises (€)": 61.0,
+    "Gains (€)": 0.0,
+    "Bilan Net (€)": -61.0,
+    "ROI (%)": -100.0
   },
   {
-    "Réunion / Hippodrome": "R5 - HIPPODROME DE WOLVERHAMPTON GB",
+    "Réunion / Hippodrome": "R5 - C4 (HIPPODROME DE WOLVERHAMPTON GB)",
     "Total Paris": 2,
     "Gagnés": 2,
     "Perdus": 0,
@@ -22,7 +22,18 @@
     "ROI (%)": -68.3
   },
   {
-    "Réunion / Hippodrome": "R3 - HIPPODROME D'ANGERS EVENTARD",
+    "Réunion / Hippodrome": "R4 - C7 (HIPPODROME DE VICHY)",
+    "Total Paris": 2,
+    "Gagnés": 2,
+    "Perdus": 0,
+    "En attente": 0,
+    "Mises (€)": 35.0,
+    "Gains (€)": 27.5,
+    "Bilan Net (€)": -7.5,
+    "ROI (%)": -21.4
+  },
+  {
+    "Réunion / Hippodrome": "R3 - C8 (HIPPODROME D'ANGERS EVENTARD)",
     "Total Paris": 2,
     "Gagnés": 0,
     "Perdus": 2,
@@ -33,7 +44,7 @@
     "ROI (%)": -100.0
   },
   {
-    "Réunion / Hippodrome": "R4 - ⚠️ Petit lot : 4 partants",
+    "Réunion / Hippodrome": "R4 - C8 (HIPPODROME DE VICHY) (⚠️ Petit lot : 4 partants)",
     "Total Paris": 2,
     "Gagnés": 2,
     "Perdus": 0,
@@ -44,14 +55,36 @@
     "ROI (%)": 60.0
   },
   {
-    "Réunion / Hippodrome": "R1 - Inconnu",
-    "Total Paris": 3,
+    "Réunion / Hippodrome": "R1 - HIPPODROME DE LA CAPELLE C1",
+    "Total Paris": 1,
     "Gagnés": 0,
     "Perdus": 0,
-    "En attente": 3,
-    "Mises (€)": 30.0,
+    "En attente": 1,
+    "Mises (€)": 10.0,
     "Gains (€)": 0.0,
-    "Bilan Net (€)": -30.0,
+    "Bilan Net (€)": -10.0,
+    "ROI (%)": -100.0
+  },
+  {
+    "Réunion / Hippodrome": "R1 - HIPPODROME DE LA CAPELLE C2",
+    "Total Paris": 1,
+    "Gagnés": 0,
+    "Perdus": 0,
+    "En attente": 1,
+    "Mises (€)": 10.0,
+    "Gains (€)": 0.0,
+    "Bilan Net (€)": -10.0,
+    "ROI (%)": -100.0
+  },
+  {
+    "Réunion / Hippodrome": "R1 - HIPPODROME DE LA CAPELLE C3",
+    "Total Paris": 1,
+    "Gagnés": 0,
+    "Perdus": 0,
+    "En attente": 1,
+    "Mises (€)": 10.0,
+    "Gains (€)": 0.0,
+    "Bilan Net (€)": -10.0,
     "ROI (%)": -100.0
   }
 ]
