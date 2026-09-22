@@ -4,7 +4,7 @@
   "poids_terrain": 1.1,
   "poids_poids": 1.0,
   "poids_cote_tendance": 1.3,
-  "poids_driver": 1.14,
+  "poids_driver": 1.15,
   "poids_corde": 1.0,
   "poids_hippodrome_acteur": 1.2,
   "poids_distance": 1.1,
@@ -14,9 +14,10 @@
     "victoires_par_terrain": 0,
     "victoires_par_hippodrome": 0,
     "victoires_par_distance": 0,
-    "total_analyses": 4
+    "total_analyses": 5
   },
   "historique_ajustements": [
+    "[22/09 17:12] Course R3 - HIPPODROME DE CABOURG - C5 -> Poids Driver/Jockey ⬆️ (+0.01)",
     "[22/09 17:12] Course R3 - HIPPODROME DE CABOURG - C4 -> Poids Musique ⬆️ (+0.01)",
     "[22/09 17:12] Course R2 - HIPPODROME DE SON PARDO PALMA - C5 -> Poids Driver/Jockey ⬆️ (+0.01)",
     "[22/09 17:12] Course R3 - HIPPODROME DE CABOURG - C2 -> Poids Driver/Jockey ⬆️ (+0.01)",
