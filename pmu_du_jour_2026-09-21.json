@@ -7,7 +7,7 @@
     "discipline": "Trot Attelé",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "11:55",
+    "heure": "11:57",
     "chevaux": [
       {
         "num": 1,
@@ -16,8 +16,8 @@
         "musique": "5a0aDmDaDaDaDaDa9a(25)",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 96.0,
-        "tendance_cote": "stable"
+        "cote": 138.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -26,7 +26,7 @@
         "musique": "8a8a0a3aDaDaDa(25)Da7a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 95.0,
+        "cote": 166.0,
         "tendance_cote": "hausse"
       },
       {
@@ -36,8 +36,8 @@
         "musique": "4a0a5a3aDa4a4a0a(25)4a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 20.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 30.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -46,8 +46,8 @@
         "musique": "6a2a3a5a1a(25)8a2a1a2a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 14.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 21.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -56,7 +56,7 @@
         "musique": "9a7m9a7a1a5a7aDaDa5a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 69.0,
+        "cote": 100.0,
         "tendance_cote": "stable"
       },
       {
@@ -66,8 +66,8 @@
         "musique": "Da8a8a2a2a0a5a(25)Da5a",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 18.0,
-        "tendance_cote": "hausse"
+        "cote": 26.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -76,8 +76,8 @@
         "musique": "0a0a1aAa1a7a2a0a3a1a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 23.0,
-        "tendance_cote": "hausse"
+        "cote": 40.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -86,8 +86,8 @@
         "musique": "4aDa3a0a1a1a6a7a4a7a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 13.0,
-        "tendance_cote": "stable"
+        "cote": 10.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -96,8 +96,8 @@
         "musique": "6a0aAa4a9a0a1a2aDa8a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 20.0,
-        "tendance_cote": "stable"
+        "cote": 17.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -106,8 +106,8 @@
         "musique": "0a0m3a2a7a1a0a8a(25)9a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 26.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 46.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -116,7 +116,7 @@
         "musique": "DaDaDa7a5a0aDa6a6aDa",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 30.0,
+        "cote": 49.0,
         "tendance_cote": "stable"
       },
       {
@@ -126,8 +126,8 @@
         "musique": "0a0a4a4a0a6a5aDa5a8a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 37.0,
-        "tendance_cote": "stable"
+        "cote": 67.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 13,
@@ -136,8 +136,8 @@
         "musique": "4a8a5a9a3a3a6aDa(25)1a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 6.3,
-        "tendance_cote": "hausse"
+        "cote": 4.3,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 14,
@@ -146,8 +146,8 @@
         "musique": "5aDa9aDa0a(25)Da5a5aDa",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 19.0,
-        "tendance_cote": "stable"
+        "cote": 16.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 15,
@@ -156,8 +156,8 @@
         "musique": "3a5aAa7a0a0a6a5a6a7a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 15.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 19.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 16,
@@ -166,7 +166,7 @@
         "musique": "Da1a3a1aDaDa1a1a2a(25)",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 2.3,
+        "cote": 2.2,
         "tendance_cote": "hausse"
       }
     ]
@@ -179,7 +179,7 @@
     "discipline": "Trot Attelé",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "12:30",
+    "heure": "12:32",
     "chevaux": [
       {
         "num": 1,
@@ -188,8 +188,8 @@
         "musique": "1a8a1a5a",
         "deferre": "PROTEGE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 4.5,
-        "tendance_cote": "hausse"
+        "cote": 7.7,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -199,7 +199,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": 14.0,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -208,8 +208,8 @@
         "musique": "Da6a5aDaDa2a3aDa5aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": 18.0,
-        "tendance_cote": "stable"
+        "cote": 56.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -218,8 +218,8 @@
         "musique": "4a3a1a5a6a3a6aDa6a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.8,
-        "tendance_cote": "hausse"
+        "cote": 8.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -228,7 +228,7 @@
         "musique": "Da5a2a1a7a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 8.6,
+        "cote": 7.7,
         "tendance_cote": "hausse"
       },
       {
@@ -238,8 +238,8 @@
         "musique": "9a5a2a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 11.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 30.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -248,8 +248,8 @@
         "musique": "1a4a1a",
         "deferre": "PROTEGE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 25.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 4.8,
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -258,8 +258,8 @@
         "musique": "2a4a1a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.0,
-        "tendance_cote": "stable"
+        "cote": 2.4,
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -268,7 +268,7 @@
         "musique": "3a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 71.0,
+        "cote": 87.0,
         "tendance_cote": "stable"
       },
       {
@@ -278,8 +278,8 @@
         "musique": "8a1a3a",
         "deferre": "PROTEGE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 142.0,
-        "tendance_cote": "stable"
+        "cote": 76.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -288,8 +288,8 @@
         "musique": "1a4a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 35.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 24.0,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -301,7 +301,7 @@
     "discipline": "Trot Attelé",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "13:05",
+    "heure": "13:06",
     "chevaux": [
       {
         "num": 1,
@@ -310,8 +310,8 @@
         "musique": "6a8aDa6a0a2a2a1a5a(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 20.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 27.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -320,8 +320,8 @@
         "musique": "Da8aDa5a2aDaDa2a7aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": 70.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 143.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -330,8 +330,8 @@
         "musique": "1a1aDa1a4aDaDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": 2.3,
-        "tendance_cote": "stable"
+        "cote": 4.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -340,8 +340,8 @@
         "musique": "6aDa0aDaDaDa(25)4aDa2a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 2.8,
-        "tendance_cote": "baisse_forte"
+        "cote": 2.4,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -350,7 +350,7 @@
         "musique": "8a4a5a7a2a5a3aDa7a(25)",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 141.0,
+        "cote": 142.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -360,8 +360,8 @@
         "musique": "1aDa6a2a3a2a4a1aDaDa",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 24.0,
-        "tendance_cote": "hausse"
+        "cote": 15.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -370,8 +370,8 @@
         "musique": "4a1a3a5a6a6a5a(25)8a7a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 35.0,
-        "tendance_cote": "hausse"
+        "cote": 9.8,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -380,7 +380,7 @@
         "musique": "3aDaDa7a6a9aDaDaDa1a",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 106.0,
+        "cote": 43.0,
         "tendance_cote": "stable"
       },
       {
@@ -390,7 +390,7 @@
         "musique": "5a5a7a3a4aDa5aDm(25)5a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 6.6,
+        "cote": 9.8,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -400,7 +400,7 @@
         "musique": "Da5aDaDa5aDaDa3a1a(25)",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 22.0,
+        "cote": 8.3,
         "tendance_cote": "stable"
       },
       {
@@ -420,8 +420,8 @@
         "musique": "Da2a4a7a6a(25)2a1aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": 141.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 102.0,
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -442,8 +442,8 @@
         "musique": "4m0a0a0a7a4a2a4a2a0a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 24.0,
-        "tendance_cote": "stable"
+        "cote": 16.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -452,8 +452,8 @@
         "musique": "0m2m2m7m6m4mDa(25)Dm2m",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 5.8,
-        "tendance_cote": "stable"
+        "cote": 11.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -462,7 +462,7 @@
         "musique": "DaDa5m3aDa2a7a3m5a1a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 14.0,
+        "cote": 13.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -472,8 +472,8 @@
         "musique": "1m0a7a0a(25)7m5m0m2m6m",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 13.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 11.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -482,8 +482,8 @@
         "musique": "6a5mDaDa4aDa2a6aDa7a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 14.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 13.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -492,8 +492,8 @@
         "musique": "0a7a0a9a6a9a0a0a8a6a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 88.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 71.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -502,7 +502,7 @@
         "musique": "0m3mDm0m3m5m5m4mDm(25)",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 35.0,
+        "cote": 21.0,
         "tendance_cote": "hausse"
       },
       {
@@ -512,8 +512,8 @@
         "musique": "4a3aDa1a2aDa5a9a0a0a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 10.0,
-        "tendance_cote": "stable"
+        "cote": 8.8,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -522,8 +522,8 @@
         "musique": "0m4m5mDm3m0a7a6m6m(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 44.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 26.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -532,8 +532,8 @@
         "musique": "8a2m6a5a0aDaDa4a2a9a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 2.7,
-        "tendance_cote": "hausse"
+        "cote": 5.6,
+        "tendance_cote": "stable"
       },
       {
         "num": 11,
@@ -542,8 +542,8 @@
         "musique": "3a0a7a5m0a3a7a3a6a1a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 35.0,
-        "tendance_cote": "stable"
+        "cote": 16.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 12,
@@ -552,8 +552,8 @@
         "musique": "4a3a5a0a5a0a1a9a4a6a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 6.4,
-        "tendance_cote": "stable"
+        "cote": 20.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 13,
@@ -562,7 +562,7 @@
         "musique": "5m5m6mDm4mDm7m5m(25)0m",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 29.0,
+        "cote": 3.5,
         "tendance_cote": "stable"
       }
     ]
@@ -575,7 +575,7 @@
     "discipline": "Trot Attelé",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "14:15",
+    "heure": "14:18",
     "chevaux": [
       {
         "num": 1,
@@ -584,8 +584,8 @@
         "musique": "0a0a0a(25)0aDa5a4a4a1a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 273.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 235.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -594,8 +594,8 @@
         "musique": "6a(25)9a6m7m7a0a5a8a9a",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 182.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 148.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -604,8 +604,8 @@
         "musique": "6a5a3a6aDa(25)0a1aDa2a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 54.0,
-        "tendance_cote": "hausse"
+        "cote": 16.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -614,7 +614,7 @@
         "musique": "6aDa8a8a0a6a3a0a(25)7a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 23.0,
+        "cote": 18.0,
         "tendance_cote": "hausse"
       },
       {
@@ -624,8 +624,8 @@
         "musique": "0m5m7aDa(25)9m6m4m1m7a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 42.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 115.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -634,7 +634,7 @@
         "musique": "Da9aDa6a5a3aDaDa6aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": 17.0,
+        "cote": 100.0,
         "tendance_cote": "stable"
       },
       {
@@ -644,8 +644,8 @@
         "musique": "0aDa6a2a3aDa3m(25)0a5a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 45.0,
-        "tendance_cote": "stable"
+        "cote": 31.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -654,8 +654,8 @@
         "musique": "1a5a6a2a6a8a5a0a(25)9a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 3.8,
-        "tendance_cote": "stable"
+        "cote": 3.9,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -664,8 +664,8 @@
         "musique": "6a6a4a7a5a5a6a6a7a6a",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 49.0,
-        "tendance_cote": "hausse"
+        "cote": 176.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -674,8 +674,8 @@
         "musique": "1a5a5a0a1a(25)9a1a8a0a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 6.2,
-        "tendance_cote": "stable"
+        "cote": 2.7,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -684,8 +684,8 @@
         "musique": "9a9a2a6a0a(25)4m1a3a3a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 19.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 69.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
@@ -694,8 +694,8 @@
         "musique": "1a5a8a1a5a3a(25)DaDa3a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 3.3,
-        "tendance_cote": "hausse"
+        "cote": 17.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 13,
@@ -704,8 +704,8 @@
         "musique": "4a1a3a1a5aDaDa3a1a2a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 13.0,
-        "tendance_cote": "hausse"
+        "cote": 7.7,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 14,
@@ -714,8 +714,8 @@
         "musique": "4a2a(25)6a0a5a4a1a4a3a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 7.6,
-        "tendance_cote": "baisse_forte"
+        "cote": 6.1,
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -727,7 +727,7 @@
     "discipline": "Trot Attelé",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "14:51",
+    "heure": "14:52",
     "chevaux": [
       {
         "num": 1,
@@ -736,7 +736,7 @@
         "musique": "6a2a6a2aDa8aDa7aDaDm",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 26.0,
+        "cote": 76.0,
         "tendance_cote": "stable"
       },
       {
@@ -746,7 +746,7 @@
         "musique": "1a1a2a2aDaDa7a1a4aDa",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 21.0,
+        "cote": 9.4,
         "tendance_cote": "hausse"
       },
       {
@@ -756,8 +756,8 @@
         "musique": "0a0m7a8m4m7m(25)6m4m(24)",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 28.0,
-        "tendance_cote": "stable"
+        "cote": 185.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -766,7 +766,7 @@
         "musique": "1a1a3a0a6aDaDa5a2a(25)",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 2.7,
+        "cote": 2.3,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -776,8 +776,8 @@
         "musique": "6a7a2a1a1a2a4a8a(25)6a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 42.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 50.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -786,7 +786,7 @@
         "musique": "9aDa1a5a(25)DaAa4aDa4a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 5.2,
+        "cote": 3.2,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -796,8 +796,8 @@
         "musique": "Da3a8a9a5a3a8a6a5a8a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 56.0,
-        "tendance_cote": "stable"
+        "cote": 34.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 8,
@@ -806,7 +806,7 @@
         "musique": "0a1a1a5a3a5a(25)1a3a8a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 9.4,
+        "cote": 12.0,
         "tendance_cote": "stable"
       },
       {
@@ -816,7 +816,7 @@
         "musique": "3aDa6aDa2a5a8aDa3a0a",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 10.0,
+        "cote": 19.0,
         "tendance_cote": "hausse"
       },
       {
@@ -826,8 +826,8 @@
         "musique": "6aDa9a3aDa8aDa6aDa2a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 15.0,
-        "tendance_cote": "hausse"
+        "cote": 22.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 11,
@@ -836,8 +836,8 @@
         "musique": "3a3a8a9aDa3aDa3a7a(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 42.0,
-        "tendance_cote": "stable"
+        "cote": 61.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 12,
@@ -846,7 +846,7 @@
         "musique": "Da5a6a6a2a1aDa9a1aDa",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 56.0,
+        "cote": 114.0,
         "tendance_cote": "hausse"
       },
       {
@@ -856,8 +856,8 @@
         "musique": "1a6aDa8aDaDa3aDa9a(25)",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 68.0,
-        "tendance_cote": "stable"
+        "cote": 86.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 14,
@@ -866,7 +866,7 @@
         "musique": "5a4a2aDa3a(25)Da7aDaDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": 22.0,
+        "cote": 214.0,
         "tendance_cote": "hausse"
       },
       {
@@ -876,8 +876,8 @@
         "musique": "6aDa9a7a8a0a6aDaDaDa",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 20.0,
-        "tendance_cote": "stable"
+        "cote": 99.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 16,
@@ -886,8 +886,8 @@
         "musique": "9a1a1a6a2a2a4a4a5a6a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 31.0,
-        "tendance_cote": "hausse"
+        "cote": 30.0,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -908,8 +908,8 @@
         "musique": "3a0a2a3a2a2a2a4a(25)4a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 8.1,
-        "tendance_cote": "stable"
+        "cote": 9.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -918,7 +918,7 @@
         "musique": "9aDa8a3a9aDa(25)4a3a6a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 467.0,
+        "cote": 21.0,
         "tendance_cote": "stable"
       },
       {
@@ -928,8 +928,8 @@
         "musique": "8a5a4a7a0a8a5a2a(25)Da",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 17.0,
-        "tendance_cote": "stable"
+        "cote": 12.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -938,8 +938,8 @@
         "musique": "4a8aDa6a6a6a1aDa5a9a",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 9.9,
-        "tendance_cote": "baisse_forte"
+        "cote": 28.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -948,7 +948,7 @@
         "musique": "2a3aDa5a2a6a6a0aDa8a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 16.0,
+        "cote": 13.0,
         "tendance_cote": "stable"
       },
       {
@@ -958,7 +958,7 @@
         "musique": "1a1a3a1aDa0a3a1aDm7m",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 1.8,
+        "cote": 3.4,
         "tendance_cote": "hausse"
       },
       {
@@ -968,8 +968,8 @@
         "musique": "9a3a1a8a1aDa3a3a2a(25)",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 9.6,
-        "tendance_cote": "stable"
+        "cote": 3.7,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -978,8 +978,8 @@
         "musique": "7a4a5a3a6a4a9a2aDaDa",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 29.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 24.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -988,8 +988,8 @@
         "musique": "5aDa6a3a6aDa2a0aDa3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 33.0,
-        "tendance_cote": "stable"
+        "cote": 9.6,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -998,8 +998,8 @@
         "musique": "Da1a6a3a8a(25)6a8a2a3a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 42.0,
-        "tendance_cote": "hausse"
+        "cote": 18.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 11,
@@ -1008,8 +1008,8 @@
         "musique": "8a8a6a7a0a8a(25)3aDm1m",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 42.0,
-        "tendance_cote": "stable"
+        "cote": 94.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 12,
@@ -1018,7 +1018,7 @@
         "musique": "5a2a2a8a7aDaDaDa4a4a",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 58.0,
+        "cote": 62.0,
         "tendance_cote": "stable"
       },
       {
@@ -1028,8 +1028,8 @@
         "musique": "Aa0a6a9a3aDa0a6a(25)0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 116.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 276.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 14,
@@ -1038,7 +1038,7 @@
         "musique": "Da0a7aDmDm(25)Dm9a8aDa",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 51.0,
+        "cote": 166.0,
         "tendance_cote": "stable"
       },
       {
@@ -1048,7 +1048,7 @@
         "musique": "1m1m1m1aDmDm0a7a(25)Da",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 58.0,
+        "cote": 33.0,
         "tendance_cote": "hausse"
       }
     ]
@@ -1070,7 +1070,7 @@
         "musique": "1a1aDaDa6a1a1aAa(25)3a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 36.0,
+        "cote": 11.0,
         "tendance_cote": "stable"
       },
       {
@@ -1080,8 +1080,8 @@
         "musique": "3a2aDa2a1a1a1a1a1a1a",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 42.0,
-        "tendance_cote": "hausse"
+        "cote": 17.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -1090,7 +1090,7 @@
         "musique": "3a8a(25)3a0a8a0a2a0aDa",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 15.0,
+        "cote": 46.0,
         "tendance_cote": "hausse"
       },
       {
@@ -1100,7 +1100,7 @@
         "musique": "5mDm4m1m9a4aDa0a(25)Da",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 55.0,
+        "cote": 121.0,
         "tendance_cote": "hausse"
       },
       {
@@ -1110,8 +1110,8 @@
         "musique": "7aDa(24)1m5m3m4m1m1m1m",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 14.0,
-        "tendance_cote": "stable"
+        "cote": 3.9,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -1120,7 +1120,7 @@
         "musique": "6aDa3aDa7a4aDm3a5a0a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 26.0,
+        "cote": 144.0,
         "tendance_cote": "stable"
       },
       {
@@ -1130,8 +1130,8 @@
         "musique": "5a6a2a2a1a6a2aDaDa0a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 138.0,
-        "tendance_cote": "stable"
+        "cote": 47.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 8,
@@ -1140,8 +1140,8 @@
         "musique": "8a2a3a6a9aDa6a0a0a0a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 30.0,
-        "tendance_cote": "hausse"
+        "cote": 104.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 9,
@@ -1150,7 +1150,7 @@
         "musique": "2a0aAa3aDa5a6a4a2a2a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 39.0,
+        "cote": 24.0,
         "tendance_cote": "stable"
       },
       {
@@ -1160,8 +1160,8 @@
         "musique": "9a5a5a5a7a2a4a1a3a3a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 92.0,
-        "tendance_cote": "stable"
+        "cote": 57.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -1170,8 +1170,8 @@
         "musique": "1a1a1a1aDa1a5a1a0a1a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 12.0,
-        "tendance_cote": "hausse"
+        "cote": 5.3,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 12,
@@ -1180,7 +1180,7 @@
         "musique": "1a2a2aDaDaAa2a1a4aDa",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 2.0,
+        "cote": 3.2,
         "tendance_cote": "hausse"
       },
       {
@@ -1190,8 +1190,8 @@
         "musique": "Da3a6a1a3aDa7a(25)8a8a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 69.0,
-        "tendance_cote": "stable"
+        "cote": 39.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 14,
@@ -1200,8 +1200,8 @@
         "musique": "6a6a8a5a8aDa3a3a0a(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 14.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 30.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 15,
@@ -1210,8 +1210,8 @@
         "musique": "6a7a6a0a(25)2a1a3a6a4a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 5.2,
-        "tendance_cote": "stable"
+        "cote": 11.0,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -1232,8 +1232,8 @@
         "musique": "0a0aDa3aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": 8.3,
-        "tendance_cote": "hausse"
+        "cote": 23.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -1242,8 +1242,8 @@
         "musique": "1a7a7a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.2,
-        "tendance_cote": "hausse"
+        "cote": 1.5,
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -1252,7 +1252,7 @@
         "musique": "2a4a0a3a2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.3,
+        "cote": 4.3,
         "tendance_cote": "hausse"
       },
       {
@@ -1262,7 +1262,7 @@
         "musique": "0a6a0a4a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 15.0,
+        "cote": 48.0,
         "tendance_cote": "hausse"
       },
       {
@@ -1272,17 +1272,17 @@
         "musique": "0a0a4a7a7a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 8.3,
-        "tendance_cote": "stable"
+        "cote": 13.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
         "nom": "BONNIE BLAIR",
         "driver": "M. HØITOMT",
         "musique": "3a6a2a5a0a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 8.2,
+        "cote": 13.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -1290,10 +1290,10 @@
         "nom": "WOKE UP IN LOVE",
         "driver": "L.A. KOLLE",
         "musique": "6a3a7a0a4a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 11.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 20.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -1302,8 +1302,8 @@
         "musique": "0a0a4a0a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 24.0,
-        "tendance_cote": "stable"
+        "cote": 54.0,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -1322,19 +1322,19 @@
         "nom": "HA ELLA",
         "driver": "L.A. KOLLE",
         "musique": "9a4a0a5a5a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 28.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 9.1,
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
         "nom": "SPANG TURBO",
-        "driver": "G. AUSTEVOLL",
+        "driver": "V. HOP",
         "musique": "7a0a8a0a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 13.0,
+        "cote": 21.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -1344,7 +1344,7 @@
         "musique": "1aDaDa5mDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": 12.0,
+        "cote": 15.0,
         "tendance_cote": "hausse"
       },
       {
@@ -1354,8 +1354,8 @@
         "musique": "0a5aDm5m1m",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.8,
-        "tendance_cote": "baisse_forte"
+        "cote": 8.8,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -1364,8 +1364,8 @@
         "musique": "2a1a0a4a1a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 2.1,
-        "tendance_cote": "stable"
+        "cote": 2.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -1374,8 +1374,8 @@
         "musique": "4a1a0a0m2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.5,
-        "tendance_cote": "hausse"
+        "cote": 8.3,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -1384,27 +1384,27 @@
         "musique": "3a2a6a0a6a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 85.0,
-        "tendance_cote": "hausse"
+        "cote": 5.7,
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
         "nom": "HAUAN SAGA",
         "driver": "A. TENGSAREID",
         "musique": "0a0a2a2a0a",
-        "deferre": "",
+        "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 24.0,
-        "tendance_cote": "hausse"
+        "cote": 28.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 9,
-        "nom": "FRØKEN FYRRIG",
+        "nom": "FRÏ¿?KEN FYRRIG",
         "driver": "R. SVEEN",
         "musique": "Da6a5a0a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 34.0,
+        "cote": 88.0,
         "tendance_cote": "stable"
       }
     ]
@@ -1426,28 +1426,28 @@
         "musique": "0a(25)0a1a3aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 15.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
         "nom": "STELLA P.E.T.",
         "driver": "B. STEINE",
         "musique": "0a0a6a0a0a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 7.1,
-        "tendance_cote": "stable"
+        "cote": 13.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
         "nom": "MAZEPPA",
         "driver": "V. HOP",
         "musique": "0a3a5a0a6a",
-        "deferre": "",
+        "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": 16.0,
-        "tendance_cote": "hausse"
+        "cote": 3.8,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -1456,17 +1456,17 @@
         "musique": "0a0a0m0a6m",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.4,
+        "cote": 19.0,
         "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
         "nom": "FEBE",
-        "driver": "G. AUSTEVOLL",
+        "driver": "L.A. KOLLE",
         "musique": "0a2a5a2a4a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 8.0,
+        "cote": 1.7,
         "tendance_cote": "stable"
       },
       {
@@ -1476,7 +1476,7 @@
         "musique": "0a0a0a0a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 2.2,
+        "cote": 13.0,
         "tendance_cote": "stable"
       },
       {
@@ -1487,7 +1487,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 8,
@@ -1496,7 +1496,7 @@
         "musique": "0a0a2aDa1a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 9.2,
+        "cote": 4.0,
         "tendance_cote": "hausse"
       },
       {
@@ -1506,17 +1506,17 @@
         "musique": "4a5a2a0a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 16.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 10.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
         "nom": "HENESSI BORDEAUX",
-        "driver": "HERMAN R.TVEDT",
+        "driver": "H.R. TVEDT",
         "musique": "0a0a3a2a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 16.0,
+        "cote": 23.0,
         "tendance_cote": "baisse_forte"
       }
     ]
@@ -1538,8 +1538,8 @@
         "musique": "0a4aDa6aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": 13.0,
-        "tendance_cote": "stable"
+        "cote": 15.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -1548,18 +1548,18 @@
         "musique": "5a0a0a0a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 13.0,
-        "tendance_cote": "hausse"
+        "cote": 65.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
         "nom": "ARES H.",
-        "driver": "G. AUSTEVOLL",
+        "driver": "L.A. KOLLE",
         "musique": "6a5a5a0a(25)0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.6,
-        "tendance_cote": "hausse"
+        "cote": 69.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -1568,8 +1568,8 @@
         "musique": "0a1a2a2a1a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.4,
-        "tendance_cote": "baisse_forte"
+        "cote": 2.3,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -1578,8 +1578,8 @@
         "musique": "0a0a(25)0a2a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 13.0,
-        "tendance_cote": "stable"
+        "cote": 62.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -1588,8 +1588,8 @@
         "musique": "6a4a2a5a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 7.9,
-        "tendance_cote": "stable"
+        "cote": 26.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -1598,8 +1598,8 @@
         "musique": "2a0a1a1a2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 9.3,
-        "tendance_cote": "baisse_forte"
+        "cote": 10.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -1608,8 +1608,8 @@
         "musique": "3a2a1a1aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": 27.0,
-        "tendance_cote": "stable"
+        "cote": 3.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -1618,7 +1618,7 @@
         "musique": "1a4a5aDa2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 27.0,
+        "cote": 25.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -1628,7 +1628,7 @@
         "musique": "5a0a3a8a(25)4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 27.0,
+        "cote": 67.0,
         "tendance_cote": "hausse"
       },
       {
@@ -1638,18 +1638,18 @@
         "musique": "9a5a3a2aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": 13.0,
-        "tendance_cote": "hausse"
+        "cote": 11.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 12,
         "nom": "CONTINUITY",
         "driver": "T.E. SOLBERG",
         "musique": "1a4a2a0a4a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 27.0,
-        "tendance_cote": "hausse"
+        "cote": 37.0,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -1670,7 +1670,7 @@
         "musique": "5a4a0a0a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 11.0,
+        "cote": 48.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -1678,10 +1678,10 @@
         "nom": "KING'S ISLAND",
         "driver": "V. HOP",
         "musique": "4a4a0a0a6a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 11.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 31.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -1690,8 +1690,8 @@
         "musique": "6a8a0a5a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 4.7,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -1700,8 +1700,8 @@
         "musique": "0a2a1a0a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 7.7,
-        "tendance_cote": "stable"
+        "cote": 17.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -1710,8 +1710,8 @@
         "musique": "5a3a2a1a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.3,
-        "tendance_cote": "stable"
+        "cote": 3.7,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -1720,27 +1720,27 @@
         "musique": "2a2a5a7a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 15.0,
+        "cote": 19.0,
         "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
         "nom": "GAAGAALICIOUS",
-        "driver": "G. AUSTEVOLL",
+        "driver": "T.E. SOLBERG",
         "musique": "5a4a4a0a2a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 72.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
         "nom": "TRIXIE SUN",
         "driver": "M.T. AADLAND",
         "musique": "8a3a0a1a2a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": 4.6,
+        "cote": 13.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -1750,8 +1750,8 @@
         "musique": "2a8a1a4a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": 5.1,
-        "tendance_cote": "stable"
+        "cote": 13.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -1760,18 +1760,18 @@
         "musique": "0a0a0a5a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 85.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 11,
         "nom": "RISE N'SHINE VIXI",
         "driver": "A.S. AKSELSEN",
         "musique": "1a6a2a3a0m",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": 11.0,
-        "tendance_cote": "hausse"
+        "cote": 18.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 12,
@@ -1780,8 +1780,8 @@
         "musique": "2a0a1a0a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 3.2,
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -1800,10 +1800,10 @@
         "nom": "SUPREME SUND",
         "driver": "A. TENGSAREID",
         "musique": "0a2a1a0a4a",
-        "deferre": "",
+        "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -1813,27 +1813,27 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
         "nom": "ROCKY VRIJTHOUT",
         "driver": "F. HAMRE",
         "musique": "1a0a4a6a2a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
         "nom": "SWEET JOHANNA S.C.",
         "driver": "L.A. KOLLE",
         "musique": "1a6a5a0a2a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -1853,17 +1853,17 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
         "nom": "RIVERSIDE PRINCESS",
         "driver": "V. HOP",
         "musique": "7a0a5a0a0a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -1879,7 +1879,7 @@
     "chevaux": [
       {
         "num": 1,
-        "nom": "BJØRLI LIZZIE",
+        "nom": "BJÏ¿?RLI LIZZIE",
         "driver": "L.A. KOLLE",
         "musique": "3a1a2a5a0a",
         "deferre": "",
@@ -1889,33 +1889,33 @@
       },
       {
         "num": 2,
-        "nom": "MJØLNER JÆRV",
+        "nom": "MJÏ¿?LNER JÏ¿?RV",
         "driver": "E. HØITOMT",
         "musique": "5a3a5a4a5a",
-        "deferre": "",
-        "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
-      },
-      {
-        "num": 3,
-        "nom": "GRISLE RØVEREN G.L.",
-        "driver": "P.V. KALS",
-        "musique": "2a2a1a0a0a",
         "deferre": "",
         "poids": 0.0,
         "cote": null,
         "tendance_cote": "stable"
       },
       {
+        "num": 3,
+        "nom": "GRISLE RÏ¿?VEREN G.L.",
+        "driver": "P.V. KALS",
+        "musique": "2a2a1a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "baisse_forte"
+      },
+      {
         "num": 4,
-        "nom": "BJØNNUM JUNI",
+        "nom": "BJÏ¿?NNUM JUNI",
         "driver": "G.V. BACHMANN",
         "musique": "2a6a0a2a2a",
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -1925,7 +1925,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -1935,14 +1935,14 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
         "nom": "TANGEN BERIT",
         "driver": "T.E. SOLBERG",
         "musique": "0a0aDa2aDa",
-        "deferre": "",
+        "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
         "tendance_cote": "baisse_forte"
@@ -1950,12 +1950,12 @@
       {
         "num": 8,
         "nom": "VERDALS EIRA",
-        "driver": "G. AUSTEVOLL",
+        "driver": "A.S. AKSELSEN",
         "musique": "0a3a0a0a0a",
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -1965,7 +1965,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -1984,10 +1984,10 @@
         "nom": "IFICANDREAM E.P.",
         "driver": "B. STEINE",
         "musique": "Da2a0a3a6a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -1997,7 +1997,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -2007,37 +2007,37 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
         "nom": "COOL HAND ENERGY",
         "driver": "F. HAMRE",
         "musique": "Da8a2a1a1a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
         "nom": "ENJOYTHEVICTORY S.C.",
         "driver": "A. LANGERUD",
         "musique": "0a0a0a8aDm",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
         "nom": "YUKON TOLL",
         "driver": "M.T. AADLAND",
         "musique": "3aDa4a1a3a",
-        "deferre": "",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -2058,7 +2058,7 @@
         "musique": "8p0p1p7p2p1p7p1p0p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 9.5,
+        "cote": 8.8,
         "tendance_cote": "stable"
       },
       {
@@ -2068,8 +2068,8 @@
         "musique": "3p0p0p1p9p1p1p3p(25)4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.7,
-        "tendance_cote": "baisse_forte"
+        "cote": 3.3,
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -2078,8 +2078,8 @@
         "musique": "6p7p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.2,
-        "tendance_cote": "hausse"
+        "cote": 5.5,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -2088,8 +2088,8 @@
         "musique": "6p9p3p5p4p0p0p0p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 16.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 53.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -2098,7 +2098,7 @@
         "musique": "1p9p1p9p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.9,
+        "cote": 3.1,
         "tendance_cote": "hausse"
       },
       {
@@ -2108,8 +2108,8 @@
         "musique": "5h9h3h",
         "deferre": "",
         "poids": 0.0,
-        "cote": 9.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 45.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -2118,7 +2118,7 @@
         "musique": "0p0p4p8p8p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 5.7,
+        "cote": 14.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2128,7 +2128,7 @@
         "musique": "2p5p8p6p6p0p8p6p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 11.0,
+        "cote": 6.9,
         "tendance_cote": "stable"
       }
     ]
@@ -2150,8 +2150,8 @@
         "musique": "2p5p4p8p3p(25)4p4p4p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.6,
-        "tendance_cote": "stable"
+        "cote": 3.6,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -2160,8 +2160,8 @@
         "musique": "3p1p6p5p1p4p0p7p(25)5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 9.1,
-        "tendance_cote": "stable"
+        "cote": 5.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -2170,8 +2170,8 @@
         "musique": "6p8p6p(25)3p2p3p6p1p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 12.0,
-        "tendance_cote": "stable"
+        "cote": 33.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -2180,7 +2180,7 @@
         "musique": "6p5p5p3p1p6p(25)3p2p1p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 8.2,
+        "cote": 3.7,
         "tendance_cote": "stable"
       },
       {
@@ -2190,7 +2190,7 @@
         "musique": "1p2p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.6,
+        "cote": 2.7,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2200,8 +2200,8 @@
         "musique": "6p6p1p7p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 22.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 37.0,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -2222,7 +2222,7 @@
         "musique": "2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 1.8,
+        "cote": 2.1,
         "tendance_cote": "hausse"
       },
       {
@@ -2232,8 +2232,8 @@
         "musique": "1p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 5.2,
-        "tendance_cote": "stable"
+        "cote": 5.1,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -2242,8 +2242,8 @@
         "musique": "6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 8.9,
-        "tendance_cote": "baisse_forte"
+        "cote": 13.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -2252,8 +2252,8 @@
         "musique": "5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 26.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 22.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -2262,8 +2262,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.8,
-        "tendance_cote": "stable"
+        "cote": 8.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -2272,8 +2272,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 23.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 4.2,
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -2282,8 +2282,8 @@
         "musique": "8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 26.0,
-        "tendance_cote": "hausse"
+        "cote": 33.0,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -2304,8 +2304,8 @@
         "musique": "7p2p3p2p2p2p(25)4p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.5,
-        "tendance_cote": "stable"
+        "cote": 1.9,
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -2314,7 +2314,7 @@
         "musique": "7p3p7p7p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 12.0,
+        "cote": 35.0,
         "tendance_cote": "hausse"
       },
       {
@@ -2325,7 +2325,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -2334,8 +2334,8 @@
         "musique": "5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 8.6,
-        "tendance_cote": "hausse"
+        "cote": 10.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -2344,8 +2344,8 @@
         "musique": "4p2p2p8p7p6p7p(25)0p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 10.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 31.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -2354,8 +2354,8 @@
         "musique": "8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 51.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 69.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -2364,8 +2364,8 @@
         "musique": "7p4p4p6p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.7,
-        "tendance_cote": "stable"
+        "cote": 12.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -2374,7 +2374,7 @@
         "musique": "3p2p8p2p3p5p0p0p(25)5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.6,
+        "cote": 5.2,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2384,7 +2384,7 @@
         "musique": "6p2p4p4p7p(25)7p3p8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 8.2,
+        "cote": 9.6,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2394,8 +2394,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 11.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 9.2,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -2416,7 +2416,7 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 20.0,
+        "cote": 49.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2426,8 +2426,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 62.0,
-        "tendance_cote": "hausse"
+        "cote": 29.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -2436,7 +2436,7 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 11.0,
+        "cote": 7.2,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2446,8 +2446,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 19.0,
-        "tendance_cote": "stable"
+        "cote": 16.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -2456,8 +2456,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 20.0,
-        "tendance_cote": "stable"
+        "cote": 16.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -2466,8 +2466,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 19.0,
-        "tendance_cote": "hausse"
+        "cote": 16.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -2476,7 +2476,7 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 34.0,
+        "cote": 10.0,
         "tendance_cote": "stable"
       },
       {
@@ -2486,8 +2486,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 10.0,
-        "tendance_cote": "stable"
+        "cote": 6.1,
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -2496,8 +2496,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 23.0,
-        "tendance_cote": "stable"
+        "cote": 71.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -2506,8 +2506,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 7.8,
-        "tendance_cote": "stable"
+        "cote": 12.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -2516,8 +2516,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 7.8,
-        "tendance_cote": "baisse_forte"
+        "cote": 9.6,
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
@@ -2526,8 +2526,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 12.0,
-        "tendance_cote": "stable"
+        "cote": 5.1,
+        "tendance_cote": "hausse"
       },
       {
         "num": 13,
@@ -2536,8 +2536,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 5.7,
-        "tendance_cote": "baisse_forte"
+        "cote": 7.3,
+        "tendance_cote": "hausse"
       },
       {
         "num": 14,
@@ -2546,8 +2546,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 5.1,
-        "tendance_cote": "baisse_forte"
+        "cote": 10.0,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -2559,7 +2559,7 @@
     "discipline": "Galop Plat",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "12:12",
+    "heure": "12:14",
     "chevaux": [
       {
         "num": 1,
@@ -2568,8 +2568,8 @@
         "musique": "5h1h1h(25)1h1h1h6p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 8.4,
-        "tendance_cote": "hausse"
+        "cote": 2.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -2578,7 +2578,7 @@
         "musique": "4p7h7hTh(25)8h1h0p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 32.0,
+        "cote": 25.0,
         "tendance_cote": "stable"
       },
       {
@@ -2588,8 +2588,8 @@
         "musique": "(23)5p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 16.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 11.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -2598,8 +2598,8 @@
         "musique": "6p5h5h4hJsAh4h(25)0p8h",
         "deferre": "",
         "poids": 0.0,
-        "cote": 16.0,
-        "tendance_cote": "stable"
+        "cote": 57.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -2608,8 +2608,8 @@
         "musique": "3s0p2h2h0p9p4p(25)3p5s",
         "deferre": "",
         "poids": 0.0,
-        "cote": 7.5,
-        "tendance_cote": "baisse_forte"
+        "cote": 19.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -2618,8 +2618,8 @@
         "musique": "3p9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 28.0,
-        "tendance_cote": "hausse"
+        "cote": 15.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -2628,8 +2628,8 @@
         "musique": "3p6p6p5p9p2p(25)6p3p6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 10.0,
-        "tendance_cote": "hausse"
+        "cote": 26.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -2638,8 +2638,8 @@
         "musique": "0p0p0p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 113.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 156.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 9,
@@ -2648,18 +2648,18 @@
         "musique": "6p2p5p2p0p5p2p2p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.7,
-        "tendance_cote": "stable"
+        "cote": 3.4,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 10,
         "nom": "BLACK DU MORVAN",
-        "driver": "R.GABARD",
+        "driver": "P. POSTIC",
         "musique": "7p2p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 56.0,
-        "tendance_cote": "hausse"
+        "cote": 34.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -2668,8 +2668,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 7.0,
-        "tendance_cote": "hausse"
+        "cote": 86.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
@@ -2678,8 +2678,8 @@
         "musique": "Th(25)ThAh",
         "deferre": "",
         "poids": 0.0,
-        "cote": 25.0,
-        "tendance_cote": "hausse"
+        "cote": 131.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 13,
@@ -2688,8 +2688,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.4,
-        "tendance_cote": "baisse_forte"
+        "cote": 49.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 14,
@@ -2698,8 +2698,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 133.0,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -2711,7 +2711,7 @@
     "discipline": "Galop Plat",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "12:47",
+    "heure": "12:48",
     "chevaux": [
       {
         "num": 1,
@@ -2720,8 +2720,8 @@
         "musique": "0p1p1p6p5p2p2p(25)9p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 14.0,
-        "tendance_cote": "stable"
+        "cote": 10.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -2730,8 +2730,8 @@
         "musique": "7p1p7p2p1p6p(25)3p4p1p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 11.0,
-        "tendance_cote": "stable"
+        "cote": 6.9,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -2740,8 +2740,8 @@
         "musique": "4p0p4p7p3p2p1p(25)2p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 9.4,
-        "tendance_cote": "stable"
+        "cote": 12.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -2750,8 +2750,8 @@
         "musique": "0p0p5p5p0p2p0p4p1p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.4,
-        "tendance_cote": "baisse_forte"
+        "cote": 28.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -2760,7 +2760,7 @@
         "musique": "7p5p1p9p4p1p1p3p5p6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 18.0,
+        "cote": 3.6,
         "tendance_cote": "hausse"
       },
       {
@@ -2770,8 +2770,8 @@
         "musique": "7p1p1p(25)2p5p1p0p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 5.3,
-        "tendance_cote": "stable"
+        "cote": 5.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -2780,7 +2780,7 @@
         "musique": "5p2p3p2p5p1p1p1p(25)6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 13.0,
+        "cote": 14.0,
         "tendance_cote": "hausse"
       },
       {
@@ -2790,8 +2790,8 @@
         "musique": "(25)1p1p2p1p4p6p1p(23)9h",
         "deferre": "",
         "poids": 0.0,
-        "cote": 41.0,
-        "tendance_cote": "hausse"
+        "cote": 18.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -2800,8 +2800,8 @@
         "musique": "5p0pAh(25)Ah8h6h2p4p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 5.5,
-        "tendance_cote": "baisse_forte"
+        "cote": 26.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -2810,8 +2810,8 @@
         "musique": "3p0p1p3p7p7p8p1p(25)2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 37.0,
-        "tendance_cote": "stable"
+        "cote": 17.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -2820,8 +2820,8 @@
         "musique": "3p0p1p9p7p(25)7p4p6p6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 9.6,
-        "tendance_cote": "baisse_forte"
+        "cote": 21.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -2830,7 +2830,7 @@
         "musique": "6p1p3p6p2p3p5p3p(25)8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 20.0,
+        "cote": 36.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2840,7 +2840,7 @@
         "musique": "1p0p2p5p1p6p0p(25)7p8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 19.0,
+        "cote": 21.0,
         "tendance_cote": "hausse"
       }
     ]
@@ -2853,7 +2853,7 @@
     "discipline": "Galop Plat",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "13:22",
+    "heure": "13:23",
     "chevaux": [
       {
         "num": 1,
@@ -2862,8 +2862,8 @@
         "musique": "2p7p0p9p1p4p(25)8p7p1p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 8.8,
-        "tendance_cote": "hausse"
+        "cote": 11.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -2872,8 +2872,8 @@
         "musique": "4p1p0p0p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 173.0,
-        "tendance_cote": "stable"
+        "cote": 7.6,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -2882,8 +2882,8 @@
         "musique": "4p5p(25)0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 21.0,
-        "tendance_cote": "stable"
+        "cote": 23.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -2892,8 +2892,8 @@
         "musique": "5p9p0p8p0p5p1p7p0p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 10.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 13.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -2902,8 +2902,8 @@
         "musique": "4p6p3p6p5p7p8p5p3p6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 18.0,
-        "tendance_cote": "hausse"
+        "cote": 7.9,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -2912,7 +2912,7 @@
         "musique": "7p8p1p8p7p(25)0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 20.0,
+        "cote": 9.7,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2922,8 +2922,8 @@
         "musique": "1p2p5p0p3p4p4p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 2.9,
-        "tendance_cote": "baisse_forte"
+        "cote": 2.3,
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -2932,7 +2932,7 @@
         "musique": "5p0p0p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 7.8,
+        "cote": 27.0,
         "tendance_cote": "stable"
       },
       {
@@ -2942,8 +2942,8 @@
         "musique": "9p3p6p4p2p0p8p7p(25)7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 7.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 19.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -2952,7 +2952,7 @@
         "musique": "0p0p8p7p3p7p5p3p3p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 18.0,
+        "cote": 33.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -2962,8 +2962,8 @@
         "musique": "6p7p7p(25)8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 9.3,
-        "tendance_cote": "stable"
+        "cote": 54.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -2972,8 +2972,8 @@
         "musique": "4p0p0p5p0p3p3p8p7p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 34.0,
-        "tendance_cote": "stable"
+        "cote": 26.0,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -2985,7 +2985,7 @@
     "discipline": "Galop Plat",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "13:57",
+    "heure": "14:01",
     "chevaux": [
       {
         "num": 1,
@@ -2994,8 +2994,8 @@
         "musique": "7p0p1p3p3p4p8p3p7p6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 19.0,
-        "tendance_cote": "hausse"
+        "cote": 32.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -3004,8 +3004,8 @@
         "musique": "8p1p8p1p0p3p8p(25)6p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.9,
-        "tendance_cote": "hausse"
+        "cote": 8.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -3014,7 +3014,7 @@
         "musique": "8p0p1p7p8p4p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 16.0,
+        "cote": 5.8,
         "tendance_cote": "stable"
       },
       {
@@ -3024,8 +3024,8 @@
         "musique": "3p9p2p5p0p(25)8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.9,
-        "tendance_cote": "stable"
+        "cote": 6.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -3034,8 +3034,8 @@
         "musique": "1p5p2p5p3p3p4p4p(25)2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 13.0,
-        "tendance_cote": "stable"
+        "cote": 7.7,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -3044,7 +3044,7 @@
         "musique": "0p6p3p6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 7.6,
+        "cote": 26.0,
         "tendance_cote": "stable"
       },
       {
@@ -3054,8 +3054,8 @@
         "musique": "1p4p5p1p7p1p0p0p(25)6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 46.0,
-        "tendance_cote": "hausse"
+        "cote": 16.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -3064,8 +3064,8 @@
         "musique": "5p1p7p3p8p2p3p(25)4p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 16.0,
-        "tendance_cote": "hausse"
+        "cote": 5.9,
+        "tendance_cote": "stable"
       },
       {
         "num": 9,
@@ -3074,7 +3074,7 @@
         "musique": "6p4p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 38.0,
+        "cote": 18.0,
         "tendance_cote": "stable"
       },
       {
@@ -3084,8 +3084,8 @@
         "musique": "9p2p3p1p5p4p3p7p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 10.0,
-        "tendance_cote": "stable"
+        "cote": 27.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -3094,8 +3094,8 @@
         "musique": "5p4p9p5p(25)1p5p6p7p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 25.0,
-        "tendance_cote": "hausse"
+        "cote": 41.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 12,
@@ -3104,8 +3104,8 @@
         "musique": "4p4p0p8p3p0p6p5p(25)9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 12.0,
-        "tendance_cote": "stable"
+        "cote": 15.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 13,
@@ -3114,8 +3114,8 @@
         "musique": "4p6p4p7p7p7p5p2p(25)5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 60.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 20.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 14,
@@ -3124,7 +3124,7 @@
         "musique": "2p0p1p7p3p7p7p0p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 14.0,
+        "cote": 9.3,
         "tendance_cote": "hausse"
       },
       {
@@ -3134,8 +3134,8 @@
         "musique": "3p2p8p2p5p1p4p4p6p9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 21.0,
-        "tendance_cote": "stable"
+        "cote": 9.1,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -3147,7 +3147,7 @@
     "discipline": "Galop Plat",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "14:33",
+    "heure": "14:35",
     "chevaux": [
       {
         "num": 1,
@@ -3156,8 +3156,8 @@
         "musique": "6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 9.4,
-        "tendance_cote": "hausse"
+        "cote": 56.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -3166,8 +3166,8 @@
         "musique": "4p6p5p3p7p5p4p5p5p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 17.0,
-        "tendance_cote": "hausse"
+        "cote": 20.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -3176,7 +3176,7 @@
         "musique": "7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.0,
+        "cote": 2.1,
         "tendance_cote": "stable"
       },
       {
@@ -3186,8 +3186,8 @@
         "musique": "6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 10.0,
-        "tendance_cote": "stable"
+        "cote": 17.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -3196,8 +3196,8 @@
         "musique": "2p3p7p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.1,
-        "tendance_cote": "hausse"
+        "cote": 7.7,
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -3206,7 +3206,7 @@
         "musique": "3p9p6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 10.0,
+        "cote": 22.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3216,8 +3216,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 5.5,
-        "tendance_cote": "stable"
+        "cote": 3.1,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -3226,8 +3226,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 20.0,
-        "tendance_cote": "hausse"
+        "cote": 7.1,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -3236,8 +3236,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 12.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 17.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -3246,7 +3246,7 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 11.0,
+        "cote": 39.0,
         "tendance_cote": "hausse"
       }
     ]
@@ -3268,8 +3268,8 @@
         "musique": "9p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 5.7,
-        "tendance_cote": "hausse"
+        "cote": 11.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -3278,7 +3278,7 @@
         "musique": "5p3p3p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.5,
+        "cote": 2.7,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3288,7 +3288,7 @@
         "musique": "8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 22.0,
+        "cote": 19.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3298,8 +3298,8 @@
         "musique": "0p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.9,
-        "tendance_cote": "hausse"
+        "cote": 15.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -3308,7 +3308,7 @@
         "musique": "0p8p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 26.0,
+        "cote": 64.0,
         "tendance_cote": "stable"
       },
       {
@@ -3318,8 +3318,8 @@
         "musique": "4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.0,
-        "tendance_cote": "stable"
+        "cote": 2.4,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -3328,8 +3328,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 17.0,
-        "tendance_cote": "hausse"
+        "cote": 21.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -3338,8 +3338,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 15.0,
-        "tendance_cote": "stable"
+        "cote": 8.3,
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -3360,8 +3360,8 @@
         "musique": "0p0p0p7p(25)8p1p7p0p8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 32.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 87.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -3370,8 +3370,8 @@
         "musique": "3p9p1p5p0p2p0p7p5p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 13.0,
-        "tendance_cote": "hausse"
+        "cote": 7.7,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -3380,7 +3380,7 @@
         "musique": "0p4h1p3p1p2p(25)7h2p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 13.0,
+        "cote": 36.0,
         "tendance_cote": "hausse"
       },
       {
@@ -3390,8 +3390,8 @@
         "musique": "7p8p0p0p1p1p1p5p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 11.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 16.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -3400,8 +3400,8 @@
         "musique": "0p8p6p7p5p3p(25)2p3p1p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.9,
-        "tendance_cote": "hausse"
+        "cote": 6.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -3410,7 +3410,7 @@
         "musique": "9p1p4p1p7p8p0p(25)0p6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 16.0,
+        "cote": 26.0,
         "tendance_cote": "stable"
       },
       {
@@ -3420,8 +3420,8 @@
         "musique": "5p1p1p4p4p3p2p5p3p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 32.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 5.7,
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -3430,7 +3430,7 @@
         "musique": "0p9p7p0p1p6p0p3p(25)7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 25.0,
+        "cote": 8.7,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3440,8 +3440,8 @@
         "musique": "3p3p2p7p8p1p9p(25)7p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 23.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 21.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -3450,8 +3450,8 @@
         "musique": "0p3p3p0p8p0p0p0p1p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 51.0,
-        "tendance_cote": "hausse"
+        "cote": 25.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -3460,7 +3460,7 @@
         "musique": "3p5p(25)1p4p1p4p1p(23)9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.8,
+        "cote": 5.7,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3470,8 +3470,8 @@
         "musique": "6p3p5p5p1p1p7p2p1p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 19.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 15.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 13,
@@ -3480,8 +3480,8 @@
         "musique": "8p2p0p0p8p5p4p9p6p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 10.0,
-        "tendance_cote": "stable"
+        "cote": 36.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 14,
@@ -3490,7 +3490,7 @@
         "musique": "3p9p3p1p1p2p5p5p1p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.1,
+        "cote": 10.0,
         "tendance_cote": "hausse"
       }
     ]
@@ -3512,7 +3512,7 @@
         "musique": "3p6p0p3p1p(25)6p4p0p9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 35.0,
+        "cote": 13.0,
         "tendance_cote": "hausse"
       },
       {
@@ -3522,8 +3522,8 @@
         "musique": "3p3p3p3p5p1p9p5p9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 20.0,
-        "tendance_cote": "stable"
+        "cote": 14.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -3532,8 +3532,8 @@
         "musique": "2p4p0p7p5p7p0p1p4p8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 19.0,
-        "tendance_cote": "stable"
+        "cote": 12.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -3542,8 +3542,8 @@
         "musique": "3p0p3p8p2p2p9p0p(25)0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 14.0,
-        "tendance_cote": "stable"
+        "cote": 8.2,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -3552,8 +3552,8 @@
         "musique": "4p8p5p0p3p5p9p0p3p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 8.2,
-        "tendance_cote": "baisse_forte"
+        "cote": 20.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -3562,8 +3562,8 @@
         "musique": "0p0p0p0p(25)0p1p2p2p8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 5.7,
-        "tendance_cote": "hausse"
+        "cote": 11.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -3572,8 +3572,8 @@
         "musique": "1p5p1p6p5p0p2p5p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 123.0,
-        "tendance_cote": "stable"
+        "cote": 15.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -3582,7 +3582,7 @@
         "musique": "4p1p2p8p0p(25)0p2p2p1p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 7.2,
+        "cote": 6.5,
         "tendance_cote": "stable"
       },
       {
@@ -3592,8 +3592,8 @@
         "musique": "8p0p9p6p1p6p3p3p0p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.7,
-        "tendance_cote": "stable"
+        "cote": 15.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -3602,7 +3602,7 @@
         "musique": "7p1p2p1p2p3p2p4p6p8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 27.0,
+        "cote": 14.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3612,8 +3612,8 @@
         "musique": "0p6p0p5p3p(25)1p4p6p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 10.0,
-        "tendance_cote": "hausse"
+        "cote": 43.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
@@ -3622,8 +3622,8 @@
         "musique": "3p9p0p6p9p4p7p(25)0p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.8,
-        "tendance_cote": "hausse"
+        "cote": 3.4,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 13,
@@ -3632,8 +3632,8 @@
         "musique": "8p7p4p6p9p7p5p4p0p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 27.0,
-        "tendance_cote": "hausse"
+        "cote": 57.0,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -3645,7 +3645,7 @@
     "discipline": "Galop Plat",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "16:57",
+    "heure": "16:59",
     "chevaux": [
       {
         "num": 1,
@@ -3654,7 +3654,7 @@
         "musique": "9p6p0p0p4p8p2p0p0p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 10.0,
+        "cote": 15.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3664,7 +3664,7 @@
         "musique": "0p9p3p4p2p5p9p7p(25)0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.2,
+        "cote": 16.0,
         "tendance_cote": "stable"
       },
       {
@@ -3674,8 +3674,8 @@
         "musique": "1p4p3p1p1p1p(25)0p1p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 29.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 5.7,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -3684,8 +3684,8 @@
         "musique": "5p3p8p7p5p3p3p6p4p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 10.0,
-        "tendance_cote": "hausse"
+        "cote": 5.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -3694,8 +3694,8 @@
         "musique": "8p0p2p3p1p2p7p0p(25)0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 87.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 5.7,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -3704,8 +3704,8 @@
         "musique": "5p3p2p4p4p4p3p3p7p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.4,
-        "tendance_cote": "stable"
+        "cote": 8.2,
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -3714,7 +3714,7 @@
         "musique": "5p9p1p4p2p2p8p(25)9p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 32.0,
         "tendance_cote": "stable"
       },
       {
@@ -3724,8 +3724,8 @@
         "musique": "0p5p1p2p3p3p0p0p7p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 13.0,
-        "tendance_cote": "stable"
+        "cote": 12.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -3734,8 +3734,8 @@
         "musique": "0p9p8p0p(25)0p2p5p2p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 10.0,
-        "tendance_cote": "hausse"
+        "cote": 13.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 10,
@@ -3744,8 +3744,8 @@
         "musique": "7p5p2p4p2p4p2p(25)4p9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 12.0,
-        "tendance_cote": "hausse"
+        "cote": 8.8,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -3754,7 +3754,7 @@
         "musique": "8p8p6p4p5p7p8p6p8p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 9.6,
+        "cote": 33.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3764,8 +3764,8 @@
         "musique": "0p6p0p0p0p8p(25)0p9p6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 17.0,
-        "tendance_cote": "hausse"
+        "cote": 114.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 13,
@@ -3774,8 +3774,8 @@
         "musique": "8p0p0p8p0p(25)7p0p8p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 13.0,
-        "tendance_cote": "hausse"
+        "cote": 25.0,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -3787,7 +3787,7 @@
     "discipline": "Galop Plat",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "17:27",
+    "heure": "17:29",
     "chevaux": [
       {
         "num": 1,
@@ -3796,8 +3796,8 @@
         "musique": "1p3p6p4p0p2p0p(25)4p1p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 26.0,
-        "tendance_cote": "hausse"
+        "cote": 28.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -3806,8 +3806,8 @@
         "musique": "2p2p3p1p8p2p5p2p6p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.8,
-        "tendance_cote": "hausse"
+        "cote": 4.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -3816,8 +3816,8 @@
         "musique": "0p0p8p0p4p6p0p2p0p6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 20.0,
-        "tendance_cote": "hausse"
+        "cote": 53.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -3826,8 +3826,8 @@
         "musique": "2p0p4p0p2p2p7p5p(25)8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 26.0,
-        "tendance_cote": "hausse"
+        "cote": 25.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -3836,7 +3836,7 @@
         "musique": "Ah5h9p9p9h6h5p1p5p8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 60.0,
+        "cote": 51.0,
         "tendance_cote": "hausse"
       },
       {
@@ -3846,8 +3846,8 @@
         "musique": "8p1p4p5p6p7p2p1p8p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 40.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 32.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -3856,8 +3856,8 @@
         "musique": "5p2p5p7p3p9p0p6p2p9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.3,
-        "tendance_cote": "baisse_forte"
+        "cote": 11.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -3866,7 +3866,7 @@
         "musique": "8p0p6p0p2p1p0p7p3p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 9.2,
+        "cote": 14.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -3876,8 +3876,8 @@
         "musique": "0p7p(25)1p1p8p0p(24)0p9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 7.3,
-        "tendance_cote": "hausse"
+        "cote": 23.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -3886,8 +3886,8 @@
         "musique": "4p2p1p7p(25)0p9p4p5p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 10.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 4.7,
+        "tendance_cote": "stable"
       },
       {
         "num": 11,
@@ -3896,8 +3896,8 @@
         "musique": "4p6p8p5p9p3p4p0p8p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 17.0,
-        "tendance_cote": "stable"
+        "cote": 14.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -3906,8 +3906,8 @@
         "musique": "7p3p0p6p7p4p1p0p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 7.5,
-        "tendance_cote": "stable"
+        "cote": 25.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 13,
@@ -3916,8 +3916,8 @@
         "musique": "1p7p2p0p(25)0p0p7p5p9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 10.0,
-        "tendance_cote": "stable"
+        "cote": 3.9,
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -3929,7 +3929,7 @@
     "discipline": "Galop Plat",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "17:57",
+    "heure": "17:59",
     "chevaux": [
       {
         "num": 1,
@@ -3938,8 +3938,8 @@
         "musique": "3p7p4p(25)4p1p3p8p1p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.0,
-        "tendance_cote": "baisse_forte"
+        "cote": 6.5,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -3948,7 +3948,7 @@
         "musique": "0p0p3p6p2p2p1p(25)3p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 5.3,
+        "cote": 9.5,
         "tendance_cote": "stable"
       },
       {
@@ -3958,8 +3958,8 @@
         "musique": "6p4p7p1p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.2,
-        "tendance_cote": "hausse"
+        "cote": 3.1,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -3968,7 +3968,7 @@
         "musique": "8p5p4p1p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 2.9,
+        "cote": 1.6,
         "tendance_cote": "baisse_forte"
       }
     ]
@@ -3991,7 +3991,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -4011,7 +4011,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -4021,7 +4021,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -4031,7 +4031,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -4061,7 +4061,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -4071,7 +4071,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -4091,7 +4091,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
@@ -4101,7 +4101,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -4123,7 +4123,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -4133,7 +4133,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -4143,7 +4143,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -4163,7 +4163,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -4185,7 +4185,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -4195,7 +4195,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -4205,7 +4205,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -4225,7 +4225,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -4245,7 +4245,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -4265,7 +4265,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -4285,7 +4285,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -4306,7 +4306,7 @@
         "musique": "3p2p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 15.0,
+        "cote": 3.6,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -4316,7 +4316,7 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 6.0,
+        "cote": 10.0,
         "tendance_cote": "hausse"
       },
       {
@@ -4326,8 +4326,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.0,
-        "tendance_cote": "hausse"
+        "cote": 30.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -4336,8 +4336,8 @@
         "musique": "",
         "deferre": "",
         "poids": 0.0,
-        "cote": 7.5,
-        "tendance_cote": "hausse"
+        "cote": 10.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -4346,7 +4346,7 @@
         "musique": "6p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 15.0,
+        "cote": 70.0,
         "tendance_cote": "stable"
       },
       {
@@ -4356,8 +4356,8 @@
         "musique": "8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.0,
-        "tendance_cote": "hausse"
+        "cote": 9.8,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -4366,8 +4366,8 @@
         "musique": "2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 3.3,
+        "tendance_cote": "hausse"
       },
       {
         "num": 8,
@@ -4376,8 +4376,8 @@
         "musique": "3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 3.5,
+        "tendance_cote": "stable"
       },
       {
         "num": 9,
@@ -4386,8 +4386,8 @@
         "musique": "8p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 78.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 10,
@@ -4396,8 +4396,8 @@
         "musique": "6p9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 44.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -4406,8 +4406,8 @@
         "musique": "9p8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 15.0,
-        "tendance_cote": "stable"
+        "cote": 99.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 12,
@@ -4416,8 +4416,8 @@
         "musique": "8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 41.0,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -4438,7 +4438,7 @@
         "musique": "0p8p9p1p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.4,
+        "cote": 6.9,
         "tendance_cote": "hausse"
       },
       {
@@ -4448,7 +4448,7 @@
         "musique": "0p8p6p(25)9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 30.0,
         "tendance_cote": "hausse"
       },
       {
@@ -4458,8 +4458,8 @@
         "musique": "1p7p2p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 4.2,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -4468,8 +4468,8 @@
         "musique": "8p7p0p2p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.4,
-        "tendance_cote": "baisse_forte"
+        "cote": 12.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -4478,8 +4478,8 @@
         "musique": "5p4p(25)3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 8.6,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -4488,8 +4488,8 @@
         "musique": "6p5p8p7p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 3.1,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -4498,8 +4498,8 @@
         "musique": "9p7p9p8p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.4,
-        "tendance_cote": "baisse_forte"
+        "cote": 8.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -4508,7 +4508,7 @@
         "musique": "Tp8p6p7p9p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 24.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -4518,8 +4518,8 @@
         "musique": "9p5p8p5p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 66.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -4528,8 +4528,8 @@
         "musique": "8p5p(25)8p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 3.4,
-        "tendance_cote": "stable"
+        "cote": 18.0,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -4550,8 +4550,8 @@
         "musique": "7p0p4p3p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 4.3,
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -4560,8 +4560,8 @@
         "musique": "5p7p3p4p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 2.5,
-        "tendance_cote": "stable"
+        "cote": 13.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -4570,8 +4570,8 @@
         "musique": "4p2p2p8p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 7.3,
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -4580,7 +4580,7 @@
         "musique": "2p6p5p1p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 2.5,
+        "cote": 1.6,
         "tendance_cote": "stable"
       },
       {
@@ -4590,8 +4590,8 @@
         "musique": "4p3p5p9p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 8.3,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -4600,7 +4600,7 @@
         "musique": "4p3p7p5p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 19.0,
         "tendance_cote": "hausse"
       },
       {
@@ -4610,7 +4610,7 @@
         "musique": "7p5p4p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 42.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -4620,7 +4620,7 @@
         "musique": "4p0p(25)4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 87.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -4630,7 +4630,7 @@
         "musique": "8p0p(25)0p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 107.0,
         "tendance_cote": "stable"
       },
       {
@@ -4640,8 +4640,8 @@
         "musique": "6p7p7p5p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 2.5,
-        "tendance_cote": "hausse"
+        "cote": 30.0,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -4662,8 +4662,8 @@
         "musique": "4p2p4p6p0p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 6.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -4672,8 +4672,8 @@
         "musique": "7p1p(25)8h7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.2,
-        "tendance_cote": "stable"
+        "cote": 18.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -4682,7 +4682,7 @@
         "musique": "3p9p2p7p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.2,
+        "cote": 4.6,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -4692,8 +4692,8 @@
         "musique": "0p3p5p7p1p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.2,
-        "tendance_cote": "baisse_forte"
+        "cote": 6.4,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -4702,8 +4702,8 @@
         "musique": "8p5p5p3h",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 59.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -4712,7 +4712,7 @@
         "musique": "9p9p8p4p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 7.7,
         "tendance_cote": "stable"
       },
       {
@@ -4722,8 +4722,8 @@
         "musique": "6p3p5p(25)3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 7.5,
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -4732,8 +4732,8 @@
         "musique": "1p3p6p1p6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 3.8,
+        "tendance_cote": "stable"
       },
       {
         "num": 9,
@@ -4742,7 +4742,7 @@
         "musique": "8p8p0p9pAp",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 119.0,
         "tendance_cote": "stable"
       },
       {
@@ -4752,8 +4752,8 @@
         "musique": "7p5p5p3p5p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 2.1,
-        "tendance_cote": "baisse_forte"
+        "cote": 38.0,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -4775,7 +4775,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -4784,8 +4784,8 @@
         "musique": "1p1p1p1p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.2,
-        "tendance_cote": "stable"
+        "cote": 2.4,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -4794,8 +4794,8 @@
         "musique": "3p1p6p4p1p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.2,
-        "tendance_cote": "stable"
+        "cote": 12.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -4804,8 +4804,8 @@
         "musique": "3p2p3p3p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.2,
-        "tendance_cote": "hausse"
+        "cote": 3.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -4814,7 +4814,7 @@
         "musique": "0p0p0p7p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 19.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -4824,8 +4824,8 @@
         "musique": "1p7p7p7p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 6.3,
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -4834,8 +4834,8 @@
         "musique": "Ah5p5p7p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 20.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -4844,8 +4844,8 @@
         "musique": "0p6p8p6p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 19.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -4854,8 +4854,8 @@
         "musique": "9p0p0p3p2p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 36.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -4864,8 +4864,8 @@
         "musique": "8p7p3p4p6p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.2,
-        "tendance_cote": "hausse"
+        "cote": 31.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 11,
@@ -4874,8 +4874,8 @@
         "musique": "8p5p7p7p4p",
         "deferre": "",
         "poids": 0.0,
-        "cote": 4.2,
-        "tendance_cote": "stable"
+        "cote": 37.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -4884,7 +4884,7 @@
         "musique": "7p2p5p3p3p",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 11.0,
         "tendance_cote": "hausse"
       }
     ]
@@ -4907,7 +4907,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -4917,7 +4917,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -4927,7 +4927,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -4937,7 +4937,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -4947,7 +4947,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -4957,7 +4957,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -4977,7 +4977,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -4997,7 +4997,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -5007,7 +5007,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
@@ -5017,7 +5017,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 13,
@@ -5027,7 +5027,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -5039,7 +5039,7 @@
     "discipline": "Galop Plat",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "19:00",
+    "heure": "19:02",
     "chevaux": [
       {
         "num": 1,
@@ -5049,7 +5049,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -5069,7 +5069,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -5079,7 +5079,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -5089,7 +5089,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -5109,7 +5109,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -5119,7 +5119,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -5171,7 +5171,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -5186,12 +5186,12 @@
       {
         "num": 5,
         "nom": "DIAMOND BLUE",
-        "driver": "GUSTAVO ADRIAN AROS",
+        "driver": "NELSON ANDRES ROJAS",
         "musique": "1p1p5p1p4p",
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -5201,7 +5201,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -5211,7 +5211,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -5233,7 +5233,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -5243,7 +5243,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -5253,7 +5253,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -5273,7 +5273,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -5303,7 +5303,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -5313,7 +5313,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 10,
@@ -5323,7 +5323,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -5333,7 +5333,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -5353,7 +5353,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -5365,7 +5365,7 @@
     "discipline": "Galop Plat",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "20:30",
+    "heure": "20:34",
     "chevaux": [
       {
         "num": 1,
@@ -5375,7 +5375,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -5385,7 +5385,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -5395,7 +5395,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -5405,7 +5405,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -5415,7 +5415,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -5425,7 +5425,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -5435,7 +5435,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -5445,7 +5445,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -5465,7 +5465,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -5497,7 +5497,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -5507,7 +5507,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -5517,7 +5517,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -5537,17 +5537,17 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
         "nom": "DON MATIAS",
-        "driver": "LESLY CAROLINA GONZALEZ",
+        "driver": "ROBERTO RODRIGO AVILA CONTRERAS",
         "musique": "6p0p0p0p0p",
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -5557,7 +5557,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 9,
@@ -5579,7 +5579,7 @@
     "discipline": "Galop Plat",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "21:30",
+    "heure": "21:32",
     "chevaux": [
       {
         "num": 1,
@@ -5589,7 +5589,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -5599,7 +5599,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -5609,7 +5609,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -5629,7 +5629,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -5639,17 +5639,17 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
         "nom": "EL NENE",
-        "driver": "GUSTAVO ADRIAN AROS",
+        "driver": "DARIEN ALEXANDER CHEUQUE ROJAS",
         "musique": "0p0p8p0p1p",
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -5689,12 +5689,12 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 12,
         "nom": "PRIMA TOWN",
-        "driver": "VICTOR MANUEL BRACETTI GUERRERO",
+        "driver": "LUIS DIEGO MENGHINI YANEZ",
         "musique": "5p8p3p0p0p",
         "deferre": "",
         "poids": 0.0,
@@ -5751,7 +5751,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -5761,7 +5761,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -5771,7 +5771,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -5781,7 +5781,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -5811,7 +5811,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -5831,7 +5831,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -5853,7 +5853,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -5863,7 +5863,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -5873,7 +5873,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -5883,7 +5883,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -5893,7 +5893,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -5903,7 +5903,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -5935,7 +5935,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -5945,7 +5945,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -5955,7 +5955,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 4,
@@ -5965,7 +5965,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -5975,7 +5975,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -5985,7 +5985,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -5995,7 +5995,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -6005,7 +6005,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -6027,7 +6027,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -6037,7 +6037,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -6057,7 +6057,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -6067,7 +6067,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -6077,7 +6077,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -6087,7 +6087,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -6107,7 +6107,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "hausse"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 10,
@@ -6117,7 +6117,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -6148,7 +6148,7 @@
         "musique": "8aDaDaDa",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 6.4,
         "tendance_cote": "hausse"
       },
       {
@@ -6158,8 +6158,8 @@
         "musique": "9a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 26.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -6168,7 +6168,7 @@
         "musique": "Da",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 26.0,
         "tendance_cote": "stable"
       },
       {
@@ -6178,7 +6178,7 @@
         "musique": "Da",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 2.4,
         "tendance_cote": "stable"
       },
       {
@@ -6188,7 +6188,7 @@
         "musique": "8a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 53.0,
         "tendance_cote": "hausse"
       },
       {
@@ -6198,7 +6198,7 @@
         "musique": "8a7a8a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 107.0,
         "tendance_cote": "stable"
       },
       {
@@ -6208,8 +6208,8 @@
         "musique": "5a7a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 8.9,
+        "tendance_cote": "stable"
       },
       {
         "num": 8,
@@ -6218,8 +6218,8 @@
         "musique": "5a0a5a0a0aDa9aDaDaDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 15.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -6228,8 +6228,8 @@
         "musique": "5a6a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 4.8,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -6238,8 +6238,8 @@
         "musique": "5a0a4a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 30.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 11,
@@ -6248,8 +6248,8 @@
         "musique": "3aDaDaDa5aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 17.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
@@ -6258,8 +6258,8 @@
         "musique": "Da5a4a6a7a5aDaDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 35.0,
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -6271,7 +6271,7 @@
     "discipline": "Trot Attelé",
     "terrain_officiel": "Bon (Standard)",
     "corde": "Corde standard",
-    "heure": "11:00",
+    "heure": "11:02",
     "chevaux": [
       {
         "num": 1,
@@ -6280,8 +6280,8 @@
         "musique": "DaDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 20.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -6290,8 +6290,8 @@
         "musique": "Da8aDaDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 62.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -6300,8 +6300,8 @@
         "musique": "0a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 11.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -6310,8 +6310,8 @@
         "musique": "Da",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 27.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -6320,8 +6320,8 @@
         "musique": "DaDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 8.2,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -6330,7 +6330,7 @@
         "musique": "6a8aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 31.0,
         "tendance_cote": "hausse"
       },
       {
@@ -6340,8 +6340,8 @@
         "musique": "7a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 4.2,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -6350,8 +6350,8 @@
         "musique": "Da7aDaDa4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 124.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -6360,7 +6360,7 @@
         "musique": "4aDaDa0a5aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 24.0,
         "tendance_cote": "hausse"
       },
       {
@@ -6370,7 +6370,7 @@
         "musique": "3a5a8a8a7aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 4.8,
         "tendance_cote": "hausse"
       },
       {
@@ -6380,8 +6380,8 @@
         "musique": "5aAa4a5a(25)8aDa",
         "deferre": "PROTEGE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 5.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
@@ -6390,8 +6390,8 @@
         "musique": "Da4aDa5a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 7.3,
+        "tendance_cote": "stable"
       }
     ]
   },
@@ -6412,8 +6412,8 @@
         "musique": "DaDaDa8a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 53.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 2,
@@ -6422,7 +6422,7 @@
         "musique": "DaDaDa(25)DaDa",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 53.0,
         "tendance_cote": "hausse"
       },
       {
@@ -6432,8 +6432,8 @@
         "musique": "9a7aDa",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 159.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -6442,8 +6442,8 @@
         "musique": "DmDm3mDaDa(25)DaDa",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 159.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -6452,7 +6452,7 @@
         "musique": "6a6aDa1a8a6a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 26.0,
         "tendance_cote": "hausse"
       },
       {
@@ -6462,7 +6462,7 @@
         "musique": "5a6a4a8aDa4a5a0a8a(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 17.0,
         "tendance_cote": "stable"
       },
       {
@@ -6472,8 +6472,8 @@
         "musique": "2m3m4m(25)Dm2m",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 31.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -6482,7 +6482,7 @@
         "musique": "1a1aDaDa",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 2.7,
         "tendance_cote": "hausse"
       },
       {
@@ -6492,7 +6492,7 @@
         "musique": "7a8aDa8a8a1a6a8a9a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 31.0,
         "tendance_cote": "stable"
       },
       {
@@ -6502,7 +6502,7 @@
         "musique": "DaDaDa1a(25)7a3a3a3aDm",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 7.2,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -6512,7 +6512,7 @@
         "musique": "6a5a9a6a4a7a2a9a1a(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 11.0,
         "tendance_cote": "stable"
       },
       {
@@ -6522,7 +6522,7 @@
         "musique": "DaDa5a6aDaDa7a4aDa2a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 15.0,
         "tendance_cote": "stable"
       },
       {
@@ -6532,8 +6532,8 @@
         "musique": "1a7aDa7a4a9a7a9a(25)5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 3.4,
+        "tendance_cote": "hausse"
       },
       {
         "num": 14,
@@ -6542,8 +6542,8 @@
         "musique": "DaDaDaDaDaDa2a5mDaDa",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 79.0,
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -6564,8 +6564,8 @@
         "musique": "DaDaDa(25)Da",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 86.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -6574,8 +6574,8 @@
         "musique": "DaDaDa",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 28.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -6584,7 +6584,7 @@
         "musique": "5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 57.0,
         "tendance_cote": "stable"
       },
       {
@@ -6594,8 +6594,8 @@
         "musique": "8aDa1a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 7.1,
+        "tendance_cote": "hausse"
       },
       {
         "num": 5,
@@ -6604,8 +6604,8 @@
         "musique": "Da1a0aDa0a4aDa6a0aDa",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 34.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 6,
@@ -6614,7 +6614,7 @@
         "musique": "3a5a1a5aDaDa(25)6a3aDa",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 2.3,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -6624,8 +6624,8 @@
         "musique": "3a8a3a0a5a1a5a(25)Da6a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 26.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -6634,8 +6634,8 @@
         "musique": "8a2a6a8a1a2a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 6.7,
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -6644,7 +6644,7 @@
         "musique": "3a2aDa7aDa7aDa6a4a(25)",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 17.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -6654,8 +6654,8 @@
         "musique": "DaDa7aDaDaDa6aDa7a0a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 34.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -6665,7 +6665,7 @@
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "baisse_forte"
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -6674,7 +6674,7 @@
         "musique": "DaDaDa3a7aDa3aDa6a3a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 57.0,
         "tendance_cote": "stable"
       },
       {
@@ -6684,7 +6684,7 @@
         "musique": "7a0aDa9a1a2a(25)3a5a3a",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 20.0,
         "tendance_cote": "stable"
       },
       {
@@ -6694,8 +6694,8 @@
         "musique": "2a6aDa5a0a8a(25)6a1aDa",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 5.9,
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -6716,8 +6716,8 @@
         "musique": "Da8a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 190.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -6726,8 +6726,8 @@
         "musique": "9aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 13.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 3,
@@ -6736,8 +6736,8 @@
         "musique": "Da0a0aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 11.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -6746,7 +6746,7 @@
         "musique": "9aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 54.0,
         "tendance_cote": "stable"
       },
       {
@@ -6756,8 +6756,8 @@
         "musique": "9a",
         "deferre": "PROTEGE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 38.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -6766,8 +6766,8 @@
         "musique": "Da6aDaDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 14.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 7,
@@ -6776,8 +6776,8 @@
         "musique": "4a",
         "deferre": "PROTEGE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 3.8,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 8,
@@ -6786,8 +6786,8 @@
         "musique": "Da5a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 47.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -6796,7 +6796,7 @@
         "musique": "Da(25)0a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 8.6,
         "tendance_cote": "hausse"
       },
       {
@@ -6806,8 +6806,8 @@
         "musique": "3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 9.7,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -6816,8 +6816,8 @@
         "musique": "0a3aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 10.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 12,
@@ -6826,8 +6826,8 @@
         "musique": "4a4aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 3.4,
+        "tendance_cote": "hausse"
       }
     ]
   },
@@ -6848,8 +6848,8 @@
         "musique": "9a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 88.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 2,
@@ -6858,8 +6858,8 @@
         "musique": "DmDm",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 176.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 3,
@@ -6868,7 +6868,7 @@
         "musique": "8aDaDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 27.0,
         "tendance_cote": "stable"
       },
       {
@@ -6878,7 +6878,7 @@
         "musique": "8a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 19.0,
         "tendance_cote": "stable"
       },
       {
@@ -6888,8 +6888,8 @@
         "musique": "Da6aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 18.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 6,
@@ -6898,7 +6898,7 @@
         "musique": "4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 7.1,
         "tendance_cote": "stable"
       },
       {
@@ -6908,7 +6908,7 @@
         "musique": "4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 11.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -6918,7 +6918,7 @@
         "musique": "Da4aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 6.5,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -6928,7 +6928,7 @@
         "musique": "Da3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 9.7,
         "tendance_cote": "stable"
       },
       {
@@ -6938,7 +6938,7 @@
         "musique": "7a3a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 3.8,
         "tendance_cote": "stable"
       },
       {
@@ -6948,7 +6948,7 @@
         "musique": "5a4a8a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 12.0,
         "tendance_cote": "baisse_forte"
       },
       {
@@ -6958,8 +6958,8 @@
         "musique": "6a5a3a",
         "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 5.5,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -6990,8 +6990,8 @@
         "musique": "0a",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 33.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 3,
@@ -7000,8 +7000,8 @@
         "musique": "0a5a0aDa9aAa",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 99.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 4,
@@ -7010,8 +7010,8 @@
         "musique": "0a8a7a6a6a7a9a7a(25)Da",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 18.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 5,
@@ -7020,7 +7020,7 @@
         "musique": "2aDa2a5a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 33.0,
         "tendance_cote": "stable"
       },
       {
@@ -7030,8 +7030,8 @@
         "musique": "8a8a0a6aDa9a5a(25)3a1a",
         "deferre": "PROTEGE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 99.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 7,
@@ -7040,7 +7040,7 @@
         "musique": "4a7a6a4a8a8a9a4aDaDm",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 19.0,
         "tendance_cote": "hausse"
       },
       {
@@ -7050,8 +7050,8 @@
         "musique": "6a2a5a4aDaDa1a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 10.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 9,
@@ -7060,8 +7060,8 @@
         "musique": "1aDa9a7aDa(25)1aDa",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 6.6,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 10,
@@ -7070,8 +7070,8 @@
         "musique": "6a4a2aAa0a(25)1a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 5.3,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 11,
@@ -7080,8 +7080,8 @@
         "musique": "8a4a4a7aDa5a8a9a4a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 39.0,
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 12,
@@ -7090,7 +7090,7 @@
         "musique": "DaDa2a3a7a6aAaDaDa6a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 30.0,
         "tendance_cote": "hausse"
       },
       {
@@ -7100,7 +7100,7 @@
         "musique": "Da1a1a6a4aDa(25)Da(24)Dm",
         "deferre": "DEFERRE_ANTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 2.7,
         "tendance_cote": "hausse"
       },
       {
@@ -7110,8 +7110,8 @@
         "musique": "3aDa4a4aDaDaDa(25)8a2a",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 8.4,
+        "tendance_cote": "baisse_forte"
       }
     ]
   },
@@ -7132,8 +7132,8 @@
         "musique": "DaDaDaDaDaDa(25)Da0aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 80.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 2,
@@ -7142,7 +7142,7 @@
         "musique": "7m0a9a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 60.0,
         "tendance_cote": "hausse"
       },
       {
@@ -7152,8 +7152,8 @@
         "musique": "Aa5aDaDa(25)9aDaDaDa",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 25.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 4,
@@ -7163,7 +7163,7 @@
         "deferre": "",
         "poids": 0.0,
         "cote": null,
-        "tendance_cote": "stable"
+        "tendance_cote": "baisse_forte"
       },
       {
         "num": 5,
@@ -7172,8 +7172,8 @@
         "musique": "9a0a5a8a2a7aDa5a4a5a",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 21.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 6,
@@ -7182,8 +7182,8 @@
         "musique": "4aDm6a9a6a6a6a9a0a8a",
         "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 30.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 7,
@@ -7192,7 +7192,7 @@
         "musique": "9a5a",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
+        "cote": 30.0,
         "tendance_cote": "hausse"
       },
       {
@@ -7202,7 +7202,7 @@
         "musique": "4a2a9a9a7a(25)1aDa5aDa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 5.3,
         "tendance_cote": "hausse"
       },
       {
@@ -7212,8 +7212,8 @@
         "musique": "3a3a4a7a0aDa8a7a(25)Da",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "stable"
+        "cote": 9.2,
+        "tendance_cote": "hausse"
       },
       {
         "num": 10,
@@ -7222,8 +7222,8 @@
         "musique": "5a6a3a3a4a3a2a6a7a(25)",
         "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "baisse_forte"
+        "cote": 10.0,
+        "tendance_cote": "hausse"
       },
       {
         "num": 11,
@@ -7232,8 +7232,8 @@
         "musique": "Da3aDa4a4aDaDa8a2a7a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 5.6,
+        "tendance_cote": "stable"
       },
       {
         "num": 12,
@@ -7242,8 +7242,8 @@
         "musique": "0aDaDa2aDaDa1aDaDaTa",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 34.0,
+        "tendance_cote": "stable"
       },
       {
         "num": 13,
@@ -7252,7 +7252,7 @@
         "musique": "2a0a6a6a4a0aDa(25)4a4a",
         "deferre": "",
         "poids": 0.0,
-        "cote": null,
+        "cote": 23.0,
         "tendance_cote": "hausse"
       },
       {
@@ -7262,8 +7262,8 @@
         "musique": "1a1a4a6aDaDa6a0a8a",
         "deferre": "DEFERRE_POSTERIEURS",
         "poids": 0.0,
-        "cote": null,
-        "tendance_cote": "hausse"
+        "cote": 2.9,
+        "tendance_cote": "baisse_forte"
       }
     ]
   }
