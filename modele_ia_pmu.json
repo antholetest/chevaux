@@ -1,7 +1,7 @@
 {
   "poids_musique": 1.05,
   "poids_ferrage": 1.2,
-  "poids_terrain": 1.12,
+  "poids_terrain": 1.14,
   "poids_poids": 1.0,
   "poids_cote_tendance": 1.3,
   "poids_driver": 1.23,
@@ -17,6 +17,7 @@
     "total_analyses": 13
   },
   "historique_ajustements": [
+    "[22/09 17:12] Course R6 - HIPPODROME BADEN-BADEN ALL - C5 -> Renforcement Impact Terrain ⬆️ (+0.02)",
     "[22/09 17:12] Course R5 - HIPPODROME DE PARIS-VINCENNES - C4 -> Poids Musique ⬆️ (+0.01)",
     "[22/09 17:12] Course R1 - HIPPODROME DE DEAUVILLE - C7 -> Poids Driver/Jockey ⬆️ (+0.01)",
     "[22/09 17:12] Course R6 - HIPPODROME BADEN-BADEN ALL - C4 -> Poids Musique ⬆️ (+0.01)",
