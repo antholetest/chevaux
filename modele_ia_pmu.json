@@ -1,7 +1,7 @@
 {
   "poids_musique": 1.2,
   "poids_ferrage": 1.2,
-  "poids_terrain": 1.14,
+  "poids_terrain": 1.16,
   "poids_poids": 1.0,
   "poids_cote_tendance": 1.34,
   "poids_driver": 1.42,
@@ -17,6 +17,7 @@
     "total_analyses": 32
   },
   "historique_ajustements": [
+    "[22/09 17:24] Course R5 - HIPPODROME DE KEMPTON PARK  GB - C1 -> Renforcement Impact Terrain ⬆️ (+0.02)",
     "[22/09 17:24] Course R4 - HIPPODROME DE TOULOUSE LA CEPIERE - C4 -> Poids Musique ⬆️ (+0.01)",
     "[22/09 17:24] Course R1 - HIPPODROME DE LA CAPELLE - C8 -> Poids Musique ⬆️ (+0.01)",
     "[22/09 17:24] Course R4 - HIPPODROME DE TOULOUSE LA CEPIERE - C3 -> Poids Musique ⬆️ (+0.01)",
@@ -35,7 +36,6 @@
     "[22/09 17:24] Course R3 - HIPPODROME DE LYON-PARILLY - C4 -> Poids Driver/Jockey ⬆️ (+0.01)",
     "[22/09 17:24] Course R2 - HIPPODROME DE SAN SEBASTIAN ESP - C5 -> Poids Driver/Jockey ⬆️ (+0.01)",
     "[22/09 17:24] Course R3 - HIPPODROME DE LYON-PARILLY - C3 -> Poids Musique ⬆️ (+0.01)",
-    "[22/09 17:24] Course R3 - HIPPODROME DE LYON-PARILLY - C2 -> Poids Driver/Jockey ⬆️ (+0.01)",
-    "[22/09 17:24] Course R2 - HIPPODROME DE SAN SEBASTIAN ESP - C3 -> Poids Musique ⬆️ (+0.01)"
+    "[22/09 17:24] Course R3 - HIPPODROME DE LYON-PARILLY - C2 -> Poids Driver/Jockey ⬆️ (+0.01)"
   ]
 }
