@@ -4,7 +4,7 @@
   "poids_terrain": 1.11,
   "poids_poids": 1.0,
   "poids_cote_tendance": 1.31,
-  "poids_driver": 1.149999999999999,
+  "poids_driver": 1.154999999999999,
   "poids_corde": 1.0,
   "poids_hippodrome_acteur": 1.2,
   "poids_distance": 1.1,
@@ -15,9 +15,10 @@
     "victoires_par_terrain": 0,
     "victoires_par_hippodrome": 0,
     "victoires_par_distance": 0,
-    "total_analyses": 10
+    "total_analyses": 11
   },
   "historique_ajustements": [
+    "[23/09 19:43] Course R4 - HIPPODROME DE WAREGEM  BELGIQUE - C3 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:43] Course R4 - HIPPODROME DE WAREGEM  BELGIQUE - C2 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:43] Course R3 - HIPPODROME DE CABOURG - C5 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:43] Course R3 - HIPPODROME DE CABOURG - C4 -> Poids Driver ⬆️ (+0.005)",
