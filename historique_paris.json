@@ -7,9 +7,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 14.0,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -20,9 +20,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.24,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.24€) inférieur à la mise (10.0€)."
   },
   {
@@ -33,7 +33,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -46,9 +46,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 15.36,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -59,7 +59,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -72,7 +72,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Outsider gagnant loupé :* N°1 à 20.0."
@@ -85,9 +85,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 13.42,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -98,7 +98,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -111,9 +111,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.36,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -124,9 +124,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 7.84,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (7.84€) inférieur à la mise (10.0€)."
   },
   {
@@ -137,9 +137,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 7.78,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (7.78€) inférieur à la mise (10.0€)."
   },
   {
@@ -150,9 +150,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 14.58,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -163,7 +163,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -176,7 +176,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°12 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -189,7 +189,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -202,7 +202,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -215,9 +215,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°13 (7.0€) | Simple Gagnant (Poker) ➔ N°12 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 11.28,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -228,9 +228,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 18.0,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -241,9 +241,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 13.61,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -254,7 +254,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°12 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -267,9 +267,9 @@
     "discipline": "Steeple-chase",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 12.6,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -280,9 +280,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -293,7 +293,7 @@
     "discipline": "Steeple-chase",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -306,7 +306,7 @@
     "discipline": "Steeple-chase",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -319,9 +319,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 18.0,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -332,9 +332,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 7.78,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (7.78€) inférieur à la mise (10.0€)."
   },
   {
@@ -345,7 +345,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -358,7 +358,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -371,7 +371,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -384,9 +384,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 8.36,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (8.36€) inférieur à la mise (10.0€)."
   },
   {
@@ -397,9 +397,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 11.86,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -410,7 +410,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Outsider gagnant loupé :* N°11 à 65.0."
@@ -423,7 +423,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -436,9 +436,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 12.6,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -449,7 +449,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°13 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -462,9 +462,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 21.0,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -475,9 +475,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 30.0,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -488,9 +488,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 13.81,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -501,9 +501,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°12 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -514,7 +514,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -527,9 +527,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.0,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.0€) inférieur à la mise (10.0€)."
   },
   {
@@ -540,7 +540,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -553,7 +553,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -566,9 +566,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -579,9 +579,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 14.0,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -592,9 +592,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.24,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.24€) inférieur à la mise (10.0€)."
   },
   {
@@ -605,7 +605,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -618,9 +618,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 15.36,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -631,7 +631,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -644,7 +644,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Outsider gagnant loupé :* N°1 à 20.0."
@@ -657,9 +657,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 13.42,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -670,7 +670,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -683,9 +683,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.36,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -696,9 +696,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 7.84,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (7.84€) inférieur à la mise (10.0€)."
   },
   {
@@ -709,9 +709,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 7.78,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (7.78€) inférieur à la mise (10.0€)."
   },
   {
@@ -722,9 +722,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 14.58,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -735,7 +735,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -748,7 +748,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°12 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -761,7 +761,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -774,7 +774,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -787,9 +787,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°13 (7.0€) | Simple Gagnant (Poker) ➔ N°12 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 11.28,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -800,9 +800,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 18.0,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -813,9 +813,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 13.61,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -826,7 +826,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°12 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -839,9 +839,9 @@
     "discipline": "Steeple-chase",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 12.6,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -852,9 +852,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -865,7 +865,7 @@
     "discipline": "Steeple-chase",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -878,7 +878,7 @@
     "discipline": "Steeple-chase",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -891,9 +891,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 18.0,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -904,9 +904,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 7.78,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (7.78€) inférieur à la mise (10.0€)."
   },
   {
@@ -917,7 +917,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -930,7 +930,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -943,7 +943,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -956,9 +956,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 8.36,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (8.36€) inférieur à la mise (10.0€)."
   },
   {
@@ -969,9 +969,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 11.86,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -982,7 +982,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Outsider gagnant loupé :* N°11 à 65.0."
@@ -995,7 +995,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1008,9 +1008,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 12.6,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1021,7 +1021,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°13 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1034,9 +1034,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 21.0,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1047,9 +1047,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 30.0,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1060,9 +1060,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 13.81,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1073,9 +1073,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°12 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1086,7 +1086,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -1099,9 +1099,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.0,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.0€) inférieur à la mise (10.0€)."
   },
   {
@@ -1112,7 +1112,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1125,7 +1125,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -1138,9 +1138,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1151,9 +1151,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°13 (7.0€) | Simple Gagnant (Poker) ➔ N°14 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 26.44,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1164,9 +1164,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 32.28,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1177,9 +1177,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 8.17,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (8.17€) inférieur à la mise (10.0€)."
   },
   {
@@ -1190,7 +1190,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1203,9 +1203,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 11.67,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1216,7 +1216,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -1229,7 +1229,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1242,7 +1242,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -1255,7 +1255,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1268,9 +1268,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 11.2,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1281,7 +1281,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1294,9 +1294,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.31,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1307,9 +1307,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.53,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.53€) inférieur à la mise (10.0€)."
   },
   {
@@ -1320,9 +1320,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 20.44,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1333,9 +1333,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.64,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1346,7 +1346,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -1359,9 +1359,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.53,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.53€) inférieur à la mise (10.0€)."
   },
   {
@@ -1372,9 +1372,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 14.19,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1385,7 +1385,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -1398,7 +1398,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1411,9 +1411,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 8.17,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (8.17€) inférieur à la mise (10.0€)."
   },
   {
@@ -1424,9 +1424,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 12.88,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1437,7 +1437,7 @@
     "discipline": "Haies",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1450,7 +1450,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1463,9 +1463,9 @@
     "discipline": "Haies",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 17.08,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1476,7 +1476,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°14 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -1489,9 +1489,9 @@
     "discipline": "Steeple-chase",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 51.8,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1502,9 +1502,9 @@
     "discipline": "Haies",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 14.56,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1515,7 +1515,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1528,7 +1528,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1541,9 +1541,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 11.86,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1554,9 +1554,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 11.08,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1567,7 +1567,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1580,9 +1580,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 14.97,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1593,9 +1593,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1606,7 +1606,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -1619,7 +1619,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1632,9 +1632,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1645,9 +1645,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1658,7 +1658,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1671,7 +1671,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1684,9 +1684,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1697,9 +1697,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 19.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1710,7 +1710,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1723,9 +1723,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1736,9 +1736,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1749,7 +1749,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1762,9 +1762,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1775,9 +1775,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1788,9 +1788,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1801,9 +1801,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1814,9 +1814,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1827,7 +1827,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1840,9 +1840,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1853,7 +1853,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°16 (7.0€) | Simple Gagnant (Poker) ➔ N°13 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1866,9 +1866,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 21.58,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1879,9 +1879,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 11.08,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1892,7 +1892,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1905,7 +1905,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Outsider gagnant loupé :* N°9 à 25.0."
@@ -1918,7 +1918,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -1931,7 +1931,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1944,7 +1944,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -1957,9 +1957,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 51.72,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1970,9 +1970,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 19.5,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -1983,7 +1983,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -1996,9 +1996,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 8.36,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (8.36€) inférieur à la mise (10.0€)."
   },
   {
@@ -2009,7 +2009,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2022,9 +2022,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°13 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 45.0,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2035,9 +2035,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 8.94,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (8.94€) inférieur à la mise (10.0€)."
   },
   {
@@ -2048,9 +2048,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 11.47,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2061,9 +2061,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 11.47,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2074,9 +2074,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.53,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.53€) inférieur à la mise (10.0€)."
   },
   {
@@ -2087,7 +2087,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°12 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2100,7 +2100,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -2113,9 +2113,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 42.0,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2126,9 +2126,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°12 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 13.61,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2139,9 +2139,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°15 (7.0€) | Simple Gagnant (Poker) ➔ N°12 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 20.22,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2152,9 +2152,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 24.5,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2165,9 +2165,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 8.17,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (8.17€) inférieur à la mise (10.0€)."
   },
   {
@@ -2178,7 +2178,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Outsider gagnant loupé :* N°7 à 17.0."
@@ -2191,7 +2191,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2204,9 +2204,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°14 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 19.83,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2217,7 +2217,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2230,7 +2230,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°11 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2243,7 +2243,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°13 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2256,9 +2256,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°14 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 19.06,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2269,9 +2269,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 24.5,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2282,7 +2282,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2295,7 +2295,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°13 (7.0€) | Simple Gagnant (Poker) ➔ N°12 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -2308,9 +2308,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 8.17,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (8.17€) inférieur à la mise (10.0€)."
   },
   {
@@ -2321,9 +2321,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.31,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2334,9 +2334,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 8.36,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (8.36€) inférieur à la mise (10.0€)."
   },
   {
@@ -2347,7 +2347,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -2360,7 +2360,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2373,7 +2373,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2386,9 +2386,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2399,9 +2399,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2412,7 +2412,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°12 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2425,9 +2425,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2438,7 +2438,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2451,9 +2451,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2464,9 +2464,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2477,9 +2477,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°11 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.0,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.0€) inférieur à la mise (10.0€)."
   },
   {
@@ -2490,7 +2490,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2503,9 +2503,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2516,9 +2516,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.89,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2529,7 +2529,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°14 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2542,9 +2542,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°15 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.33,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.33€) inférieur à la mise (10.0€)."
   },
   {
@@ -2555,9 +2555,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.31,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2568,9 +2568,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 12.64,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2581,9 +2581,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 18.47,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2594,7 +2594,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2607,9 +2607,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 15.94,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2620,9 +2620,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 12.83,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2633,7 +2633,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2646,9 +2646,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 8.4,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (8.4€) inférieur à la mise (10.0€)."
   },
   {
@@ -2659,9 +2659,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.72,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.72€) inférieur à la mise (10.0€)."
   },
   {
@@ -2672,9 +2672,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 7.7,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (7.7€) inférieur à la mise (10.0€)."
   },
   {
@@ -2685,7 +2685,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°13 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -2698,9 +2698,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.11,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2711,7 +2711,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -2724,9 +2724,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°11 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 24.6,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2737,7 +2737,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2750,7 +2750,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -2763,7 +2763,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -2776,7 +2776,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°13 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2789,9 +2789,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 18.08,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2802,7 +2802,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -2815,9 +2815,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.52,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.52€) inférieur à la mise (10.0€)."
   },
   {
@@ -2828,7 +2828,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2841,9 +2841,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 8.94,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (8.94€) inférieur à la mise (10.0€)."
   },
   {
@@ -2854,9 +2854,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 15.36,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2867,9 +2867,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 18.28,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2880,9 +2880,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°12 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 43.94,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2893,7 +2893,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -2906,7 +2906,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -2919,9 +2919,9 @@
     "discipline": "Haies",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 18.67,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -2932,7 +2932,7 @@
     "discipline": "Haies",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -2945,9 +2945,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.52,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.52€) inférieur à la mise (10.0€)."
   },
   {
@@ -2958,7 +2958,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -2971,7 +2971,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -2984,7 +2984,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -2997,9 +2997,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 30.33,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3010,9 +3010,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 12.64,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3023,9 +3023,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 28.39,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3036,9 +3036,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 11.28,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3049,7 +3049,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3062,7 +3062,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°12 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -3075,9 +3075,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 13.61,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3088,7 +3088,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3101,9 +3101,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°15 (7.0€) | Simple Gagnant (Poker) ➔ N°14 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 26.44,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3114,7 +3114,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°15 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3127,7 +3127,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°14 (7.0€) | Simple Gagnant (Poker) ➔ N°17 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3140,9 +3140,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 29.04,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3153,9 +3153,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°15 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 21.3,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3166,7 +3166,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°15 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3179,9 +3179,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°15 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 11.28,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3192,7 +3192,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3205,7 +3205,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°14 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3218,9 +3218,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°15 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.33,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.33€) inférieur à la mise (10.0€)."
   },
   {
@@ -3231,9 +3231,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.31,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3244,9 +3244,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 12.64,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3257,9 +3257,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 18.47,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3270,7 +3270,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3283,9 +3283,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 15.94,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3296,9 +3296,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 12.83,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3309,7 +3309,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3322,9 +3322,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 8.4,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (8.4€) inférieur à la mise (10.0€)."
   },
   {
@@ -3335,9 +3335,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.72,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.72€) inférieur à la mise (10.0€)."
   },
   {
@@ -3348,9 +3348,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 7.7,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (7.7€) inférieur à la mise (10.0€)."
   },
   {
@@ -3361,7 +3361,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°13 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -3374,9 +3374,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 10.11,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3387,7 +3387,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -3400,9 +3400,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°11 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 24.6,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3413,7 +3413,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3426,7 +3426,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -3439,7 +3439,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -3452,7 +3452,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°13 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3465,9 +3465,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 18.08,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3478,7 +3478,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -3491,9 +3491,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.52,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.52€) inférieur à la mise (10.0€)."
   },
   {
@@ -3504,7 +3504,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3517,9 +3517,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 8.94,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (8.94€) inférieur à la mise (10.0€)."
   },
   {
@@ -3530,9 +3530,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 15.36,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3543,9 +3543,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 18.28,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3556,9 +3556,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°12 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 43.94,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3569,7 +3569,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3582,7 +3582,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -3595,9 +3595,9 @@
     "discipline": "Haies",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 18.67,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3608,7 +3608,7 @@
     "discipline": "Haies",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -3621,9 +3621,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 9.52,
+    "gain": 0.0,
     "diagnostic": "⚠️ **Victoire à perte :** Gain (9.52€) inférieur à la mise (10.0€)."
   },
   {
@@ -3634,7 +3634,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -3647,7 +3647,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -3660,7 +3660,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -3673,9 +3673,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 30.33,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3686,9 +3686,9 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 12.64,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3699,9 +3699,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 28.39,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3712,9 +3712,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 11.28,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3725,7 +3725,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3738,7 +3738,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°12 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Quasi-podium (4e/5e) :* Pronostic proche."
@@ -3751,9 +3751,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 13.61,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3764,7 +3764,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3777,9 +3777,9 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°15 (7.0€) | Simple Gagnant (Poker) ➔ N°14 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 26.44,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3790,7 +3790,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°15 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3803,7 +3803,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°14 (7.0€) | Simple Gagnant (Poker) ➔ N°17 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3816,9 +3816,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 29.04,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3829,9 +3829,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°15 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 21.3,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3842,7 +3842,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°15 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3855,9 +3855,9 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°15 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Gagné",
-    "gain": 11.28,
+    "gain": 0.0,
     "diagnostic": "🎯 **Victoire rentable :** Modèle validé."
   },
   {
@@ -3868,7 +3868,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "Perdu",
     "gain": 0.0,
     "diagnostic": "⚠️ **Analyse de l'échec :**\n• *Erreur de profil.*"
@@ -3881,7 +3881,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -3894,7 +3894,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -3907,7 +3907,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -3920,7 +3920,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°14 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -3933,7 +3933,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -3946,7 +3946,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°14 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -3959,7 +3959,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -3972,7 +3972,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -3985,7 +3985,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -3998,7 +3998,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4011,7 +4011,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4024,7 +4024,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4037,7 +4037,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4050,7 +4050,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4063,7 +4063,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4076,7 +4076,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4089,7 +4089,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4102,7 +4102,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4115,7 +4115,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4128,7 +4128,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°11 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4141,7 +4141,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4154,7 +4154,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4167,7 +4167,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4180,7 +4180,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4193,7 +4193,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4206,7 +4206,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4219,7 +4219,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4232,7 +4232,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4245,7 +4245,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°14 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4258,7 +4258,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4271,7 +4271,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°16 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4284,7 +4284,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4297,7 +4297,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4310,7 +4310,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4323,7 +4323,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4336,7 +4336,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4349,7 +4349,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4362,7 +4362,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4375,7 +4375,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°12 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4388,7 +4388,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4401,7 +4401,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4414,7 +4414,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4427,7 +4427,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4440,7 +4440,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4453,7 +4453,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4466,7 +4466,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4479,7 +4479,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4492,7 +4492,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4505,7 +4505,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4518,7 +4518,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4531,7 +4531,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4544,7 +4544,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4557,7 +4557,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4570,7 +4570,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4583,7 +4583,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4596,7 +4596,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4609,7 +4609,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4622,7 +4622,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4635,7 +4635,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°14 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4648,7 +4648,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4661,7 +4661,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°11 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4674,7 +4674,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°12 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4687,7 +4687,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°13 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4700,7 +4700,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4713,7 +4713,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°11 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4726,7 +4726,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°16 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4739,7 +4739,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4752,7 +4752,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4765,7 +4765,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4778,7 +4778,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4791,7 +4791,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4804,7 +4804,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4817,7 +4817,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4830,7 +4830,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4843,7 +4843,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4856,7 +4856,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4869,7 +4869,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4882,7 +4882,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4895,7 +4895,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°11 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4908,7 +4908,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4921,7 +4921,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4934,7 +4934,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4947,7 +4947,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°12 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4960,7 +4960,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4973,7 +4973,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4986,7 +4986,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -4999,7 +4999,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5012,7 +5012,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5025,7 +5025,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5038,7 +5038,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5051,7 +5051,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5064,7 +5064,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5077,7 +5077,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5090,7 +5090,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5103,7 +5103,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5116,7 +5116,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5129,7 +5129,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5142,7 +5142,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°15 (7.0€) | Simple Gagnant (Poker) ➔ N°16 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5155,7 +5155,7 @@
     "discipline": "Steeple-chase",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5168,7 +5168,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°12 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5181,7 +5181,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5194,7 +5194,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5207,7 +5207,7 @@
     "discipline": "Steeple-chase",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5220,7 +5220,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5233,7 +5233,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5246,7 +5246,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5259,7 +5259,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5272,7 +5272,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5285,7 +5285,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5298,7 +5298,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5311,7 +5311,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5324,7 +5324,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5337,7 +5337,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5350,7 +5350,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5363,7 +5363,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5376,7 +5376,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5389,7 +5389,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5402,7 +5402,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5415,7 +5415,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5428,7 +5428,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5441,7 +5441,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5454,7 +5454,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5467,7 +5467,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5480,7 +5480,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5493,7 +5493,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5506,7 +5506,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5519,7 +5519,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5532,7 +5532,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5545,7 +5545,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°11 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5558,7 +5558,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5571,7 +5571,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5584,7 +5584,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°12 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5597,7 +5597,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5610,7 +5610,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°12 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5623,7 +5623,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5636,7 +5636,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5649,7 +5649,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5662,7 +5662,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5675,7 +5675,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5688,7 +5688,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°13 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5701,7 +5701,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°12 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5714,7 +5714,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5727,7 +5727,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5740,7 +5740,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°13 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5753,7 +5753,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°14 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5766,7 +5766,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°10 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5779,7 +5779,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°18 (7.0€) | Simple Gagnant (Poker) ➔ N°16 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5792,7 +5792,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°12 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5805,7 +5805,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°16 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5818,7 +5818,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°14 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5831,7 +5831,7 @@
     "discipline": "Steeple-chase",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5844,7 +5844,7 @@
     "discipline": "Steeple-chase",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5857,7 +5857,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5870,7 +5870,7 @@
     "discipline": "Steeple-chase",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5883,7 +5883,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5896,7 +5896,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5909,7 +5909,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°9 (7.0€) | Simple Gagnant (Poker) ➔ N°17 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5922,7 +5922,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5935,7 +5935,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5948,7 +5948,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5961,7 +5961,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5974,7 +5974,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -5987,7 +5987,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6000,7 +6000,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6013,7 +6013,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6026,7 +6026,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6039,7 +6039,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6052,7 +6052,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6065,7 +6065,7 @@
     "discipline": "Trot Monté",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°8 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6078,7 +6078,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6091,7 +6091,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6104,7 +6104,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6117,7 +6117,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6130,7 +6130,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°12 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6143,7 +6143,7 @@
     "discipline": "Trot Attelé",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°10 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6156,7 +6156,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6169,7 +6169,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6182,7 +6182,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6195,7 +6195,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°11 (7.0€) | Simple Gagnant (Poker) ➔ N°13 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6208,7 +6208,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°12 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6221,7 +6221,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°13 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6234,7 +6234,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6247,7 +6247,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°4 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6260,7 +6260,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6273,7 +6273,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6286,7 +6286,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6299,7 +6299,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6312,7 +6312,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°7 (7.0€) | Simple Gagnant (Poker) ➔ N°13 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6325,7 +6325,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°4 (7.0€) | Simple Gagnant (Poker) ➔ N°11 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6338,7 +6338,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°9 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6351,7 +6351,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°2 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6364,7 +6364,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°3 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6377,7 +6377,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6390,7 +6390,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6403,7 +6403,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°6 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6416,7 +6416,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°5 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6429,7 +6429,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°1 (7.0€) | Simple Gagnant (Poker) ➔ N°7 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6442,7 +6442,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°8 (7.0€) | Simple Gagnant (Poker) ➔ N°6 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6455,7 +6455,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6468,7 +6468,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°5 (7.0€) | Simple Gagnant (Poker) ➔ N°2 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
@@ -6481,7 +6481,7 @@
     "discipline": "Galop Plat",
     "type": "Rapide (Massif)",
     "details": "Simple Placé (Sécurité) ➔ N°3 (7.0€) | Simple Gagnant (Poker) ➔ N°1 (3.0€)",
-    "mise": 10.0,
+    "mise": 0.0,
     "statut": "En attente",
     "gain": 0.0,
     "diagnostic": ""
