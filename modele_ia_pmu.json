@@ -4,7 +4,7 @@
   "poids_terrain": 1.2200000000000002,
   "poids_poids": 1.0,
   "poids_cote_tendance": 1.33,
-  "poids_driver": 1.4049999999999936,
+  "poids_driver": 1.4099999999999935,
   "poids_corde": 1.0,
   "poids_hippodrome_acteur": 1.2,
   "poids_distance": 1.1,
@@ -15,9 +15,10 @@
     "victoires_par_terrain": 0,
     "victoires_par_hippodrome": 0,
     "victoires_par_distance": 0,
-    "total_analyses": 62
+    "total_analyses": 63
   },
   "historique_ajustements": [
+    "[23/09 19:45] Course R8 - HIPPODROME DE VALPARAISO CHILI - C6 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:45] Course R7 - HIPPODROME DE SAN ISIDRO ARG - C9 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:45] Course R7 - HIPPODROME DE SAN ISIDRO ARG - C7 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:45] Course R7 - HIPPODROME DE SAN ISIDRO ARG - C6 -> Poids Musique ⬆️ (+0.005)",
@@ -36,7 +37,6 @@
     "[23/09 19:45] Course R5 - HIPPODROME DE KEMPTON PARK  GB - C2 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:45] Course R5 - HIPPODROME DE KEMPTON PARK  GB - C1 -> Poids Musique ⬆️ (+0.005)",
     "[23/09 19:45] Course R4 - HIPPODROME DE TOULOUSE LA CEPIERE - C8 -> Poids Musique ⬆️ (+0.005)",
-    "[23/09 19:45] Course R4 - HIPPODROME DE TOULOUSE LA CEPIERE - C5 -> Renforcement Terrain ⬆️ (+0.01)",
-    "[23/09 19:45] Course R4 - HIPPODROME DE TOULOUSE LA CEPIERE - C4 -> Poids Driver ⬆️ (+0.005)"
+    "[23/09 19:45] Course R4 - HIPPODROME DE TOULOUSE LA CEPIERE - C5 -> Renforcement Terrain ⬆️ (+0.01)"
   ]
 }
