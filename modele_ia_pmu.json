@@ -4,20 +4,21 @@
   "poids_terrain": 1.12,
   "poids_poids": 1.0,
   "poids_cote_tendance": 1.31,
-  "poids_driver": 1.1599999999999988,
+  "poids_driver": 1.1649999999999987,
   "poids_corde": 1.0,
   "poids_hippodrome_acteur": 1.2,
   "poids_distance": 1.1,
-  "poids_outsider_cache": 1.24,
+  "poids_outsider_cache": 1.25,
   "stats_impact": {
     "victoires_par_ferrage": 0,
     "victoires_par_smart_money": 0,
     "victoires_par_terrain": 0,
     "victoires_par_hippodrome": 0,
     "victoires_par_distance": 0,
-    "total_analyses": 12
+    "total_analyses": 13
   },
   "historique_ajustements": [
+    "[23/09 19:43] Course R5 - HIPPODROME DE PARIS-VINCENNES - C2 -> Recherche Joker ⬆️ (+0.01), Poids Driver ⬆️ (+0.005)",
     "[23/09 19:43] Course R5 - HIPPODROME DE PARIS-VINCENNES - C1 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:43] Course R4 - HIPPODROME DE WAREGEM  BELGIQUE - C8 -> Poids Musique ⬆️ (+0.005)",
     "[23/09 19:43] Course R4 - HIPPODROME DE WAREGEM  BELGIQUE - C5 -> Renforcement Terrain ⬆️ (+0.01)",
