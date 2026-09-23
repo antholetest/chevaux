@@ -4,7 +4,7 @@
   "poids_terrain": 1.1600000000000001,
   "poids_poids": 1.0,
   "poids_cote_tendance": 1.33,
-  "poids_driver": 1.2999999999999958,
+  "poids_driver": 1.3049999999999957,
   "poids_corde": 1.0,
   "poids_hippodrome_acteur": 1.2,
   "poids_distance": 1.1,
@@ -15,9 +15,10 @@
     "victoires_par_terrain": 0,
     "victoires_par_hippodrome": 0,
     "victoires_par_distance": 0,
-    "total_analyses": 40
+    "total_analyses": 41
   },
   "historique_ajustements": [
+    "[23/09 19:44] Course R7 - HIPPODROME DE CONCEPCION CHILI - C1 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:44] Course R6 - HIPPODROME BADEN-BADEN ALL - C9 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:44] Course R6 - HIPPODROME BADEN-BADEN ALL - C8 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:44] Course R6 - HIPPODROME BADEN-BADEN ALL - C7 -> Poids Driver ⬆️ (+0.005)",
@@ -36,7 +37,6 @@
     "[23/09 19:44] Course R4 - HIPPODROME DE WAREGEM  BELGIQUE - C3 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:44] Course R4 - HIPPODROME DE WAREGEM  BELGIQUE - C2 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:44] Course R3 - HIPPODROME DE CABOURG - C5 -> Poids Driver ⬆️ (+0.005)",
-    "[23/09 19:44] Course R3 - HIPPODROME DE CABOURG - C4 -> Poids Driver ⬆️ (+0.005)",
-    "[23/09 19:44] Course R3 - HIPPODROME DE CABOURG - C3 -> Poids Musique ⬆️ (+0.005)"
+    "[23/09 19:44] Course R3 - HIPPODROME DE CABOURG - C4 -> Poids Driver ⬆️ (+0.005)"
   ]
 }
