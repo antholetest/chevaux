@@ -7,6 +7,7 @@ import subprocess
 import re
 import random
 import pandas as pd
+import threading
 
         
 # Configuration de la page Streamlit pour mobile et PC
@@ -34,28 +35,32 @@ def safe_float(val, default=0.0):
     except (ValueError, TypeError):
         return default
 
-# --- SYNCHRONISATION GITHUB ---
-def sauvegarder_et_synchroniser(data, filename, message="Mise à jour automatique PMU"):
-    filename_path = Path(filename)
-    with open(filename_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    
+# --- SYNCHRONISATION GITHUB (ASYNCHRONE) ---
+def tache_git_background(filename_path_str, message):
     try:
         if "GITHUB_TOKEN" in st.secrets:
             token = st.secrets["GITHUB_TOKEN"]
             subprocess.run(["git", "config", "--global", "user.email", "bot@streamlit.app"], capture_output=True)
             subprocess.run(["git", "config", "--global", "user.name", "Streamlit Bot"], capture_output=True)
-            subprocess.run(["git", "add", str(filename_path)], check=True, capture_output=True)
+            subprocess.run(["git", "add", filename_path_str], check=True, capture_output=True)
             status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
-            if filename_path.name in status.stdout or str(filename_path) in status.stdout:
+            if filename_path_str in status.stdout:
                 subprocess.run(["git", "commit", "-m", message], check=True, capture_output=True)
                 repo_url = f"https://{token}@github.com/antholetest/chevaux.git"
                 res_push = subprocess.run(["git", "push", repo_url], capture_output=True, text=True)
                 if res_push.returncode != 0:
                     subprocess.run(["git", "push", repo_url, "HEAD"], capture_output=True)
-                st.toast("Données synchronisées sur GitHub !", icon="✅")
     except Exception:
-        st.toast("Données enregistrées localement.", icon="💾")
+        pass
+
+def sauvegarder_et_synchroniser(data, filename, message="Mise à jour automatique PMU"):
+    filename_path = Path(filename)
+    with open(filename_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    
+    # Lancement de la synchronisation Git en arrière-plan
+    threading.Thread(target=tache_git_background, args=(str(filename_path.name), message)).start()
+    st.toast("Données enregistrées !", icon="💾")
 
 # --- MODULE IA : GESTION DU MODÈLE ET DES POIDS DYNAMIQUES ---
 MODELE_IA_DEFAUT = {
@@ -67,13 +72,14 @@ MODELE_IA_DEFAUT = {
     "poids_driver": 1.1,
     "poids_corde": 1.0,
     "poids_hippodrome_acteur": 1.2,
-    "poids_distance": 1.1,         # ➔ S'assurer qu'il est bien présent ici
+    "poids_distance": 1.1,
+    "poids_outsider_cache": 1.2,
     "stats_impact": {
         "victoires_par_ferrage": 0,
         "victoires_par_smart_money": 0,
         "victoires_par_terrain": 0,
         "victoires_par_hippodrome": 0,
-        "victoires_par_distance": 0, # ➔ Ajouter cette ligne pour le suivi
+        "victoires_par_distance": 0,
         "total_analyses": 0
     },
     "historique_ajustements": []
@@ -143,18 +149,6 @@ def reinitialiser_application_complete():
     for key in list(st.session_state.keys()):
         del st.session_state[key]
     return fichiers_supprimes
-
-st.sidebar.divider()
-with st.sidebar.expander("🛠️ Administration & Reset"):
-    st.write("Réinitialisation totale des historiques et des coefficients IA.")
-    mdp_admin = st.text_input("Code Admin", type="password", key="input_mdp_admin")
-    if st.button("🔥 Remise à zéro totale", type="primary"):
-        if mdp_admin.strip() == st.secrets.get("PASSWORD", "301180"):
-            nb = reinitialiser_application_complete()
-            st.success(f"Application et IA réinitialisées ({nb} fichiers purgés).")
-            st.rerun()
-        else:
-            st.error("Mot de passe admin incorrect.")
 
 # --- FONCTIONS DISCIPLINE & ENVIRONNEMENT ---
 def detecter_discipline(course_obj):
@@ -303,17 +297,12 @@ def charger_donnees_fichier(fichier_json):
         return [], {}
 
 def analyser_affinite_distance(cheval, distance_course):
-    """
-    Évalue l'affinité du cheval avec la distance de la course du jour.
-    (Basé par exemple sur les indications de distance ou l'historique des performances).
-    """
     if not distance_course:
         return 1.0
-    
-    # Logique d'évaluation (peut être affinée selon les données de l'API PMU si la distance est renseignée)
-    # Par défaut, on renvoie un multiplicateur neutre ou légèrement positif
     return 1.1
 
+# CACHE DE 1 HEURE POUR ÉVITER LES RELECTURES DE FICHIERS MULTIPLES
+@st.cache_data(ttl=3600)
 def analyser_performances_acteur_par_hippodrome(nom_acteur, hippodrome_cible):
     if not nom_acteur:
         return 1.0
@@ -340,7 +329,6 @@ def analyser_performances_acteur_par_hippodrome(nom_acteur, hippodrome_cible):
         except Exception:
             continue
             
-    # Bonus fort si l'acteur a l'habitude de gagner/courir sur cet hippodrome précis
     bonus_hippodrome = min(apparitions_hippodrome * 1.0, 6.0)
     bonus_global = min(apparitions_globales * 0.2, 3.0)
     
@@ -368,6 +356,8 @@ def verifier_stop_loss(date_jour):
         print(f"Erreur lecture stop-loss : {e}")
         return False
 
+# CACHE DE 60 SECONDES POUR L'ANALYSE DE L'HISTORIQUE
+@st.cache_data(ttl=60)
 def calculer_parametres_adaptatifs():
     params = {
         "bonus_place": 0, 
@@ -433,7 +423,7 @@ def evaluer_score_cheval(cheval, discipline, terrain, corde, date_jour, params_a
     tendance = cheval.get("tendance_cote", "stable")
     bonus_place = params_adaptatifs.get("bonus_place", 0)
 
-    # 1. Musique (Pondéré par IA)
+    # 1. Musique
     score_musique = 0
     for idx, char in enumerate(musique[:8]):
         if char == "1":
@@ -448,7 +438,7 @@ def evaluer_score_cheval(cheval, discipline, terrain, corde, date_jour, params_a
             score_musique -= (6 if (char in ["D", "T", "A"] and idx < 3) else 3)
     score += score_musique * modele_ia.get("poids_musique", 1.0)
 
-    # 2. Ferrage / Poids (Pondéré par IA)
+    # 2. Ferrage / Poids
     if "Trot" in str(discipline):
         if "QUATRE" in deferre:
             score += 9.0 * modele_ia.get("poids_ferrage", 1.2)
@@ -463,7 +453,7 @@ def evaluer_score_cheval(cheval, discipline, terrain, corde, date_jour, params_a
         if terrain in ["Collant", "Lourd"] and ("LOURD" in musique or "SOUPLE" in musique):
             score += 6.0 * modele_ia.get("poids_terrain", 1.1)
 
-    # 3. Prise en compte de la Corde
+    # 3. Corde
     poids_corde = modele_ia.get("poids_corde", 1.0)
     corde_str = str(corde).upper()
     if "GAUCHE" in corde_str and ("G" in musique or "GAUCHE" in musique):
@@ -479,11 +469,11 @@ def evaluer_score_cheval(cheval, discipline, terrain, corde, date_jour, params_a
     elif tendance == "hausse":
         score -= 2.0 * modele_ia.get("poids_cote_tendance", 1.3)
 
-    # 5. Driver / Jockey contextualisé à l'hippodrome (CORRIGÉ ICI)
+    # 5. Driver / Jockey
     mult_acteur = analyser_performances_acteur_par_hippodrome(driver, hippodrome)
     score *= (mult_acteur * modele_ia.get("poids_driver", 1.1) * modele_ia.get("poids_hippodrome_acteur", 1.2))
 
-    # 6. Affinité de distance (NOUVEAU CRITÈRE)
+    # 6. Affinité de distance
     poids_dist_ia = modele_ia.get("poids_distance", 1.1)
     mult_distance = analyser_affinite_distance(cheval, distance_course)
     score *= (mult_distance * poids_dist_ia)
@@ -499,6 +489,22 @@ def evaluer_score_cheval(cheval, discipline, terrain, corde, date_jour, params_a
         elif cote > 35.0:
             score -= 3
 
+    # 8. DÉTECTION DU JOKER / BON OUTSIDER (NOUVEAU)
+    poids_outsider = modele_ia.get("poids_outsider_cache", 1.2)
+    if isinstance(cote, (int, float)) and 8.0 <= cote <= 30.0:
+        bonus_joker = 0.0
+        # Signal 1 : L'argent intelligent se place dessus à la dernière minute
+        if tendance == "baisse_forte":
+            bonus_joker += 6.0
+        # Signal 2 : Le cheval est préparé spécifiquement (Trot)
+        if "Trot" in str(discipline) and "QUATRE" in deferre:
+            bonus_joker += 4.0
+        # Signal 3 : Driver/Jockey en grande réussite sur cet hippodrome
+        if mult_acteur > 1.2:
+            bonus_joker += 4.0
+        
+        score += bonus_joker * poids_outsider
+
     score += params_adaptatifs.get("malus_discipline", {}).get(discipline, 0)
     return max(0.0, round(score, 1))
 
@@ -508,6 +514,10 @@ def retroaction_apprentissage_ia(pari_item, arrivee_officielle, cotes_reelles, p
     statut = pari_item.get("statut")
     details_pari = str(pari_item.get("details", ""))
     discipline = pari_item.get("discipline", "Galop Plat")
+    
+    # Récupération des montants
+    mise_totale = safe_float(pari_item.get("mise", 0))
+    gain_total = safe_float(pari_item.get("gain", 0))
     
     nums_paries = re.findall(r'N°\s*(\d+)', details_pari)
     gagnant_reel_num = arrivee_officielle[0] if arrivee_officielle else None
@@ -522,20 +532,41 @@ def retroaction_apprentissage_ia(pari_item, arrivee_officielle, cotes_reelles, p
     ajustements = []
 
     if statut == "Gagné":
-        diagnostic_lignes.append("🎯 **Victoire validée :** Modèle prédictif exact.")
         modele_ia["stats_impact"]["total_analyses"] += 1
         
+        # --- VÉRIFICATION DE LA RENTABILITÉ ---
+        if gain_total > 0 and gain_total < mise_totale:
+            diagnostic_lignes.append(f"⚠️ **Victoire à perte :** Gain ({gain_total}€) inférieur à la mise ({mise_totale}€). Jeu trop frileux.")
+            # L'IA est trop prudente : on l'oblige à chercher des outsiders
+            modele_ia["poids_outsider_cache"] = round(modele_ia.get("poids_outsider_cache", 1.2) + 0.05, 3)
+            ajustements.append("Recherche Joker/Outsider ⬆️ (+0.05)")
+        else:
+            diagnostic_lignes.append("🎯 **Victoire rentable :** Modèle prédictif exact et validé.")
+            # Si le gagnant trouvé était un outsider, on conforte ce réglage
+            if cheval_gagnant_obj and safe_float(cheval_gagnant_obj.get("cote")) >= 8.0:
+                modele_ia["poids_outsider_cache"] = round(modele_ia.get("poids_outsider_cache", 1.2) + 0.02, 3)
+                ajustements.append("Validation Joker ⬆️ (+0.02)")
+        
+        # Ajustements classiques si victoire
         if cheval_gagnant_obj:
             def_gagnant = str(cheval_gagnant_obj.get("deferre", "")).upper()
             if "QUATRE" in def_gagnant:
-                modele_ia["poids_ferrage"] = min(2.0, round(modele_ia["poids_ferrage"] + 0.02, 3))
+                modele_ia["poids_ferrage"] = round(modele_ia["poids_ferrage"] + 0.02, 3)
                 modele_ia["stats_impact"]["victoires_par_ferrage"] += 1
                 ajustements.append("Poids Ferrage ⬆️ (+0.02)")
             
+            # --- AJUSTEMENT DRIVER / JOCKEY SÉCURISÉ ---
             driver_nom = str(cheval_gagnant_obj.get("driver") or cheval_gagnant_obj.get("jockey") or "").strip()
             if driver_nom:
-                modele_ia["poids_driver"] = min(2.0, round(modele_ia["poids_driver"] + 0.01, 3))
-                ajustements.append("Poids Driver/Jockey ⬆️ (+0.01)")
+                cote_gagnant_val = safe_float(cheval_gagnant_obj.get("cote"), 0.0)
+                reunion_pari = pari_item.get("reunion", "")
+                mult_act = analyser_performances_acteur_par_hippodrome(driver_nom, reunion_pari)
+                
+                # Condition : Victoire outsider (cote >= 8.0) OU driver surperformant sur la piste (mult_act > 1.2)
+                if cote_gagnant_val >= 8.0 or mult_act > 1.2:
+                    poids_actuel = modele_ia.get("poids_driver", 1.0)
+                    modele_ia["poids_driver"] = round(min(2.0, poids_actuel + 0.01), 3)
+                    ajustements.append("Poids Driver/Jockey ⬆️ (+0.01)")
 
     elif statut == "Perdu":
         diagnostic_lignes.append("⚠️ **Analyse de l'échec :**")
@@ -544,23 +575,24 @@ def retroaction_apprentissage_ia(pari_item, arrivee_officielle, cotes_reelles, p
         
         if presence_proche:
             diagnostic_lignes.append("• *Quasi-podium (4e/5e) :* Pronostic proche. Léger manque de vitesse finale.")
-            modele_ia["poids_musique"] = min(2.0, round(modele_ia["poids_musique"] + 0.01, 3))
+            modele_ia["poids_musique"] = round(modele_ia["poids_musique"] + 0.01, 3)
             ajustements.append("Poids Musique ⬆️ (+0.01)")
         else:
             cote_gagnant = cotes_reelles.get(gagnant_reel_num, 0.0)
             if cote_gagnant > 15.0:
-                diagnostic_lignes.append(f"• *Outsider gagnant :* N°{gagnant_reel_num} à {cote_gagnant:.1f} contre 1.")
-                modele_ia["poids_cote_tendance"] = min(2.0, round(modele_ia["poids_cote_tendance"] + 0.02, 3))
-                ajustements.append("Sensibilité Smart Money ⬆️ (+0.02)")
+                diagnostic_lignes.append(f"• *Outsider gagnant loupé :* N°{gagnant_reel_num} à {cote_gagnant:.1f} contre 1.")
+                modele_ia["poids_cote_tendance"] = round(modele_ia["poids_cote_tendance"] + 0.02, 3)
+                modele_ia["poids_outsider_cache"] = round(modele_ia.get("poids_outsider_cache", 1.2) + 0.04, 3)
+                ajustements.append("Sensibilité Smart Money & Joker ⬆️")
             else:
                 diagnostic_lignes.append("• *Erreur de profil :* Profil du gagnant non détecté par la pondération actuelle.")
                 if "Trot" in str(discipline) and cheval_gagnant_obj:
                     def_gagnant = str(cheval_gagnant_obj.get("deferre", "")).upper()
                     if "QUATRE" in def_gagnant:
-                        modele_ia["poids_ferrage"] = min(2.0, round(modele_ia["poids_ferrage"] + 0.03, 3))
+                        modele_ia["poids_ferrage"] = round(modele_ia["poids_ferrage"] + 0.03, 3)
                         ajustements.append("Renforcement Ferrage Trot ⬆️ (+0.03)")
                 else:
-                    modele_ia["poids_terrain"] = min(2.0, round(modele_ia["poids_terrain"] + 0.02, 3))
+                    modele_ia["poids_terrain"] = round(modele_ia["poids_terrain"] + 0.02, 3)
                     ajustements.append("Renforcement Impact Terrain ⬆️ (+0.02)")
 
     if ajustements:
@@ -577,7 +609,6 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs,
         date_iso = datetime.date.today().strftime("%Y-%m-%d")
 
     budget_total_effectif = safe_float(budget_base)
-            
     opportunites = []
     malus_disc = params_adaptatifs.get("malus_discipline", {})
 
@@ -603,6 +634,8 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs,
         
         ecart = meilleur["score_analyse"] - second["score_analyse"]
         cote_fav = safe_float(meilleur.get("cote"), 3.0)
+        
+        # Calcul du score de confiance (sécurité de la course)
         indice_confiance = ecart + (15 if 2.0 <= cote_fav <= 6.0 else 5)
         
         outsiders = [c for c in chevaux_valides if 6.0 <= safe_float(c.get("cote")) <= 25.0 and c["num"] != meilleur["num"]]
@@ -620,25 +653,34 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs,
             "nb_partants": nb_partants_total
         })
         
+    # Tri par niveau de confiance décroissant (les plus sûres en premier)
     opportunites.sort(key=lambda x: x["score_confiance"], reverse=True)
     if not opportunites:
         return []
-        
-    # CORRECTION : Réduction du nombre de courses si le budget est petit (ex: <= 25€ -> max 2 courses phares)
-    max_courses = 2 if budget_total_effectif <= 25.0 else 5
-    courses_qualifiees = [o for o in opportunites if o["score_confiance"] >= 10.0]
-    top_courses = courses_qualifiees[:max_courses] if courses_qualifiees else opportunites[:min(2, len(opportunites))]
-        
-    somme_scores = sum(c["score_confiance"] for c in top_courses)
-    if somme_scores > 0:
-        brutes_mises = [budget_total_effectif * (c["score_confiance"] / somme_scores) for c in top_courses]
+
+    # --- STRATÉGIE SÉCURITÉ MAXIMALE : MOINS DE PARIS POSSIBLE ---
+    if budget_total_effectif < 20.0:
+        max_courses_autorisees = 1  # Budget court : 1 seule course (la plus sûre du jour)
+    elif budget_total_effectif < 50.0:
+        max_courses_autorisees = 2  # Budget moyen : Top 2 maximum
     else:
-        brutes_mises = [budget_total_effectif / len(top_courses)] * len(top_courses)
+        max_courses_autorisees = 3  # Grand budget : Top 3 maximum
+        
+    # Ne conserver que les courses à très haut niveau de confiance (>= 12.0)
+    courses_haute_confiance = [o for o in opportunites if o["score_confiance"] >= 12.0]
     
-    # Arrondi intelligent pour coller exactement au budget global sans le dépasser
+    if courses_haute_confiance:
+        top_courses = courses_haute_confiance[:max_courses_autorisees]
+    else:
+        # Si aucune course ne dépasse le seuil, on prend la seule et unique meilleure course du jour
+        top_courses = opportunites[:1]
+
+    # --- RÉPARTITION DU BUDGET SUR LES COURSES SÉLECTIONNÉES ---
+    somme_scores = sum(c["score_confiance"] for c in top_courses)
+    brutes_mises = [budget_total_effectif * (c["score_confiance"] / somme_scores) for c in top_courses]
     mises_allouees = [max(1, int(round(m))) for m in brutes_mises]
     
-    # Ajustement de la somme exacte si l'arrondi décale de quelques euros
+    # Ajustement d'arrondi sur la course N°1
     diff = int(budget_total_effectif) - sum(mises_allouees)
     if diff != 0 and mises_allouees:
         mises_allouees[0] = max(1, mises_allouees[0] + diff)
@@ -650,13 +692,14 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs,
         cote_secu = safe_float(chev_base.get("cote"), 3.0)
         nb_p = course_opt.get("nb_partants", 8)
 
+        # 80% de la mise de la course va sur la sécurité
         if cote_secu > 1.0:
             rendement = 1.0 + (cote_secu - 1.0) / (3.0 if nb_p >= 8 else 2.0)
-            mise_secu = max(1, int(round(mise_course / rendement))) if rendement > 1.0 else max(1, int(round(mise_course * 0.7)))
+            mise_secu = max(1, int(round(mise_course / rendement))) if rendement > 1.0 else max(1, int(round(mise_course * 0.8)))
         else:
-            mise_secu = max(1, int(round(mise_course * 0.7)))
+            mise_secu = max(1, int(round(mise_course * 0.8)))
             
-        mise_poker = max(1, mise_course - mise_secu)
+        mise_poker = max(0, mise_course - mise_secu)
         cote_poker = safe_float(chev_poker.get("cote"), 5.0)
         
         plan_paris.append({
@@ -665,10 +708,11 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs,
             "Discipline": course_opt["discipline"],
             "Base Solide (Sécurité)": f"Simple Placé ➔ N°{chev_base['num']} - {chev_base['nom']} (Cote: {cote_secu:.1f})",
             "Mise Sécu": f"{mise_secu} €",
-            "Coup de Poker": f"Simple Gagnant ➔ N°{chev_poker['num']} - {chev_poker['nom']} (Cote: {cote_poker:.1f})",
+            "Coup de Poker": f"Simple Gagnant ➔ N°{chev_poker['num']} - {chev_poker['nom']} (Cote: {cote_poker:.1f})" if mise_poker > 0 else "Aucun",
             "Mise Poker": f"{mise_poker} €",
-            "Mise Totale Course": f"{mise_secu + mise_poker} €"
+            "Mise Totale Course": f"{mise_course} €"
         })
+        
     return plan_paris
 
 def generer_et_sauvegarder_bilan_journee(historique, date_str):
@@ -714,6 +758,28 @@ def generer_et_sauvegarder_bilan_journee(historique, date_str):
             "Bilan Net (€)": round(net, 2), "ROI (%)": round(roi, 1)
         })
 
+    # --- Ligne de Total Global ---
+    tot_paris = sum(v["paris_total"] for v in reunions_bilan.values())
+    tot_gagnes = sum(v["gagnes"] for v in reunions_bilan.values())
+    tot_perdus = sum(v["perdus"] for v in reunions_bilan.values())
+    tot_attente = sum(v["en_attente"] for v in reunions_bilan.values())
+    tot_mises = sum(v["mises"] for v in reunions_bilan.values())
+    tot_gains = sum(v["gains"] for v in reunions_bilan.values())
+    tot_net = tot_gains - tot_mises
+    tot_roi = (tot_net / tot_mises * 100) if tot_mises > 0 else 0.0
+
+    bilan_data.append({
+        "Réunion / Hippodrome": "TOTAL",
+        "Total Paris": tot_paris,
+        "Gagnés": tot_gagnes,
+        "Perdus": tot_perdus,
+        "En attente": tot_attente,
+        "Mises (€)": round(tot_mises, 2),
+        "Gains (€)": round(tot_gains, 2),
+        "Bilan Net (€)": round(tot_net, 2),
+        "ROI (%)": round(tot_roi, 1)
+    })
+
     fichier_bilan = DOSSIER / f"bilan_journee_{date_str}.json"
     sauvegarder_et_synchroniser(bilan_data, fichier_bilan, f"Bilan journée {date_str}")
     return bilan_data
@@ -746,7 +812,6 @@ def verifier_resultats_automatiques_pmu(historique):
             if not date_pmu:
                 continue
 
-            # Recherche élargie et combinée pour extraire proprement R et C
             texte_global = f"{reunion_raw} {course_raw} {course_full}"
             
             r_match = re.search(r'R\s*(\d+)', texte_global, re.IGNORECASE)
@@ -826,7 +891,7 @@ def verifier_resultats_automatiques_pmu(historique):
                         if div_ref == 0 and cote_ref > 1.0:
                             div_ref = max(1.1, 1.0 + (cote_ref - 1.0) / (3.6 if len(liste_partants_bruts) >= 8 else 2.5))
                         if num_secu in arrivee_trouvee[:limite_places]:
-                            gain_total += mise_part * div_ref  # ➔ Corrigé : multiplication par la mise de la part
+                            gain_total += mise_part * div_ref
                             un_gagne = True
                             
                     elif is_gagnant and nums_part:
@@ -851,6 +916,90 @@ def verifier_resultats_automatiques_pmu(historique):
             generer_et_sauvegarder_bilan_journee(historique, d_mod)
             
     return modifie
+
+# --- MODULE ADMINISTRATION ET APPRENTISSAGE IA ---
+st.sidebar.divider()
+with st.sidebar.expander("🛠️ Administration et réinitialisation"):
+    st.write("Gestion des historiques et apprentissage accéléré.")
+    mdp_admin = st.text_input("Code Admin", type="password", key="input_mdp_admin")
+    
+    # Bouton 1 : Reset classique
+    if st.button("🔥 Remise à zéro totale", type="primary"):
+        if mdp_admin.strip() == st.secrets.get("PASSWORD", "301180"):
+            nb = reinitialiser_application_complete()
+            st.success(f"Application et IA réinitialisées ({nb} fichiers purgés).")
+            st.rerun()
+        else:
+            st.error("Mot de passe admin incorrect.")
+            
+    st.divider()
+    
+    # Bouton 2 : Simulation massive du Chrono
+    st.write("🤖 **Nourrir l'IA :** Parier sur toutes les courses")
+    if st.button("🚀 Simuler le Chrono (10€/course)"):
+        if mdp_admin.strip() == st.secrets.get("PASSWORD", "301180"):
+            date_iso = st.session_state.get("date_commune", datetime.date.today()).strftime("%Y-%m-%d")
+            fichier_jour = DOSSIER / f"pmu_du_jour_{date_iso}.json"
+            
+            if fichier_jour.exists():
+                donnees_chrono, _ = charger_donnees_fichier(fichier_jour)
+                hist = []
+                if FICHIER_HISTORIQUE.exists():
+                    with open(FICHIER_HISTORIQUE, "r", encoding="utf-8", errors="replace") as f:
+                        try:
+                            hist = json.load(f)
+                        except Exception:
+                            hist = []
+                            
+                paris_ajoutes = 0
+                params_ad_chrono = calculer_parametres_adaptatifs()
+                
+                for c_elem in donnees_chrono:
+                    if not c_elem.get("nom_course") or len(str(c_elem.get("nom_course"))) <= 2:
+                        continue
+                        
+                    r_nom = f"{c_elem.get('reunion', 'R1')} - {c_elem.get('hippodrome', 'HIPPODROME')}"
+                    chevaux_val_c = [c for c in c_elem.get("chevaux", []) if safe_float(c.get("cote")) > 1.0 or c.get("cote") is None]
+                    
+                    if chevaux_val_c:
+                        for c in chevaux_val_c:
+                            c["score_analyse"] = evaluer_score_cheval(
+                                c, c_elem.get('discipline'), c_elem.get('terrain_officiel'), 
+                                c_elem.get('corde', 'Corde standard'), date_iso, params_ad_chrono
+                            )
+                        chevaux_val_c.sort(key=lambda x: x["score_analyse"], reverse=True)
+                        base_chev = chevaux_val_c[0]
+                        outsiders_c = [c for c in chevaux_val_c if 6.0 <= safe_float(c.get("cote")) <= 25.0 and c["num"] != base_chev["num"]]
+                        poker_chev = max(outsiders_c, key=lambda x: x["score_analyse"]) if outsiders_c else (chevaux_val_c[1] if len(chevaux_val_c) > 1 else base_chev)
+                        
+                        # Allocation type : 70% Sécurité / 30% Poker
+                        hist.append({
+                            "date": date_iso, 
+                            "reunion": r_nom, 
+                            "course_num": c_elem.get('course', 'C?'), 
+                            "course": f"{r_nom} - {c_elem.get('course', 'C?')}",
+                            "discipline": c_elem.get('discipline'), 
+                            "type": "Rapide (Massif)",
+                            "details": f"Simple Placé (Sécurité) ➔ N°{base_chev.get('num', '?')} (7.0€) | Simple Gagnant (Poker) ➔ N°{poker_chev.get('num', '?')} (3.0€)",
+                            "mise": 10.0, 
+                            "statut": "En attente", 
+                            "gain": 0.0, 
+                            "diagnostic": ""
+                        })
+                        paris_ajoutes += 1
+                        
+                if paris_ajoutes > 0:
+                    sauvegarder_et_synchroniser(hist, FICHIER_HISTORIQUE, f"Ajout de {paris_ajoutes} paris pour apprentissage IA")
+                    st.success(f"✅ {paris_ajoutes} paris ajoutés avec succès ! Allez dans l'onglet 'Suivi' et vérifiez les résultats pour ajuster l'IA.")
+                    import time
+                    time.sleep(2)
+                    st.rerun()
+                else:
+                    st.warning("Aucune course valide à parier aujourd'hui.")
+            else:
+                st.error("Aucune donnée trouvée. Veuillez télécharger les courses du jour dans le premier onglet.")
+        else:
+            st.error("Mot de passe admin incorrect.")
 
 # --- INTERFACE UTILISATEUR STREAMLIT ---
 tab_chronologique, tab_analyse, tab_ia, tab_suivi, tab_reunions = st.tabs([
@@ -929,7 +1078,6 @@ with tab_chronologique:
                 "base": base_chev, "poker": poker_chev
             })
         
-        # --- TRI CHRONOLOGIQUE GLOBAL PAR HEURE ---
         toutes_courses.sort(key=lambda x: x["heure"])
         
         for idx_c, item_c in enumerate(toutes_courses):
@@ -937,7 +1085,6 @@ with tab_chronologique:
             b_chev = item_c["base"]
             p_chev = item_c["poker"]
             
-            # Utilisation de clés uniques et stables incluant la réunion et le numéro de course
             cle_unique_course = f"{item_c['reunion']}_{item_c['course_num']}_{idx_c}"
             
             with st.expander(f"🕒 {item_c['heure']} | {item_c['reunion']} ➔ {item_c['course_num']} : {item_c['nom_course']}"):
@@ -947,8 +1094,6 @@ with tab_chronologique:
                 col_m, col_b = st.columns([2, 1])
                 with col_m:
                     mise_input = st.number_input("Mise Totale (€)", min_value=1, value=10, key=f"m_{cle_unique_course}")
-                    
-                    # Calcul dynamique de la répartition pour l'affichage visuel
                     mise_secu = round(mise_input * 0.7, 1)
                     mise_poker = round(mise_input - mise_secu, 1)
                     st.caption(f"💡 Répartition indicative : **{mise_secu} €** sur la Sécu | **{mise_poker} €** sur le Poker")
@@ -1097,7 +1242,7 @@ with tab_ia:
             {"Critère": "Adaptation Terrain", "Poids IA": modele_ia.get("poids_terrain", 1.0)},
             {"Critère": "Tendance Cotes (Smart Money)", "Poids IA": modele_ia.get("poids_cote_tendance", 1.0)},
             {"Critère": "Impact Driver / Jockey", "Poids IA": modele_ia.get("poids_driver", 1.0)},
-            {"Critère": "Affinité Distance", "Poids IA": modele_ia.get("poids_distance", 1.1)}, # ➔ Ajout ici
+            {"Critère": "Affinité Distance", "Poids IA": modele_ia.get("poids_distance", 1.1)},
         ])
         st.bar_chart(df_poids.set_index("Critère"))
         
@@ -1131,7 +1276,6 @@ with tab_suivi:
         with col_btn2:
             if st.button("🗑️ Réinitialiser les montants (Mises / Gains / Bilan)", type="secondary"):
                 for p in historique:
-                    # On ne remet à zéro que les valeurs financières, on ne touche pas au statut global ni au reste
                     p["mise"] = 0.0
                     p["gain"] = 0.0
                 sauvegarder_et_synchroniser(historique, FICHIER_HISTORIQUE, "Remise à zéro des montants financiers")
