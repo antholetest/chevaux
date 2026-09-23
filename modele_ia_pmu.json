@@ -8,16 +8,17 @@
   "poids_corde": 1.0,
   "poids_hippodrome_acteur": 1.2,
   "poids_distance": 1.1,
-  "poids_outsider_cache": 1.4600000000000002,
+  "poids_outsider_cache": 1.4700000000000002,
   "stats_impact": {
     "victoires_par_ferrage": 0,
     "victoires_par_smart_money": 0,
     "victoires_par_terrain": 0,
     "victoires_par_hippodrome": 0,
     "victoires_par_distance": 0,
-    "total_analyses": 83
+    "total_analyses": 84
   },
   "historique_ajustements": [
+    "[23/09 19:47] Course R5 - HIPPODROME DE MONS  BELGIQUE - C5 -> Recherche Joker ⬆️ (+0.01), Poids Driver ⬆️ (+0.005)",
     "[23/09 19:47] Course R5 - HIPPODROME DE MONS  BELGIQUE - C4 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:47] Course R5 - HIPPODROME DE MONS  BELGIQUE - C3 -> Recherche Joker ⬆️ (+0.01), Poids Driver ⬆️ (+0.005)",
     "[23/09 19:47] Course R5 - HIPPODROME DE MONS  BELGIQUE - C2 -> Poids Musique ⬆️ (+0.005)",
@@ -36,7 +37,6 @@
     "[23/09 19:47] Course R2 - HIPPODROME DE VICHY - C7 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:47] Course R2 - HIPPODROME DE VICHY - C6 -> Recherche Joker ⬆️ (+0.01), Poids Driver ⬆️ (+0.005)",
     "[23/09 19:47] Course R2 - HIPPODROME DE VICHY - C5 -> Poids Driver ⬆️ (+0.005)",
-    "[23/09 19:47] Course R2 - HIPPODROME DE VICHY - C4 -> Renforcement Terrain ⬆️ (+0.01)",
-    "[23/09 19:47] Course R2 - HIPPODROME DE VICHY - C3 -> Recherche Joker ⬆️ (+0.01), Poids Driver ⬆️ (+0.005)"
+    "[23/09 19:47] Course R2 - HIPPODROME DE VICHY - C4 -> Renforcement Terrain ⬆️ (+0.01)"
   ]
 }
