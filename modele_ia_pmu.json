@@ -3,7 +3,7 @@
   "poids_ferrage": 1.2,
   "poids_terrain": 1.3700000000000003,
   "poids_poids": 1.0,
-  "poids_cote_tendance": 1.35,
+  "poids_cote_tendance": 1.36,
   "poids_driver": 1.5,
   "poids_corde": 1.0,
   "poids_hippodrome_acteur": 1.2,
@@ -18,6 +18,7 @@
     "total_analyses": 150
   },
   "historique_ajustements": [
+    "[23/09 19:52] Course R9 - HIPPODROME D'AMIENS - C1 -> Sensibilité Smart Money ⬆️",
     "[23/09 19:52] Course R8 - HIPPODROME DE HAYDOCK GB - C4 -> Renforcement Terrain ⬆️ (+0.01)",
     "[23/09 19:52] Course R8 - HIPPODROME DE HAYDOCK GB - C3 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:51] Course R8 - HIPPODROME DE HAYDOCK GB - C2 -> Poids Musique ⬆️ (+0.005)",
@@ -36,7 +37,6 @@
     "[23/09 19:51] Course R6 - HIPPODROME DE VICHY - C3 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:51] Course R6 - HIPPODROME DE VICHY - C2 -> Poids Musique ⬆️ (+0.005)",
     "[23/09 19:51] Course R5 - HIPPODROME DE CRAON - C9 -> Renforcement Terrain ⬆️ (+0.01)",
-    "[23/09 19:51] Course R5 - HIPPODROME DE CRAON - C8 -> Poids Musique ⬆️ (+0.005)",
-    "[23/09 19:51] Course R5 - HIPPODROME DE CRAON - C7 -> Poids Driver ⬆️ (+0.005)"
+    "[23/09 19:51] Course R5 - HIPPODROME DE CRAON - C8 -> Poids Musique ⬆️ (+0.005)"
   ]
 }
