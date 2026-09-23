@@ -4,20 +4,21 @@
   "poids_terrain": 1.2500000000000002,
   "poids_poids": 1.0,
   "poids_cote_tendance": 1.34,
-  "poids_driver": 1.4399999999999928,
+  "poids_driver": 1.4449999999999927,
   "poids_corde": 1.0,
   "poids_hippodrome_acteur": 1.2,
   "poids_distance": 1.1,
-  "poids_outsider_cache": 1.4100000000000001,
+  "poids_outsider_cache": 1.4200000000000002,
   "stats_impact": {
     "victoires_par_ferrage": 0,
     "victoires_par_smart_money": 0,
     "victoires_par_terrain": 0,
     "victoires_par_hippodrome": 0,
     "victoires_par_distance": 0,
-    "total_analyses": 69
+    "total_analyses": 70
   },
   "historique_ajustements": [
+    "[23/09 19:47] Course R2 - HIPPODROME DE VICHY - C6 -> Recherche Joker ⬆️ (+0.01), Poids Driver ⬆️ (+0.005)",
     "[23/09 19:47] Course R2 - HIPPODROME DE VICHY - C5 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:47] Course R2 - HIPPODROME DE VICHY - C4 -> Renforcement Terrain ⬆️ (+0.01)",
     "[23/09 19:47] Course R2 - HIPPODROME DE VICHY - C3 -> Recherche Joker ⬆️ (+0.01), Poids Driver ⬆️ (+0.005)",
@@ -36,7 +37,6 @@
     "[23/09 19:45] Course R7 - HIPPODROME DE SAN ISIDRO ARG - C7 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:45] Course R7 - HIPPODROME DE SAN ISIDRO ARG - C6 -> Poids Musique ⬆️ (+0.005)",
     "[23/09 19:45] Course R6 - HIPPODROME DE SOLVALLA STOCKHOLM - C8 -> Poids Musique ⬆️ (+0.005)",
-    "[23/09 19:45] Course R6 - HIPPODROME DE SOLVALLA STOCKHOLM - C7 -> Poids Driver ⬆️ (+0.005)",
-    "[23/09 19:45] Course R6 - HIPPODROME DE SOLVALLA STOCKHOLM - C6 -> Poids Driver ⬆️ (+0.005)"
+    "[23/09 19:45] Course R6 - HIPPODROME DE SOLVALLA STOCKHOLM - C7 -> Poids Driver ⬆️ (+0.005)"
   ]
 }
