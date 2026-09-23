@@ -1,0 +1,21 @@
+{
+  "poids_musique": 1.0,
+  "poids_ferrage": 1.2,
+  "poids_terrain": 1.1,
+  "poids_poids": 1.0,
+  "poids_cote_tendance": 1.3,
+  "poids_driver": 1.1,
+  "poids_corde": 1.0,
+  "poids_hippodrome_acteur": 1.2,
+  "poids_distance": 1.1,
+  "poids_outsider_cache": 1.2,
+  "stats_impact": {
+    "victoires_par_ferrage": 0,
+    "victoires_par_smart_money": 0,
+    "victoires_par_terrain": 0,
+    "victoires_par_hippodrome": 0,
+    "victoires_par_distance": 0,
+    "total_analyses": 0
+  },
+  "historique_ajustements": []
+}
