@@ -4,7 +4,7 @@
   "poids_terrain": 1.2200000000000002,
   "poids_poids": 1.0,
   "poids_cote_tendance": 1.33,
-  "poids_driver": 1.389999999999994,
+  "poids_driver": 1.3949999999999938,
   "poids_corde": 1.0,
   "poids_hippodrome_acteur": 1.2,
   "poids_distance": 1.1,
@@ -15,9 +15,10 @@
     "victoires_par_terrain": 0,
     "victoires_par_hippodrome": 0,
     "victoires_par_distance": 0,
-    "total_analyses": 59
+    "total_analyses": 60
   },
   "historique_ajustements": [
+    "[23/09 19:45] Course R6 - HIPPODROME DE SOLVALLA STOCKHOLM - C7 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:45] Course R6 - HIPPODROME DE SOLVALLA STOCKHOLM - C6 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 19:45] Course R6 - HIPPODROME DE SOLVALLA STOCKHOLM - C5 -> Poids Musique ⬆️ (+0.005)",
     "[23/09 19:45] Course R6 - HIPPODROME DE SOLVALLA STOCKHOLM - C4 -> Poids Musique ⬆️ (+0.005)",
@@ -36,7 +37,6 @@
     "[23/09 19:45] Course R4 - HIPPODROME DE TOULOUSE LA CEPIERE - C3 -> Poids Musique ⬆️ (+0.005)",
     "[23/09 19:45] Course R4 - HIPPODROME DE TOULOUSE LA CEPIERE - C2 -> Poids Musique ⬆️ (+0.005)",
     "[23/09 19:45] Course R4 - HIPPODROME DE TOULOUSE LA CEPIERE - C1 -> Poids Driver ⬆️ (+0.005)",
-    "[23/09 19:45] Course R3 - HIPPODROME DE LYON-PARILLY - C8 -> Recherche Joker ⬆️ (+0.01), Poids Driver ⬆️ (+0.005)",
-    "[23/09 19:45] Course R3 - HIPPODROME DE LYON-PARILLY - C7 -> Poids Musique ⬆️ (+0.005)"
+    "[23/09 19:45] Course R3 - HIPPODROME DE LYON-PARILLY - C8 -> Recherche Joker ⬆️ (+0.01), Poids Driver ⬆️ (+0.005)"
   ]
 }
