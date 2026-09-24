@@ -281,7 +281,6 @@ def telecharger_pmu_date(date_iso, fichier_cible):
                         rapport_direct = p.get("dernierRapportDirect")
                         cote_val = rapport_direct.get("rapport") if isinstance(rapport_direct, dict) else None
                         
-                        # Remplacement du random par une comparaison d'ouverture
                         rapport_ref = p.get("rapportReference")
                         cote_ouv = rapport_ref.get("rapport") if isinstance(rapport_ref, dict) else cote_val
                         
@@ -505,12 +504,12 @@ def evaluer_score_cheval(cheval, discipline, terrain, corde, date_jour, params_a
     elif tendance == "hausse":
         score -= 3.0 * modele_ia.get("poids_cote_tendance", 1.35)
 
-    # 5. Synergie Acteur / Hippodrome (Passage au modèle additif)
+    # 5. Synergie Acteur / Hippodrome
     mult_acteur = analyser_performances_acteur_par_hippodrome(driver, hippodrome)
     bonus_acteur = (mult_acteur - 1.0) * 10.0
     score += (bonus_acteur * modele_ia.get("poids_driver", 1.15) * modele_ia.get("poids_hippodrome_acteur", 1.25))
 
-    # 6. Affinité de distance (Passage au modèle additif)
+    # 6. Affinité de distance
     poids_dist_ia = modele_ia.get("poids_distance", 1.1)
     mult_distance = analyser_affinite_distance(cheval, distance_course)
     bonus_distance = (mult_distance - 1.0) * 5.0
@@ -519,11 +518,11 @@ def evaluer_score_cheval(cheval, discipline, terrain, corde, date_jour, params_a
     # 7. Attraction des Cotes & Détection d'Outsider Rentable
     if cote > 1.0:
         if cote < 2.5:
-            score += 6  # Favori sur-parié : bon score mais avantage gain limité
+            score += 6
         elif 2.5 <= cote <= 6.0:
-            score += 8  # Zone d'équilibre optimale
+            score += 8
         elif 6.0 < cote <= 18.0:
-            score += 10 # Zone de fort ROI potentiel
+            score += 10
         elif cote > 35.0:
             score -= 2
 
@@ -544,7 +543,7 @@ def evaluer_score_cheval(cheval, discipline, terrain, corde, date_jour, params_a
     score += params_adaptatifs.get("malus_discipline", {}).get(discipline, 0)
     return max(0.0, round(score, 1))
 
-# --- CALCUL DU VALEUR ESPÉRÉE (VALUE BET INDEX) ET PROBABILITÉ ESTIMAITVE ---
+# --- CALCUL DU VALEUR ESPÉRÉE (VALUE BET INDEX) ET PROBABILITÉ ESTIMATIVE ---
 def calculer_valeur_esperee(chevaux_valides):
     """Calcule l'Espérance de Gain (EV = Proba_Estimee * Cote_Reelle) pour chaque cheval."""
     score_total = sum(safe_float(c.get("score_analyse", 0)) for c in chevaux_valides)
@@ -560,7 +559,6 @@ def calculer_valeur_esperee(chevaux_valides):
         proba_estimee = score / score_total
         c["proba_estimee"] = round(proba_estimee, 4)
         
-        # EV = Espérance Mathématique de Gain
         if cote > 1.0:
             ev = proba_estimee * cote
         else:
@@ -606,7 +604,6 @@ def retroaction_apprentissage_ia(pari_item, arrivee_officielle, cotes_reelles, p
         else:
             diagnostic_lignes.append(f"🎯 **Victoire rentable (+{profit_net:.2f}€ | ROI: +{roi_pari:.1f}%) !**")
             
-            # Plus le ROI est fort, plus la rétroaction positive est accentuée
             facteur_amplification = min(0.015, 0.003 + (roi_pari / 10000.0))
             
             if cheval_gagnant_obj and safe_float(cheval_gagnant_obj.get("cote")) >= 6.0:
@@ -649,7 +646,6 @@ def retroaction_apprentissage_ia(pari_item, arrivee_officielle, cotes_reelles, p
                         modele_ia["poids_ferrage"] = max(0.7, modele_ia.get("poids_ferrage", 1.25) - 0.002)
                         ajustements.append("Ajustement Ferrage ⬇️ (-0.002)")
 
-    # AMORTISSEMENT POUR CONSERVER UNE AGILITÉ DU MODÈLE
     cles_poids = [
         "poids_musique", "poids_ferrage", "poids_terrain", "poids_poids", 
         "poids_cote_tendance", "poids_driver", "poids_corde", 
@@ -703,14 +699,10 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs,
         meilleur_score = chevaux_tries_score[0]
         meilleur_ev = chevaux_tries_ev[0]
         
-        # Filtre sur la valeur espérée minimale fixée (EV > 1.15)
         if meilleur_ev["ev_index"] <= 1.15:
             continue
             
-        cote_fav = safe_float(meilleur_score.get("cote"), 3.0)
         ecart_score = meilleur_score["score_analyse"] - chevaux_tries_score[1]["score_analyse"] if len(chevaux_tries_score) > 1 else 10.0
-        
-        # Score de confiance fondé sur l'EV et l'écart
         indice_confiance = ecart_score + (meilleur_ev["ev_index"] * 10)
         
         outsiders = [c for c in chevaux_valides if 5.5 <= safe_float(c.get("cote")) <= 25.0 and c["num"] != meilleur_score["num"]]
@@ -736,7 +728,6 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs,
     max_courses = 1 if budget_total_effectif < 25.0 else (2 if budget_total_effectif < 60.0 else 3)
     top_courses = opportunites[:max_courses]
 
-    # Staking proportionnel à l'EV (Fractional Kelly Staking)
     somme_ev = sum(c["ev_max"] for c in top_courses)
     brutes_mises = [(budget_total_effectif * (c["ev_max"] / somme_ev)) for c in top_courses] if somme_ev > 0 else [budget_total_effectif / len(top_courses)] * len(top_courses)
     mises_allouees = [max(1, int(round(m))) for m in brutes_mises]
@@ -752,7 +743,6 @@ def generer_plan_budget_journalier(fichier_json, budget_base, params_adaptatifs,
         cote_secu = safe_float(chev_base.get("cote"), 3.0)
         ev_base = chev_base.get("ev_index", 1.0)
         
-        # Répartition dynamique selon la Valeur Espérée
         ratio_secu = 0.65 if ev_base > 1.2 else 0.75
         mise_secu = max(1, int(round(mise_course * ratio_secu)))
         mise_poker = max(0, mise_course - mise_secu)
@@ -934,7 +924,6 @@ def verifier_resultats_automatiques_pmu(historique):
                 for part in parts:
                     part_lower = part.lower()
                     nums_part = re.findall(r'N°\s*(\d+)', part)
-                    # 1. Regex de détection de mises strictement corrigée
                     mise_part_m = re.search(r'\((\d+(?:[\.,]\d+)?)\s*€\)', part)
                     mise_part = float(mise_part_m.group(1).replace(",", ".")) if mise_part_m else (mise_totale / len(parts))
 
@@ -1028,7 +1017,6 @@ with st.sidebar.expander("🛠️ Administration et réinitialisation"):
                         chevaux_val_c.sort(key=lambda x: (x.get("ev_index", 0), x["score_analyse"]), reverse=True)
                         base_chev = chevaux_val_c[0]
                         
-                        # 4. Filtre strict EV appliqué lors de l'apprentissage automatisé
                         if base_chev.get("ev_index", 0) > 1.15:
                             outsiders_c = [c for c in chevaux_val_c if 5.5 <= safe_float(c.get("cote")) <= 25.0 and c["num"] != base_chev["num"]]
                             poker_chev = max(outsiders_c, key=lambda x: x.get("ev_index", 0)) if outsiders_c else (chevaux_val_c[1] if len(chevaux_val_c) > 1 else base_chev)
