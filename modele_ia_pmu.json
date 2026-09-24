@@ -1,7 +1,7 @@
 {
   "poids_musique": 1.379999999999992,
   "poids_ferrage": 1.2,
-  "poids_terrain": 1.3700000000000003,
+  "poids_terrain": 1.3800000000000003,
   "poids_poids": 1.0,
   "poids_cote_tendance": 1.36,
   "poids_driver": 1.5,
@@ -18,6 +18,7 @@
     "total_analyses": 169
   },
   "historique_ajustements": [
+    "[24/09 04:07] Course R3 - HIPPODROME DE LA TESTE DE BUCH - C5 -> Renforcement Terrain ⬆️ (+0.01)",
     "[24/09 04:07] Course R3 - HIPPODROME DE LA TESTE DE BUCH - C4 -> Poids Driver ⬆️ (+0.005)",
     "[24/09 04:07] Course R3 - HIPPODROME DE LA TESTE DE BUCH - C3 -> Poids Driver ⬆️ (+0.005)",
     "[24/09 04:07] Course R2 - HIPPODROME DE SON PARDO PALMA - C3 -> Poids Driver ⬆️ (+0.005)",
@@ -36,7 +37,6 @@
     "[23/09 20:00] Course R1 - HIPPODROME DE PARIS-VINCENNES - C4 -> Poids Musique ⬆️ (+0.005)",
     "[23/09 20:00] Course R1 - HIPPODROME DE PARIS-VINCENNES - C2 -> Poids Driver ⬆️ (+0.005)",
     "[23/09 20:00] Course R1 - HIPPODROME DE PARIS-VINCENNES - C1 -> Poids Driver ⬆️ (+0.005)",
-    "[23/09 19:53] Course R2 - HIPPODROME DE SON PARDO PALMA - C3 -> Poids Driver ⬆️ (+0.005)",
-    "[23/09 19:53] Course R2 - HIPPODROME DE SON PARDO PALMA - C2 -> Poids Musique ⬆️ (+0.005)"
+    "[23/09 19:53] Course R2 - HIPPODROME DE SON PARDO PALMA - C3 -> Poids Driver ⬆️ (+0.005)"
   ]
 }
