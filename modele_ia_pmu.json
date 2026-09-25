@@ -1,5 +1,5 @@
 {
-  "poids_musique": 1.2100000000000002,
+  "poids_musique": 1.2300000000000002,
   "poids_ferrage": 1.25,
   "poids_terrain": 1.15,
   "poids_poids": 1.0,
@@ -18,9 +18,10 @@
     "victoires_par_hippodrome": 0,
     "victoires_par_distance": 0,
     "total_analyses": 1,
-    "gain_cumule_ia": -91.25
+    "gain_cumule_ia": -101.25
   },
   "historique_ajustements": [
+    "[25/09 18:28] Course R2 - HIPPODROME DE CAGNES/MER - C1 -> Poids Musique ⬆️ (+0.02)",
     "[25/09 18:27] Course R1 - HIPPODROME DE PARIS-VINCENNES - C3 -> Poids Musique ⬆️ (+0.02)",
     "[25/09 18:27] Course R1 - HIPPODROME DE PARIS-VINCENNES - C1 -> Poids Musique ⬆️ (+0.02)",
     "[25/09 18:21] Course R3 - HIPPODROME GELSENKIRCHEN ALL - C6 -> Ajustement Value : Recherche Outsider ⬆️ (+0.05)",
