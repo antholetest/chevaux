@@ -1,6 +1,6 @@
 {
   "poids_musique": 1.07,
-  "poids_ferrage": 1.2200000000000002,
+  "poids_ferrage": 1.2050000000000003,
   "poids_terrain": 1.15,
   "poids_poids": 1.0,
   "poids_cote_tendance": 1.3800000000000001,
@@ -18,9 +18,10 @@
     "victoires_par_hippodrome": 0,
     "victoires_par_distance": 0,
     "total_analyses": 0,
-    "gain_cumule_ia": -40.0
+    "gain_cumule_ia": -50.0
   },
   "historique_ajustements": [
+    "[25/09 14:02] Course R3 - HIPPODROME DE CABOURG - C7 -> Ajustement Ferrage ⬇️ (-0.015)",
     "[25/09 14:02] Course R3 - HIPPODROME DE CABOURG - C6 -> Ajustement Ferrage ⬇️ (-0.015)",
     "[25/09 14:02] Course R2 - HIPPODROME DE SON PARDO PALMA - C5 -> Ajustement Ferrage ⬇️ (-0.015)",
     "[25/09 14:02] Course R2 - HIPPODROME DE SON PARDO PALMA - C2 -> Poids Musique ⬆️ (+0.02)",
