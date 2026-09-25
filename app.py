@@ -421,7 +421,6 @@ def charger_donnees_fichier(fichier_json):
     return [], {}
 
 def analyser_affinite_distance(cheval, distance_course):
-  """Analyse l'historique/musique du cheval par rapport à la distance du jour."""
   if not distance_course:
     return 1.0
 
@@ -484,7 +483,6 @@ def analyser_performances_acteur_par_hippodrome(
   multiplicateur = 1.0 + ((bonus_hippodrome + bonus_global) / 10.0)
   return multiplicateur
 
-# --- DÉTECTION DU STOP-LOSS ---
 def verifier_stop_loss(date_jour):
   if not FICHIER_HISTORIQUE.exists():
     return False
@@ -574,6 +572,53 @@ def calculer_parametres_adaptatifs():
     pass
   return params
 
+# --- FONCTIONS DE TESTS STATISTIQUES (STUDENT & MONTE CARLO) ---
+def test_student_yield(paris_regles, mu_0=-0.15):
+  """Calcule le test t de Student sur le rendement moyen par pari."""
+  rendements = []
+  for p in paris_regles:
+    m = safe_float(p.get("mise", 0))
+    g = safe_float(p.get("gain", 0))
+    if m > 0:
+      rendements.append((g - m) / m)
+  
+  n = len(rendements)
+  if n < 2: return None, None
+  
+  mean_r = sum(rendements) / n
+  variance = sum((r - mean_r)**2 for r in rendements) / (n - 1)
+  s = math.sqrt(variance)
+  
+  if s == 0: return None, None
+  
+  t_score = (mean_r - mu_0) / (s / math.sqrt(n))
+  return t_score, mean_r
+
+def test_significativite_monte_carlo(paris_regles, iterations=10000):
+  """Simule les résultats par permutation aléatoire pour déterminer la p-value."""
+  if len(paris_regles) < 10:
+    return None, None
+  
+  profit_reel = sum(
+      safe_float(p.get("gain", 0)) - safe_float(p.get("mise", 0))
+      for p in paris_regles
+  )
+  
+  mises = [safe_float(p.get("mise", 0)) for p in paris_regles]
+  gains_bruts = [safe_float(p.get("gain", 0)) for p in paris_regles]
+  
+  succes = 0
+  gains_melanges = list(gains_bruts)
+  
+  for _ in range(iterations):
+    random.shuffle(gains_melanges)
+    profit_sim = sum(g - m for g, m in zip(gains_melanges, mises))
+    if profit_sim >= profit_reel:
+      succes += 1
+          
+  p_value = succes / iterations
+  return p_value, profit_reel
+
 # --- ÉVALUATION DES CHEVAUX ---
 def evaluer_score_cheval(
     cheval,
@@ -586,7 +631,6 @@ def evaluer_score_cheval(
     distance_course="",
 ):
   modele_ia = charger_modele_ia()
-
   score = 0.0
   musique = str(cheval.get("musique") or "").upper()
   deferre = str(cheval.get("deferre") or "").upper()
@@ -688,7 +732,6 @@ def evaluer_score_cheval(
   return max(0.0, round(score, 1))
 
 def calculer_valeur_esperee_avancee(chevaux_valides, nb_partants=12):
-  """Applique un modèle Softmax pour transformer les scores en probabilités réalistes."""
   if not chevaux_valides:
     return chevaux_valides
 
@@ -720,7 +763,6 @@ def calculer_valeur_esperee_avancee(chevaux_valides, nb_partants=12):
     )
   return chevaux_valides
 
-# --- AMÉLIORATION 5 : OPTIMISATION DYNAMIQUE PAR RÉGRESSION HISTORIQUE ---
 def retroaction_apprentissage_ia(
     pari_item, arrivee_officielle, cotes_reelles, partants_details
 ):
@@ -761,7 +803,6 @@ def retroaction_apprentissage_ia(
           f"⚠️ **Victoire déficitaire :** Gain ({gain_total:.2f}€) < Mise"
           f" ({mise_totale:.2f}€)."
       )
-      # Taux d'apprentissage augmentés et limites relâchées
       modele_ia["poids_musique"] = max(
           0.1, modele_ia.get("poids_musique", 1.05) - 0.02
       )
@@ -854,7 +895,6 @@ def retroaction_apprentissage_ia(
       "poids_outsider_cache",
   ]
   
-  # Suppression de l'amortissement artificiel pour garantir un apprentissage long terme
   for cle in cles_poids:
     if cle in modele_ia:
       modele_ia[cle] = max(0.1, min(3.0, float(modele_ia[cle])))
@@ -1864,6 +1904,44 @@ with tab_suivi:
     col3.metric("Bilan Net", f"{bilan_net:+.2f} €", delta=f"{bilan_net:+.2f} €")
     col4.metric("ROI Global", f"{roi_global:+.1f} %", delta=f"{roi_global:+.1f} %")
     
+    st.divider()
+    st.write("### 🧪 Validation Statistique de l'IA (T-Test & Monte Carlo)")
+    st.write("Vérifie si les résultats actuels relèvent d'un réel avantage algorithmique ou du hasard.")
+    
+    if st.button("Lancer les tests de significativité"):
+      paris_evaluables = [
+          p for p in historique
+          if p.get("statut") in ["Gagné", "Perdu"]
+      ]
+      if len(paris_evaluables) < 10:
+        st.warning(f"Seulement {len(paris_evaluables)} paris terminés. Il en faut au moins 10 pour un test pertinent (idéalement > 1 000).")
+      else:
+        with st.spinner("Simulation de Monte Carlo (10 000 itérations) en cours..."):
+          p_val_mc, profit_reel = test_significativite_monte_carlo(paris_evaluables)
+          t_score, mean_r = test_student_yield(paris_evaluables, mu_0=-0.15)
+          
+          st.markdown(f"**Nombre de paris évalués :** {len(paris_evaluables)}")
+          
+          col_mc, col_tt = st.columns(2)
+          with col_mc:
+            st.info("🎲 **Simulation de Monte Carlo**")
+            if p_val_mc is not None:
+              st.metric("p-value empirique", f"{p_val_mc:.4f}")
+              if p_val_mc < 0.05:
+                st.success("✅ Résultat significatif ! L'IA bat le hasard.")
+              else:
+                st.warning("⚠️ Résultat potentiellement dû au hasard (p-value >= 0.05).")
+          
+          with col_tt:
+            st.info("📊 **Test t de Student**")
+            if t_score is not None:
+              st.metric("Score t", f"{t_score:.2f}")
+              st.caption("Hypothèse Nulle : Le rendement est <= au prélèvement PMU (-15%).")
+              if t_score > 1.645:
+                st.success("✅ Rejet de l'hypothèse nulle (> 1.645). L'IA surperforme le marché.")
+              else:
+                st.warning("⚠️ L'avantage n'est pas encore statistiquement prouvé (t <= 1.645).")
+
     st.divider()
     st.write("### Historique des Paris")
     st.dataframe(historique, use_container_width=True)
