@@ -993,7 +993,7 @@ def generer_plan_budget_journalier(
     meilleur_score = chevaux_tries_score[0]
     meilleur_ev = chevaux_tries_ev[0]
 
-    if meilleur_ev["ev_index"] <= 1.12:
+    if meilleur_ev["ev_index"] <= 1.30:
       continue
 
     ecart_score = (
@@ -1007,7 +1007,7 @@ def generer_plan_budget_journalier(
     outsiders = [
         c
         for c in chevaux_valides
-        if 5.5 <= safe_float(c.get("cote")) <= 25.0
+        if 7.0 <= safe_float(c.get("cote")) <= 22.0
         and c["num"] != meilleur_score["num"]
     ]
     poker = (
@@ -1084,7 +1084,7 @@ def generer_plan_budget_journalier(
     cote_secu = safe_float(chev_base.get("cote"), 3.0)
     ev_base = chev_base.get("ev_index", 1.0)
 
-    ratio_secu = 0.65 if ev_base > 1.2 else 0.75
+    ratio_secu = 0.50
     mise_secu = max(1, int(round(mise_course * ratio_secu)))
     mise_poker = max(0, mise_course - mise_secu)
     cote_poker = safe_float(chev_poker.get("cote"), 5.0)
@@ -1437,11 +1437,11 @@ with st.sidebar.expander("🛠️ Administration et réinitialisation"):
             )
             base_chev = chevaux_val_c[0]
 
-            if base_chev.get("ev_index", 0) > 1.12:
+            if base_chev.get("ev_index", 0) > 1.30:
               outsiders_c = [
                   c
                   for c in chevaux_val_c
-                  if 5.5 <= safe_float(c.get("cote")) <= 25.0
+                  if 7.0 <= safe_float(c.get("cote")) <= 22.0
                   and c["num"] != base_chev["num"]
               ]
               poker_chev = (
@@ -1588,7 +1588,7 @@ with tab_chronologique:
         outsiders_c = [
             c
             for c in chevaux_val_c
-            if 5.5 <= safe_float(c.get("cote")) <= 25.0
+            if 7.0 <= safe_float(c.get("cote")) <= 22.0
             and c["num"] != base_chev["num"]
         ]
         poker_chev = (
