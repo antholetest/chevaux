@@ -28,7 +28,6 @@ HEADERS = {
     )
 }
 
-
 # --- FONCTIONS UTILITAIRES DE CONVERSION & RÉGULARISATION ---
 def safe_float(val, default=0.0):
   if val is None or val == "" or val == "-":
@@ -37,12 +36,6 @@ def safe_float(val, default=0.0):
     return float(str(val).replace(",", ".").replace("€", "").strip())
   except (ValueError, TypeError):
     return default
-
-
-def amortir_poids(valeur, cible=1.0, facteur=0.01):
-  """Ramène doucement les poids vers la valeur neutre (1.0)."""
-  return valeur + (cible - valeur) * facteur
-
 
 def normaliser_scores_chevaux(chevaux, cle_score="score_analyse"):
   """Ramène les scores calculés d'une course sur une échelle relative de 0 à 100."""
@@ -57,7 +50,6 @@ def normaliser_scores_chevaux(chevaux, cle_score="score_analyse"):
           (safe_float(c.get(cle_score, 0)) / score_max) * 100, 1
       )
   return chevaux
-
 
 # --- SYNCHRONISATION GITHUB (ASYNCHRONE) ---
 def tache_git_background(filename_path_str, message):
@@ -97,7 +89,6 @@ def tache_git_background(filename_path_str, message):
   except Exception:
     pass
 
-
 def sauvegarder_et_synchroniser(
     data, filename, message="Mise à jour automatique PMU"
 ):
@@ -109,7 +100,6 @@ def sauvegarder_et_synchroniser(
       target=tache_git_background, args=(str(filename_path.name), message)
   ).start()
   st.toast("Données enregistrées !", icon="💾")
-
 
 # --- MODULE IA : GESTION DU MODÈLE ET DES POIDS DYNAMIQUES ---
 MODELE_IA_DEFAUT = {
@@ -137,7 +127,6 @@ MODELE_IA_DEFAUT = {
     "historique_ajustements": [],
 }
 
-
 def charger_modele_ia():
   if not FICHIER_MODELE_IA.exists():
     sauvegarder_et_synchroniser(
@@ -154,7 +143,6 @@ def charger_modele_ia():
   except (json.JSONDecodeError, Exception):
     return MODELE_IA_DEFAUT.copy()
 
-
 def sauvegarder_modele_ia(modele):
   cles_poids = [
       "poids_musique",
@@ -168,15 +156,15 @@ def sauvegarder_modele_ia(modele):
       "poids_distance",
       "poids_outsider_cache",
   ]
+  # Limites élargies pour permettre un apprentissage à plus long terme (0.1 à 3.0)
   for cle in cles_poids:
     if cle in modele:
-      modele[cle] = max(0.7, min(1.5, float(modele[cle])))
+      modele[cle] = max(0.1, min(3.0, float(modele[cle])))
   sauvegarder_et_synchroniser(
       modele,
       FICHIER_MODELE_IA,
       "Mise à jour automatique du modèle IA (Optimisation Gain)",
   )
-
 
 # --- PROTECTION PAR MOT DE PASSE ---
 def verifier_authentification():
@@ -197,9 +185,7 @@ def verifier_authentification():
         st.error("Mot de passe incorrect.")
     st.stop()
 
-
 verifier_authentification()
-
 
 def reinitialiser_application_complete():
   fichiers_supprimes = 0
@@ -255,7 +241,6 @@ def reinitialiser_application_complete():
     del st.session_state[key]
   return fichiers_supprimes
 
-
 # --- FONCTIONS DISCIPLINE & ENVIRONNEMENT ---
 def detecter_discipline(course_obj):
   api_disc = str(course_obj.get("discipline", "")).upper()
@@ -286,7 +271,6 @@ def detecter_discipline(course_obj):
     return "Trot Attelé"
   return "Galop Plat"
 
-
 def detecter_corde(nom_course, conditions_texte=""):
   texte = f"{nom_course} {conditions_texte}".upper()
   if "GAUCHE" in texte:
@@ -294,7 +278,6 @@ def detecter_corde(nom_course, conditions_texte=""):
   elif "DROITE" in texte:
     return "Corde à droite ↻"
   return "Corde standard"
-
 
 def detecter_etat_terrain(conditions_texte):
   if not conditions_texte:
@@ -311,7 +294,6 @@ def detecter_etat_terrain(conditions_texte):
         else "Souple"
     )
   return "Bon (Standard)"
-
 
 def telecharger_pmu_date(date_iso, fichier_cible):
   try:
@@ -424,7 +406,6 @@ def telecharger_pmu_date(date_iso, fichier_cible):
   )
   return True
 
-
 def charger_donnees_fichier(fichier_json):
   try:
     with open(fichier_json, "r", encoding="utf-8") as f:
@@ -439,13 +420,8 @@ def charger_donnees_fichier(fichier_json):
   except (json.JSONDecodeError, Exception):
     return [], {}
 
-
-# --- AMÉLIORATION 2 : VÉRITABLE ANALYSE D'AFFINITÉ DE DISTANCE ---
 def analyser_affinite_distance(cheval, distance_course):
-  """Analyse l'historique/musique du cheval par rapport à la distance du jour.
-
-  Tolérance ±200m au galop ou adéquation des distances au trot.
-  """
+  """Analyse l'historique/musique du cheval par rapport à la distance du jour."""
   if not distance_course:
     return 1.0
 
@@ -461,7 +437,6 @@ def analyser_affinite_distance(cheval, distance_course):
   multiplicateur = 1.0
 
   if dist_val > 0:
-    # Recherche de succès récents dans la musique (victoires = 1, podiums = 2, 3)
     if "1" in musique[:4]:
       multiplicateur = 1.25
     elif "2" in musique[:4] or "3" in musique[:4]:
@@ -472,7 +447,6 @@ def analyser_affinite_distance(cheval, distance_course):
     multiplicateur = 1.05
 
   return round(multiplicateur, 2)
-
 
 @st.cache_data(ttl=3600)
 def analyser_performances_acteur_par_hippodrome(
@@ -510,7 +484,6 @@ def analyser_performances_acteur_par_hippodrome(
   multiplicateur = 1.0 + ((bonus_hippodrome + bonus_global) / 10.0)
   return multiplicateur
 
-
 # --- DÉTECTION DU STOP-LOSS ---
 def verifier_stop_loss(date_jour):
   if not FICHIER_HISTORIQUE.exists():
@@ -531,7 +504,6 @@ def verifier_stop_loss(date_jour):
   except Exception as e:
     print(f"Erreur lecture stop-loss : {e}")
     return False
-
 
 @st.cache_data(ttl=60)
 def calculer_parametres_adaptatifs():
@@ -601,7 +573,6 @@ def calculer_parametres_adaptatifs():
   except Exception:
     pass
   return params
-
 
 # --- ÉVALUATION DES CHEVAUX ---
 def evaluer_score_cheval(
@@ -682,7 +653,7 @@ def evaluer_score_cheval(
       * modele_ia.get("poids_hippodrome_acteur", 1.25)
   )
 
-  # 6. Affinité de distance (Amélioration 2 intégrée)
+  # 6. Affinité de distance
   poids_dist_ia = modele_ia.get("poids_distance", 1.1)
   mult_distance = analyser_affinite_distance(cheval, distance_course)
   bonus_distance = (mult_distance - 1.0) * 5.0
@@ -716,56 +687,38 @@ def evaluer_score_cheval(
   score += params_adaptatifs.get("malus_discipline", {}).get(discipline, 0)
   return max(0.0, round(score, 1))
 
-
-# --- AMÉLIORATION 1 & 3 : MODÈLE SOFTMAX ET EV DISTINCTE (GAGNANT / PLAÇÉ) ---
 def calculer_valeur_esperee_avancee(chevaux_valides, nb_partants=12):
-  """1.
-
-  Applique un modèle Softmax pour transformer les scores en probabilités réalistes.
-  3. Calcule séparément l'espérance de gain pour le Simple Gagnant et le Simple
-  Placé (podium).
-  """
+  """Applique un modèle Softmax pour transformer les scores en probabilités réalistes."""
   if not chevaux_valides:
     return chevaux_valides
 
-  # Modèle Softmax avec température pour creuser l'écart entre favoris et outsiders
   temperature = 12.0
   scores = [safe_float(c.get("score_analyse", 0)) for c in chevaux_valides]
   max_score = max(scores, default=0.0)
 
   exp_scores = [
       math.exp((s - max_score) / temperature) for s in scores
-  ]  # Stabilité numérique
+  ]
   somme_exp = sum(exp_scores)
-
   nb_places = 3 if nb_partants >= 8 else 2
 
   for i, c in enumerate(chevaux_valides):
-    # Probabilité estimée par Softmax (Gagnant)
     proba_estimee = exp_scores[i] / somme_exp if somme_exp > 0 else 0.0
     c["proba_estimee"] = round(proba_estimee, 4)
-
     cote = safe_float(c.get("cote"), 0.0)
-
-    # EV Gagnant
     c["ev_index"] = round(proba_estimee * cote, 2) if cote > 1.0 else 0.0
 
-    # Probabilité spécifique pour le podium (Simple Placé)
-    # Basée sur la probabilité cumulée d'apparition dans les n premiers
     proba_place = min(
         0.95, proba_estimee * (nb_places * 2.1) + (1.0 / nb_partants * 0.6)
     )
     c["proba_place"] = round(proba_place, 4)
 
-    # Estimation de la cote placée et calcul de l'EV Placé
     cote_place = max(1.1, 1.0 + (cote - 1.0) / (nb_places + 1.2))
     c["cote_place_estimee"] = round(cote_place, 2)
     c["ev_place_index"] = (
         round(proba_place * cote_place, 2) if cote > 1.0 else 0.0
     )
-
   return chevaux_valides
-
 
 # --- AMÉLIORATION 5 : OPTIMISATION DYNAMIQUE PAR RÉGRESSION HISTORIQUE ---
 def retroaction_apprentissage_ia(
@@ -791,10 +744,7 @@ def retroaction_apprentissage_ia(
 
   diagnostic_lignes = []
   ajustements = []
-
-  # Erreur de prédiction pour régression dynamique
   cible = 1.0 if statut == "Gagné" else 0.0
-  # On estime l'erreur globale basée sur le profit net et le résultat
   erreur_regression = (
       -0.05 if statut == "Perdu" else (0.02 if profit_net > 0 else -0.01)
   )
@@ -811,28 +761,29 @@ def retroaction_apprentissage_ia(
           f"⚠️ **Victoire déficitaire :** Gain ({gain_total:.2f}€) < Mise"
           f" ({mise_totale:.2f}€)."
       )
+      # Taux d'apprentissage augmentés et limites relâchées
       modele_ia["poids_musique"] = max(
-          0.7, modele_ia.get("poids_musique", 1.05) - 0.004
+          0.1, modele_ia.get("poids_musique", 1.05) - 0.02
       )
       modele_ia["poids_outsider_cache"] = min(
-          1.5, modele_ia.get("poids_outsider_cache", 1.3) + 0.01
+          3.0, modele_ia.get("poids_outsider_cache", 1.3) + 0.05
       )
-      ajustements.append("Ajustement Value : Recherche Outsider ⬆️ (+0.01)")
+      ajustements.append("Ajustement Value : Recherche Outsider ⬆️ (+0.05)")
     else:
       diagnostic_lignes.append(
           f"🎯 **Victoire rentable (+{profit_net:.2f}€ | ROI: +{roi_pari:.1f}%)"
           " !**"
       )
       facteur_amplification = min(
-          0.02, abs(erreur_regression) + (roi_pari / 8000.0)
+          0.1, abs(erreur_regression) + (roi_pari / 4000.0)
       )
       if cheval_gagnant_obj and safe_float(cheval_gagnant_obj.get("cote")) >= 6.0:
         modele_ia["poids_outsider_cache"] = min(
-            1.5,
+            3.0,
             modele_ia.get("poids_outsider_cache", 1.3) + facteur_amplification,
         )
         modele_ia["poids_cote_tendance"] = min(
-            1.5,
+            3.0,
             modele_ia.get("poids_cote_tendance", 1.35) + facteur_amplification,
         )
         ajustements.append(
@@ -843,10 +794,10 @@ def retroaction_apprentissage_ia(
       def_gagnant = str(cheval_gagnant_obj.get("deferre", "")).upper()
       if "QUATRE" in def_gagnant and "Trot" in str(discipline):
         modele_ia["poids_ferrage"] = min(
-            1.5, modele_ia.get("poids_ferrage", 1.25) + 0.005
+            3.0, modele_ia.get("poids_ferrage", 1.25) + 0.025
         )
         modele_ia["stats_impact"]["victoires_par_ferrage"] += 1
-        ajustements.append("Poids Ferrage Trot ⬆️ (+0.005)")
+        ajustements.append("Poids Ferrage Trot ⬆️ (+0.025)")
 
   elif statut == "Perdu":
     modele_ia["stats_impact"]["gain_cumule_ia"] = round(
@@ -859,9 +810,9 @@ def retroaction_apprentissage_ia(
     if presence_proche:
       diagnostic_lignes.append("• *Quasi-podium (4e/5e) :* Très proche.")
       modele_ia["poids_musique"] = min(
-          1.5, modele_ia.get("poids_musique", 1.05) + 0.004
+          3.0, modele_ia.get("poids_musique", 1.05) + 0.02
       )
-      ajustements.append("Poids Musique ⬆️ (+0.004)")
+      ajustements.append("Poids Musique ⬆️ (+0.02)")
     else:
       cote_gagnant = cotes_reelles.get(gagnant_reel_num, 0.0)
       if cote_gagnant > 12.0:
@@ -869,10 +820,10 @@ def retroaction_apprentissage_ia(
             f"• *Outsider manqué :* N°{gagnant_reel_num} à {cote_gagnant:.1f}."
         )
         modele_ia["poids_cote_tendance"] = min(
-            1.5, modele_ia.get("poids_cote_tendance", 1.35) + 0.006
+            3.0, modele_ia.get("poids_cote_tendance", 1.35) + 0.03
         )
         modele_ia["poids_outsider_cache"] = min(
-            1.5, modele_ia.get("poids_outsider_cache", 1.3) + 0.008
+            3.0, modele_ia.get("poids_outsider_cache", 1.3) + 0.04
         )
         ajustements.append("Augmentation Sensibilité Smart Money & Outsider ⬆️")
       else:
@@ -881,14 +832,14 @@ def retroaction_apprentissage_ia(
           def_gagnant = str(cheval_gagnant_obj.get("deferre", "")).upper()
           if "QUATRE" in def_gagnant:
             modele_ia["poids_ferrage"] = min(
-                1.5, modele_ia.get("poids_ferrage", 1.25) + 0.004
+                3.0, modele_ia.get("poids_ferrage", 1.25) + 0.02
             )
-            ajustements.append("Renforcement Ferrage ⬆️ (+0.004)")
+            ajustements.append("Renforcement Ferrage ⬆️ (+0.02)")
           else:
             modele_ia["poids_ferrage"] = max(
-                0.7, modele_ia.get("poids_ferrage", 1.25) - 0.003
+                0.1, modele_ia.get("poids_ferrage", 1.25) - 0.015
             )
-            ajustements.append("Ajustement Ferrage ⬇️ (-0.003)")
+            ajustements.append("Ajustement Ferrage ⬇️ (-0.015)")
 
   cles_poids = [
       "poids_musique",
@@ -902,11 +853,11 @@ def retroaction_apprentissage_ia(
       "poids_distance",
       "poids_outsider_cache",
   ]
+  
+  # Suppression de l'amortissement artificiel pour garantir un apprentissage long terme
   for cle in cles_poids:
     if cle in modele_ia:
-      modele_ia[cle] = max(
-          0.7, min(1.5, amortir_poids(float(modele_ia[cle]), facteur=0.015))
-      )
+      modele_ia[cle] = max(0.1, min(3.0, float(modele_ia[cle])))
 
   if ajustements:
     horodatage = datetime.datetime.now().strftime("%d/%m %H:%M")
@@ -915,27 +866,18 @@ def retroaction_apprentissage_ia(
         f"[{horodatage}] Course {pari_item.get('course')} ->"
         f" {', '.join(ajustements)}",
     )
-    modele_ia["historique_ajustements"] = modele_ia["historique_ajustements"][
-        :20
-    ]
+    modele_ia["historique_ajustements"] = modele_ia["historique_ajustements"][:20]
     sauvegarder_modele_ia(modele_ia)
 
   return "\n".join(diagnostic_lignes)
 
-
-# --- AMÉLIORATION 4 : CRITÈRE DE KELLY MATHÉMATIQUE POUR LE STAKING ---
 def calculer_fraction_kelly_exacte(p, c, frequence_kelly=0.25):
-  """Formule mathématique exacte du Critère de Kelly fractionnaire :
-
-  Fraction = ((p * c) - 1) / (c - 1) * frequence_kelly
-  """
   if c <= 1.0 or p <= 0:
     return 0.0
   kelly = (p * c - 1.0) / (c - 1.0)
   if kelly <= 0:
     return 0.0
   return max(0.01, kelly * frequence_kelly)
-
 
 def generer_plan_budget_journalier(
     fichier_json, budget_base, params_adaptatifs, date_iso=None
@@ -960,8 +902,7 @@ def generer_plan_budget_journalier(
     corde = course.get("corde", "Corde standard")
     distance_course = course.get("distance", "")
     chevaux_valides = [
-        c
-        for c in chevaux
+        c for c in chevaux
         if safe_float(c.get("cote")) > 1.0 or c.get("cote") is None
     ]
     nb_partants_total = len(chevaux)
@@ -1025,7 +966,6 @@ def generer_plan_budget_journalier(
         f" {course.get('hippodrome', 'HIPPODROME')}"
     )
 
-    # Calcul Kelly pour la base (Sécu Placé) et le poker (Gagnant)
     p_place = safe_float(meilleur_score.get("proba_place", 0.3))
     c_place = safe_float(meilleur_score.get("cote_place_estimee", 2.0))
     kelly_secu = calculer_fraction_kelly_exacte(p_place, c_place, frequence_k)
@@ -1111,8 +1051,6 @@ def generer_plan_budget_journalier(
 
   return plan_paris
 
-
-# --- BILAN AUTOMATISÉ PAR RÉUNION ---
 def generer_et_sauvegarder_bilan_journee(historique, date_str):
   historique_jour = [
       p
@@ -1204,7 +1142,6 @@ def generer_et_sauvegarder_bilan_journee(historique, date_str):
       bilan_data, fichier_bilan, f"Bilan journée {date_str}"
   )
   return bilan_data
-
 
 def verifier_resultats_automatiques_pmu(historique):
   modifie = False
@@ -1363,7 +1300,6 @@ def verifier_resultats_automatiques_pmu(historique):
 
   return modifie
 
-
 # --- MODULE ADMINISTRATION ET APPRENTISSAGE IA ---
 st.sidebar.divider()
 with st.sidebar.expander("🛠️ Administration et réinitialisation"):
@@ -1503,18 +1439,15 @@ tab_chronologique, tab_analyse, tab_ia, tab_suivi, tab_reunions = st.tabs([
 if "date_commune" not in st.session_state:
   st.session_state["date_commune"] = datetime.date.today()
 
-
 def sync_date_chrono():
   d = st.session_state["date_chrono_picker"]
   st.session_state["date_commune"] = d
   st.session_state["date_analyse_picker"] = d
 
-
 def sync_date_analyse():
   d = st.session_state["date_analyse_picker"]
   st.session_state["date_commune"] = d
   st.session_state["date_chrono_picker"] = d
-
 
 # --- TAB 1 : CHRONOLOGIQUE ---
 with tab_chronologique:
@@ -1928,50 +1861,29 @@ with tab_suivi:
     col1, col2, col3, col4 = st.columns(4)
     col1.metric("Mise Totale", f"{total_mise:.2f} €")
     col2.metric("Gains Totaux", f"{total_gain:.2f} €")
-    col3.metric("Bilan Net", f"{bilan_net:+.2f} €")
-    col4.metric("ROI Global", f"{roi_global:+.1f}%")
-
+    col3.metric("Bilan Net", f"{bilan_net:+.2f} €", delta=f"{bilan_net:+.2f} €")
+    col4.metric("ROI Global", f"{roi_global:+.1f} %", delta=f"{roi_global:+.1f} %")
+    
     st.divider()
-    st.subheader("📁 Historique détaillé des engagements")
-    data_suivi = []
-    for idx, p in enumerate(historique):
-      gain_val = (
-          safe_float(p.get("gain", 0)) if p.get("statut") == "Gagné" else 0.0
-      )
-      data_suivi.append({
-          "Index": idx,
-          "Date": p.get("date"),
-          "Course": p.get("course"),
-          "Type": p.get("type"),
-          "Détails": p.get("details"),
-          "Mise (€)": safe_float(p.get("mise", 0)),
-          "Statut": p.get("statut"),
-          "Gain (€)": gain_val,
-          "Diagnostic IA": p.get("diagnostic", "-"),
-      })
-
-    df_suivi = pd.DataFrame(data_suivi)
-    df_suivi["Gain (€)"] = df_suivi["Gain (€)"].astype(float)
-    st.dataframe(df_suivi, use_container_width=True, hide_index=True)
+    st.write("### Historique des Paris")
+    st.dataframe(historique, use_container_width=True)
   else:
-    st.info("Aucun historique disponible.")
+    st.info("Aucun historique de paris disponible.")
 
-# --- TAB 5 : REUNIONS ---
+# --- TAB 5 : BILAN PAR RÉUNION ---
 with tab_reunions:
-  st.title("🏟️ Bilan Financier par Réunion")
-  if FICHIER_HISTORIQUE.exists():
-    with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as f:
-      historique = json.load(f)
-    dates = sorted(
-        list(set(str(p.get("date")) for p in historique if p.get("date"))),
-        reverse=True,
-    )
-    if dates:
-      d_choisie = st.selectbox("📅 Sélectionner la date", dates)
-      bilan = generer_et_sauvegarder_bilan_journee(historique, d_choisie)
-      if bilan:
-        st.dataframe(bilan, use_container_width=True, hide_index=True)
-    else:
-      st.info("Aucune date valide.")
+  st.title("🏟️ Bilan Global par Réunion")
+  
+  fichiers_bilan = list(DOSSIER.glob("bilan_journee_*.json"))
+  if fichiers_bilan:
+    for fichier in sorted(fichiers_bilan, reverse=True):
+      date_bilan = fichier.stem.split("_")[-1]
+      with st.expander(f"📅 Bilan de la journée du {date_bilan}"):
+        try:
+          with open(fichier, "r", encoding="utf-8") as f:
+            data_bilan = json.load(f)
+            st.dataframe(data_bilan, use_container_width=True)
+        except Exception:
+          st.error("Erreur de lecture du bilan de cette journée.")
   else:
-    st.info("Aucun bilan disponible.")
+    st.info("Aucun bilan journalier généré pour le moment. Les bilans seront créés lors de la vérification des résultats.")
