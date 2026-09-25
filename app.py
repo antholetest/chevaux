@@ -1,3 +1,4 @@
+import base64
 import datetime
 import json
 import math
@@ -5,7 +6,6 @@ from pathlib import Path
 import random
 import re
 import requests
-import subprocess
 import threading
 import pandas as pd
 import streamlit as st
@@ -21,6 +21,7 @@ st.set_page_config(
 DOSSIER = Path(".")
 FICHIER_HISTORIQUE = DOSSIER / "historique_paris.json"
 FICHIER_MODELE_IA = DOSSIER / "modele_ia_pmu.json"
+REPO_GITHUB = "antholetest/chevaux"
 
 HEADERS = {
     "User-Agent": (
@@ -51,55 +52,77 @@ def normaliser_scores_chevaux(chevaux, cle_score="score_analyse"):
       )
   return chevaux
 
-# --- SYNCHRONISATION GITHUB (ASYNCHRONE) ---
-def tache_git_background(filename_path_str, message):
+# --- SYNCHRONISATION GITHUB VIA API REST (ASYNCHRONE) ---
+def synchroniser_github_api(filename_str, content_bytes, message):
+  if "GITHUB_TOKEN" not in st.secrets:
+    print("⚠️ GITHUB_TOKEN non configuré dans st.secrets.")
+    return
+
+  token = st.secrets["GITHUB_TOKEN"]
+  url = f"https://api.github.com/repos/{REPO_GITHUB}/contents/{filename_str}"
+  headers = {
+      "Authorization": f"token {token}",
+      "Accept": "application/vnd.github.v3+json",
+  }
+
   try:
-    if "GITHUB_TOKEN" in st.secrets:
-      token = st.secrets["GITHUB_TOKEN"]
-      subprocess.run([
-          "git",
-          "config",
-          "--global",
-          "user.email",
-          "bot@streamlit.app",
-      ], capture_output=True)
-      subprocess.run([
-          "git",
-          "config",
-          "--global",
-          "user.name",
-          "Streamlit Bot",
-      ], capture_output=True)
-      subprocess.run(
-          ["git", "add", filename_path_str], check=True, capture_output=True
-      )
-      status = subprocess.run(
-          ["git", "status", "--porcelain"], capture_output=True, text=True
-      )
-      if filename_path_str in status.stdout:
-        subprocess.run(
-            ["git", "commit", "-m", message], check=True, capture_output=True
-        )
-        repo_url = f"https://{token}@github.com/antholetest/chevaux.git"
-        res_push = subprocess.run(
-            ["git", "push", repo_url], capture_output=True, text=True
-        )
-        if res_push.returncode != 0:
-          subprocess.run(["git", "push", repo_url, "HEAD"], capture_output=True)
-  except Exception:
-    pass
+    # 1. Récupération du SHA si le fichier existe déjà sur GitHub
+    res_get = requests.get(url, headers=headers, timeout=10)
+    sha = res_get.json().get("sha") if res_get.status_code == 200 else None
+
+    # 2. Encodage en base64 pour l'API GitHub
+    content_b64 = base64.b64encode(content_bytes).decode("utf-8")
+
+    # 3. Payload de commit
+    payload = {"message": message, "content": content_b64}
+    if sha:
+      payload["sha"] = sha
+
+    # 4. Envoi via PUT
+    res_put = requests.put(url, headers=headers, json=payload, timeout=10)
+    if res_put.status_code not in [200, 201]:
+      print(f"❌ Erreur Sync GitHub API ({res_put.status_code}): {res_put.text}")
+    else:
+      print(f"✅ Sync GitHub réussie pour {filename_str}")
+  except Exception as e:
+    print(f"⚠️ Exception lors de la synchronisation GitHub API: {e}")
+
+def supprimer_github_api(filename_str, message="Suppression fichier"):
+  if "GITHUB_TOKEN" not in st.secrets:
+    return
+
+  token = st.secrets["GITHUB_TOKEN"]
+  url = f"https://api.github.com/repos/{REPO_GITHUB}/contents/{filename_str}"
+  headers = {
+      "Authorization": f"token {token}",
+      "Accept": "application/vnd.github.v3+json",
+  }
+
+  try:
+    res_get = requests.get(url, headers=headers, timeout=10)
+    if res_get.status_code == 200:
+      sha = res_get.json().get("sha")
+      payload = {"message": message, "sha": sha}
+      requests.delete(url, headers=headers, json=payload, timeout=10)
+  except Exception as e:
+    print(f"⚠️ Erreur suppression GitHub API pour {filename_str}: {e}")
 
 def sauvegarder_et_synchroniser(
     data, filename, message="Mise à jour automatique PMU"
 ):
   filename_path = Path(filename)
-  with open(filename_path, "w", encoding="utf-8") as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
+  content_bytes = json.dumps(data, ensure_ascii=False, indent=2).encode("utf-8")
 
+  # Sauvegarde locale
+  with open(filename_path, "wb") as f:
+    f.write(content_bytes)
+
+  # Envoi asynchrone sur GitHub via l'API REST
   threading.Thread(
-      target=tache_git_background, args=(str(filename_path.name), message)
+      target=synchroniser_github_api,
+      args=(filename_path.name, content_bytes, message),
   ).start()
-  st.toast("Données enregistrées !", icon="💾")
+  st.toast("Données enregistrées & synchronisées !", icon="💾")
 
 # --- MODULE IA : GESTION DU MODÈLE ET POIDS FIGÉS ---
 MODELE_IA_DEFAUT = {
@@ -113,8 +136,8 @@ MODELE_IA_DEFAUT = {
     "poids_hippodrome_acteur": 1.25,
     "poids_distance": 1.1,
     "poids_outsider_cache": 1.30,
-    "seuil_value_bet": 1.50,  # Rehaussé à 1.50 minimum
-    "frequence_kelly": 0.05,  # Kelly prudent (0.05)
+    "seuil_value_bet": 1.50,
+    "frequence_kelly": 0.05,
     "stats_impact": {
         "victoires_par_ferrage": 0,
         "victoires_par_smart_money": 0,
@@ -162,7 +185,7 @@ def sauvegarder_modele_ia(modele):
   sauvegarder_et_synchroniser(
       modele,
       FICHIER_MODELE_IA,
-      "Mise à jour du modèle IA (Mode Fige)",
+      "Mise à jour du modèle IA (Mode Figé)",
   )
 
 # --- PROTECTION PAR MOT DE PASSE ---
@@ -197,44 +220,15 @@ def reinitialiser_application_complete():
   for pattern in patterns:
     for f in DOSSIER.glob(pattern):
       try:
+        filename_str = f.name
         f.unlink()
         fichiers_supprimes += 1
+        threading.Thread(
+            target=supprimer_github_api,
+            args=(filename_str, "Remise à zéro admin"),
+        ).start()
       except Exception:
         pass
-
-  try:
-    if "GITHUB_TOKEN" in st.secrets:
-      token = st.secrets["GITHUB_TOKEN"]
-      subprocess.run([
-          "git",
-          "config",
-          "--global",
-          "user.email",
-          "bot@streamlit.app",
-      ], capture_output=True)
-      subprocess.run([
-          "git",
-          "config",
-          "--global",
-          "user.name",
-          "Streamlit Bot",
-      ], capture_output=True)
-      subprocess.run(["git", "rm", "-f", "*.json"], capture_output=True)
-      status = subprocess.run(
-          ["git", "status", "--porcelain"], capture_output=True, text=True
-      )
-      if status.stdout.strip():
-        subprocess.run([
-            "git",
-            "commit",
-            "-m",
-            "Remise à zéro complète (admin)",
-        ], check=True, capture_output=True)
-        repo_url = f"https://{token}@github.com/antholetest/chevaux.git"
-        subprocess.run(["git", "push", repo_url], capture_output=True)
-        st.toast("Dépôt GitHub nettoyé !", icon="🧹")
-  except Exception as e:
-    st.toast(f"Nettoyage local (Git: {e})", icon="⚠️")
 
   for key in list(st.session_state.keys()):
     del st.session_state[key]
@@ -580,16 +574,18 @@ def test_student_yield(paris_regles, mu_0=-0.15):
     g = safe_float(p.get("gain", 0))
     if m > 0:
       rendements.append((g - m) / m)
-  
+
   n = len(rendements)
-  if n < 2: return None, None
-  
+  if n < 2:
+    return None, None
+
   mean_r = sum(rendements) / n
-  variance = sum((r - mean_r)**2 for r in rendements) / (n - 1)
+  variance = sum((r - mean_r) ** 2 for r in rendements) / (n - 1)
   s = math.sqrt(variance)
-  
-  if s == 0: return None, None
-  
+
+  if s == 0:
+    return None, None
+
   t_score = (mean_r - mu_0) / (s / math.sqrt(n))
   return t_score, mean_r
 
@@ -597,24 +593,24 @@ def test_significativite_monte_carlo(paris_regles, iterations=10000):
   """Simule les résultats par permutation aléatoire pour déterminer la p-value."""
   if len(paris_regles) < 10:
     return None, None
-  
+
   profit_reel = sum(
       safe_float(p.get("gain", 0)) - safe_float(p.get("mise", 0))
       for p in paris_regles
   )
-  
+
   mises = [safe_float(p.get("mise", 0)) for p in paris_regles]
   gains_bruts = [safe_float(p.get("gain", 0)) for p in paris_regles]
-  
+
   succes = 0
   gains_melanges = list(gains_bruts)
-  
+
   for _ in range(iterations):
     random.shuffle(gains_melanges)
     profit_sim = sum(g - m for g, m in zip(gains_melanges, mises))
     if profit_sim >= profit_reel:
       succes += 1
-          
+
   p_value = succes / iterations
   return p_value, profit_reel
 
@@ -654,7 +650,7 @@ def evaluer_score_cheval(
       score_musique -= 7 if (char in ["D", "T", "A"] and idx < 3) else 4
   score += score_musique * modele_ia.get("poids_musique", 1.05)
 
-  # 2. Configuration Physico-Technique (Ferrage / Poids / Terrain)
+  # 2. Configuration Physico-Technique
   if "Trot" in str(discipline):
     if "QUATRE" in deferre:
       score += 10.0 * modele_ia.get("poids_ferrage", 1.25)
@@ -738,9 +734,7 @@ def calculer_valeur_esperee_avancee(chevaux_valides, nb_partants=12):
   scores = [safe_float(c.get("score_analyse", 0)) for c in chevaux_valides]
   max_score = max(scores, default=0.0)
 
-  exp_scores = [
-      math.exp((s - max_score) / temperature) for s in scores
-  ]
+  exp_scores = [math.exp((s - max_score) / temperature) for s in scores]
   somme_exp = sum(exp_scores)
   nb_places = 3 if nb_partants >= 8 else 2
 
@@ -765,10 +759,6 @@ def calculer_valeur_esperee_avancee(chevaux_valides, nb_partants=12):
 def retroaction_apprentissage_ia(
     pari_item, arrivee_officielle, cotes_reelles, partants_details
 ):
-  """
-  Enregistre les statistiques financières de rétroaction sans modifier les poids dynamiques.
-  Les poids sont maintenus figés pour éviter les oscillations/sur-apprentissage sur le court terme.
-  """
   modele_ia = charger_modele_ia()
   statut = pari_item.get("statut")
   details_pari = str(pari_item.get("details", ""))
@@ -835,7 +825,6 @@ def retroaction_apprentissage_ia(
   return "\n".join(diagnostic_lignes)
 
 def calculer_fraction_kelly_exacte(p, c, frequence_kelly=0.05):
-  """Critère de Kelly prudent avec fraction réduite à 0.05 par défaut."""
   if c <= 1.0 or p <= 0:
     return 0.0
   kelly = (p * c - 1.0) / (c - 1.0)
@@ -854,8 +843,8 @@ def generer_plan_budget_journalier(
   opportunites = []
   malus_disc = params_adaptatifs.get("malus_discipline", {})
   modele_ia = charger_modele_ia()
-  seuil_min_ev = modele_ia.get("seuil_value_bet", 1.50)  # Seuil durci à 1.50
-  frequence_k = modele_ia.get("frequence_kelly", 0.05)  # Kelly prudent (0.05)
+  seuil_min_ev = modele_ia.get("seuil_value_bet", 1.50)
+  frequence_k = modele_ia.get("frequence_kelly", 0.05)
 
   for course in donnees:
     chevaux = course.get("chevaux", [])
@@ -899,7 +888,6 @@ def generer_plan_budget_journalier(
     meilleur_score = chevaux_tries_score[0]
     meilleur_ev = chevaux_tries_ev[0]
 
-    # Filtre durci : Sélectionner uniquement les véritables opportunités
     if meilleur_ev["ev_index"] < seuil_min_ev:
       continue
 
@@ -988,7 +976,6 @@ def generer_plan_budget_journalier(
     mise_course = mises_allouees[idx]
     chev_base, chev_poker = course_opt["meilleur_cheval"], course_opt["poker"]
 
-    # Répartition sécurisée : 80% Placé Sécurité / 20% Gagnant Poker
     ratio_secu = 0.80
     mise_secu = max(1, int(round(mise_course * ratio_secu)))
     mise_poker = max(0, mise_course - mise_secu)
@@ -1338,7 +1325,6 @@ with st.sidebar.expander("🛠️ Administration et réinitialisation"):
             )
             base_chev = chevaux_val_c[0]
 
-            # Filtre à EV >= 1.50
             if base_chev.get("ev_index", 0) >= 1.50:
               outsiders_c = [
                   c
@@ -1356,7 +1342,6 @@ with st.sidebar.expander("🛠️ Administration et réinitialisation"):
                   )
               )
 
-              # Répartition 80% Sécu (8€) / 20% Poker (2€)
               hist.append({
                   "date": date_iso,
                   "reunion": r_nom,
@@ -1539,7 +1524,6 @@ with tab_chronologique:
           mise_input = st.number_input(
               "Mise Totale (€)", min_value=1, value=10, key=f"m_{cle_unique_course}"
           )
-          # Répartition 80 % Sécu / 20 % Poker
           mise_secu = round(mise_input * 0.8, 1)
           mise_poker = round(mise_input - mise_secu, 1)
           st.caption(
@@ -1824,11 +1808,11 @@ with tab_suivi:
     col2.metric("Gains Totaux", f"{total_gain:.2f} €")
     col3.metric("Bilan Net", f"{bilan_net:+.2f} €", delta=f"{bilan_net:+.2f} €")
     col4.metric("ROI Global", f"{roi_global:+.1f} %", delta=f"{roi_global:+.1f} %")
-    
+
     st.divider()
     st.write("### 🧪 Validation Statistique de l'IA (T-Test & Monte Carlo)")
     st.write("Vérifie si les résultats actuels relèvent d'un réel avantage algorithmique ou du hasard.")
-    
+
     if st.button("Lancer les tests de significativité"):
       paris_evaluables = [
           p for p in historique
@@ -1840,9 +1824,9 @@ with tab_suivi:
         with st.spinner("Simulation de Monte Carlo (10 000 itérations) en cours..."):
           p_val_mc, profit_reel = test_significativite_monte_carlo(paris_evaluables)
           t_score, mean_r = test_student_yield(paris_evaluables, mu_0=-0.15)
-          
+
           st.markdown(f"**Nombre de paris évalués :** {len(paris_evaluables)}")
-          
+
           col_mc, col_tt = st.columns(2)
           with col_mc:
             st.info("🎲 **Simulation de Monte Carlo**")
@@ -1852,7 +1836,7 @@ with tab_suivi:
                 st.success("✅ Résultat significatif ! L'IA bat le hasard.")
               else:
                 st.warning("⚠️ Résultat potentiellement dû au hasard (p-value >= 0.05).")
-          
+
           with col_tt:
             st.info("📊 **Test t de Student**")
             if t_score is not None:
@@ -1872,7 +1856,7 @@ with tab_suivi:
 # --- TAB 5 : BILAN PAR RÉUNION ---
 with tab_reunions:
   st.title("🏟️ Bilan Global par Réunion")
-  
+
   fichiers_bilan = list(DOSSIER.glob("bilan_journee_*.json"))
   if fichiers_bilan:
     for fichier in sorted(fichiers_bilan, reverse=True):
