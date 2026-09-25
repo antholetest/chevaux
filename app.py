@@ -101,7 +101,7 @@ def sauvegarder_et_synchroniser(
   ).start()
   st.toast("Données enregistrées !", icon="💾")
 
-# --- MODULE IA : GESTION DU MODÈLE ET DES POIDS DYNAMIQUES ---
+# --- MODULE IA : GESTION DU MODÈLE ET POIDS FIGÉS ---
 MODELE_IA_DEFAUT = {
     "poids_musique": 1.05,
     "poids_ferrage": 1.25,
@@ -113,8 +113,8 @@ MODELE_IA_DEFAUT = {
     "poids_hippodrome_acteur": 1.25,
     "poids_distance": 1.1,
     "poids_outsider_cache": 1.30,
-    "seuil_value_bet": 1.05,
-    "frequence_kelly": 0.25,
+    "seuil_value_bet": 1.50,  # Rehaussé à 1.50 minimum
+    "frequence_kelly": 0.05,  # Kelly prudent (0.05)
     "stats_impact": {
         "victoires_par_ferrage": 0,
         "victoires_par_smart_money": 0,
@@ -156,14 +156,13 @@ def sauvegarder_modele_ia(modele):
       "poids_distance",
       "poids_outsider_cache",
   ]
-  # Limites élargies pour permettre un apprentissage à plus long terme (0.1 à 3.0)
   for cle in cles_poids:
     if cle in modele:
       modele[cle] = max(0.1, min(3.0, float(modele[cle])))
   sauvegarder_et_synchroniser(
       modele,
       FICHIER_MODELE_IA,
-      "Mise à jour automatique du modèle IA (Optimisation Gain)",
+      "Mise à jour du modèle IA (Mode Fige)",
   )
 
 # --- PROTECTION PAR MOT DE PASSE ---
@@ -766,6 +765,10 @@ def calculer_valeur_esperee_avancee(chevaux_valides, nb_partants=12):
 def retroaction_apprentissage_ia(
     pari_item, arrivee_officielle, cotes_reelles, partants_details
 ):
+  """
+  Enregistre les statistiques financières de rétroaction sans modifier les poids dynamiques.
+  Les poids sont maintenus figés pour éviter les oscillations/sur-apprentissage sur le court terme.
+  """
   modele_ia = charger_modele_ia()
   statut = pari_item.get("statut")
   details_pari = str(pari_item.get("details", ""))
@@ -785,11 +788,6 @@ def retroaction_apprentissage_ia(
       break
 
   diagnostic_lignes = []
-  ajustements = []
-  cible = 1.0 if statut == "Gagné" else 0.0
-  erreur_regression = (
-      -0.05 if statut == "Perdu" else (0.02 if profit_net > 0 else -0.01)
-  )
 
   if statut == "Gagné":
     modele_ia["stats_impact"]["total_analyses"] += 1
@@ -803,115 +801,41 @@ def retroaction_apprentissage_ia(
           f"⚠️ **Victoire déficitaire :** Gain ({gain_total:.2f}€) < Mise"
           f" ({mise_totale:.2f}€)."
       )
-      modele_ia["poids_musique"] = max(
-          0.1, modele_ia.get("poids_musique", 1.05) - 0.02
-      )
-      modele_ia["poids_outsider_cache"] = min(
-          3.0, modele_ia.get("poids_outsider_cache", 1.3) + 0.05
-      )
-      ajustements.append("Ajustement Value : Recherche Outsider ⬆️ (+0.05)")
     else:
       diagnostic_lignes.append(
           f"🎯 **Victoire rentable (+{profit_net:.2f}€ | ROI: +{roi_pari:.1f}%)"
           " !**"
       )
-      facteur_amplification = min(
-          0.1, abs(erreur_regression) + (roi_pari / 4000.0)
-      )
-      if cheval_gagnant_obj and safe_float(cheval_gagnant_obj.get("cote")) >= 6.0:
-        modele_ia["poids_outsider_cache"] = min(
-            3.0,
-            modele_ia.get("poids_outsider_cache", 1.3) + facteur_amplification,
-        )
-        modele_ia["poids_cote_tendance"] = min(
-            3.0,
-            modele_ia.get("poids_cote_tendance", 1.35) + facteur_amplification,
-        )
-        ajustements.append(
-            f"Validation High Value ⬆️ (+{facteur_amplification:.3f})"
-        )
 
     if cheval_gagnant_obj:
       def_gagnant = str(cheval_gagnant_obj.get("deferre", "")).upper()
       if "QUATRE" in def_gagnant and "Trot" in str(discipline):
-        modele_ia["poids_ferrage"] = min(
-            3.0, modele_ia.get("poids_ferrage", 1.25) + 0.025
-        )
         modele_ia["stats_impact"]["victoires_par_ferrage"] += 1
-        ajustements.append("Poids Ferrage Trot ⬆️ (+0.025)")
 
   elif statut == "Perdu":
     modele_ia["stats_impact"]["gain_cumule_ia"] = round(
         modele_ia["stats_impact"].get("gain_cumule_ia", 0.0) - mise_totale, 2
     )
-    diagnostic_lignes.append("⚠️ **Analyse de l'échec (Régression) :**")
+    diagnostic_lignes.append("⚠️ **Analyse de l'échec :**")
     top_4_5 = arrivee_officielle[3:5] if len(arrivee_officielle) >= 5 else []
     presence_proche = any(n in nums_paries for n in top_4_5)
 
     if presence_proche:
       diagnostic_lignes.append("• *Quasi-podium (4e/5e) :* Très proche.")
-      modele_ia["poids_musique"] = min(
-          3.0, modele_ia.get("poids_musique", 1.05) + 0.02
-      )
-      ajustements.append("Poids Musique ⬆️ (+0.02)")
     else:
       cote_gagnant = cotes_reelles.get(gagnant_reel_num, 0.0)
       if cote_gagnant > 12.0:
         diagnostic_lignes.append(
             f"• *Outsider manqué :* N°{gagnant_reel_num} à {cote_gagnant:.1f}."
         )
-        modele_ia["poids_cote_tendance"] = min(
-            3.0, modele_ia.get("poids_cote_tendance", 1.35) + 0.03
-        )
-        modele_ia["poids_outsider_cache"] = min(
-            3.0, modele_ia.get("poids_outsider_cache", 1.3) + 0.04
-        )
-        ajustements.append("Augmentation Sensibilité Smart Money & Outsider ⬆️")
       else:
         diagnostic_lignes.append("• *Élimination de valeur.*")
-        if "Trot" in str(discipline) and cheval_gagnant_obj:
-          def_gagnant = str(cheval_gagnant_obj.get("deferre", "")).upper()
-          if "QUATRE" in def_gagnant:
-            modele_ia["poids_ferrage"] = min(
-                3.0, modele_ia.get("poids_ferrage", 1.25) + 0.02
-            )
-            ajustements.append("Renforcement Ferrage ⬆️ (+0.02)")
-          else:
-            modele_ia["poids_ferrage"] = max(
-                0.1, modele_ia.get("poids_ferrage", 1.25) - 0.015
-            )
-            ajustements.append("Ajustement Ferrage ⬇️ (-0.015)")
 
-  cles_poids = [
-      "poids_musique",
-      "poids_ferrage",
-      "poids_terrain",
-      "poids_poids",
-      "poids_cote_tendance",
-      "poids_driver",
-      "poids_corde",
-      "poids_hippodrome_acteur",
-      "poids_distance",
-      "poids_outsider_cache",
-  ]
-  
-  for cle in cles_poids:
-    if cle in modele_ia:
-      modele_ia[cle] = max(0.1, min(3.0, float(modele_ia[cle])))
-
-  if ajustements:
-    horodatage = datetime.datetime.now().strftime("%d/%m %H:%M")
-    modele_ia["historique_ajustements"].insert(
-        0,
-        f"[{horodatage}] Course {pari_item.get('course')} ->"
-        f" {', '.join(ajustements)}",
-    )
-    modele_ia["historique_ajustements"] = modele_ia["historique_ajustements"][:20]
-    sauvegarder_modele_ia(modele_ia)
-
+  sauvegarder_modele_ia(modele_ia)
   return "\n".join(diagnostic_lignes)
 
-def calculer_fraction_kelly_exacte(p, c, frequence_kelly=0.25):
+def calculer_fraction_kelly_exacte(p, c, frequence_kelly=0.05):
+  """Critère de Kelly prudent avec fraction réduite à 0.05 par défaut."""
   if c <= 1.0 or p <= 0:
     return 0.0
   kelly = (p * c - 1.0) / (c - 1.0)
@@ -930,7 +854,8 @@ def generer_plan_budget_journalier(
   opportunites = []
   malus_disc = params_adaptatifs.get("malus_discipline", {})
   modele_ia = charger_modele_ia()
-  frequence_k = modele_ia.get("frequence_kelly", 0.25)
+  seuil_min_ev = modele_ia.get("seuil_value_bet", 1.50)  # Seuil durci à 1.50
+  frequence_k = modele_ia.get("frequence_kelly", 0.05)  # Kelly prudent (0.05)
 
   for course in donnees:
     chevaux = course.get("chevaux", [])
@@ -974,7 +899,8 @@ def generer_plan_budget_journalier(
     meilleur_score = chevaux_tries_score[0]
     meilleur_ev = chevaux_tries_ev[0]
 
-    if meilleur_ev["ev_index"] <= 1.30:
+    # Filtre durci : Sélectionner uniquement les véritables opportunités
+    if meilleur_ev["ev_index"] < seuil_min_ev:
       continue
 
     ecart_score = (
@@ -1061,10 +987,9 @@ def generer_plan_budget_journalier(
   for idx, course_opt in enumerate(top_courses):
     mise_course = mises_allouees[idx]
     chev_base, chev_poker = course_opt["meilleur_cheval"], course_opt["poker"]
-    cote_secu = safe_float(chev_base.get("cote"), 3.0)
-    ev_base = chev_base.get("ev_index", 1.0)
 
-    ratio_secu = 0.50
+    # Répartition sécurisée : 80% Placé Sécurité / 20% Gagnant Poker
+    ratio_secu = 0.80
     mise_secu = max(1, int(round(mise_course * ratio_secu)))
     mise_poker = max(0, mise_course - mise_secu)
     cote_poker = safe_float(chev_poker.get("cote"), 5.0)
@@ -1355,7 +1280,7 @@ with st.sidebar.expander("🛠️ Administration et réinitialisation"):
       st.error("Mot de passe admin incorrect.")
 
   st.divider()
-  st.write("🤖 **Nourrir l'IA :** Parier sur toutes les courses")
+  st.write("🤖 **Nourrir l'IA :** Parier sur toutes les courses (Seuil EV >= 1.50)")
   if st.button("🚀 Simuler le Chrono (10€/course)"):
     if mdp_admin.strip() == st.secrets.get("PASSWORD", "301180"):
       date_iso = st.session_state.get(
@@ -1413,7 +1338,8 @@ with st.sidebar.expander("🛠️ Administration et réinitialisation"):
             )
             base_chev = chevaux_val_c[0]
 
-            if base_chev.get("ev_index", 0) > 1.30:
+            # Filtre à EV >= 1.50
+            if base_chev.get("ev_index", 0) >= 1.50:
               outsiders_c = [
                   c
                   for c in chevaux_val_c
@@ -1430,6 +1356,7 @@ with st.sidebar.expander("🛠️ Administration et réinitialisation"):
                   )
               )
 
+              # Répartition 80% Sécu (8€) / 20% Poker (2€)
               hist.append({
                   "date": date_iso,
                   "reunion": r_nom,
@@ -1439,8 +1366,8 @@ with st.sidebar.expander("🛠️ Administration et réinitialisation"):
                   "type": "Rapide (Massif Value)",
                   "details": (
                       f"Simple Placé (Sécurité Value) ➔ N°{base_chev.get('num', '?')}"
-                      f" (7.0€) | Simple Gagnant (Poker Value) ➔"
-                      f" N°{poker_chev.get('num', '?')} (3.0€)"
+                      f" (8.0€) | Simple Gagnant (Poker Value) ➔"
+                      f" N°{poker_chev.get('num', '?')} (2.0€)"
                   ),
                   "mise": 10.0,
                   "statut": "En attente",
@@ -1461,7 +1388,7 @@ with st.sidebar.expander("🛠️ Administration et réinitialisation"):
           time.sleep(2)
           st.rerun()
         else:
-          st.warning("Aucune course valide à parier aujourd'hui.")
+          st.warning("Aucune course à EV >= 1.50 aujourd'hui.")
       else:
         st.error("Aucune donnée trouvée pour cette date.")
     else:
@@ -1471,7 +1398,7 @@ with st.sidebar.expander("🛠️ Administration et réinitialisation"):
 tab_chronologique, tab_analyse, tab_ia, tab_suivi, tab_reunions = st.tabs([
     "⏰ Chrono des Courses",
     "📊 Analyse & Value Bets",
-    "🧠 Moteur IA & Maximisation Gains",
+    "🧠 Moteur IA & Paramètres ROI",
     "📈 Suivi & ROI Financier",
     "🏟️ Bilan par Réunion",
 ])
@@ -1612,11 +1539,12 @@ with tab_chronologique:
           mise_input = st.number_input(
               "Mise Totale (€)", min_value=1, value=10, key=f"m_{cle_unique_course}"
           )
-          mise_secu = round(mise_input * 0.7, 1)
+          # Répartition 80 % Sécu / 20 % Poker
+          mise_secu = round(mise_input * 0.8, 1)
           mise_poker = round(mise_input - mise_secu, 1)
           st.caption(
-              f"💡 Répartition Optimisée : **{mise_secu} €** Sécu |"
-              f" **{mise_poker} €** Poker"
+              f"💡 Répartition Sécurisée : **{mise_secu} €** Sécu (80%) |"
+              f" **{mise_poker} €** Poker (20%)"
           )
 
         with col_b:
@@ -1729,7 +1657,7 @@ with tab_analyse:
 
     st.divider()
     st.subheader(
-        "💰 Allocation Stratégique (Critère de Kelly & Modèle Avancé)"
+        "💰 Allocation Stratégique (Critère de Kelly & Modèle Prudent)"
     )
     budget_saisi = st.number_input(
         "Budget Global à Allouer (€)",
@@ -1750,12 +1678,11 @@ with tab_analyse:
       else:
         st.session_state["plan_courant"] = None
         st.info(
-            "Aucune opportunité ne présente un avantage mathématique suffisant"
-            " aujourd'hui."
+            "Aucune opportunité ne présente un EV >= 1.50 aujourd'hui."
         )
 
     if st.session_state.get("plan_courant"):
-      st.write("### 📌 Stratégie de Mises Optimisée")
+      st.write("### 📌 Stratégie de Mises Optimisée (80% Sécurité / 20% Poker)")
       st.dataframe(st.session_state["plan_courant"], use_container_width=True)
 
       if st.button("✅ Enregistrer tout ce plan de mise", type="primary"):
@@ -1806,17 +1733,17 @@ with tab_analyse:
 
 # --- TAB 3 : DASHBOARD IA ---
 with tab_ia:
-  st.title("🧠 Moteur d'Apprentissage IA & Paramètres ROI")
+  st.title("🧠 Moteur IA & Paramètres Figés")
   modele_ia = charger_modele_ia()
 
   col_k1, col_k2, col_k3, col_k4 = st.columns(4)
   col_k1.metric("Poids Ferrage", f"{modele_ia.get('poids_ferrage', 1.25):.2f}")
   col_k2.metric(
-      "Sensibilité Smart Money",
-      f"{modele_ia.get('poids_cote_tendance', 1.35):.2f}",
+      "Seuil EV Min",
+      f"{modele_ia.get('seuil_value_bet', 1.50):.2f}",
   )
   col_k3.metric(
-      "Sensibilité Value Bet", f"{modele_ia.get('poids_outsider_cache', 1.30):.2f}"
+      "Kelly Fraction", f"{modele_ia.get('frequence_kelly', 0.05):.2f}"
   )
   col_k4.metric(
       "Gain Cumulé IA",
@@ -1824,7 +1751,7 @@ with tab_ia:
   )
 
   st.divider()
-  st.subheader("📊 Pondérations Actuelles orientées Rendement")
+  st.subheader("📊 Pondérations Actuelles (Figées pour accumulation de Dataset)")
 
   col_g1, col_g2 = st.columns([2, 2])
   with col_g1:
@@ -1839,13 +1766,7 @@ with tab_ia:
     st.bar_chart(df_poids.set_index("Critère"))
 
   with col_g2:
-    st.write("**Derniers ajustements dynamiques (Régression) :**")
-    historique_ajust = modele_ia.get("historique_ajustements", [])
-    if historique_ajust:
-      for item in historique_ajust:
-        st.info(item)
-    else:
-      st.info("Aucun ajustement récent.")
+    st.info("📌 **Note d'entraînement :** Les poids dynamiques sont actuellement **figés** pour accumuler un jeu de données propre d'au moins 1 000 à 5 000 courses sans osciller sur le bruit à court terme.")
 
 # --- TAB 4 : SUIVI ET BILAN FINANCIER ---
 with tab_suivi:
@@ -1856,13 +1777,13 @@ with tab_suivi:
 
     col_btn1, col_btn2 = st.columns([2, 2])
     with col_btn1:
-      if st.button("🔄 Vérifier les résultats et entrainer l'IA"):
-        with st.spinner("Analyse du rendement et rétroaction IA..."):
+      if st.button("🔄 Vérifier les résultats PMU"):
+        with st.spinner("Analyse du rendement..."):
           if verifier_resultats_automatiques_pmu(historique):
             sauvegarder_et_synchroniser(
                 historique, FICHIER_HISTORIQUE, "Mise à jour résultats"
             )
-            st.success("Résultats et modèle IA actualisés !")
+            st.success("Résultats actualisés !")
             st.rerun()
           else:
             st.info("Aucun nouveau résultat à traiter.")
@@ -1914,7 +1835,7 @@ with tab_suivi:
           if p.get("statut") in ["Gagné", "Perdu"]
       ]
       if len(paris_evaluables) < 10:
-        st.warning(f"Seulement {len(paris_evaluables)} paris terminés. Il en faut au moins 10 pour un test pertinent (idéalement > 1 000).")
+        st.warning(f"Seulement {len(paris_evaluables)} paris terminés. Il en faut au moins 10 pour un test pertinent.")
       else:
         with st.spinner("Simulation de Monte Carlo (10 000 itérations) en cours..."):
           p_val_mc, profit_reel = test_significativite_monte_carlo(paris_evaluables)
