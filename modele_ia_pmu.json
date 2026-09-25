@@ -1,14 +1,14 @@
 {
-  "poids_musique": 1.062963231149387,
-  "poids_ferrage": 1.1650759415953371,
-  "poids_terrain": 1.1125588477178328,
+  "poids_musique": 1.0659587826821462,
+  "poids_ferrage": 1.162599802471407,
+  "poids_terrain": 1.1108704650020653,
   "poids_poids": 1.0,
-  "poids_cote_tendance": 1.2671396652503233,
-  "poids_driver": 1.1125588477178328,
+  "poids_cote_tendance": 1.2631325702715683,
+  "poids_driver": 1.1108704650020653,
   "poids_corde": 1.0,
-  "poids_hippodrome_acteur": 1.1875980795297207,
-  "poids_distance": 1.0750392318118887,
-  "poids_outsider_cache": 1.2399819789960422,
+  "poids_hippodrome_acteur": 1.184784108336775,
+  "poids_distance": 1.0739136433347103,
+  "poids_outsider_cache": 1.2363822493111016,
   "seuil_value_bet": 1.05,
   "frequence_kelly": 0.25,
   "stats_impact": {
@@ -18,9 +18,10 @@
     "victoires_par_hippodrome": 0,
     "victoires_par_distance": 0,
     "total_analyses": 1,
-    "gain_cumule_ia": -181.64
+    "gain_cumule_ia": -191.64
   },
   "historique_ajustements": [
+    "[25/09 11:01] Course R4 - HIPPODROME DE TOULOUSE LA CEPIERE - C1 -> Poids Musique ⬆️ (+0.004)",
     "[25/09 11:00] Course R2 - HIPPODROME DE SAN SEBASTIAN ESP - C4 -> Poids Musique ⬆️ (+0.004)",
     "[25/09 11:00] Course R2 - HIPPODROME DE SAN SEBASTIAN ESP - C3 -> Poids Musique ⬆️ (+0.004)",
     "[25/09 11:00] Course R2 - HIPPODROME DE SAN SEBASTIAN ESP - C2 -> Poids Musique ⬆️ (+0.004)",
