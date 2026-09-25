@@ -1,14 +1,14 @@
 {
-  "poids_musique": 1.048633664569705,
-  "poids_ferrage": 1.2105638087179509,
-  "poids_terrain": 1.134941294651153,
+  "poids_musique": 1.0479041596011593,
+  "poids_ferrage": 1.2044503515871818,
+  "poids_terrain": 1.1329171752313858,
   "poids_poids": 1.0,
-  "poids_cote_tendance": 1.3202606726387374,
-  "poids_driver": 1.134941294651153,
+  "poids_cote_tendance": 1.3154567625491562,
+  "poids_driver": 1.1329171752313858,
   "poids_corde": 1.0,
-  "poids_hippodrome_acteur": 1.224902157751922,
-  "poids_distance": 1.0899608631007691,
-  "poids_outsider_cache": 1.277079458350368,
+  "poids_hippodrome_acteur": 1.221528625385643,
+  "poids_distance": 1.0886114501542576,
+  "poids_outsider_cache": 1.2729232664751124,
   "seuil_value_bet": 1.05,
   "frequence_kelly": 0.25,
   "stats_impact": {
@@ -18,9 +18,10 @@
     "victoires_par_hippodrome": 0,
     "victoires_par_distance": 0,
     "total_analyses": 0,
-    "gain_cumule_ia": -70.0
+    "gain_cumule_ia": -80.0
   },
   "historique_ajustements": [
+    "[25/09 10:59] Course R3 - HIPPODROME DE CABOURG - C7 -> Ajustement Ferrage ⬇️ (-0.003)",
     "[25/09 10:59] Course R3 - HIPPODROME DE CABOURG - C6 -> Ajustement Ferrage ⬇️ (-0.003)",
     "[25/09 10:59] Course R3 - HIPPODROME DE CABOURG - C5 -> Ajustement Ferrage ⬇️ (-0.003)",
     "[25/09 10:59] Course R3 - HIPPODROME DE CABOURG - C2 -> Ajustement Ferrage ⬇️ (-0.003)",
