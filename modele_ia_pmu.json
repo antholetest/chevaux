@@ -1,5 +1,5 @@
 {
-  "poids_musique": 1.3500000000000003,
+  "poids_musique": 1.3700000000000003,
   "poids_ferrage": 1.25,
   "poids_terrain": 1.15,
   "poids_poids": 1.0,
@@ -18,9 +18,10 @@
     "victoires_par_hippodrome": 0,
     "victoires_par_distance": 0,
     "total_analyses": 3,
-    "gain_cumule_ia": -184.33
+    "gain_cumule_ia": -194.33
   },
   "historique_ajustements": [
+    "[25/09 18:29] Course R1 - HIPPODROME DE DEAUVILLE - C7 -> Poids Musique ⬆️ (+0.02)",
     "[25/09 18:29] Course R1 - HIPPODROME DE DEAUVILLE - C6 -> Poids Musique ⬆️ (+0.02)",
     "[25/09 18:29] Course R1 - HIPPODROME DE DEAUVILLE - C1 -> Poids Musique ⬆️ (+0.02)",
     "[25/09 18:28] Course R4 - HIPPODROME DE SON PARDO PALMA - C5 -> Ajustement Value : Recherche Outsider ⬆️ (+0.05)",
@@ -39,7 +40,6 @@
     "[25/09 18:21] Course R2 - HIPPODROME DE CAGNES/MER - C4 -> Poids Musique ⬆️ (+0.02)",
     "[25/09 18:21] Course R2 - HIPPODROME DE CAGNES/MER - C3 -> Poids Musique ⬆️ (+0.02)",
     "[25/09 18:21] Course R2 - HIPPODROME DE CAGNES/MER - C2 -> Poids Musique ⬆️ (+0.02)",
-    "[25/09 18:21] Course R2 - HIPPODROME DE CAGNES/MER - C1 -> Poids Musique ⬆️ (+0.02)",
-    "[25/09 18:20] Course R1 - HIPPODROME DE PARIS-VINCENNES - C3 -> Poids Musique ⬆️ (+0.02)"
+    "[25/09 18:21] Course R2 - HIPPODROME DE CAGNES/MER - C1 -> Poids Musique ⬆️ (+0.02)"
   ]
 }
