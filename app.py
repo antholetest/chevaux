@@ -1959,9 +1959,9 @@ with tab_reunions:
       with st.expander(f"📅 Bilan de la journée du {date_bilan}"):
         try:
           with open(fichier, "r", encoding="utf-8") as f:
-            data_bilan = json.load(f)
-            st.dataframe(data_bilan, use_container_width=True)
-        except Exception:
-          st.error("Erreur de lecture du bilan de cette journée.")
+            donnees_bilan = json.load(f)
+          st.dataframe(donnees_bilan, use_container_width=True)
+        except Exception as e:
+          st.error(f"Erreur de chargement du bilan : {e}")
   else:
-    st.info("Aucun bilan journalier généré pour le moment. Les bilans seront créés lors de la vérification des résultats.")
+    st.info("Aucun bilan journalier disponible pour le moment.")
