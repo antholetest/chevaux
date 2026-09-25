@@ -1,14 +1,14 @@
 {
-  "poids_musique": 1.0718157599277853,
-  "poids_ferrage": 1.1577583933528208,
-  "poids_terrain": 1.1075692969066289,
+  "poids_musique": 1.0746785235288685,
+  "poids_ferrage": 1.1553920174525285,
+  "poids_terrain": 1.1059557574530294,
   "poids_poids": 1.0,
-  "poids_cote_tendance": 1.2552977979917324,
-  "poids_driver": 1.1075692969066289,
+  "poids_cote_tendance": 1.2514683310218564,
+  "poids_driver": 1.1059557574530294,
   "poids_corde": 1.0,
-  "poids_hippodrome_acteur": 1.1792821615110476,
-  "poids_distance": 1.0717128646044194,
-  "poids_outsider_cache": 1.2293439678378637,
+  "poids_hippodrome_acteur": 1.1765929290883819,
+  "poids_distance": 1.070637171635353,
+  "poids_outsider_cache": 1.2259038083202958,
   "seuil_value_bet": 1.05,
   "frequence_kelly": 0.25,
   "stats_impact": {
@@ -18,9 +18,10 @@
     "victoires_par_hippodrome": 0,
     "victoires_par_distance": 0,
     "total_analyses": 1,
-    "gain_cumule_ia": -211.64
+    "gain_cumule_ia": -221.64
   },
   "historique_ajustements": [
+    "[25/09 11:01] Course R4 - HIPPODROME DE TOULOUSE LA CEPIERE - C7 -> Poids Musique ⬆️ (+0.004)",
     "[25/09 11:01] Course R4 - HIPPODROME DE TOULOUSE LA CEPIERE - C3 -> Poids Musique ⬆️ (+0.004)",
     "[25/09 11:01] Course R4 - HIPPODROME DE TOULOUSE LA CEPIERE - C2 -> Poids Musique ⬆️ (+0.004)",
     "[25/09 11:01] Course R4 - HIPPODROME DE TOULOUSE LA CEPIERE - C1 -> Poids Musique ⬆️ (+0.004)",
@@ -39,7 +40,6 @@
     "[25/09 10:59] Course R3 - HIPPODROME DE CABOURG - C6 -> Ajustement Ferrage ⬇️ (-0.003)",
     "[25/09 10:59] Course R3 - HIPPODROME DE CABOURG - C5 -> Ajustement Ferrage ⬇️ (-0.003)",
     "[25/09 10:59] Course R3 - HIPPODROME DE CABOURG - C2 -> Ajustement Ferrage ⬇️ (-0.003)",
-    "[25/09 10:59] Course R3 - HIPPODROME DE CABOURG - C1 -> Ajustement Ferrage ⬇️ (-0.003)",
-    "[25/09 10:59] Course R2 - HIPPODROME DE SON PARDO PALMA - C5 -> Ajustement Ferrage ⬇️ (-0.003)"
+    "[25/09 10:59] Course R3 - HIPPODROME DE CABOURG - C1 -> Ajustement Ferrage ⬇️ (-0.003)"
   ]
 }
