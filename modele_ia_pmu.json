@@ -1,14 +1,14 @@
 {
-  "poids_musique": 1.0535433325502994,
-  "poids_ferrage": 1.1924767247331436,
-  "poids_terrain": 1.1270251728437883,
+  "poids_musique": 1.048800182562045,
+  "poids_ferrage": 1.1895895738621465,
+  "poids_terrain": 1.1251197952511316,
   "poids_poids": 1.0,
-  "poids_cote_tendance": 1.3014730768825913,
-  "poids_driver": 1.1270251728437883,
+  "poids_cote_tendance": 1.2969509807293524,
+  "poids_driver": 1.1251197952511316,
   "poids_corde": 1.0,
-  "poids_hippodrome_acteur": 1.2117086214063137,
-  "poids_distance": 1.0846834485625259,
-  "poids_outsider_cache": 1.2608250215725787,
+  "poids_hippodrome_acteur": 1.208532992085219,
+  "poids_distance": 1.0834131968340879,
+  "poids_outsider_cache": 1.26676264624899,
   "seuil_value_bet": 1.05,
   "frequence_kelly": 0.25,
   "stats_impact": {
@@ -17,10 +17,11 @@
     "victoires_par_terrain": 0,
     "victoires_par_hippodrome": 0,
     "victoires_par_distance": 0,
-    "total_analyses": 0,
-    "gain_cumule_ia": -110.0
+    "total_analyses": 1,
+    "gain_cumule_ia": -111.64
   },
   "historique_ajustements": [
+    "[25/09 10:59] Course R5 - HIPPODROME DE PARIS-VINCENNES - C6 -> Ajustement Value : Recherche Outsider ⬆️ (+0.01)",
     "[25/09 10:59] Course R5 - HIPPODROME DE PARIS-VINCENNES - C4 -> Poids Musique ⬆️ (+0.004)",
     "[25/09 10:59] Course R5 - HIPPODROME DE PARIS-VINCENNES - C3 -> Ajustement Ferrage ⬇️ (-0.003)",
     "[25/09 10:59] Course R5 - HIPPODROME DE PARIS-VINCENNES - C2 -> Poids Musique ⬆️ (+0.004)",
