@@ -593,6 +593,9 @@ def test_significativite_monte_carlo(paris_regles, iterations=10000):
     if len(paris_regles) < 10:
         return None, None
 
+    # Fixer la graine aléatoire pour garantir la reproductibilité sur le Cloud
+    random.seed(42)
+
     profit_reel = sum(
         safe_float(p.get("gain", 0)) - safe_float(p.get("mise", 0))
         for p in paris_regles
