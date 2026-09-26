@@ -1,0 +1,6964 @@
+[
+  {
+    "reunion": "R1",
+    "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+    "course": "C1",
+    "nom_course": "PRIX DE SAINT-FLOUR",
+    "discipline": "Trot Attelé",
+    "distance": 2850,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "12:24",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "IBRA DE LOU",
+        "driver": "L. SEIGNE",
+        "musique": "(25)7a3a4a1a8m2a4a3a7a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 28.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "ILLICO DES BROUETS",
+        "driver": "A. DAULIER",
+        "musique": "(25)7a2aDa6a2a7aDa9a0a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 110.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "HILKA DE BERTRANGE",
+        "driver": "CHARLY CLOZIER",
+        "musique": "(25)7a3a5a9aDa4a6a4aDa",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 54.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "JICKY GIRL",
+        "driver": "Mlle A. HALLAIS",
+        "musique": "(25)6a6a6a9aDa5a2a5a5a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 23.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "HE STAR DU CALICE",
+        "driver": "F. CHAPDELAINE",
+        "musique": "(25)1a3a2a1a0a6a1aDa8a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 7.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "ICE SCOTT",
+        "driver": "TH. CLAIRET",
+        "musique": "(25)0a3a3a0a5a3a2aDa5a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 36.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "HAHICHA GIRL",
+        "driver": "Mlle S. BLANCHETIERE",
+        "musique": "(25)2a6a8a4a8a2a3a0aDa",
+        "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 14.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "HYPERION DU BOCAGE",
+        "driver": "P.M. ALLAIS",
+        "musique": "(25)3aDa2a0aDaDmDa3a0m",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 32.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "IDEAL DU DIGEON",
+        "driver": "R. BERTHELOT",
+        "musique": "(25)9a5a4a8a4a6a4a9a4a",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 49.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "GALON D'AMIRAL",
+        "driver": "S. LABOUTIQUE",
+        "musique": "(25)Da7aDaDaDaDa9a1a7a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 121.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "HORSERIS",
+        "driver": "F. BERTHAULT",
+        "musique": "(25)4a5a6aDm4a3a6a4a6a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 53.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "HABIBI",
+        "driver": "Q.B. VERNEUIL",
+        "musique": "(25)9a0a8aDa2a0a1a2a(24)",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 21.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "JACQUARD",
+        "driver": "M. PRAT",
+        "musique": "(25)7aDa1m1mDm1mDm(24)Dm",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 1.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "HIPPARIS",
+        "driver": "JEAN MAXIME LESNE",
+        "musique": "(25)1a2a3a9a6a0a0a5a7a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 5.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R1",
+    "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+    "course": "C2",
+    "nom_course": "PRIX DE TIGNES",
+    "discipline": "Trot Attelé",
+    "distance": 2700,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "12:58",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "NIKITA GOLD",
+        "driver": "B. ROBIN",
+        "musique": "(25)4a3aDa4a7aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 46.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "NOCE ROYALE",
+        "driver": "F. NIVARD",
+        "musique": "Da(25)5a4a2a1a",
+        "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 26.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "NIKITA",
+        "driver": "C. HERIVAUX",
+        "musique": "(25)2a4aDa2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 65.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "NINA DE LA DUNE",
+        "driver": "CL. DUVALDESTIN",
+        "musique": "1a(25)1a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 7.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "NOUS QUATRE",
+        "driver": "Y. LEBOURGEOIS",
+        "musique": "(25)4a1a",
+        "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 4.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "NEW HOLIDAY",
+        "driver": "THEO DUVALDESTIN",
+        "musique": "(25)7a3a2a1a3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 19.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "NINA DE MAI",
+        "driver": "R. CONGARD",
+        "musique": "(25)1a1a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 10.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "NOIRE INTENSE",
+        "driver": "W. BIGEON",
+        "musique": "(25)3aDa1a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 2.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "NONEKA",
+        "driver": "TH. BRIAND",
+        "musique": "(25)1a1a1a",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 5.9,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R1",
+    "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+    "course": "C3",
+    "nom_course": "PRIX D'EVIAN",
+    "discipline": "Trot Attelé",
+    "distance": 2175,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "13:34",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "MELINA SUPREME",
+        "driver": "R. CONGARD",
+        "musique": "(25)0a5a2a9a7a6a5aDa(24)",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 118.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "MODE DU VALLON",
+        "driver": "F. LAGADEUC",
+        "musique": "(25)Dm5a5mDaDa0a9a2a9a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 55.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "MAYA D'AVRIL",
+        "driver": "F. NIVARD",
+        "musique": "(25)1a2a5a0aDa4a5a1a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "MIDNIGHT MOLLY",
+        "driver": "F. GUERINEAU",
+        "musique": "(25)9a8a2a9aDm7a6aDa(24)",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 125.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "MA AM CHENU",
+        "driver": "M. MOTTIER",
+        "musique": "(25)6a1a2aDaDa7a2a1a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 5.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "MOLLY MADRIK",
+        "driver": "A. ABRIVARD",
+        "musique": "(25)2a5mDm4m0m1m8a8a2a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 6.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "MAVANA DU DIGEON",
+        "driver": "M. ABRIVARD",
+        "musique": "(25)4a4a5a3a1a4a5a9a4a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 11.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "MADNESS SAM",
+        "driver": "TH. LEVESQUE",
+        "musique": "(25)8a0aDaDa1aDa3a7a2a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 14.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "MARIE DI LEONE",
+        "driver": "A. COLLETTE",
+        "musique": "(25)2a2a5a7a4a2a3a6a2a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 7.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "MAMJACK SACHA",
+        "driver": "B. ROCHARD",
+        "musique": "(25)Da8aDa4a8a2aDa2aDa",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 9.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "MERIDA DU GRANIT",
+        "driver": "E. RAFFIN",
+        "musique": "(25)3a5a1a4a6a4a3a6a2a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 2.9,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R1",
+    "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+    "course": "C4",
+    "nom_course": "PRIX DU FOREZ",
+    "discipline": "Trot Attelé",
+    "distance": 2700,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "14:15",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "HURRICANE CARTER",
+        "driver": "Y. LEBOURGEOIS",
+        "musique": "(25)1a4a9a2a2a2a3aDa1a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 10.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "ISOFOU DU CHENE",
+        "driver": "P.PH. PLOQUIN",
+        "musique": "(25)1a0a3a8a3a6a2a3a1a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 7.2,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "HERO SIBEY",
+        "driver": "D. BONNE",
+        "musique": "(25)2a9a0a1a4a5a4aDa4a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 24.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "GOAL STAR",
+        "driver": "TH. BRIAND",
+        "musique": "Da(25)Da6a5aDaDa4a0a0a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "HE AND ME",
+        "driver": "J. DUBOIS",
+        "musique": "(25)8a(24)9a3a0a2a(23)7a1a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 107.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "JINGLE DU PONT",
+        "driver": "N. BAZIRE",
+        "musique": "2a(25)1a1a0a0a9a1a2a0a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 4.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "HAPPY DANICA",
+        "driver": "P.Y. VERVA",
+        "musique": "0a(25)3a6a6a5a3aDm0a0a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 23.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "IDEAL DU ROCHER",
+        "driver": "CL. DUVALDESTIN",
+        "musique": "(25)3mDa1a5a1a2a1a4a5a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 7.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "JAZZMAN DEBAILLEUL",
+        "driver": "E. SZIRMAY",
+        "musique": "(25)0a0a0a4a8a6a8a2a2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 60.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "HYMNE DU GERS",
+        "driver": "R. CONGARD",
+        "musique": "(25)0m0a1a8a7a0a9a6a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 125.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "IGREC DE CELLAND",
+        "driver": "D. THOMAIN",
+        "musique": "(25)8a2a1a7a8a2aDa3a5a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 30.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "HUBBLE DU VIVIER",
+        "driver": "A. ABRIVARD",
+        "musique": "(25)1a2a3a9a6m4a2m7aDa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 2.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "HIDALGO DES NOES",
+        "driver": "G. GELORMINI",
+        "musique": "(25)4a0a6aDa1a6a0a5a9a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 36.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "HULYSSE DIGEO",
+        "driver": "J.W. HALLAIS",
+        "musique": "(25)4a0a3a0a1a5a5a1a3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 13.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R1",
+    "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+    "course": "C5",
+    "nom_course": "PRIX DE QUESTEMBERT",
+    "discipline": "Trot Attelé",
+    "distance": 2700,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "14:53",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "KIBORA BUISSONAY",
+        "driver": "A. COLLETTE",
+        "musique": "(25)Da1aDa6aDaDa2aDa2a",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 20.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "KARA DE PIERREPONT",
+        "driver": "L. CUEFF",
+        "musique": "(25)0a9mDaDaDa1a7a1a8a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 124.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "KOTKITA",
+        "driver": "E. RAFFIN",
+        "musique": "(25)3a3aDaDaDa1aDa1a5a",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 7.7,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "KELOWA STARDUST",
+        "driver": "J.F. SENET",
+        "musique": "(25)6aDa3aDa3aDa5a1a3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 135.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "KISS ME DU RUEL",
+        "driver": "Y. LEBOURGEOIS",
+        "musique": "(25)8aAa6a4a3a7aDa5a(24)",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 20.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "KABALA QUICK",
+        "driver": "M. MOTTIER",
+        "musique": "(25)5m1mDm1m2mAmDm1mDa",
+        "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 25.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "KAPELLA DAIRPET",
+        "driver": "TH. LEVESQUE",
+        "musique": "(25)1aDa7a2a2a6a(24)7a4a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 3.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "KYRA D'ESSARTS",
+        "driver": "F. LAGADEUC",
+        "musique": "(25)6a6a1a6a8a0a2a2a(24)",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 14.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "KYA D'ERABLE",
+        "driver": "A. ABRIVARD",
+        "musique": "(25)2a0a5a4a2aDa3m5a3a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 8.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "KABALVA",
+        "driver": "D. THOMAIN",
+        "musique": "(25)4a0a5a4a9a5a9a6aDa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 16.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "KOH LANTA",
+        "driver": "B. ROCHARD",
+        "musique": "(25)7a1aDaDa2a3a(24)3a3a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 2.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "KELOWNA LEGEND",
+        "driver": "TH. BRIAND",
+        "musique": "0a(25)9a3a8a7a6a1a7a7a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 32.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R1",
+    "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+    "course": "C6",
+    "nom_course": "PRIX DE RANES - PX SENIORS DES COURSES",
+    "discipline": "Trot Attelé",
+    "distance": 2850,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "15:29",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "IRINA DE MONTCEAU",
+        "driver": "G.A. POU POU",
+        "musique": "(25)0a0a9aDa4a3aAaDaDa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 122.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "KOMERE DE CORDAY",
+        "driver": "ARNAUD DESMOTTES",
+        "musique": "(25)3a3a4a1a5a6a(24)1a1a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "NIAGARA RIVER",
+        "driver": "GUILLAUME MARTIN",
+        "musique": "(25)3a9a3a2a5a4a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 35.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "DENIA",
+        "driver": "P.PH. PLOQUIN",
+        "musique": "(25)4a0aDm0a7a7a7a8a2a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 43.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "KIVALA RENARDIER",
+        "driver": "A. COLLETTE",
+        "musique": "(25)7a3a5a5a8a1a7a1a5a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 11.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "KEY OF LOVE",
+        "driver": "A. BARRIER",
+        "musique": "(25)1a1a6a9aDa2a0a7a9a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 4.4,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "ISLA (GER)",
+        "driver": "M. ABRIVARD",
+        "musique": "(25)1a5a1a6a3a3a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 16.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "DILVA JET",
+        "driver": "G. GELORMINI",
+        "musique": "(25)4a5a2a3aDa8a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 22.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "XERAVA C.D.",
+        "driver": "A. ABRIVARD",
+        "musique": "(25)5a1a5a3a4a4a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 32.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "DIVINA TRIO",
+        "driver": "TH. BRIAND",
+        "musique": "(25)2a2a3a1a1a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 47.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "JOUVENCE DE CAREL",
+        "driver": "THEO DUVALDESTIN",
+        "musique": "(25)5mDa5a9a0aDm4a1a9a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 40.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "KALITA D'HENINEL",
+        "driver": "B. ROCHARD",
+        "musique": "(25)7a2a3a8a1a1a2a3a2a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 6.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "JALOUZ D'OLIVERIE",
+        "driver": "E. RAFFIN",
+        "musique": "0a(25)1a1a0a7a0aDa4aDa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 7.7,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "DADA DEL RONCO",
+        "driver": "F. NIVARD",
+        "musique": "(25)2a0a7a8a5a1a1a3a2a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 26.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 15,
+        "nom": "JUNKIE (SWE)",
+        "driver": "TH. LEVESQUE",
+        "musique": "(25)7a9aDa6a7a5a2a1a2a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 16,
+        "nom": "KEY LADY",
+        "driver": "M. MOTTIER",
+        "musique": "(25)3a5a3a4a1a1a6a6aDa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 4.6,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R1",
+    "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+    "course": "C7",
+    "nom_course": "PRIX DE CROIX",
+    "discipline": "Trot Attelé",
+    "distance": 2850,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "16:02",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "FUNNY GIRL (ITY)",
+        "driver": "M. MOTTIER",
+        "musique": "(25)0aDa2a8a9a6a7a0a3a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 111.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "FAR WEST BI",
+        "driver": "G. GELORMINI",
+        "musique": "(25)8a2a2a1a8a2a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 42.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "LEARN TO FLY",
+        "driver": "F. NIVARD",
+        "musique": "(25)6a7a4a4a4a8a3a4a4a",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 50.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "PHANTOM EXPRESS",
+        "driver": "B. GOOP",
+        "musique": "(25)8a3a8a1a2a5a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 9.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "LUCIANO MENUET",
+        "driver": "TH. BRIAND",
+        "musique": "(25)Da0aDa7a0a8a8a(24)Da",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 107.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "FAR WISE AS",
+        "driver": "R. BAKKER",
+        "musique": "(25)5aDa7a4a2a1a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 41.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "LIZA JOSSELYN",
+        "driver": "N. BAZIRE",
+        "musique": "(25)1a2a1a0a1a1a1aDa(24)",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 3.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "LOMBOK JIEL",
+        "driver": "P.Y. VERVA",
+        "musique": "(25)4a2a1a3a4a5a6a1a2a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 5.4,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "BULLET THE BLUESKY",
+        "driver": "D. WAJERSTEN",
+        "musique": "(25)Da0a1a2a1aDa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 17.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "LOVINO BELLO",
+        "driver": "E. RAFFIN",
+        "musique": "(25)0a1a7a1a2a6a5a2a1a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 2.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R1",
+    "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+    "course": "C8",
+    "nom_course": "PRIX BELLINO II",
+    "discipline": "Trot Attelé",
+    "distance": 2700,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "16:39",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "MUZAN KIBUTSUJI",
+        "driver": "R. BAKKER",
+        "musique": "(25)5a1a2a4a5a4a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 25.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "GRAN TORINO (ITY)",
+        "driver": "F. LAGADEUC",
+        "musique": "(25)0a4a6a9a7a1a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 119.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "GILL DORIAL",
+        "driver": "G. GELORMINI",
+        "musique": "(25)2a7a1a3a2a1a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 17.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "MAD OF YOU",
+        "driver": "J. DUBOIS",
+        "musique": "(25)Da3a6a0a1a6a5a1a1a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 83.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "GOLIMPIO D'OR",
+        "driver": "MARCO BASILE",
+        "musique": "(25)9a6a5a3a1a5a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 27.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "MUST ATOUT",
+        "driver": "A. BARRIER",
+        "musique": "(25)8aDa4aDa2a7a5a7aDa",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 26.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "MARQUETY DE BAILLY",
+        "driver": "Y. LEBOURGEOIS",
+        "musique": "(25)4a0a5a2a5a1a6a4a9a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 45.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "MARDOUK DE GODREL",
+        "driver": "E. ALLARD",
+        "musique": "(25)5a2a3a7aDaDa1aDaDa",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 28.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "MAKE YOUR DAY",
+        "driver": "F. NIVARD",
+        "musique": "(25)1a1a1a1a1a(24)2a1a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 2.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "MAGICO DE LOU",
+        "driver": "A. BOURGOIN-TIMBERT",
+        "musique": "(25)9a0a2a4a8a4a4a2a4a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 130.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "PARANOH NEWPORT",
+        "driver": "E. RAFFIN",
+        "musique": "1a2a1a1aDaDa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 6.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "GINGER GIO",
+        "driver": "M. ABRIVARD",
+        "musique": "(25)1aDa5aDa6a0a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 5.2,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "MAKE A DREAM",
+        "driver": "M. MOTTIER",
+        "musique": "(25)3aDaDa3aDa4a8a2a1a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 7.7,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "MAESTRO RIVER",
+        "driver": "B. ROCHARD",
+        "musique": "(25)9aDaDaDaDa4aDaDa3a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 11.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R1",
+    "hippodrome": "HIPPODROME DE PARIS-VINCENNES",
+    "course": "C9",
+    "nom_course": "PRIX DE SARTILLY",
+    "discipline": "Trot Monté",
+    "distance": 2175,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "17:12",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "HAVRE DE PAIX",
+        "driver": "Mlle E. BOUCLET",
+        "musique": "(25)Dm4m0m4m5m(24)Dm8m4m",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 73.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "ILLICO DE BOUTEAU",
+        "driver": "R. HEMERY",
+        "musique": "(25)1a2a3a0a6a3a3a1a2a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 74.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "LUCKY GUY BOKO",
+        "driver": "M. MOTTIER",
+        "musique": "(25)4a7a8a0a0a4a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 3.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "ICARE DU LEARD",
+        "driver": "A. COLLETTE",
+        "musique": "(25)8m5m0a0aDm5m5m6m(24)",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 27.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "HIATUS",
+        "driver": "Mme T. MATHIAS-MAISONNETTE",
+        "musique": "(25)0a0a0a0aDaDaDaDa0a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 94.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "HARRY DU LYS",
+        "driver": "M. GRUMETZ",
+        "musique": "4m(25)9m7m1m3m3m0a3m1m",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 18.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "FILIPPA B.J.",
+        "driver": "GUILLAUME MARTIN",
+        "musique": "(24)3a5a4aAa1a4a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 21.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "STACCATO HL",
+        "driver": "B. ROCHARD",
+        "musique": "(25)2m6m2a4m3m2m",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 4.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "FIRST ONE DIAMOND",
+        "driver": "E. RAFFIN",
+        "musique": "(25)Da1a5a1a1a1a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 5.6,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "HAS DE COEUR",
+        "driver": "P.Y. VERVA",
+        "musique": "(25)Da6m6m6aDa8aDa6aDa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 51.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "IN LOVE REGLISSE",
+        "driver": "E. DE JESUS",
+        "musique": "(25)7a8a4m9a3m8a5m2a1m",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 20.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "MISTER INVICTUS",
+        "driver": "A. ABRIVARD",
+        "musique": "(25)8a8aDm2m2mDm4a2a6a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 4.4,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "ILLUSION D'AMOUR",
+        "driver": "J.Y. RICART",
+        "musique": "(25)0aDaDaAaDa5a9a8aDa",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 42.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R2",
+    "hippodrome": "HIPPODROME GELSENKIRCHEN ALL",
+    "course": "C1",
+    "nom_course": "PREIS ST. MALO                          ALLEMAGNE",
+    "discipline": "Trot Attelé",
+    "distance": 2000,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "09:36",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "GEORGIES JOKER",
+        "driver": "BRUSTEN DIETER",
+        "musique": "0a2a6a5a4a5a6a7a0a3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 62.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "INDIGO DES BAUX",
+        "driver": "BOT ROBBIN",
+        "musique": "3a1a2a0a5a4a1a3a2a2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 6.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "VELTEN VON STEVEN",
+        "driver": "HAUBER MARCIANO",
+        "musique": "1aDa4a3a2a1a2a3a5a3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 13.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "MESSI HAZELAAR",
+        "driver": "LOOK JURGEN",
+        "musique": "7aDa4a6aDa4a5a3aDa5a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 47.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "NAIKEY",
+        "driver": "NIMCZYK MICHAEL",
+        "musique": "1a5a1a3a4a3a0a5a1aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 1.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "JULNICK SHARK",
+        "driver": "HOLZSCHUH JOCHEN",
+        "musique": "4a6a2a3a1a1a4a2a3a3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 27.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R2",
+    "hippodrome": "HIPPODROME GELSENKIRCHEN ALL",
+    "course": "C2",
+    "nom_course": "PREIS ST. BRIEUC                        ALLEMAGNE",
+    "discipline": "Trot Attelé",
+    "distance": 2000,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "10:03",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "MUFASA H BOKO",
+        "driver": "HETTELING JUN. CEES",
+        "musique": "3a3a4a2a5a4a4a6a4a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 25.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "TAKE FIVE",
+        "driver": "BOT ROBBIN",
+        "musique": "1a1aDa2a3a4a6a1a3aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 2.6,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "DUCATI EXPRESS",
+        "driver": "REBER THOMAS",
+        "musique": "2a1a2a1a3a1a2a4a1a3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 9.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "MAX HAZELAAR",
+        "driver": "HOLZSCHUH JOCHEN",
+        "musique": "3a1aDa1a1a4a3a3a4a3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 11.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "SOUTH CAROLINA AS",
+        "driver": "NIMCZYK MICHAEL",
+        "musique": "2a5a3a4a7a4a1a0a0a2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 2.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "HAWAI SONG",
+        "driver": "BOCK MARKUS",
+        "musique": "9a8a7a0a6a7a8a0a5a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 103.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "NAVAJO MH",
+        "driver": "HAUBER MARCIANO",
+        "musique": "0a0a6a2a2a4a2a0aDa0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 6.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "GEORGIES BUERANER",
+        "driver": "VERBEECK JOSEPH",
+        "musique": "5a3a1a2a6a5a3a7a2aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 23.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R2",
+    "hippodrome": "HIPPODROME GELSENKIRCHEN ALL",
+    "course": "C3",
+    "nom_course": "PREIS VON MORLAIX                       ALLEMAGNE",
+    "discipline": "Trot Attelé",
+    "distance": 2000,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "10:35",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "HIP HOP SWIFT",
+        "driver": "BOCK MARKUS",
+        "musique": "8a6a8aDa7a7a0a8a8a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 91.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "JEZEBEL DREAM",
+        "driver": "HAUBER MARCIANO",
+        "musique": "6a0a6a4a7a0a5a8a0aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 24.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "KAPPI DE LEMI",
+        "driver": "HOLZSCHUH JOCHEN",
+        "musique": "2a4a2a8a6a1a2a5a2a4a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 3.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "IROULEGUY",
+        "driver": "VERBEECK JOSEPH",
+        "musique": "3a3a1a3a9a8a7a5a6a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 4.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "HITACQ WIT",
+        "driver": "REBER THOMAS",
+        "musique": "4a9a6a3a4a0a4a8a3a4a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 24.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "HUGGY MOKO",
+        "driver": "BRUSTEN DIETER",
+        "musique": "3aDa7aDa8a5aDaDa4a1a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 16.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "INO DU VIVIER",
+        "driver": "LOOK JURGEN",
+        "musique": "7a4aDa5a0a1a4a0aDa2a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 20.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "JEPS DE GUOZ",
+        "driver": "NIMCZYK MICHAEL",
+        "musique": "8a3a4a3a1a2a0a1a2aDa",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 2.1,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R2",
+    "hippodrome": "HIPPODROME GELSENKIRCHEN ALL",
+    "course": "C4",
+    "nom_course": "PREIS VON DINAN                         ALLEMAGNE",
+    "discipline": "Trot Attelé",
+    "distance": 2000,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "11:10",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "UPTOWN GIRL",
+        "driver": "BOCK MARKUS",
+        "musique": "7a8aDa0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 112.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "LITTLE NELLIE",
+        "driver": "BOT ROBBIN",
+        "musique": "4aDaDaDa2a1aDaDa5aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 20.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "ONYX MEADOW",
+        "driver": "HETTELING JUN. CEES",
+        "musique": "3aDa3a2a3a3a4a2aDa1a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 20.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "PURPLE FLEVO",
+        "driver": "HAUBER MARCIANO",
+        "musique": "1a4a1a3a4a2a4a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 2.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "NARTHEX BOKO",
+        "driver": "NIMCZYK MICHAEL",
+        "musique": "1a2a1a4a4a1a4a3a6a7a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 3.4,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "MALAKY FAFA",
+        "driver": "DOOYEWEERD M.J.W. VAN",
+        "musique": "Da4a4a2a9aDa2a0aDaDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 5.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "JUILLET DREAM CJ",
+        "driver": "LOOK JURGEN",
+        "musique": "6a5a7a6aDa6a6a6a8a5a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 47.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "OMANI",
+        "driver": "REBER THOMAS",
+        "musique": "6a2aDaDa6a5a3a5a5a6a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 52.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "GRAZIELLA",
+        "driver": "BRUSTEN DIETER",
+        "musique": "2a6a4a3aDa3a6a3a9a2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 18.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "SARMAT",
+        "driver": "WILL BEN",
+        "musique": "5a8a3a0a9a9a0a5a6a5a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 95.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R2",
+    "hippodrome": "HIPPODROME GELSENKIRCHEN ALL",
+    "course": "C5",
+    "nom_course": "PREIS VON VANNES                        ALLEMAGNE",
+    "discipline": "Trot Attelé",
+    "distance": 2000,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "11:45",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "MONEY SHARK",
+        "driver": "DOOYEWEERD M.J.W. VAN",
+        "musique": "DaDa1a1aDa2a1aDaDaDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 4.4,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "GENTELS ASS",
+        "driver": "BOCK MARKUS",
+        "musique": "8a4aDa5a2a6a6a5a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 69.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "FIRST EQUOS JET",
+        "driver": "HETTELING JUN. CEES",
+        "musique": "4a8a2a1a3aDa4a6a5aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 11.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "GLAMOUR AS",
+        "driver": "NIMCZYK MICHAEL",
+        "musique": "1a7a5a7a6a4a4a2a4a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 2.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "PEBBLES STONE",
+        "driver": "HAUBER MARCIANO",
+        "musique": "Da2a2a1aDa2a1aDa0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 4.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "INDY BYD",
+        "driver": "Mme MARGIES FABIENNE",
+        "musique": "5aDa9a4a3aDaDa4a7a2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 83.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "TRIGGER",
+        "driver": "REBER THOMAS",
+        "musique": "2a3aDa3a1a2a2a2a5a4a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 7.6,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "VAL DE LOIRE",
+        "driver": "BRUSTEN DIETER",
+        "musique": "7a3a3a4a2a3a7a8a5a7a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 45.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "ORLANDO ATTACK",
+        "driver": "HOLZSCHUH JOCHEN",
+        "musique": "6a4a0a0a9a4a6a3a1a6a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 23.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "OLIVIA GREENWOOD",
+        "driver": "BOT ROBBIN",
+        "musique": "6a0a6a4a1a7a9a9a5a2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "RUN OF THE RACE",
+        "driver": "MANZKE GERD",
+        "musique": "9a9a6a0aDa6a5a5a5a7a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 109.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R3",
+    "hippodrome": "HIPPODROME DE CHANTILLY",
+    "course": "C1",
+    "nom_course": "PRIX DU BOIS DE PRECY",
+    "discipline": "Galop Plat",
+    "distance": 1900,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "10:19",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "LE LANDIN",
+        "driver": "M.GRANDIN",
+        "musique": "(25)4p9p5p1p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 11.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "EL VEGAS",
+        "driver": "A.LEMAITRE",
+        "musique": "(25)6p1p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 5.2,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "WHITE SHARK",
+        "driver": "T.PICCONE",
+        "musique": "(25)0p7p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 34.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "PINK PANTHERA",
+        "driver": "H.BESNIER",
+        "musique": "(25)1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 3.7,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "ANASHKAYA",
+        "driver": "C.SOUMILLON",
+        "musique": "(25)1p6p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 1.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "CHARLESTON DANCER",
+        "driver": "A.HAMELIN",
+        "musique": "(25)5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 29.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "TSAVERNA",
+        "driver": "P.REMOUE",
+        "musique": "(25)9p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 57.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R3",
+    "hippodrome": "HIPPODROME DE CHANTILLY",
+    "course": "C2",
+    "nom_course": "PRIX DE LA ROUTE DES FERMETTES",
+    "discipline": "Galop Plat",
+    "distance": 2700,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "10:53",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "JAYCLE DE GREE",
+        "driver": "A.WERLE",
+        "musique": "(25)1p2p1p2p2p3p(24)Jp0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 8.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "AMIRAL D'AUMONT",
+        "driver": "E.CORALLO",
+        "musique": "(25)9p6p5p6p1p2p4p6p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 15.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "CHESS",
+        "driver": "A.LEMAITRE",
+        "musique": "(25)0p8p0p6p0p7p2p(24)1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 5.6,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "CASSIUS",
+        "driver": "C.SOUMILLON",
+        "musique": "(25)3p6p1p3p5p5p(24)1p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 1.7,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "KAMSTYLE",
+        "driver": "R.MANGIONE",
+        "musique": "(25)6p0p6p7p1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 47.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "HOT AND BEAUTY",
+        "driver": "M.CALBRIX",
+        "musique": "(25)2p9p5p7p6p4p9p6p8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 21.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "LA DO RE",
+        "driver": "A.MADAMET",
+        "musique": "(25)0p5p2p0p1p2p(24)8p3p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "KATANA DES ROCS",
+        "driver": "B.KALYSBEK UULU",
+        "musique": "(25)0p8p9p7p6p0p6p8p6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 70.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "MAY IT BE",
+        "driver": "M.GRANDIN",
+        "musique": "(25)5p1p(24)0p1p7p5p1p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 6.6,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R3",
+    "hippodrome": "HIPPODROME DE CHANTILLY",
+    "course": "C3",
+    "nom_course": "PRIX DE LA ROUTE DES MOINES",
+    "discipline": "Galop Plat",
+    "distance": 2700,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "11:28",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "MADIBA",
+        "driver": "A.HAMELIN",
+        "musique": "(25)1p4p8p4p1p2p0p2p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 5.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "SCREEN SHOT",
+        "driver": "T.BACHELOT",
+        "musique": "(25)0p0p5p6p4p1p8p2p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 3.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "PANGAEA",
+        "driver": "A.MADAMET",
+        "musique": "(25)9p2p8p9p3p3p4p1p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 4.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "BOB LA BIDOUILLE",
+        "driver": "E.HARDOUIN",
+        "musique": "(25)1p0p4p0p1p(24)0p0p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 25.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "LEMPIRA",
+        "driver": "P.REMOUE",
+        "musique": "(25)0p5p0p7p8p2p2p3p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 51.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "SEDSER",
+        "driver": "E.CORALLO",
+        "musique": "(25)0p0p9p2p3p2p0p7p8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 79.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "WEST MARTIN",
+        "driver": "H.BOUTIN",
+        "musique": "(25)8p3h3p5p8p3p9p7p7p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 23.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "MARIOENTO",
+        "driver": "H.JOURNIAC",
+        "musique": "(25)8p0p8p9p8p8p4p1p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 26.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "OCTANE",
+        "driver": "M.CALBRIX",
+        "musique": "(25)6p6p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 29.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "SILVER CONDOR",
+        "driver": "A.DUQUESNOY",
+        "musique": "(25)9p0p0p0p0p0p0p0p8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 83.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "SANDY EAGLE",
+        "driver": "T.PICCONE",
+        "musique": "(25)5p0p0p2p1p4p5p(24)5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 13.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "KUPKA",
+        "driver": "R.MANGIONE",
+        "musique": "(25)0p6p3p5p0p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 10.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "BLISTRO",
+        "driver": "A.CRASTUS",
+        "musique": "(25)8p0p0p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 123.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "FREED FROM DESIRE",
+        "driver": "M.GRANDIN",
+        "musique": "(25)7p0p7p9p5p1p6p8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 16.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R3",
+    "hippodrome": "HIPPODROME DE CHANTILLY",
+    "course": "C4",
+    "nom_course": "PRIX DES TROIS CLAIRIERES",
+    "discipline": "Galop Plat",
+    "distance": 1600,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "12:03",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "BOCCA AL LUPO",
+        "driver": "A.LEMAITRE",
+        "musique": "(25)3p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 5.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "ANGEL DREAMER",
+        "driver": "A.VILCHIEN",
+        "musique": "(25)3p3p8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 18.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "TOLEO",
+        "driver": "A.CRASTUS",
+        "musique": "(25)0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 32.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "SPIRITO",
+        "driver": "T.PICCONE",
+        "musique": "(25)5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 9.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "TORNADO ALLEY",
+        "driver": "M.VELON",
+        "musique": "(25)9p7p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 6.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "KENDARO",
+        "driver": "J.MARIEN",
+        "musique": "(25)9p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 34.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "HELLO JO",
+        "driver": "M.GRANDIN",
+        "musique": "(25)0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 4.4,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "FOREST GALORE",
+        "driver": "C.SOUMILLON",
+        "musique": "(25)2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 2.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "NIOUININON",
+        "driver": "A.DUQUESNOY",
+        "musique": "(25)0p9p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 99.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "LION OF VENICE",
+        "driver": "B.KALYSBEK UULU",
+        "musique": "(25)0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 95.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "MAGIC PARK",
+        "driver": "X.BERGERON",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 91.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R3",
+    "hippodrome": "HIPPODROME DE CHANTILLY",
+    "course": "C5",
+    "nom_course": "PRIX MOLTON",
+    "discipline": "Galop Plat",
+    "distance": 1600,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "12:40",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "ROZARION",
+        "driver": "S.CHUETTE",
+        "musique": "(25)1p7p3p4p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 14.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "APOLIDE",
+        "driver": "M.GRANDIN",
+        "musique": "(25)9p5p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 5.2,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "ICE CRACKER",
+        "driver": "T.PICCONE",
+        "musique": "(25)2p4p3p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 4.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "MATAURI QUEEN",
+        "driver": "A.LEMAITRE",
+        "musique": "(25)5p2p6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 9.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "DARINICE",
+        "driver": "F.LEFEBVRE",
+        "musique": "1p(25)1p2p7p4p2p0p7p1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 9.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "BORN TO DEFEAT",
+        "driver": "H.JOURNIAC",
+        "musique": "(25)2p1p5p8p5p9p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 8.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "OCEAN STAR",
+        "driver": "M.CALBRIX",
+        "musique": "(25)7p5p1p4p4p7p7p5p6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 25.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "ACHILEA CHOPE",
+        "driver": "M.Z .SAHEBJAN",
+        "musique": "(25)0p0p0p8p1p5p7p7p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 73.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "CORYPHEENE",
+        "driver": "J.MARIEN",
+        "musique": "(25)6p7p6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 78.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "CONQUEST",
+        "driver": "A.MADAMET",
+        "musique": "(25)7p0p7p8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 7.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "NANALA",
+        "driver": "E.HARDOUIN",
+        "musique": "(25)5p0p0p8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 27.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "ARKEN",
+        "driver": "F.VALLE SKAR",
+        "musique": "(25)4p2p2p4p3p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 9.7,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R3",
+    "hippodrome": "HIPPODROME DE CHANTILLY",
+    "course": "C6",
+    "nom_course": "PRIX DE LA ROUTE DES PINS",
+    "discipline": "Galop Plat",
+    "distance": 1600,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "13:15",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "BAYRAMOVA",
+        "driver": "S.CHUETTE",
+        "musique": "(25)0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 6.7,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "MY LOVE SONG",
+        "driver": "M.GRANDIN",
+        "musique": "(25)9p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 33.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "NOLITA STAR",
+        "driver": "A.VILCHIEN",
+        "musique": "(25)8p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 73.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "LANDED",
+        "driver": "L.CARBONI",
+        "musique": "(25)8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 77.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "RUBENESQUE",
+        "driver": "T.BACHELOT",
+        "musique": "(25)3p7p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 7.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "BASANTI",
+        "driver": "H.BESNIER",
+        "musique": "(25)3p8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 9.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "TCHIRIKHOVA",
+        "driver": "C.SOUMILLON",
+        "musique": "(25)2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 1.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "LIGHT CITY",
+        "driver": "A.CRASTUS",
+        "musique": "(25)0p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 70.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "LA JUSTICIERE",
+        "driver": "E.WEISSMEIER",
+        "musique": "(25)0p8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 37.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "MYSTERY DAY",
+        "driver": "A.LEMAITRE",
+        "musique": "(25)8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 14.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "LADY FRANCA ROSA",
+        "driver": "T.PICCONE",
+        "musique": "(25)0p0p4p7p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 19.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "TEVERE",
+        "driver": "F.LEFEBVRE",
+        "musique": "(25)6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 33.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "SURPRISE ETOILEE",
+        "driver": "X.BERGERON",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 98.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R3",
+    "hippodrome": "HIPPODROME DE CHANTILLY",
+    "course": "C7",
+    "nom_course": "PRIX DE LA FAISANDERIE D'APREMONT",
+    "discipline": "Galop Plat",
+    "distance": 1600,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "13:50",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "BALTIC DUKE",
+        "driver": "F.LEFEBVRE",
+        "musique": "(25)3p3p9p3p3p7p3p5p3p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 7.6,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "SORENGO",
+        "driver": "H.JOURNIAC",
+        "musique": "(25)7p0p5p9p7p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "AMBRA ANTICA",
+        "driver": "T.PICCONE",
+        "musique": "(25)8p0p0p0p1p0p3p1p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 8.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "CHRISTINE",
+        "driver": "E.HARDOUIN",
+        "musique": "(25)2p6p5p5p6p6p8p0p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 4.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "NIKULYA FAL",
+        "driver": "A.LEMAITRE",
+        "musique": "(25)9p5p4p4p5p6p0p9p6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 21.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "LELIO",
+        "driver": "A.VILCHIEN",
+        "musique": "(25)8p0p2p7p2p5p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 9.6,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "ACE",
+        "driver": "M.GRANDIN",
+        "musique": "(25)0p0p0p3p8p9p4p(24)3p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 20.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "HAPPY SPIRIT",
+        "driver": "R.MANGIONE",
+        "musique": "(25)0p0p0p0p0p(24)3p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 38.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "MODERN SPIRIT",
+        "driver": "A.CRASTUS",
+        "musique": "(25)4p5p7p5p8p8p5p7p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 13.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "SPEEDY GREEN",
+        "driver": "P.REMOUE",
+        "musique": "(25)7p8p9p7p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 23.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "SYRUS",
+        "driver": "E.CORALLO",
+        "musique": "(25)0p2p0p5p0p0p6p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 8.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "MARIE DE PRUSSE",
+        "driver": "A.DUQUESNOY",
+        "musique": "(25)0p0p6p2p6p4p4p4p7p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 57.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "STAY AROUND",
+        "driver": "W.LEVESQUE",
+        "musique": "(25)6p4p4p3p0p2p5p6p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 16.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "ZYA D'AUMONT",
+        "driver": "A.HAMELIN",
+        "musique": "(25)0p4p0p0p8p3p6p2p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 47.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 15,
+        "nom": "POKROV",
+        "driver": "A.MADAMET",
+        "musique": "(25)0p4p6p8p6p0p8h3h8h",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 32.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 16,
+        "nom": "BIRCHPACOLAURGREEN",
+        "driver": "A.WERLE",
+        "musique": "(25)0p8p4p6p4p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 98.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R3",
+    "hippodrome": "HIPPODROME DE CHANTILLY",
+    "course": "C8",
+    "nom_course": "PRIX DE LA TABLE D'APREMONT",
+    "discipline": "Galop Plat",
+    "distance": 1600,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "14:34",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "SEND WOOD",
+        "driver": "C.PACAUT",
+        "musique": "(25)7p9p0p4p3p4p0p3p7p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 14.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "MY QUEEN",
+        "driver": "W.LEVESQUE",
+        "musique": "(25)2p2p1p0p3p6p5p1p8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 6.7,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "DUTY",
+        "driver": "I.MENDIZABAL",
+        "musique": "(25)8p2p8p(24)1p4p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 37.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "CLAVIS AUREA",
+        "driver": "F.VALLE SKAR",
+        "musique": "(25)5p6p1p4p5p3p6p9p6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 9.2,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "BABY HARTWOOD",
+        "driver": "M.GRANDIN",
+        "musique": "(25)6p1p4p1p6p7p0p6p8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "CALA ROSSA",
+        "driver": "M.VELON",
+        "musique": "(25)5p5p3p8p2p3p2p(24)9p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 9.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "BOISEMONT",
+        "driver": "C.SOUMILLON",
+        "musique": "(25)0p4p4p2p8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "GOLDEN BROWN",
+        "driver": "A.CRASTUS",
+        "musique": "(25)4p0p6p5p0p5p8p4p1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 9.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "ANGEL WARRIOR",
+        "driver": "H.JOURNIAC",
+        "musique": "(25)4p9p0p8p5p1p(24)2p6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 5.7,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "ISPERIA",
+        "driver": "F.LEFEBVRE",
+        "musique": "(25)9pDp5p4p3p1p0p0p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 46.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "CALOUNIYA",
+        "driver": "E.CORALLO",
+        "musique": "(25)0p4p5p3p5p9p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 64.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "AKVAREL",
+        "driver": "M.CALBRIX",
+        "musique": "(25)4p5p6p8p5p7p1p(24)1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 20.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "IPSO FACTO",
+        "driver": "R.MANGIONE",
+        "musique": "(25)9p6p7p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "LA FERRETCAPIENNE",
+        "driver": "T.PICCONE",
+        "musique": "(25)1p7p1p7p0p6p2p3p6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 26.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 15,
+        "nom": "DAVALLIA",
+        "driver": "H.BOUTIN",
+        "musique": "(25)1p3p8p3p5p2p6p6p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 21.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 16,
+        "nom": "LES DIGGERS",
+        "driver": "A.LEMAITRE",
+        "musique": "(25)0p1p6p3p3p4p0p6p3p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 31.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R4",
+    "hippodrome": "HIPPODROME DE LYON LA SOIE",
+    "course": "C1",
+    "nom_course": "PRIX PARC DU MERCANTOUR",
+    "discipline": "Trot Attelé",
+    "distance": 2700,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "15:09",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "KATSOUKA",
+        "driver": "S. STEFANO",
+        "musique": "(25)4a7a8a3a0a8a3a3a8a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "KATHARINA DE MAI",
+        "driver": "A. ROZZONI",
+        "musique": "8a(25)5a9a5a0a4a8a3a8a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 27.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "KENAVO DU BOUILLON",
+        "driver": "F. TUGEND",
+        "musique": "(25)2aDaDaDaDa1a3a0a1a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 3.6,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "KLASS DE DOMPIERRE",
+        "driver": "D. BEKAERT",
+        "musique": "(25)3aDa2aDa3a1a7a1a1a",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 6.6,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "KID PADDLE",
+        "driver": "F. BONNEFOY",
+        "musique": "(25)7a7a5a7aDa8a7aDa8a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 55.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "KLIC JULRY",
+        "driver": "J.P. GAUVIN",
+        "musique": "(25)DaDaDa2a5aDa8aDa5a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 21.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "KOETANE D'AVRIL",
+        "driver": "Q. CHAUVE-LAFFAY",
+        "musique": "(25)8a1a8a1a8a8a7m0a5a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 7.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "KALINE DU CORTA",
+        "driver": "J. CUOQ",
+        "musique": "(25)6a6a7a6a0a6a6aDa4a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 64.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "KEROS DU BAS BOSQ",
+        "driver": "B. RUET",
+        "musique": "(25)6a6a7a0a9a1a4aDa2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 36.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "KANTISSIME WINNER",
+        "driver": "MARTIN CORMY",
+        "musique": "(25)Da6a9a2a(24)1a8a4a1a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 3.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "KEEP TIME",
+        "driver": "C. TRIBOLET",
+        "musique": "(25)2a3a9a6aDaDa7a4a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 21.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "KUNG FU FAMILY",
+        "driver": "L. LAMAZIERE",
+        "musique": "(25)9aDa1a2a0a4a2a5a5a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 6.2,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R4",
+    "hippodrome": "HIPPODROME DE LYON LA SOIE",
+    "course": "C2",
+    "nom_course": "PRIX PARC DE L'AUBRAC",
+    "discipline": "Trot Attelé",
+    "distance": 2700,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "15:45",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "MOLITA",
+        "driver": "T. OUVRIE",
+        "musique": "(25)DaDaDaDa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 5.4,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "MA LOLA QUICK",
+        "driver": "F. BROUST",
+        "musique": "(25)5aDaDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 130.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "MONIE DU LOISIR",
+        "driver": "M. DUJMIC",
+        "musique": "(25)6aDa8a8a5m7a9aAa9a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 78.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "MILADY OAKS",
+        "driver": "G. VIDAL",
+        "musique": "(25)Da8aDaDaDaDa6a5aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 78.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "MESSINE JIHAIME",
+        "driver": "N. CORMY",
+        "musique": "(25)5a2a3aDa2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 10.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "MISS LOUBRESSE",
+        "driver": "Y.A. BRIAND",
+        "musique": "(25)7a2a2a3a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 4.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "MARIA DU MATO",
+        "driver": "B. THOMAS",
+        "musique": "(25)2a6a1a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 26.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "MANON DES CHAMPS",
+        "driver": "P. CALLIER",
+        "musique": "(25)4mDa3a8a4a5aDa4a7a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 19.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "MANDOLINE",
+        "driver": "MARTIN CORMY",
+        "musique": "(25)1a5a4a2aDa5aDa5aDa",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 9.6,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "MISAKI D'OURVILLE",
+        "driver": "F. BONNEFOY",
+        "musique": "(25)0a2a2a3a9a2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 66.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "MOON TURGOT",
+        "driver": "Q. CHAUVE-LAFFAY",
+        "musique": "6a(25)DaDa7a0aDa2aDa3a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 6.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "MAKARA DU RAVARY",
+        "driver": "L. GOETZ",
+        "musique": "(25)2a0a0a1a2a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 3.7,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R4",
+    "hippodrome": "HIPPODROME DE LYON LA SOIE",
+    "course": "C3",
+    "nom_course": "PRIX PARC DES CALANQUES",
+    "discipline": "Trot Attelé",
+    "distance": 2700,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "19:30",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "MILANO",
+        "driver": "F. BONNEFOY",
+        "musique": "(25)5aDa7aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 65.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "MIO DE ROSAN",
+        "driver": "B. RUET",
+        "musique": "(25)Da6a4a3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 30.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "MAZZARO KILY",
+        "driver": "G. LAURENT",
+        "musique": "(25)4a8a7aDa1a4a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "MAGIC PEGASUS",
+        "driver": "P. CALLIER",
+        "musique": "(25)Da8a4a5a6a6a5a5a2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 30.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "MAESTRO D'ESPACE",
+        "driver": "Q. CHAUVE-LAFFAY",
+        "musique": "(25)0a6aDa2aDaDa7a6aDa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 5.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "MALONG",
+        "driver": "A. GAUDIN",
+        "musique": "(25)7a0a6aDmDaDm1aDaDa",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 34.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "MISTA GUILLERVILLE",
+        "driver": "Y.A. BRIAND",
+        "musique": "(25)8a9a5a5aDa2a2aDaDa",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 4.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "MAKING TIME",
+        "driver": "ALEXIS LERENARD",
+        "musique": "(25)6m4mDm2m3mDmDa7aDm",
+        "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 33.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "MOGADOR BLEU",
+        "driver": "MARTIN CORMY",
+        "musique": "(25)3a3aDa3a2a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 2.6,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "MASSIMO",
+        "driver": "D. BEKAERT",
+        "musique": "(25)2aDa6a7a2aDa4a6a3a",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 4.2,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "MINI LULU",
+        "driver": "J.L. VERRIERE",
+        "musique": "(25)4a1aDa1aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 20.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R4",
+    "hippodrome": "HIPPODROME DE LYON LA SOIE",
+    "course": "C4",
+    "nom_course": "PRIX PARC DE MILLEVACHES EN LIMOUSIN",
+    "discipline": "Trot Attelé",
+    "distance": 2050,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "16:54",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "NATO JOSSELYN",
+        "driver": "M. BROUWER",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 1.6,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "NEMROD KYDE",
+        "driver": "TH. BUSSET",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 18.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "NEOPHYTE GIGI",
+        "driver": "M. DUJMIC",
+        "musique": "",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "NIRVANA D'HERMES",
+        "driver": "S. STEFANO",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 11.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "NOEMIE DES CHARMES",
+        "driver": "T. OUVRIE",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 4.4,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "NUDAN WELL",
+        "driver": "A. TINTILLIER",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 6.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "NORIGOULET",
+        "driver": "A. ANDRE",
+        "musique": "(25)Da",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 13.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "N'ATTENDS PERSONNE",
+        "driver": "PH. GAILLARD",
+        "musique": "(25)9a0a4a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 5.4,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R4",
+    "hippodrome": "HIPPODROME DE LYON LA SOIE",
+    "course": "C5",
+    "nom_course": "PRIX PARC DE LA VANOISE",
+    "discipline": "Trot Attelé",
+    "distance": 2700,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "17:30",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "KHAZIM",
+        "driver": "D. BEKAERT",
+        "musique": "(25)Da4a1aDaDa6a0a5aDa",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 8.7,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "JASMINE LOULOU",
+        "driver": "J.P. PRALUS",
+        "musique": "(25)0aDaDa0aDa4a0a5aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 164.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "JASPER JOHNS",
+        "driver": "B. THOMAS",
+        "musique": "(25)Dm3m5aDa1a2aDa4a7a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 90.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "L'AMBASSADEUR",
+        "driver": "L. GARCIA",
+        "musique": "(25)DaDaDa2a4a4a4a2a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 25.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "LUEGO CONTIGO",
+        "driver": "Y.A. BRIAND",
+        "musique": "(25)6a6a7a4a3a1a1a2a1a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 3.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "JO DE L'ETANG",
+        "driver": "D. MARASCO",
+        "musique": "(25)8a8a0a7a9a7a2a4a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 235.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "JOYAUX DES ILES",
+        "driver": "M. LAFFAY",
+        "musique": "(25)Da0a5a2a7a9a0a0a9a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 104.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "LIZZY DE JOUDES",
+        "driver": "G. LAURENT",
+        "musique": "(25)Aa5a6a5a0a2a6a4a5a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 90.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "KHAN D'HERIPRE",
+        "driver": "B. RUET",
+        "musique": "(25)6a9a9a7a9a1a7a1a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 120.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "JAKABINO",
+        "driver": "P. CALLIER",
+        "musique": "(25)3a7a8a2a1a5a1a5a2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 25.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "JADE MAJOR",
+        "driver": "A. ANDRE",
+        "musique": "(25)7a2a3a0a1a6a8a4a3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 15.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "ISABEY QUESNOT",
+        "driver": "N. PACHA",
+        "musique": "(25)9a5a0a9a0a0aDa2a7a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 56.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "INO DE BRION",
+        "driver": "Q. DAOUGABEL",
+        "musique": "(25)8a7aDa0aDa1a6a6aDa",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 175.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "JAMES DE LA VALLEE",
+        "driver": "A. TINTILLIER",
+        "musique": "(25)4m6a7a8a3a3a1a1a1a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 7.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 15,
+        "nom": "KRIS MARTIN",
+        "driver": "M. BROUWER",
+        "musique": "(25)6a6a5a5m9a1aDa1aDa",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 2.6,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 16,
+        "nom": "HADES JULRY",
+        "driver": "J.P. GAUVIN",
+        "musique": "(25)8a8a0mDa5a2a9a4a6a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 115.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R4",
+    "hippodrome": "HIPPODROME DE LYON LA SOIE",
+    "course": "C6",
+    "nom_course": "PRIX PARC DE PORT-CROS",
+    "discipline": "Trot Attelé",
+    "distance": 2700,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "18:02",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "JE REVE DE TOI",
+        "driver": "C. TRIBOLET",
+        "musique": "(25)DaDaDa9a9aDa2a0a8a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 126.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "JUNIOR DU GRENIER",
+        "driver": "A. ANDRE",
+        "musique": "(25)0a(24)DmDm4aDaDa3a0a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 10.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "KING DE BASSIERE",
+        "driver": "L. DURANTET",
+        "musique": "(25)Da0a8aDa0a0a9aDa1a",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 111.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "JOYAU DE MASSARA",
+        "driver": "J.P. PRALUS",
+        "musique": "(25)Da2a0a4a5a4aDa7a4a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 51.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "KALIMA DU GOUTIER",
+        "driver": "P. CALLIER",
+        "musique": "(25)6a6a5a4a5a7a8a9a5a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 18.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "JASON FAC",
+        "driver": "L. GOETZ",
+        "musique": "(25)1a9a6a0a6a7a5aDa9a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 6.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "KAMELIE DU CAMPUS",
+        "driver": "A. MUIDEBLED",
+        "musique": "(25)5a2a4a7aDa4aDa5a3a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 3.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "KARAOKE",
+        "driver": "MARTIN CORMY",
+        "musique": "(25)0a4a3a5a4a8a8a0a2a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 25.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "JACEE DE BUSSIERES",
+        "driver": "Q. CHAUVE-LAFFAY",
+        "musique": "(25)DmDaDmDa5a(24)Dm3a8a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 28.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "KADIMA ERA",
+        "driver": "T. OUVRIE",
+        "musique": "(25)0aDm3a5a(24)Dm1mDa(23)",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 4.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "JACQUIE DU GARDEN",
+        "driver": "Q. DAOUGABEL",
+        "musique": "(25)3a6a6a6a4a1a7a3a1a",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 54.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "JUAN LES PINS",
+        "driver": "B. RUET",
+        "musique": "(25)5m2aDa3m9a2a3aDaDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 121.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "JIPSY DES AIRES",
+        "driver": "A. TINTILLIER",
+        "musique": "(25)Da7a2a2a5a6m8a8a3a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 16.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "JACKPOT MATH",
+        "driver": "TH. BUSSET",
+        "musique": "(25)8aDa8m2m5m8m6m3m1m",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 134.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 15,
+        "nom": "JEWEL SMILE",
+        "driver": "N. PACHA",
+        "musique": "(25)0a4aDaDa1a2aDaDa3a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 23.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 16,
+        "nom": "KIWI DU LOISIR",
+        "driver": "A. GAUDIN",
+        "musique": "(25)8a1a1aDa2a0a5aDa6a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 8.4,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R4",
+    "hippodrome": "HIPPODROME DE LYON LA SOIE",
+    "course": "C7",
+    "nom_course": "PRIX PARC DES PREALPES D'AZUR",
+    "discipline": "Trot Attelé",
+    "distance": 2700,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "18:34",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "LUAP D'ORTIGE",
+        "driver": "B. THOMAS",
+        "musique": "(25)8a8a3a4a8a0a3a7aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 102.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "LOOKING DU CAIEU",
+        "driver": "F. OUVRIE",
+        "musique": "Da(25)DaDa1aDaDa7a6a(24)",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 3.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "LITTLE OAKS",
+        "driver": "G. VIDAL",
+        "musique": "(25)DaDaAa5a1a(24)8a5a3a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 18.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "LESNOIX",
+        "driver": "ALEXIS LERENARD",
+        "musique": "(25)6aDa7a3aDm6a0a5aDa",
+        "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 55.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "LINO DE LA VALLEE",
+        "driver": "A. ANDRE",
+        "musique": "(25)1a3a3aDa3a2aDaDa(24)",
+        "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 9.6,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "LUTIN DU JOUR",
+        "driver": "TH. BUSSET",
+        "musique": "(25)Da2a5a5a1a1a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 18.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "LEXO JELOCA",
+        "driver": "L. GOETZ",
+        "musique": "(25)2a3a0a6aDa5a7a1a2a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 2.6,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "LUXOR DES CELLIERS",
+        "driver": "C. TRIBOLET",
+        "musique": "(25)Da2a2aDaDa3aDa5a4m",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 70.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "LUPIN DE LA VALLEE",
+        "driver": "L. DURANTET",
+        "musique": "(25)3aDa4a5a3a4a8aDa4a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 6.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "LANCELOT VENESI",
+        "driver": "Q. CHAUVE-LAFFAY",
+        "musique": "(25)0aDaDaDaDa(24)1a3a2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 70.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "LUCCIANO D'OMAHA",
+        "driver": "P. CALLIER",
+        "musique": "(25)7a5a6a8a2a2a4a1a2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 16.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R4",
+    "hippodrome": "HIPPODROME DE LYON LA SOIE",
+    "course": "C8",
+    "nom_course": "PRIX PARC DES CAPS ET MARAIS D'OPALE",
+    "discipline": "Trot Attelé",
+    "distance": 2700,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "19:06",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "LONELY JULRY",
+        "driver": "J.P. GAUVIN",
+        "musique": "(25)5a4a6aDa6a0aDaDa2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 57.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "LA RAMEE",
+        "driver": "P. CALLIER",
+        "musique": "(25)5a4a0a4a5aDa9a3aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 54.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "L'IMPERATRICE",
+        "driver": "A. ANDRE",
+        "musique": "(25)DmDa6a2mDmDaDa4aDa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 7.4,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "LANCIA DE LOU",
+        "driver": "T. OUVRIE",
+        "musique": "(25)DaDaDa1a1aDaDa3aDa",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 6.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "LIBERTY FRANCE",
+        "driver": "N. PACHA",
+        "musique": "(25)2a8a6a2aDm5a7a8a(24)",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "LEYLI DE LA VALLEE",
+        "driver": "A. TINTILLIER",
+        "musique": "(25)9aDa0aDaDaDa1aDa(24)",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 20.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "LOUISETTE FLEURY",
+        "driver": "Q. CHAUVE-LAFFAY",
+        "musique": "(25)7a2a0a0aDa1a(24)0a1a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "LADY BLACK ROCHEL",
+        "driver": "M. BROUWER",
+        "musique": "(25)1a2a3a3aDa1a2a3a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 2.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "LEGENDE DU BUGEY",
+        "driver": "L. DURANTET",
+        "musique": "(25)5a8aDaDaDaDa9a1a2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 133.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "L'ILE DU TRIEUX",
+        "driver": "MARTIN CORMY",
+        "musique": "(25)3a5a1aDaDa0a3a2a7a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "LOUNA CHIC",
+        "driver": "J. CUOQ",
+        "musique": "(25)2m5m4mDaDaDm8a7aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 69.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "LOLA DU CHERISAY",
+        "driver": "F. TUGEND",
+        "musique": "(25)4aDa4a2a7a7a8a5a8a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 10.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "LUNA MAG",
+        "driver": "B. RUET",
+        "musique": "(25)9aDa6a6a4aDaDm6a3m",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 120.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "LAIKA D'ESPACE",
+        "driver": "PH. GAILLARD",
+        "musique": "(25)0a9aDaDaDa8a2a(24)Dm",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 52.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R5",
+    "hippodrome": "HIPPODROME DE WOLVEGA P-B",
+    "course": "C1",
+    "nom_course": "PRIX BONNE ANNÉE 2026                   PAYS BAS",
+    "discipline": "Trot Attelé",
+    "distance": 2100,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "17:44",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "PIP BIANCO",
+        "driver": "BJORN VAN DEN BERG",
+        "musique": "(25)5a2a1a0a4a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 7.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "NITRO GREENWOOD",
+        "driver": "Mme ZOË WESTER",
+        "musique": "(25)5a0a3a0a5a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 17.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "JANERO DES MONTS",
+        "driver": "Mme ROSA DEKKER",
+        "musique": "(25)5a0a0a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 7.7,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "JACKY BAROSSO",
+        "driver": "JAAP VAN RIJN",
+        "musique": "(25)1a1a3aRa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 2.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "PAULO GREENWOOD",
+        "driver": "MATS WESTER",
+        "musique": "(25)4a3a5a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 15.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "PORSCHE BOKO",
+        "driver": "ANDRÉ BAKKER",
+        "musique": "(25)2a1a0a5aRa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 5.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "ORLANDO LOBELL",
+        "driver": "FINN VERKAIK",
+        "musique": "(25)0a0aRa(24)0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 21.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "PETER B SWAGERMAN",
+        "driver": "FRANS VAN DER BLONK",
+        "musique": "(25)0a5a0a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 28.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "FACE RIS",
+        "driver": "STEFAN SCHOONHOVEN",
+        "musique": "(25)3a0a0a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "PATRICK J",
+        "driver": "TOM KOOYMAN",
+        "musique": "(25)1a1a0a2a0a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 16.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "RUNNER LOBELL",
+        "driver": "JOHN DEKKER",
+        "musique": "(25)5a4a4a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 28.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "PASSOA TRANSS R",
+        "driver": "JIM VELDMAN",
+        "musique": "(25)4a4a0a0a4a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 42.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R5",
+    "hippodrome": "HIPPODROME DE WOLVEGA P-B",
+    "course": "C2",
+    "nom_course": "PRIX DION TESSELAAR - CHAMPION 2025     PAYS BAS",
+    "discipline": "Trot Attelé",
+    "distance": 2600,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "18:18",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "KATYUSHA",
+        "driver": "TOM KOOYMAN",
+        "musique": "(25)0a5a3a1a4a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 14.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "LOVE SUPREME",
+        "driver": "JAAP VAN RIJN",
+        "musique": "(25)0a2a0a1aRa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 1.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "IRANCY CODIE",
+        "driver": "KRISTOF DEPUYDT",
+        "musique": "(25)5a1a1a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 11.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "GABIN GRIFF",
+        "driver": "MICHEL ROTHENGATTER",
+        "musique": "(25)3a2a2a0a0a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 6.2,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "HERRA D'AVENIR",
+        "driver": "ANDRÉ BAKKER",
+        "musique": "(25)4a1a0a4a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 14.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "JEYMIXE",
+        "driver": "BAS CREBAS",
+        "musique": "(25)0a4a1a5a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 11.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "IT'S ME DIESCHOOT TF",
+        "driver": "Mme HANNA HUYGENS",
+        "musique": "(25)5a0a5a5a4a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 29.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "INDIEN PASS",
+        "driver": "MARC HUYGENS",
+        "musique": "(25)0a3a4a3a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 59.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "JACK BELLI",
+        "driver": "Mme FLORIS VANDENABEELE",
+        "musique": "(25)3a5a4a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 29.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "HECTOR DE CORDAY",
+        "driver": "LIEVEN CANNAERT",
+        "musique": "(25)0a3a4a2a2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 29.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "IDYLLE TURGOT",
+        "driver": "JEFFREY MIERAS",
+        "musique": "(25)4a3a0a0a5a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 19.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R5",
+    "hippodrome": "HIPPODROME DE WOLVEGA P-B",
+    "course": "C3",
+    "nom_course": "PRIX BOKO STABLES - CHAMPION 2025       PAYS BAS",
+    "discipline": "Trot Attelé",
+    "distance": 2100,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "18:50",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "NANCE BB",
+        "driver": "CHIEL BOS",
+        "musique": "(25)3a4a2a0a4a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 107.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "OVE SCHERMER",
+        "driver": "BJORN VAN DEN BERG",
+        "musique": "(25)1a2a1a2a1a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "LEO GS",
+        "driver": "Mme ROSA DEKKER",
+        "musique": "(25)5a4a5a1a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 14.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "PARANOIA",
+        "driver": "ANDRÉ BAKKER",
+        "musique": "(25)0a1a0a3a1a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 10.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "GURION FONT",
+        "driver": "JAAP VAN RIJN",
+        "musique": "(25)1a1a1a1a1a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 1.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "OFFLIMIT BRIGADOON (NL)",
+        "driver": "FINN VERKAIK",
+        "musique": "(25)Ra5a5a3a1a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "MIGHTY MEERSWAL",
+        "driver": "PATRICK VAN OOIJEN",
+        "musique": "0a(25)3a0a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 107.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "E LADY RIS",
+        "driver": "STEFAN SCHOONHOVEN",
+        "musique": "(25)4a4a0a3a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 35.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "OLIVER KITE",
+        "driver": "JEFFREY MIERAS",
+        "musique": "(25)2a0a0a3a3a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "MONEY MAKER BR",
+        "driver": "ROB DE VLIEGER",
+        "musique": "(25)3a2a3a4a3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 47.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R5",
+    "hippodrome": "HIPPODROME DE WOLVEGA P-B",
+    "course": "C4",
+    "nom_course": "PRIX FLORIS VANDENABEELE - CHAMPION 2025PAYS BAS",
+    "discipline": "Trot Attelé",
+    "distance": 2100,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "19:22",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "PATHWAY FORTUNA",
+        "driver": "FRANS VAN DER BLONK",
+        "musique": "(25)Ra",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 27.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "PAPARAZZI",
+        "driver": "NIELS JONGEJANS",
+        "musique": "(25)Ra",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 15.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "PROUD DREAM",
+        "driver": "JEFFREY MIERAS",
+        "musique": "(25)0aRa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 10.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "RAMBO LOBELL",
+        "driver": "JOHN DEKKER",
+        "musique": "(25)Ra4a0aRa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 2.4,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "PRECIOUS GURU",
+        "driver": "Mme CAROLINE AALBERS",
+        "musique": "(25)0a0a0a3a5a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 21.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "PAPILLON BOKO",
+        "driver": "JIM VELDMAN",
+        "musique": "(25)0a0a0aRa(24)Ra",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 54.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "PETER V.BOKO",
+        "driver": "ANDRÉ BAKKER",
+        "musique": "(25)0a2a0a0a0a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 108.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "PAYCHECK H",
+        "driver": "STEFAN SCHOONHOVEN",
+        "musique": "(25)2a5a4a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 13.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "PROUD BEUCKENSWIJK",
+        "driver": "TOM KOOYMAN",
+        "musique": "(25)0a3a3aRa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 19.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "PANTANI STARLAKE",
+        "driver": "JAAP VAN RIJN",
+        "musique": "(25)0a4a1aRa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 3.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "PRETTY P KITE",
+        "driver": "ROB DE VLIEGER",
+        "musique": "(25)5a2a0a5a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 24.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R5",
+    "hippodrome": "HIPPODROME DE WOLVEGA P-B",
+    "course": "C5",
+    "nom_course": "PRIX PETER TER BORGH - CHAMPION 2025    PAYS BAS",
+    "discipline": "Trot Attelé",
+    "distance": 2100,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "19:49",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "MARK SCHERMER",
+        "driver": "Mme INGRID VAN DEN AKKER",
+        "musique": "(25)0a0a3a0a2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 49.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "OLIZE JB BOKO",
+        "driver": "ANDRÉ BAKKER",
+        "musique": "(25)3a1a0a2a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 5.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "PEBBLES NEWPORT",
+        "driver": "FINN VERKAIK",
+        "musique": "(25)4a4a0a3a1a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "NINA BEUCKENSWIJK (NL)",
+        "driver": "KURT ROEGES",
+        "musique": "(25)1a1aRa5a3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 1.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "MAYLO",
+        "driver": "STEFAN SCHOONHOVEN",
+        "musique": "(25)3a4a4a0a5a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 16.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "LOCHRAN F.BOKO",
+        "driver": "JAAP VAN RIJN",
+        "musique": "0a(25)0a3a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 4.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "DREAM BURGERHEIDE",
+        "driver": "TOM KOOYMAN",
+        "musique": "(25)2a(24)3a2a3a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 49.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "MISTRAL RICARDO",
+        "driver": "JOHN DEKKER",
+        "musique": "(25)4a5a2a1a4a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 10.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R5",
+    "hippodrome": "HIPPODROME DE WOLVEGA P-B",
+    "course": "C6",
+    "nom_course": "PRIX JAAP VAN RIJN - CHAMPION 2025      PAYS BAS",
+    "discipline": "Trot Attelé",
+    "distance": 2100,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "20:15",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "HAMORI MEMORY",
+        "driver": "Mme NIKITA MENGER",
+        "musique": "(25)3a0a0a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "MISS NORMANDIE",
+        "driver": "Mme FLORIS VANDENABEELE",
+        "musique": "(25)Ra",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "LOVELY SAM",
+        "driver": "ANDRÉ BAKKER",
+        "musique": "4a(25)0a4a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "LOLITA WELL",
+        "driver": "PATRICK VAN OOIJEN",
+        "musique": "(25)4a4a0a5a5a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "KURAMA DAIRPET",
+        "driver": "KILLIAN POELS",
+        "musique": "(25)4a0a5a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "LEADER DE VAUVILLE",
+        "driver": "KRISTOF DEPUYDT",
+        "musique": "1a(25)1a5a0a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "LANDRE DU CHIFFRES TF",
+        "driver": "Mme HANNA HUYGENS",
+        "musique": "(25)5a0a5a4a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "LONE RANGER",
+        "driver": "BAS CREBAS",
+        "musique": "(25)4a0a0a5a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R6",
+    "hippodrome": "HIPPO DE GULFSTREAM PARK USA",
+    "course": "C8",
+    "nom_course": "MAIDEN SPECIAL WEIGHT 1700",
+    "discipline": "Galop Plat",
+    "distance": 1700,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "20:53",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "RAMAJAY",
+        "driver": "T GAFFALIONE",
+        "musique": "(25)2p2p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "LENNIE G",
+        "driver": "C LANERIE",
+        "musique": "(25)4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "THUNDEROUSLY",
+        "driver": "J ALVARADO",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "REDEMPTION HOUR",
+        "driver": "J CASTELLANO",
+        "musique": "(25)7p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "SARTORIAL",
+        "driver": "J RUIZ",
+        "musique": "(25)4p3p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "FANCY GENTLEMAN",
+        "driver": "J ROSARIO",
+        "musique": "(25)3p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "CRUISIN CROSSBAY",
+        "driver": "M HUSBANDS",
+        "musique": "(25)4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "ACE JACK DEUCE",
+        "driver": "R ROJAS",
+        "musique": "(25)4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "PAX MUNDI",
+        "driver": "I ORTIZ, JR.",
+        "musique": "(25)2p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R6",
+    "hippodrome": "HIPPO DE GULFSTREAM PARK USA",
+    "course": "C9",
+    "nom_course": "ALLOWANCE OPTIONAL CLAIMING 1000",
+    "discipline": "Galop Plat",
+    "distance": 1000,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "21:23",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "HOT CARGO",
+        "driver": "J MORELOS",
+        "musique": "(25)6p3p3p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "COCO ABARRIO",
+        "driver": "C MARTINEZ",
+        "musique": "(25)6p1p2p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "TRUMPETS",
+        "driver": "E PEREZ",
+        "musique": "(25)3p3p2p7p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "GREENFIELD COUGAR",
+        "driver": "J BRAVO",
+        "musique": "(25)4p1p1p1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "BREEZERO",
+        "driver": "T GAFFALIONE",
+        "musique": "(25)1p2p4p1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "LE AMAZONIA",
+        "driver": "J ALVARADO",
+        "musique": "(25)2p4p1p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "MZ BIG BUCKS",
+        "driver": "I ORTIZ, JR.",
+        "musique": "(24)8p1p1p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "VINDICATE CHA CHA",
+        "driver": "J CASTELLANO",
+        "musique": "(25)1p6p6p3p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "ON THE PAYROLL",
+        "driver": "J ROSARIO",
+        "musique": "(25)1p3p1p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "APROPOS",
+        "driver": "J RUIZ",
+        "musique": "(25)6p6p(24)1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R6",
+    "hippodrome": "HIPPO DE GULFSTREAM PARK USA",
+    "course": "C10",
+    "nom_course": "SUNSHINE CLASSIC S.",
+    "discipline": "Galop Plat",
+    "distance": 1700,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "21:53",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "PURE CLASS",
+        "driver": "J CASTELLANO",
+        "musique": "(25)5p8p1p3p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "HADES",
+        "driver": "T GAFFALIONE",
+        "musique": "(25)1p7p4p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "AWESOME TRAIN",
+        "driver": "I ORTIZ, JR.",
+        "musique": "(25)1p4p1p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "LURE HIM IN",
+        "driver": "E GONZALEZ",
+        "musique": "(25)2p4p5p3p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "LIGHTNING TONES",
+        "driver": "J MORELOS",
+        "musique": "(25)3p2p1p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "NEOEQUOS",
+        "driver": "M HUSBANDS",
+        "musique": "(25)6p2p1p9p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R6",
+    "hippodrome": "HIPPO DE GULFSTREAM PARK USA",
+    "course": "C11",
+    "nom_course": "SUNSHINE FILLY AND MARE TURF S.",
+    "discipline": "Galop Plat",
+    "distance": 1600,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "22:23",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "LADY CHA CHA",
+        "driver": "M VASQUEZ",
+        "musique": "(25)4p3p6p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "LUZ DE LA LUNA",
+        "driver": "D EGAN",
+        "musique": "(25)2p1p2p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "MISS MARY NELL",
+        "driver": "J ROSARIO",
+        "musique": "(25)8p1p2p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "VOLATILED",
+        "driver": "M HUSBANDS",
+        "musique": "(25)2p2p3p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "SAPPHIRE GIRL",
+        "driver": "M HUSBANDS",
+        "musique": "(25)1p2p6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "SPIRITED BOSS",
+        "driver": "I ORTIZ, JR.",
+        "musique": "(25)1p3p2p1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "ASHIMA",
+        "driver": "J CASTELLANO",
+        "musique": "(25)1p3p2p1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "SOUPER WILLIWAW",
+        "driver": "J RUIZ",
+        "musique": "(25)5p1p1p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "RUGELACH",
+        "driver": "E GONZALEZ",
+        "musique": "(25)2p2p7p(24)",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "SOUPER ZONDA",
+        "driver": "T GAFFALIONE",
+        "musique": "(25)4p8p1p(24)",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "GREAT VENEZUELA",
+        "driver": "T GAFFALIONE",
+        "musique": "(25)1p4p2p1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R7",
+    "hippodrome": "HIPPODROME DE SAN ISIDRO ARG",
+    "course": "C6",
+    "nom_course": "PREMIO FANTASIOSO 2020",
+    "discipline": "Galop Plat",
+    "distance": 1400,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "19:30",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "FUTURIST MIND",
+        "driver": "LUCAS FRANCISCO GONZALEZ",
+        "musique": "0p3p7p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "LUNA CURIOSA",
+        "driver": "MARTIN MONTOYA",
+        "musique": "0p4p0p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "ERINA",
+        "driver": "IVAN MONASTEROLO",
+        "musique": "0p2p3p3p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "GLOBAL PANCHA",
+        "driver": "EDUARDO GABRIEL ORTEGA TORRES",
+        "musique": "0p4p7p6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "MARY STRIPES",
+        "driver": "BRIAN RODRIGO ENRIQUE",
+        "musique": "0p4p3p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "ESPOUSE",
+        "driver": "WILLIAM PEREYRA",
+        "musique": "0p7p5p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "EMMA DANCE",
+        "driver": "JUAN PABLO PAOLONI",
+        "musique": "0p4p3p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "QUEEN FOR SALE",
+        "driver": "KEVIN BANEGAS",
+        "musique": "0p6p2p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R7",
+    "hippodrome": "HIPPODROME DE SAN ISIDRO ARG",
+    "course": "C7",
+    "nom_course": "PREMIO MATECO 2018",
+    "discipline": "Galop Plat",
+    "distance": 1000,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "20:00",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "GANG FLOWER",
+        "driver": "LEO NICOLAS ACUNA",
+        "musique": "0p6p3p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "PIERNA DE REINAS",
+        "driver": "IVAN MONASTEROLO",
+        "musique": "0p5p1p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "FESTIVE GIRL",
+        "driver": "MARTIN MONTOYA",
+        "musique": "0p7p8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "MY SOVEREIGN",
+        "driver": "JUAN PABLO PAOLONI",
+        "musique": "0p1p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "SANA COSTUMBRE",
+        "driver": "KEVIN BANEGAS",
+        "musique": "0p0p1p6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "FORTY DESEADA",
+        "driver": "ARIEL CARLOS FUENTES",
+        "musique": "0p3p5p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "ASOMBRAME",
+        "driver": "BRIAN RODRIGO ENRIQUE",
+        "musique": "0p1p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "SFERA",
+        "driver": "THIAGO EVER LARREA FRUTOS",
+        "musique": "0p8p1p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "FILLYS NOVA",
+        "driver": "FRANCISCO JESUS LAVIGNA",
+        "musique": "0p1p3p6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R7",
+    "hippodrome": "HIPPODROME DE SAN ISIDRO ARG",
+    "course": "C8",
+    "nom_course": "CLASICO BOTAFOGO G3 S. ( GRADE III )",
+    "discipline": "Galop Plat",
+    "distance": 2000,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "20:30",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "JAZZ SEIVER",
+        "driver": "KEVIN BANEGAS",
+        "musique": "0p2p0p7p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "ORPEN AGAIN",
+        "driver": "PABLO DAMIAN CARRIZO",
+        "musique": "0p1p7p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "CHELATO",
+        "driver": "JUAN CRUZ VILLAGRA",
+        "musique": "0p1p3p1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "JOAKO",
+        "driver": "ADRIAN MAXIMILIANO GIANNETTI",
+        "musique": "0p1p1p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "PECADO ORIGINAL",
+        "driver": "RODRIGO DANIEL BASCUNAN",
+        "musique": "0p2p1p1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "DRAGONET",
+        "driver": "EDUARDO GABRIEL ORTEGA TORRES",
+        "musique": "0p3p9p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R7",
+    "hippodrome": "HIPPODROME DE SAN ISIDRO ARG",
+    "course": "C9",
+    "nom_course": "PREMIO JURISTAR",
+    "discipline": "Galop Plat",
+    "distance": 1600,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "21:00",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "MONDEGO",
+        "driver": "FLORES JAIRO EMANUEL",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "RIO MORO",
+        "driver": "JUAN CRUZ VILLAGRA",
+        "musique": "0p7p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "DON AUTENTICO",
+        "driver": "BRIAN RODRIGO ENRIQUE",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "MR BLUE SKY",
+        "driver": "EDUARDO ORTEGA PAVON",
+        "musique": "0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "SOVIET BOY",
+        "driver": "BALMACEDA LAUTARO EMANUEL",
+        "musique": "0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "MARC GUCCI",
+        "driver": "LUCAS FRANCISCO GONZALEZ",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "BIG SPIRIT",
+        "driver": "LEO NICOLAS ACUNA",
+        "musique": "0p0p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "YOUNG SEA",
+        "driver": "PABLO DAMIAN CARRIZO",
+        "musique": "0p0p9p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "HAPPY HALO",
+        "driver": "WILLIAM PEREYRA",
+        "musique": "0p3p9p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "DON MACHETE",
+        "driver": "IVAN MONASTEROLO",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "KASHMIRE KID",
+        "driver": "LUCRECIA MARIANA CARABAJAL",
+        "musique": "0p2p2p8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "PERSECUTOR",
+        "driver": "FRANCISCO JESUS LAVIGNA",
+        "musique": "0p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "GLOBAL DEL SUR",
+        "driver": "RODRIGO DANIEL BASCUNAN",
+        "musique": "0p0p9p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "PLATONIC LOVE",
+        "driver": "MARTIN MONTOYA",
+        "musique": "0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 15,
+        "nom": "MEMIN PENGUIN",
+        "driver": "KEVIN BANEGAS",
+        "musique": "0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R7",
+    "hippodrome": "HIPPODROME DE SAN ISIDRO ARG",
+    "course": "C10",
+    "nom_course": "CLÁSICO ANIBAL D. ETCHART S.",
+    "discipline": "Galop Plat",
+    "distance": 1000,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "21:35",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "PORTUARIA LURE",
+        "driver": "KEVIN BANEGAS",
+        "musique": "0p1p3p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "RARE HUMOR",
+        "driver": "MARTIN MONTOYA",
+        "musique": "0p7p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "LA BAMBULLA",
+        "driver": "LUCIANO MATIAS RECUERO",
+        "musique": "0p6p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "PRETORIANA",
+        "driver": "IVAN MONASTEROLO",
+        "musique": "0p6p1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "VIEJA AMIGA MASK",
+        "driver": "WILLIAM PEREYRA",
+        "musique": "0p1p4p1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "NAIMABAD",
+        "driver": "MARTIN JAVIER VALLE",
+        "musique": "0p3p2p1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "GATA FRANK",
+        "driver": "BRIAN RODRIGO ENRIQUE",
+        "musique": "0p3p3p1p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R7",
+    "hippodrome": "HIPPODROME DE SAN ISIDRO ARG",
+    "course": "C11",
+    "nom_course": "PREMIO GREZZO 2025",
+    "discipline": "Galop Plat",
+    "distance": 1600,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "22:05",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "LAST CHANCE",
+        "driver": "BRIAN RODRIGO ENRIQUE",
+        "musique": "0p3p2p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "SHARIM",
+        "driver": "EDUARDO ORTEGA PAVON",
+        "musique": "0p2p2p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "EL OCURRENTE",
+        "driver": "MARTIN MONTOYA",
+        "musique": "0p6p5p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "NIGHT CRAWLER",
+        "driver": "KEVIN BANEGAS",
+        "musique": "0p1p1p2p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "THOR MEDINA",
+        "driver": "IVAN MONASTEROLO",
+        "musique": "0p1p2p3p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "EMBLEMATICU",
+        "driver": "BALMACEDA LAUTARO EMANUEL",
+        "musique": "0p3p0p5p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "CITY FOR SALE",
+        "driver": "FACUNDO MARCELO CORIA",
+        "musique": "0p1p1p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R7",
+    "hippodrome": "HIPPODROME DE SAN ISIDRO ARG",
+    "course": "C12",
+    "nom_course": "PREMIO BEST TIMES 2016",
+    "discipline": "Galop Plat",
+    "distance": 1000,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "22:35",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "JACK NEGRO",
+        "driver": "JUAN PABLO PAOLONI",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "SANTOS LUGARES",
+        "driver": "WEISHEIM ENRIQUE CARLOS E.",
+        "musique": "0p2p0p7p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "CONCILIADOR",
+        "driver": "PABLO DAMIAN CARRIZO",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "MARROCO MOI",
+        "driver": "RODRIGO DANIEL BASCUNAN",
+        "musique": "0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "SISMICO MIGHT",
+        "driver": "WILLIAM PEREYRA",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "HUMOR DE HONOR",
+        "driver": "IVAN MONASTEROLO",
+        "musique": "0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "CHATEAU GAL",
+        "driver": "LUCAS JESUS NORIEGA COBIAN",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "SPANKY",
+        "driver": "non communique.",
+        "musique": "0p2p8p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "DON CHAROLA",
+        "driver": "MARTIN MONTOYA",
+        "musique": "0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "CORONADO",
+        "driver": "LEO NICOLAS ACUNA",
+        "musique": "0p9p6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "EL SUENO",
+        "driver": "BRIAN RODRIGO ENRIQUE",
+        "musique": "0p5p4p4p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "POWER DETTO",
+        "driver": "EDUARDO GABRIEL ORTEGA TORRES",
+        "musique": "0p5p6p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "DESAFIANDO",
+        "driver": "THIAGO EVER LARREA FRUTOS",
+        "musique": "0p0p0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "QUE SEAS VOS",
+        "driver": "LUCRECIA MARIANA CARABAJAL",
+        "musique": "0p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 15,
+        "nom": "IGINUS",
+        "driver": "TOMAS VALENTIN ROA",
+        "musique": "0p9p6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 16,
+        "nom": "ELLOKOBETO",
+        "driver": "EDUARDO ORTEGA PAVON",
+        "musique": "0p0p6p6p",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R8",
+    "hippodrome": "HIPPODROME D'ARGENTAN",
+    "course": "C1",
+    "nom_course": "PRIX FABULOUS WOOD",
+    "discipline": "Trot Attelé",
+    "distance": 2875,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "12:00",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "NINO PRESTO",
+        "driver": "P.A. DELACOUR",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 19.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "NIRVANA SPIRIT",
+        "driver": "C. PILFERT",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 15.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "NIARKOS DU CEBE",
+        "driver": "L. GUINOISEAU",
+        "musique": "(25)Da",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 4.2,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "NIKI DU GOUTIER",
+        "driver": "R. LAMY",
+        "musique": "Da",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 7.7,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "NUAGE MYSTIC",
+        "driver": "A. REBECHE",
+        "musique": "Da(25)Da",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 42.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "NEWTON DE MONGOCHY",
+        "driver": "ADRIEN BLANDIN",
+        "musique": "(25)6a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 17.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "NONANT EFBE",
+        "driver": "F. BLANDIN",
+        "musique": "(25)6a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 42.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "NEWTON LANDING",
+        "driver": "TH. OSSUN",
+        "musique": "(25)7a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 13.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "NIKYSTAR D'AUVRECY",
+        "driver": "N. BRIDAULT",
+        "musique": "(25)4a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "NASTRO D'ORO",
+        "driver": "A. CHERADAME",
+        "musique": "(25)3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 5.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "NEW MAN ANGELE",
+        "driver": "G. DELACOUR",
+        "musique": "(25)DaDa3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 3.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R8",
+    "hippodrome": "HIPPODROME D'ARGENTAN",
+    "course": "C2",
+    "nom_course": "PRIX GERARD SAINT",
+    "discipline": "Trot Monté",
+    "distance": 2875,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "12:30",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "KHALEESI MATCH",
+        "driver": "LUCAS LUCIANI",
+        "musique": "6a(25)9m9a6a0a(24)1a2aDm",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "KING COMMANDERIE",
+        "driver": "Mme O. CORBIN",
+        "musique": "(25)DmDm7mDmDa9a5a4aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 71.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "KRONOS DE COSSE",
+        "driver": "M. LELIEVRE",
+        "musique": "0m(25)9aDa7a0a0a9aDa(24)",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 50.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "KECILPOSTE",
+        "driver": "M. POTIER",
+        "musique": "(25)7m9a0m8a3m3m0a5m7m",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 6.7,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "JOYCE PRIORY",
+        "driver": "Mlle E. BIZOUX",
+        "musique": "(25)0mDmDa(24)0aDmDa6m1m",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 35.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "KUZA DU BOUILLON",
+        "driver": "Mlle CLARA DERSOIR",
+        "musique": "(25)7a9a0a8a6a0aDm1m0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 13.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "INTENSE ACE",
+        "driver": "Mlle CL. SAUVAGE",
+        "musique": "(25)1mDm6a0a0a9a0a0a9a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 7.6,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "JOYAU DAIRPET",
+        "driver": "M. DELORME",
+        "musique": "(25)7m0a7a8a8a2a2a0a0a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 8.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "KENJI D'AUBERVILLE",
+        "driver": "ANDREA ROUSSEL",
+        "musique": "(25)1mDm0a7mDmDm4m7m9m",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 10.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "JUST PACHA",
+        "driver": "Mme R. HAGHIGHAT",
+        "musique": "(25)3mDm4m4m2m7m8mDm(24)",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 7.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "KANDISSIME",
+        "driver": "Mlle AURIANE MEUNIER",
+        "musique": "(25)Dm(24)DmDm2m1m3mDmDm",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 11.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "JAKA DU RUEL",
+        "driver": "Mlle M. JOLY",
+        "musique": "(25)7a2a2aDaDa2mDaDm8a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 10.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "KEOPS LUDOIS",
+        "driver": "Mlle A. GERVAIS",
+        "musique": "(25)4m1mDa6mDm3m2mDa0a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 5.2,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "JASMINE DE LYONS",
+        "driver": "V. HERARD",
+        "musique": "(25)2m6m0m5mDm5mAm2m6m",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 23.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R8",
+    "hippodrome": "HIPPODROME D'ARGENTAN",
+    "course": "C3",
+    "nom_course": "PRIX ETIENNE PANTHOU",
+    "discipline": "Trot Attelé",
+    "distance": 2875,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "13:00",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "MAUVE DE FLEUR",
+        "driver": "ET. LEFRANC",
+        "musique": "",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 14.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "MEVA DAIRPET",
+        "driver": "L. LAUDREN",
+        "musique": "(25)Da7aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "MELLINA DE MAI",
+        "driver": "G. JOUVE",
+        "musique": "(25)DaDaDm7aDa8m",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 13.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "MAZARA",
+        "driver": "J. CONDETTE",
+        "musique": "(25)6mDmDa9aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "MINETTE DU BOIS",
+        "driver": "P.A. DELACOUR",
+        "musique": "(25)0aDaDaDaDa(24)Da5a6a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 55.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "MESANGE DU RIB",
+        "driver": "N. PERRON",
+        "musique": "(25)5a4aAm0m8mDm",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 4.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "MAMBA BERRY",
+        "driver": "J. JAMAULT",
+        "musique": "(25)7a6a5a7a6a6a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 55.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "MALIZIOSA",
+        "driver": "P. CIMAROSTI",
+        "musique": "(25)5a8a8aDa3aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 6.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "MARA",
+        "driver": "CH. THIERRY",
+        "musique": "(25)3aDa8a3aDa(24)Da",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 6.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "MILADY DES RIOULTS",
+        "driver": "Q. MICHEL",
+        "musique": "(25)3a8a3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 7.2,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "MORZINE",
+        "driver": "G. CARDINE",
+        "musique": "(25)8aDaDaDa5aDaDa2a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "MIDINETTE DU YUCCA",
+        "driver": "K. CHAMPENOIS",
+        "musique": "(25)4m4aDm6m5m",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 8.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "MISSIONDARCHE",
+        "driver": "C. GODARD",
+        "musique": "(25)2a4aDa(24)DaDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 10.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "MONA PAGE",
+        "driver": "T. BEAUVAIS",
+        "musique": "(25)5aDa2a5a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 13.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R8",
+    "hippodrome": "HIPPODROME D'ARGENTAN",
+    "course": "C4",
+    "nom_course": "PRIX GASTON BRUNET",
+    "discipline": "Trot Attelé",
+    "distance": 2875,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "13:30",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "KISS YOU DU VERGER",
+        "driver": "S. OLIVIER",
+        "musique": "(25)9a3aDa9aDaDa9a2a7a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 121.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "KRONOS DES LANDES",
+        "driver": "B. HARDY",
+        "musique": "(25)2a2aDa7a0a5a6a0a9a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 15.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "KOLOSSE",
+        "driver": "S. BAUDE",
+        "musique": "(25)4aDa5aDaDa5a0aDa5a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 5.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "KOITRO DE QUERY",
+        "driver": "S. HARDY",
+        "musique": "(25)9a6a0a3aDa0a2a1a3a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 30.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "KAPORAL WINNER",
+        "driver": "T. CALO",
+        "musique": "(25)Da2a0a4aDa1a0a0m(24)",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 22.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "KAID BOURGEOIS",
+        "driver": "CL. GUILLON",
+        "musique": "(25)Dm2a3aDa4a0aDa4aDa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 15.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "KOOL D'AUBERVILLE",
+        "driver": "N. PERRELLE",
+        "musique": "(25)Da2a8a1a4a8a4a7a8a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "KIFF DU MANOLET",
+        "driver": "S. TRIBOURDEAU",
+        "musique": "(25)4a6a3a6aDaDa6a2a3a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "KOBE BEJI",
+        "driver": "A. LAMY",
+        "musique": "(25)Dm1aDm1a4aDa9a(24)8a",
+        "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 4.7,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "KARO FASHION",
+        "driver": "W. PLAIRE",
+        "musique": "(25)4a4a4a4a1a5a0a4a2a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "KING IMPERIAL",
+        "driver": "A. REBECHE",
+        "musique": "(25)0a1a6a4a8a7a6a0a7a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 8.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "KERLAZ D'AVE",
+        "driver": "A.G. MAILLARD",
+        "musique": "0a(25)Da0a7a3a3a6aDa6a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 40.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "KRONOS D'ERPION",
+        "driver": "F. BLANDIN",
+        "musique": "(25)5a8a5a6a0a7a8a6a4a",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 40.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "KING BLACK DANOVER",
+        "driver": "J. TRAVERS",
+        "musique": "(25)1a5a0a8aDaDa2a5aDa",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 11.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 15,
+        "nom": "KILOU",
+        "driver": "G. DELACOUR",
+        "musique": "5m(25)0aDa5a1a7aDaDa6a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 7.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 16,
+        "nom": "KAISER DE CESNY",
+        "driver": "P.A. DELACOUR",
+        "musique": "(25)0a8a1a2aDm0a3m3m8a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 24.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 17,
+        "nom": "KANEM",
+        "driver": "J. VANMEERBECK",
+        "musique": "(25)Da7aDaDa6a0a3a8a5a",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 24.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 18,
+        "nom": "KASSKOU CLEMAXELLE",
+        "driver": "S. GOUGEON",
+        "musique": "5a(25)9mDa3a5a8a2m9a3m",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R8",
+    "hippodrome": "HIPPODROME D'ARGENTAN",
+    "course": "C5",
+    "nom_course": "PRIX VINCENT MUSELLI",
+    "discipline": "Trot Attelé",
+    "distance": 2875,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "14:00",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "LOVELY FAST",
+        "driver": "P. CASTEL",
+        "musique": "(25)2mDa0aDa(24)9a8a5a5a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "LUCKY LUKE DANOVER",
+        "driver": "J. TRAVERS",
+        "musique": "(25)4aDa5aDa3aDa8aDa4a",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 62.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "LORD TOLLEVILLE",
+        "driver": "ADRIEN BLANDIN",
+        "musique": "(25)6a5a8a4a0aDa4a0a4a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 13.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "LE VOLONTAIRE",
+        "driver": "M. CHARUEL",
+        "musique": "(25)Da7a7a3a6a0aDa0aAa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 41.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "LACERTOSUS",
+        "driver": "S. OLIVIER",
+        "musique": "(25)Da0aDa0a7a7aDaDaDa",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 31.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "LAZAAL",
+        "driver": "R. LAMY",
+        "musique": "(25)1a3a3aDa3a5aDa6aDa",
+        "deferre": "DEFERRE_ANTERIEURS_PROTEGE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 3.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "LE CAPTAIN JACK",
+        "driver": "P.A. RYNWALT-BOULARD",
+        "musique": "(25)3a2a7a6a7aDa5aDa5a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 31.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "L'AIR DU TEMPS",
+        "driver": "A. LAMY",
+        "musique": "(25)1aDaDa1a3a2a7aDaDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 7.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "LUCKY DE POMMERAY",
+        "driver": "L. GUILLEMIN",
+        "musique": "(25)Dm8aDaDa3a3a3a6a1a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 9.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "LUTIN DE LA BASLE",
+        "driver": "B. HARDY",
+        "musique": "(25)2a9a6a3a4a7a0aDa8a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "LAFAYETTE DU BOURG",
+        "driver": "G. BLANDIN",
+        "musique": "(25)3a3a3a2aDa5a8aDa7a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 6.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "LOKY DE JIEL",
+        "driver": "M. BIZOUX",
+        "musique": "9a(24)Da2a1a4a6a2aDa(23)",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 24.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "L'ECLAIR DE PLAY",
+        "driver": "F. BLANDIN",
+        "musique": "(25)4a0a0a5a4a6a8a1a0a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 31.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "L'ANGE DE BOUERE",
+        "driver": "S. POILANE",
+        "musique": "(25)4a7a1a2a4a1a7a2a(24)",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 19.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 15,
+        "nom": "LESS TIME",
+        "driver": "S. ERNAULT",
+        "musique": "5a(25)7aDa1aDa(24)1aDa1a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 6.3,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 16,
+        "nom": "LUTIN DU PRATEL",
+        "driver": "A. LENOIR",
+        "musique": "(25)7a2a4a9a1a8a5a8a2a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 41.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 17,
+        "nom": "LYX OF CAMARO",
+        "driver": "M. GILARD",
+        "musique": "(25)2a9a6a6a7a1a4a4a1a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 62.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R8",
+    "hippodrome": "HIPPODROME D'ARGENTAN",
+    "course": "C6",
+    "nom_course": "PRIX ANDRE MARE",
+    "discipline": "Trot Attelé",
+    "distance": 2875,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "14:30",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "KAOURA THONIC",
+        "driver": "A. JANNIER",
+        "musique": "(25)8aAa6a0aDa4a1aDa0a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "KUZCOTOPIA",
+        "driver": "G. FAVRIS",
+        "musique": "(25)0a7a5aDa0a4a0a9a8a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 12.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "KELBELLE MOIRE",
+        "driver": "Mlle L. BESNARD",
+        "musique": "(25)0a7a0m7aDa3aDa0a4a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "KOUMBA DE LA NADE",
+        "driver": "TH. VIAUD",
+        "musique": "(25)Da4a0a6aDa7a2a5a6a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 55.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "KISS ME DOLUCIO",
+        "driver": "Mme A. MARANDEL",
+        "musique": "(25)8a0a8a5a3a2aDaDaDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 137.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "KISS ME TO LIVE",
+        "driver": "J.CH. BEAUFILS",
+        "musique": "(25)4a6a5a(24)Da0a5a6a9a",
+        "deferre": "PROTEGE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 7.4,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "KELSA DES TOUCHES",
+        "driver": "CH. GUERANGER",
+        "musique": "(25)0aDa0a2a0a8a0a8a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "KAMA DU METZ",
+        "driver": "M. BEAUVAIS",
+        "musique": "(25)3a0a3aDa2a9a0a8aDa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 13.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "KETTY PETTEVINIERE",
+        "driver": "P. BEASSE",
+        "musique": "(25)1a8a8a6a8a4a2a(24)3a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 18.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "KEILA DU PERCHE",
+        "driver": "TH. GOUJON",
+        "musique": "(25)3aDa1a3a6a7aDaDaDa",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 4.4,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "KALI DES LANDIERS",
+        "driver": "Mlle M. DE MEYER",
+        "musique": "(25)7a3a6a5a8a3a7a7a5a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 5.8,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "KOMMUNES DE PLAY",
+        "driver": "L. CHUPIN",
+        "musique": "(25)0a9aDa8a3a0a9a6a0a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 19.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "KISS ME DU LIVET",
+        "driver": "Mme ANDREA MAILLARD",
+        "musique": "4a(25)6a8a6a9a9a0a8a0a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 8.1,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "KALINKA DU BREUIL",
+        "driver": "FL. BUTTIER",
+        "musique": "(25)3a8a0a3a9a3a0a6a3a",
+        "deferre": "PROTEGE_ANTERIEURS_DEFERRRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 10.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 15,
+        "nom": "KALITY D'ERABLE",
+        "driver": "TH. BIZOUX",
+        "musique": "(25)0a7a4a0a0a6aDa0m1a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 34.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 16,
+        "nom": "KEVA LUDOISE",
+        "driver": "A. HEMON",
+        "musique": "(25)5a0a1a5a1a1a7a0a5a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 10.0,
+        "tendance_cote": "stable"
+      }
+    ]
+  },
+  {
+    "reunion": "R8",
+    "hippodrome": "HIPPODROME D'ARGENTAN",
+    "course": "C7",
+    "nom_course": "PRIX FERNAND LEGER",
+    "discipline": "Trot Attelé",
+    "distance": 2875,
+    "terrain_officiel": "Bon (Standard)",
+    "corde": "Corde standard",
+    "heure": "15:03",
+    "chevaux": [
+      {
+        "num": 1,
+        "nom": "LOLLIPOP WHITE",
+        "driver": "ADRIEN BLANDIN",
+        "musique": "(25)5a7a3aDa5aDaDaDaDa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 21.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 2,
+        "nom": "LIZA FLIGNY",
+        "driver": "S. HARDY",
+        "musique": "Dm(25)6m3m7m0a8aDa4m6m",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 3,
+        "nom": "LANA DES LANDES",
+        "driver": "Mlle NOEMIE HARDY",
+        "musique": "9a(25)0mDa6aDa4a8a3a6a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 4,
+        "nom": "LIBERTY D'IPEJY",
+        "driver": "S. GOUGEON",
+        "musique": "4m(25)Dm7m0a7a8a8aDa6a",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 26.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 5,
+        "nom": "LEA D'HOULBEC",
+        "driver": "A. REBECHE",
+        "musique": "(25)8a(24)1m3mDa6a2a4m",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 120.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 6,
+        "nom": "LAMBADA MOIRE",
+        "driver": "R. CORBIN",
+        "musique": "4a(25)3aDa9a4aDaDa7a0a",
+        "deferre": "DEFERRE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 7,
+        "nom": "LILI MARLEEN",
+        "driver": "S. ERNAULT",
+        "musique": "(25)1a1a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 2.9,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 8,
+        "nom": "LAGUNE DE LA COTE",
+        "driver": "S. OLIVIER",
+        "musique": "(25)7a0a0a7a0aDa4a2a5a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 15.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 9,
+        "nom": "LANA DE BEAUMEE",
+        "driver": "M. GILARD",
+        "musique": "(25)8aDa2a6a6aDa8a8aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 30.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 10,
+        "nom": "LUTECE DE LA FOLIE",
+        "driver": "CL. GUILLON",
+        "musique": "(25)6a5a6a3a5a0a1a0aDa",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 26.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 11,
+        "nom": "LAURE DE LORIOL",
+        "driver": "B. HARDY",
+        "musique": "(25)6a0a9a8a0a9a9a4a0a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": null,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 12,
+        "nom": "LEGENDE DRY",
+        "driver": "F. BLANDIN",
+        "musique": "(25)0a5aDaDaDa2aDa1aDa",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 30.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 13,
+        "nom": "LADY FAIRY",
+        "driver": "A.G. MAILLARD",
+        "musique": "(25)1aDaDa2a(24)Da5a6a5a",
+        "deferre": "DEFERRE_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 7.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 14,
+        "nom": "LA FLECHE",
+        "driver": "G. BLANDIN",
+        "musique": "(25)3a2a4a5a6m3m7a2a0a",
+        "deferre": "PROTEGE_ANTERIEURS",
+        "poids": 0.0,
+        "cote": 6.5,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 15,
+        "nom": "LEGENDE DU BOULAY",
+        "driver": "L. CHUPIN",
+        "musique": "(25)9a0a2a4a7a8a(24)8aDm",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 60.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 16,
+        "nom": "LOBELIE DE GODREL",
+        "driver": "P.A. RYNWALT-BOULARD",
+        "musique": "(24)3m4m6a9a6m3m3m2aDm",
+        "deferre": "",
+        "poids": 0.0,
+        "cote": 120.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 17,
+        "nom": "LIO DE PIENCOURT",
+        "driver": "ST. MEUNIER",
+        "musique": "(25)8a8a8a8a0aDm6a6a5a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 10.0,
+        "tendance_cote": "stable"
+      },
+      {
+        "num": 18,
+        "nom": "LADY DE JANEIRO",
+        "driver": "A. LAMY",
+        "musique": "5a(25)Da3aDa0a7aDa6a4a",
+        "deferre": "DEFERRE_ANTERIEURS_POSTERIEURS",
+        "poids": 0.0,
+        "cote": 6.5,
+        "tendance_cote": "stable"
+      }
+    ]
+  }
+]
