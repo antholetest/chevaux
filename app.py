@@ -29,6 +29,15 @@ HEADERS = {
     )
 }
 
+# --- INITIALISATION DE LA SESSION STATE POUR LES DATES ---
+if "date_commune" not in st.session_state:
+    st.session_state["date_commune"] = datetime.date.today()
+if "date_chrono_picker" not in st.session_state:
+    st.session_state["date_chrono_picker"] = st.session_state["date_commune"]
+if "date_analyse_picker" not in st.session_state:
+    st.session_state["date_analyse_picker"] = st.session_state["date_commune"]
+
+
 # --- FONCTIONS UTILITAIRES DE CONVERSION & RÉGULARISATION ---
 def safe_float(val, default=0.0):
     if val is None or val == "" or val == "-":
@@ -65,19 +74,14 @@ def synchroniser_github_api(filename_str, content_bytes, message, token=None):
     }
 
     try:
-        # 1. Récupération du SHA si le fichier existe déjà sur GitHub
         res_get = requests.get(url, headers=headers, timeout=10)
         sha = res_get.json().get("sha") if res_get.status_code == 200 else None
 
-        # 2. Encodage en base64 pour l'API GitHub
         content_b64 = base64.b64encode(content_bytes).decode("utf-8")
-
-        # 3. Payload de commit
         payload = {"message": message, "content": content_b64}
         if sha:
             payload["sha"] = sha
 
-        # 4. Envoi via PUT
         res_put = requests.put(url, headers=headers, json=payload, timeout=10)
         if res_put.status_code not in [200, 201]:
             print(f"❌ Erreur Sync GitHub API ({res_put.status_code}): {res_put.text}")
@@ -111,7 +115,6 @@ def sauvegarder_et_synchroniser(
     filename_path = Path(filename)
     content_bytes = json.dumps(data, ensure_ascii=False, indent=2).encode("utf-8")
 
-    # Sauvegarde locale
     with open(filename_path, "wb") as f:
         f.write(content_bytes)
 
@@ -222,40 +225,6 @@ def reinitialiser_application_complete():
         fichiers_supprimes += 1
       except Exception:
         pass
-
-  try:
-    if "GITHUB_TOKEN" in st.secrets:
-      token = st.secrets["GITHUB_TOKEN"]
-      subprocess.run([
-          "git",
-          "config",
-          "--global",
-          "user.email",
-          "bot@streamlit.app",
-      ], capture_output=True)
-      subprocess.run([
-          "git",
-          "config",
-          "--global",
-          "user.name",
-          "Streamlit Bot",
-      ], capture_output=True)
-      subprocess.run(["git", "rm", "-f", "*.json"], capture_output=True)
-      status = subprocess.run(
-          ["git", "status", "--porcelain"], capture_output=True, text=True
-      )
-      if status.stdout.strip():
-        subprocess.run([
-            "git",
-            "commit",
-            "-m",
-            "Remise à zéro complète (admin)",
-        ], check=True, capture_output=True)
-        repo_url = f"https://{token}@github.com/antholetest/chevaux.git"
-        subprocess.run(["git", "push", repo_url], capture_output=True)
-        st.toast("Dépôt GitHub nettoyé !", icon="🧹")
-  except Exception as e:
-    st.toast(f"Nettoyage local (Git: {e})", icon="⚠️")
 
   for key in list(st.session_state.keys()):
     del st.session_state[key]
@@ -665,7 +634,6 @@ def evaluer_score_cheval(
     tendance = cheval.get("tendance_cote", "stable")
     bonus_place = params_adaptatifs.get("bonus_place", 0)
 
-    # 1. Performance Récente & Musique
     score_musique = 0
     for idx, char in enumerate(musique[:8]):
         if char == "1":
@@ -680,7 +648,6 @@ def evaluer_score_cheval(
             score_musique -= 7 if (char in ["D", "T", "A"] and idx < 3) else 4
     score += score_musique * modele_ia.get("poids_musique", 1.05)
 
-    # 2. Configuration Physico-Technique
     if "Trot" in str(discipline):
         if "QUATRE" in deferre:
             score += 10.0 * modele_ia.get("poids_ferrage", 1.25)
@@ -697,7 +664,6 @@ def evaluer_score_cheval(
         ):
             score += 7.0 * modele_ia.get("poids_terrain", 1.15)
 
-    # 3. Corde
     poids_corde = modele_ia.get("poids_corde", 1.0)
     corde_str = str(corde).upper()
     if "GAUCHE" in corde_str and ("G" in musique or "GAUCHE" in musique):
@@ -707,13 +673,11 @@ def evaluer_score_cheval(
     else:
         score += 1.0 * poids_corde
 
-    # 4. Smart Money & Mouvement des Cotes
     if tendance == "baisse_forte":
         score += 6.5 * modele_ia.get("poids_cote_tendance", 1.35)
     elif tendance == "hausse":
         score -= 3.0 * modele_ia.get("poids_cote_tendance", 1.35)
 
-    # 5. Synergie Acteur / Hippodrome
     mult_acteur = analyser_performances_acteur_par_hippodrome(driver, hippodrome)
     bonus_acteur = (mult_acteur - 1.0) * 10.0
     score += (
@@ -722,13 +686,11 @@ def evaluer_score_cheval(
         * modele_ia.get("poids_hippodrome_acteur", 1.25)
     )
 
-    # 6. Affinité de distance
     poids_dist_ia = modele_ia.get("poids_distance", 1.1)
     mult_distance = analyser_affinite_distance(cheval, distance_course)
     bonus_distance = (mult_distance - 1.0) * 5.0
     score += bonus_distance * poids_dist_ia
 
-    # 7. Attraction des Cotes & Détection d'Outsider Rentable
     if cote > 1.0:
         if cote < 2.5:
             score += 6
@@ -739,7 +701,6 @@ def evaluer_score_cheval(
         elif cote > 35.0:
             score -= 2
 
-    # 8. DÉTECTION DU VALUE OUTSIDER
     poids_outsider = modele_ia.get("poids_outsider_cache", 1.30)
     if 6.0 <= cote <= 30.0:
         bonus_joker = 0.0
@@ -1424,9 +1385,6 @@ tab_chronologique, tab_analyse, tab_ia, tab_suivi, tab_reunions = st.tabs([
     "🏟️ Bilan par Réunion",
 ])
 
-if "date_commune" not in st.session_state:
-    st.session_state["date_commune"] = datetime.date.today()
-
 def sync_date_chrono():
     d = st.session_state["date_chrono_picker"]
     st.session_state["date_commune"] = d
@@ -1444,7 +1402,6 @@ with tab_chronologique:
     with col_c1:
         date_chrono_sel = st.date_input(
             "Date",
-            value=st.session_state["date_commune"],
             key="date_chrono_picker",
             on_change=sync_date_chrono,
         )
@@ -1613,8 +1570,6 @@ with tab_chronologique:
 with tab_analyse:
     st.title("📊 Analyse Intégrale & Détection de Value Bets")
     
-    # Correction : On supprime la valeur par défaut au milieu, 
-    # et on s'assure que st.session_state["date_analyse_picker"] est initialisé en amont si besoin.
     date_sel = st.date_input(
         "Date du jour",
         key="date_analyse_picker",
@@ -1674,7 +1629,7 @@ with tab_analyse:
                         "EV Gagnant": c.get("ev_index"),
                         "EV Placé": c.get("ev_place_index"),
                     } for c in chevaux_tries],
-                    use_container_width=True,
+                    width="stretch",
                 )
 
         st.divider()
@@ -1705,7 +1660,7 @@ with tab_analyse:
 
         if st.session_state.get("plan_courant"):
             st.write("### 📌 Stratégie de Mises Optimisée (80% Sécurité / 20% Poker)")
-            st.dataframe(st.session_state["plan_courant"], use_container_width=True)
+            st.dataframe(st.session_state["plan_courant"], width="stretch")
 
             if st.button("✅ Enregistrer tout ce plan de mise", type="primary"):
                 hist = []
@@ -1886,7 +1841,7 @@ with tab_suivi:
 
         st.divider()
         st.write("### Historique des Paris")
-        st.dataframe(historique, use_container_width=True)
+        st.dataframe(historique, width="stretch")
     else:
         st.info("Aucun historique de paris disponible.")
 
@@ -1902,7 +1857,7 @@ with tab_reunions:
                 try:
                     with open(fichier, "r", encoding="utf-8") as f:
                         donnees_bilan = json.load(f)
-                    st.dataframe(donnees_bilan, use_container_width=True)
+                    st.dataframe(donnees_bilan, width="stretch")
                 except Exception as e:
                     st.error(f"Erreur de chargement du bilan : {e}")
     else:
